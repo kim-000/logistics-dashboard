@@ -3,10 +3,16 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Global Trade & Logistics Daily Intelligence</title>
+  <title>Global Trade & Logistics Intelligence + Cargo Tracking</title>
+  <!-- Tailwind CSS -->
   <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Lucide Icons -->
   <script src="https://unpkg.com/lucide@latest"></script>
+  <!-- Chart.js -->
   <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <!-- QR Code Generator Lib -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+  <!-- Pretendard Font -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css">
   <script>
     tailwind.config = {
@@ -30,9 +36,11 @@
 </head>
 <body class="bg-slate-50 dark:bg-slate-950 text-slate-800 dark:text-slate-100 min-h-screen flex flex-col transition-colors duration-200">
 
-  <header class="sticky top-0 z-40 bg-white/90 dark:bg-slate-900/90 backdrop-blur-md border-b border-slate-200 dark:border-slate-800 shadow-sm">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-3.5">
-      <div class="flex flex-col md:flex-row md:items-center justify-between gap-4">
+  <!-- Main Header -->
+  <header class="sticky top-0 z-40 bg-white/90 dark:bg-slate-900/90 backdrop-blur-md border-b border-slate-200 dark:border-slate-800 shadow-xs">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-3">
+      <div class="flex flex-col md:flex-row md:items-center justify-between gap-3">
+        
         <div class="flex items-center space-x-3">
           <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-brand-600 to-indigo-600 flex items-center justify-center text-white shadow-md shadow-brand-500/20">
             <i data-lucide="ship" class="w-5 h-5"></i>
@@ -71,7 +79,7 @@
             <button onclick="setLanguage('en')" id="lang-en" class="px-2.5 py-1 rounded-md transition text-slate-500 hover:text-slate-900 dark:hover:text-white">EN</button>
           </div>
 
-          <button onclick="copyBriefingText()" class="flex items-center space-x-1.5 px-3 py-1.5 bg-brand-600 hover:bg-brand-700 text-white rounded-lg text-xs font-medium shadow-sm transition active:scale-95">
+          <button onclick="copyBriefingText()" class="flex items-center space-x-1.5 px-3 py-1.5 bg-brand-600 hover:bg-brand-700 text-white rounded-lg text-xs font-medium shadow-xs transition active:scale-95">
             <i data-lucide="copy" class="w-3.5 h-3.5"></i>
             <span id="btn-copy-label">요약 텍스트 복사</span>
           </button>
@@ -85,8 +93,99 @@
     </div>
   </header>
 
+  <!-- [NEW] CARGONAVI STYLE RAPID TRACKING MODULE (맨 윗부분 추가) -->
+  <section class="bg-gradient-to-r from-slate-900 via-slate-850 to-indigo-950 text-white border-b border-slate-800 shadow-md">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-3.5">
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-4 items-center">
+        
+        <!-- 海運 M B/L / Container Tracking -->
+        <div class="bg-white/10 dark:bg-white/5 backdrop-blur-md p-3 rounded-xl border border-white/10 flex flex-col sm:flex-row items-center gap-2.5">
+          <div class="flex items-center space-x-2 text-rose-400 shrink-0">
+            <i data-lucide="anchor" class="w-5 h-5"></i>
+            <div class="text-xs font-bold leading-tight">
+              <span class="text-rose-400 font-extrabold uppercase">Ocean Track</span><br>
+              <span class="text-slate-300 text-[10px]">M B/L & Container</span>
+            </div>
+          </div>
+
+          <div class="flex flex-1 w-full gap-1.5">
+            <!-- Carrier Selector -->
+            <select id="tracking-carrier" class="bg-slate-800 text-white text-xs rounded-lg px-2 py-1.5 border border-slate-700 focus:outline-hidden focus:ring-1 focus:ring-brand-500 shrink-0">
+              <option value="AUTO">자동 감지 / ALL</option>
+              <option value="ONE">ONE (Ocean Network)</option>
+              <option value="MAEU">Maersk Line</option>
+              <option value="MSCU">MSC</option>
+              <option value="CMA">CMA CGM</option>
+              <option value="HMM">HMM (현대상선)</option>
+              <option value="EGLV">Evergreen (장영)</option>
+              <option value="COSCO">COSCO</option>
+              <option value="YML">Yang Ming (양밍)</option>
+              <option value="WHL">Wan Hai (완하이)</option>
+              <option value="KMTC">KMTC (고려해운)</option>
+              <option value="SNKO">Sinokor (장금상선)</option>
+              <option value="ZIM">ZIM Line</option>
+            </select>
+
+            <input type="text" id="ocean-bl-input" placeholder="B/L or 컨테이너 번호 (예: ONEY..., MAEU...)" class="flex-1 min-w-0 bg-slate-800/90 text-white text-xs rounded-lg px-2.5 py-1.5 border border-slate-700 focus:outline-hidden focus:ring-2 focus:ring-rose-500 placeholder-slate-400 font-mono uppercase">
+          </div>
+
+          <div class="flex items-center space-x-1 shrink-0 w-full sm:w-auto justify-end">
+            <button onclick="trackOceanCargo()" class="px-3 py-1.5 bg-rose-600 hover:bg-rose-500 text-white rounded-lg text-xs font-bold transition flex items-center space-x-1 shadow-xs">
+              <i data-lucide="search" class="w-3.5 h-3.5"></i>
+              <span>Track</span>
+            </button>
+            <button onclick="clearInput('ocean-bl-input')" class="px-2 py-1.5 bg-slate-700 hover:bg-slate-600 text-slate-300 rounded-lg text-xs transition">Clear</button>
+          </div>
+        </div>
+
+        <!-- 航空 RapidTrack AWB Tracking (캡처화면 카고나비 스타일) -->
+        <div class="bg-white/10 dark:bg-white/5 backdrop-blur-md p-3 rounded-xl border border-white/10 flex flex-col sm:flex-row items-center gap-2.5">
+          <div class="flex items-center space-x-2 text-amber-400 shrink-0">
+            <i data-lucide="plane-takeoff" class="w-5 h-5"></i>
+            <div class="text-xs font-bold leading-tight">
+              <span class="text-red-400 font-extrabold uppercase">RapidTrack</span><br>
+              <span class="text-slate-300 text-[10px]">国際エアカーゴ (AWB)</span>
+            </div>
+          </div>
+
+          <div class="flex flex-1 w-full gap-1.5 items-center">
+            <input type="text" id="air-awb-input" placeholder="例: 180-12345675 (또는 11자리)" class="flex-1 min-w-0 bg-slate-800/90 text-white text-xs rounded-lg px-2.5 py-1.5 border border-slate-700 focus:outline-hidden focus:ring-2 focus:ring-amber-500 placeholder-slate-400 font-mono">
+          </div>
+
+          <div class="flex items-center space-x-1 shrink-0 w-full sm:w-auto justify-end">
+            <button onclick="trackAirCargo()" class="px-3 py-1.5 bg-amber-500 hover:bg-amber-400 text-slate-950 rounded-lg text-xs font-bold transition flex items-center space-x-1 shadow-xs">
+              <i data-lucide="search" class="w-3.5 h-3.5"></i>
+              <span>Track</span>
+            </button>
+            <button onclick="clearInput('air-awb-input')" class="px-2 py-1.5 bg-slate-700 hover:bg-slate-600 text-slate-300 rounded-lg text-xs transition">Clear</button>
+            <button onclick="openQrModal()" title="스마트폰 QR 조회" class="px-2 py-1.5 bg-slate-700 hover:bg-slate-600 text-slate-300 rounded-lg text-xs transition flex items-center space-x-1">
+              <i data-lucide="qr-code" class="w-3.5 h-3.5"></i>
+              <span>QR</span>
+            </button>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- QR Code Modal -->
+  <div id="qr-modal" class="fixed inset-0 z-50 bg-black/60 backdrop-blur-xs flex items-center justify-center hidden p-4">
+    <div class="bg-white dark:bg-slate-900 rounded-2xl p-6 max-w-xs w-full shadow-2xl border border-slate-200 dark:border-slate-800 text-center relative">
+      <button onclick="closeQrModal()" class="absolute top-3 right-3 text-slate-400 hover:text-slate-600 dark:hover:text-white">
+        <i data-lucide="x" class="w-5 h-5"></i>
+      </button>
+      <h3 class="text-sm font-bold text-slate-900 dark:text-white mb-1">스마트폰 화물 조회 QR</h3>
+      <p class="text-xs text-slate-500 mb-4">카메라로 비추면 조회 화면으로 이동합니다</p>
+      <div id="qrcode-box" class="flex justify-center p-3 bg-white rounded-xl border border-slate-200 mx-auto w-fit"></div>
+      <div id="qr-target-text" class="text-[11px] text-slate-600 dark:text-slate-400 font-mono mt-3 truncate"></div>
+    </div>
+  </div>
+
   <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6 space-y-6 flex-1 w-full">
 
+    <!-- KPI Summary Grid -->
     <div class="grid grid-cols-2 md:grid-cols-4 gap-3 sm:gap-4">
       <div class="bg-white dark:bg-slate-900 p-4 rounded-xl border border-slate-200 dark:border-slate-800 shadow-xs flex items-center space-x-3.5">
         <div class="p-2.5 rounded-lg bg-blue-50 dark:bg-blue-950/60 text-blue-600 dark:text-blue-400">
@@ -137,6 +236,7 @@
       </div>
     </div>
 
+    <!-- FX & Rates Section -->
     <section class="bg-white dark:bg-slate-900 rounded-2xl border border-slate-200 dark:border-slate-800 p-5 shadow-xs">
       <div class="flex flex-col sm:flex-row sm:items-center justify-between pb-4 border-b border-slate-100 dark:border-slate-800 gap-3">
         <div class="flex items-center space-x-2.5">
@@ -232,6 +332,7 @@
       </div>
     </section>
 
+    <!-- Filter Tabs & Search Bar -->
     <div class="flex flex-col md:flex-row items-stretch md:items-center justify-between gap-3">
       <div class="flex overflow-x-auto space-x-1.5 p-1 bg-slate-200/70 dark:bg-slate-900 rounded-xl text-xs font-semibold scrollbar-none">
         <button onclick="setTab('all')" id="tab-all" class="px-3.5 py-2 rounded-lg bg-white dark:bg-brand-600 text-slate-900 dark:text-white shadow-xs whitespace-nowrap transition font-bold">전체 보기 (18)</button>
@@ -247,10 +348,10 @@
       </div>
     </div>
 
-    <div id="news-container" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-      <!-- 렌더링 위치 -->
-    </div>
+    <!-- News Grid Container -->
+    <div id="news-container" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4"></div>
 
+    <!-- Empty State -->
     <div id="empty-state" class="hidden py-16 text-center">
       <i data-lucide="inbox" class="w-12 h-12 mx-auto text-slate-300 dark:text-slate-700 mb-3"></i>
       <h3 class="text-sm font-bold text-slate-700 dark:text-slate-300" id="txt-empty-title">검색된 브리핑 항목이 없습니다.</h3>
@@ -279,7 +380,107 @@
   </div>
 
   <script>
-    // 1. 기본 인텔리전스 데이터 (data.json 생성 전에도 항상 즉시 화면에 노출됨)
+    // ----------------------------------------------------
+    // CARGONAVI STYLE RAPID TRACKING LOGIC
+    // ----------------------------------------------------
+    function clearInput(id) {
+      document.getElementById(id).value = '';
+    }
+
+    // 1. 해상 컨테이너선 M B/L 추적
+    function trackOceanCargo() {
+      const bl = document.getElementById('ocean-bl-input').value.trim();
+      const carrier = document.getElementById('tracking-carrier').value;
+      if (!bl) {
+        showToast('B/L 또는 컨테이너 번호를 입력하세요.');
+        return;
+      }
+
+      // 선사별 트래킹 공식 다이렉트 URL 맵
+      const carrierUrls = {
+        ONE: `https://ecomm.one-line.com/one-ecom/manage-shipment/cargo-tracking?quickSearchType=BL&quickSearchNumber=${encodeURIComponent(bl)}`,
+        MAEU: `https://www.maersk.com/tracking/${encodeURIComponent(bl)}`,
+        MSCU: `https://www.msc.com/en/track-a-shipment?query=${encodeURIComponent(bl)}`,
+        CMA: `https://www.cma-cgm.com/ebusiness/tracking/search?SearchBy=BL&SearchValue=${encodeURIComponent(bl)}`,
+        HMM: `https://www.hmm21.com/cms/business/ebiz/trackTrace/trackTrace/index.jsp?type=1&number=${encodeURIComponent(bl)}`,
+        EGLV: `https://ct.shipmentlink.com/servlet/TTrn_Tracking`,
+        COSCO: `https://lines.coscoshipping.com/home/cargotracking?trackingNumber=${encodeURIComponent(bl)}`,
+        YML: `https://www.yangming.com/e-service/track_trace/track_trace_cargo_tracking.aspx`,
+        WHL: `https://www.wanhai.com/views/cargo/cargo_tracking.xhtml?q=${encodeURIComponent(bl)}`,
+        KMTC: `https://www.ekmtc.com/`,
+        SNKO: `https://www.sinokor.co.kr/`,
+        ZIM: `https://www.zim.com/tools/track-a-shipment?consignmentnumber=${encodeURIComponent(bl)}`
+      };
+
+      if (carrier !== 'AUTO' && carrierUrls[carrier]) {
+        window.open(carrierUrls[carrier], '_blank');
+      } else {
+        // 자동 판별 / 통합 추적 (Track-Trace)
+        window.open(`https://www.track-trace.com/container?number=${encodeURIComponent(bl)}`, '_blank');
+      }
+    }
+
+    // 2. 항공화물 M AWB RapidTrack 추적 (캡처 이미지 기반)
+    function trackAirCargo() {
+      let awb = document.getElementById('air-awb-input').value.trim().replace(/[^0-9]/g, '');
+      if (!awb || awb.length < 8) {
+        showToast('유효한 AWB 번호를 입력하세요 (예: 18012345671)');
+        return;
+      }
+
+      const prefix = awb.substring(0, 3);
+      const number = awb.substring(3);
+
+      // 주요 항공사 AWB 접두사 매핑
+      const airlineUrls = {
+        '180': `https://cargo.koreanair.com/ko/tracking?awbNo=${prefix}${number}`, // 대한항공
+        '988': `https://www.asianacargo.com/tracking/awbTracking.do`, // 아시아나
+        '131': `https://www.jal.co.jp/jalcargo/inter/`, // JAL
+        '205': `https://www.anacargo.jp/ja/int/`, // ANA
+        '160': `https://www.cathaypacificcargo.com/`, // 캐세이퍼시픽
+        '618': `https://www.singaporeair.com/` // 싱가포르항공
+      };
+
+      if (airlineUrls[prefix]) {
+        window.open(airlineUrls[prefix], '_blank');
+      } else {
+        // 전 세계 공용 에어카고 트래커
+        window.open(`https://www.track-trace.com/aircargo?number=${encodeURIComponent(awb)}`, '_blank');
+      }
+    }
+
+    // 3. QR코드 모달
+    let qrcodeInstance = null;
+    function openQrModal() {
+      const awb = document.getElementById('air-awb-input').value.trim();
+      const bl = document.getElementById('ocean-bl-input').value.trim();
+      const targetVal = awb || bl || 'https://kim-000.github.io/logistics-dashboard/';
+      const targetUrl = awb 
+        ? `https://www.track-trace.com/aircargo?number=${encodeURIComponent(awb)}`
+        : (bl ? `https://www.track-trace.com/container?number=${encodeURIComponent(bl)}` : targetVal);
+
+      const box = document.getElementById('qrcode-box');
+      box.innerHTML = '';
+      qrcodeInstance = new QRCode(box, {
+        text: targetUrl,
+        width: 140,
+        height: 140,
+        colorDark : "#0f172a",
+        colorLight : "#ffffff",
+        correctLevel : QRCode.CorrectLevel.M
+      });
+
+      document.getElementById('qr-target-text').innerText = targetVal;
+      document.getElementById('qr-modal').classList.remove('hidden');
+    }
+
+    function closeQrModal() {
+      document.getElementById('qr-modal').classList.add('hidden');
+    }
+
+    // ----------------------------------------------------
+    // 인텔리전스 뉴스 데이터 (18건 보장)
+    // ----------------------------------------------------
     const fallbackNews = [
       { id: 1, category: 'logistics', badge: '해상운송·체선', source: 'Sea-Intelligence', datetime: '오늘 최신', url: 'https://news.google.com/search?q=컨테이너+선박+정시율&hl=ko&gl=KR&ceid=KR:ko', title: { ko: '글로벌 정시 도착률 50% 하회… 상하이·닝보 등 아시아 허브 항만 체선 심화', ja: 'コンテナ船の定時運航率が50％割れ… 上海・寧波などアジア主要港で混雑深刻化', en: 'Global Schedule Reliability Drops Below 50%: Port Congestion Worsens in Shanghai & Ningbo' }, desc: { ko: '기상 악화 및 환적 물량 집중으로 평균 지연 일수가 6.8일로 증가했습니다. 주요 선사들의 임의 기항 건너뛰기(Port Omission)에 대한 사전 대비가 요구됩니다.', ja: '悪天候と接続貨物の集中により平均遅延日数が6.8日に増加。船社の抜港や積み残しリスクに対する事前対応が求められます。', en: 'Average delay increased to 6.8 days due to adverse weather and transshipment surges.' } },
       { id: 2, category: 'logistics', badge: '일본선복·피더', source: '日本海事新聞', datetime: '오늘 최신', url: 'https://news.google.com/search?q=日本発+コンテナ船+スペース逼迫&hl=ja&gl=JP&ceid=JP:ja', title: { ko: '일본발 원거리·역내 컨테이너선 선복난… 신규 부킹 제한 및 중단 선사 속출', ja: '日本発の北米・欧州・アジア域内コンテナ船スペース逼迫… 新規予約停止が相次ぐ', en: 'Container Space Shortage Ex-Japan: Multiple Carriers Suspend New Bookings' }, desc: { ko: '선사들이 중국 등 대형 화주 지역으로 선복을 우선 배정하면서 일본 기항 선박의 잔여 스페이스가 급감했습니다.', ja: '船社が中国等の大規模市場へ船腹を優先配分しているため、日本寄港船の空き枠が急減しています。', en: 'Carriers prioritize vessel allocation to larger markets like China, causing severe space crunches ex-Japan.' } },
@@ -297,7 +498,7 @@
       { id: 14, category: 'japan_visa', badge: '체류관리·디지털', source: '디지털청', datetime: '오늘 최신', url: 'https://news.google.com/search?q=在留カード+マイナンバーカード+一体化&hl=ja&gl=JP&ceid=JP:ja', title: { ko: '외국인 재류카드-마이넘버카드 통합 발급 로드맵 추진… 온라인 갱신 편의 확대', ja: '在留カードとマイナンバーカードの一体化計画が進行… 更新手続きの利便性向上へ', en: 'Integration of Residence Card and My Number Card Progresses: Streamlined Online Renewal' }, desc: { ko: '재류카드와 마이넘버카드를 통합하여 비자 갱신 시 관공서 이중 방문을 최소화하는 디지털 행정 연계가 단계적으로 도입됩니다.', ja: '在留カードとマイナカードの一本化により、ビザ更新等のオンライン化が進められます。', en: 'The rollout of unified residence and My Number identity cards aims to simplify visa renewal procedures.' } },
       { id: 15, category: 'global', badge: '중동·해운안보', source: 'Reuters', datetime: '오늘 최신', url: 'https://news.google.com/search?q=Israel+election+shipping+risk&hl=en&gl=US&ceid=US:en', title: { ko: '이스라엘 총선 출구조사 박빙… 중동 정세 및 홍해 항로 안정화 시점 불투명', ja: 'イスラエル総選挙、出口調査で大接戦… 中東情勢と紅海航路の正常化時期は見通せず', en: 'Israel Election Exit Polls Deadlocked: Middle East Shipping Route Security Remains Uncertain' }, desc: { ko: '연정 구성 결과에 따라 안보 기조가 좌우될 것으로 보여 호르무즈 및 홍해 주변 해상 물류 리스크의 조기 완화는 난항이 예상됩니다.', ja: '連立交渉の結果次第で外交方針が左右される見通しで、紅海周辺の航行リスクの早期沈静化は見通せません。', en: 'Exit polls indicate a razor-thin coalition struggle, prolonging security uncertainties around key maritime chokepoints.' } },
       { id: 16, category: 'global', badge: '남미·원자재', source: 'Financial Times', datetime: '오늘 최신', url: 'https://news.google.com/search?q=Brazil+election+commodity+supply+chain&hl=en&gl=US&ceid=US:en', title: { ko: '브라질 대선 결과 정국 대립 지속… 대두·철광석 등 원자재 수출 공급망 모니터링', ja: 'ブラジル大統領選後の政情不安が継続… 大豆・鉄鉱石など資源供給網の動向注視', en: 'Post-Election Political Clashes in Brazil: Bulk Commodity & Iron Ore Export Corridors Watched' }, desc: { ko: '선거 결과에 불복하는 항만 파업 우려가 남아있어 글로벌 벌크선 운임 및 농산물·원자재 수급 변동성에 주의가 필요합니다.', ja: '選挙結果を巡る対立から主要港湾アクセスの混乱が警戒されており、バルク船運賃や資源供給に注視が必要です。', en: 'Post-election political friction maintains risks of transport strikes affecting major bulk ports.' } },
-      { id: 17, category: 'global', badge: '미·중·통상규제', source: 'Wall Street Journal', datetime: '오늘 최신', url: 'https://news.google.com/search?q=US+CBP+supply+chain+compliance&hl=en&gl=US&ceid=US:en', title: { ko: '미국 관세청(CBP) 저가 소액 화물 면세 축소 및 우회 수입 서류 검증 대폭 강화', ja: '米税関（CBP）、少額免税枠の厳格化と迂回輸入の監視強化を通告', en: 'US CBP Tightens Low-Value Import Scrutiny & Cross-Border Supply Chain Compliance' }, desc: { ko: '디미니미스 면세 제도를 악용한 불법 수입 방지를 위해 인보이스 및 HS코드 데이터 정합성이 일치하지 않을 시 즉각 통관 보류 조치가 취해집니다.', ja: '少額特例制度の悪用防止に向け、インボ이스や原産地記載の不備に対し即座に通関留めが実施されます。', en: 'US Customs steps up enforcement against fraudulent de minimis entries.' } },
+      { id: 17, category: 'global', badge: '미·중·통상규제', source: 'Wall Street Journal', datetime: '오늘 최신', url: 'https://news.google.com/search?q=US+CBP+supply+chain+compliance&hl=en&gl=US&ceid=US:en', title: { ko: '미국 관세청(CBP) 저가 소액 화물 면세 축소 및 우회 수입 서류 검증 대폭 강화', ja: '米税関（CBP）、少額免税枠の厳格化と迂回輸入の監視強化を通告', en: 'US CBP Tightens Low-Value Import Scrutiny & Cross-Border Supply Chain Compliance' }, desc: { ko: '디미니미스 면세 제도를 악용한 불법 수입 방지를 위해 인보이스 및 HS코드 데이터 정합성이 일치하지 않을 시 즉각 통관 보류 조치가 취해집니다.', ja: '少額特例制度の悪用防止に向け、インボイスや原産地記載の不備に対し即座に通関留めが実施されます。', en: 'US Customs steps up enforcement against fraudulent de minimis entries.' } },
       { id: 18, category: 'global', badge: '첨단테크·공급망', source: 'Bloomberg', datetime: '오늘 최신', url: 'https://news.google.com/search?q=tech+supply+chain+regulations&hl=en&gl=US&ceid=US:en', title: { ko: '글로벌 테크 공급망 디커플링 가속… 핵심 반도체·배터리 공급망 인증 요건 확대', ja: '先端技術サプライチェーンのデカップリング加速… 半導体・車載電池の調達証明義務化', en: 'Tech Supply Chain Decoupling Accelerates: Tougher Origin Tracing for Chips & Batteries' }, desc: { ko: '서방 주요국이 국가 안보를 이유로 방산 및 주요 인프라 부품에서 특정국 원자재 배제 인증을 의무화함에 따라 공급망 재편이 본격화되고 있습니다.', ja: '主要国が重要インフラにおける特定国サプライヤー排除方針を強めており、部材調達網の再編が迫られています。', en: 'Stricter origin traceability mandates in Western markets accelerate the realignment of electronic components.' } }
     ];
 
@@ -396,7 +597,9 @@
       }
     };
 
-    // 2. data.json 로드 (없더라도 Fallback 뉴스를 띄워 절대 멈추지 않음)
+    // ----------------------------------------------------
+    // DATA LOADER & RENDER
+    // ----------------------------------------------------
     async function loadData() {
       try {
         const res = await fetch('./data.json?t=' + new Date().getTime());
@@ -413,12 +616,7 @@
           }
           if (data.news && Object.keys(data.news).length > 0) {
             const parsed = [];
-            const catMap = {
-              logistics: '해상·항공 물류',
-              japan_domestic: '일본 경제·정치',
-              japan_visa: '비자·체류 정책',
-              global: '글로벌 무역 정세'
-            };
+            const catMap = { logistics: '해상·항공 물류', japan_domestic: '일본 경제·정치', japan_visa: '비자·체류 정책', global: '글로벌 무역 정세' };
             Object.keys(catMap).forEach(key => {
               if (data.news[key] && Array.isArray(data.news[key])) {
                 data.news[key].forEach(item => {
@@ -434,15 +632,12 @@
                 });
               }
             });
-            if (parsed.length > 0) {
-              currentNewsList = parsed;
-            }
+            if (parsed.length > 0) currentNewsList = parsed;
           }
         } else {
-          throw new Error('data.json not ready yet');
+          throw new Error('data.json not ready');
         }
       } catch (err) {
-        // data.json이 없으면 브라우저 직접 환율 API 호출 & fallback 뉴스 유지
         fetchLiveFXDirect();
       } finally {
         renderNews();
@@ -457,7 +652,6 @@
           const usdkrw = data.rates.KRW.toFixed(2);
           const usdjpy = data.rates.JPY.toFixed(2);
           const jpykrw = ((data.rates.KRW / data.rates.JPY) * 100).toFixed(2);
-
           document.getElementById('rate-usdkrw').innerText = Number(usdkrw).toLocaleString();
           document.getElementById('rate-usdjpy').innerText = usdjpy;
           document.getElementById('rate-jpykrw').innerText = jpykrw;
@@ -465,11 +659,10 @@
           document.getElementById('header-last-updated').innerText = `최종 동기화: ${new Date().toLocaleTimeString()} (Live)`;
         }
       } catch (e) {
-        console.warn('FX direct fetch error:', e);
+        console.warn('FX error:', e);
       }
     }
 
-    // 3. 카드 렌더링
     function renderNews() {
       const container = document.getElementById('news-container');
       const emptyState = document.getElementById('empty-state');
@@ -532,7 +725,6 @@
       lucide.createIcons();
     }
 
-    // 4. 유틸 및 이벤트 핸들러
     function triggerManualRefresh() {
       const icon = document.getElementById('icon-refresh');
       icon.classList.add('animate-spin');
@@ -563,7 +755,6 @@
     function setLanguage(lang) {
       currentLang = lang;
       const t = i18n[lang];
-
       ['ko', 'ja', 'en'].forEach(l => {
         const btn = document.getElementById(`lang-${l}`);
         btn.className = (l === lang)
@@ -634,19 +825,14 @@
       });
 
       text += `대시보드 바로가기: https://kim-000.github.io/logistics-dashboard/`;
-
-      navigator.clipboard.writeText(text).then(() => {
-        showToast(i18n[currentLang].copiedToast);
-      });
+      navigator.clipboard.writeText(text).then(() => showToast(i18n[currentLang].copiedToast));
     }
 
     function showToast(msg) {
       const toast = document.getElementById('toast');
       document.getElementById('toast-message').innerText = msg;
       toast.classList.remove('translate-y-20', 'opacity-0');
-      setTimeout(() => {
-        toast.classList.add('translate-y-20', 'opacity-0');
-      }, 2500);
+      setTimeout(() => toast.classList.add('translate-y-20', 'opacity-0'), 2500);
     }
 
     function toggleTrendChart() {
@@ -675,30 +861,15 @@
         data: {
           labels: ['D-6', 'D-5', 'D-4', 'D-3', 'D-2', 'D-1', 'Today'],
           datasets: [
-            {
-              label: 'USD/KRW',
-              data: [1320, 1324, 1322, 1328, 1325, 1324, 1326.8],
-              borderColor: '#3b82f6',
-              backgroundColor: 'rgba(59, 130, 246, 0.05)',
-              tension: 0.3,
-              fill: true
-            },
-            {
-              label: 'USD/JPY',
-              data: [156.8, 157.1, 157.4, 157.2, 157.6, 157.8, 157.95],
-              borderColor: '#10b981',
-              tension: 0.3
-            }
+            { label: 'USD/KRW', data: [1320, 1324, 1322, 1328, 1325, 1324, 1326.8], borderColor: '#3b82f6', backgroundColor: 'rgba(59, 130, 246, 0.05)', tension: 0.3, fill: true },
+            { label: 'USD/JPY', data: [156.8, 157.1, 157.4, 157.2, 157.6, 157.8, 157.95], borderColor: '#10b981', tension: 0.3 }
           ]
         },
         options: {
           responsive: true,
           maintainAspectRatio: false,
           plugins: { legend: { position: 'top', labels: { boxWidth: 12, font: { size: 11 } } } },
-          scales: {
-            y: { grid: { color: 'rgba(156, 163, 175, 0.1)' } },
-            x: { grid: { display: false } }
-          }
+          scales: { y: { grid: { color: 'rgba(156, 163, 175, 0.1)' } }, x: { grid: { display: false } } }
         }
       });
     }
