@@ -163,6 +163,12 @@
     </div>
   </section>
 
+  <!-- 숨겨진 Direct Auto-Submit Form (track-trace 경유 시 메인 화면 멈춤 없이 즉시 Direct 실행) -->
+  <form id="trackTraceForm" action="https://www.track-trace.com/aircargo" method="POST" target="_blank" class="hidden">
+    <input type="hidden" name="number" id="hidden_aircargo_number" value="">
+    <input type="hidden" name="direct" value="true">
+  </form>
+
   <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6 space-y-6 flex-1 w-full">
 
     <!-- KPI Summary Grid -->
@@ -361,7 +367,7 @@
 
   <script>
     // ----------------------------------------------------
-    // CARGONAVI STYLE RAPID TRACKING LOGIC (다이렉트 결과 도출)
+    // CARGONAVI STYLE RAPID TRACKING LOGIC (안전한 복사 + 공식 페이지 호출)
     // ----------------------------------------------------
     function clearInput(id) {
       document.getElementById(id).value = '';
@@ -401,7 +407,7 @@
       }
     }
 
-    // 2. 항공화물 M AWB RapidTrack 추적 (cargonavi 실제 결과창 도출)
+    // 2. 항공화물 M AWB RapidTrack 추적 (자동 복사 후 에러 없는 페이지로 연결)
     function trackAirCargo() {
       let rawInput = document.getElementById('air-awb-input').value.trim();
       let cleanAwb = rawInput.replace(/[^0-9]/g, '');
@@ -413,69 +419,46 @@
       const prefix = cleanAwb.substring(0, 3);
       const serial = cleanAwb.substring(3);
 
-      // 카고나비 방식: 뒤 8자리 일련번호 자동 복사
+      // ★ 카고나비의 핵심: JAL(131) 등 보안이 막힌 페이지는 복사 후 메인 조회창 띄우기
       navigator.clipboard.writeText(serial).catch(() => {});
-      showToast(`AWB [${serial}] 복사 완료`);
+      showToast(`AWB [${serial}] 자동 복사됨 (Ctrl+V)`);
 
-      // 각 항공사 실제 화물 추적 결과(Result) 페이지로 파라미터 직송
       switch (prefix) {
+        case '160':
+          // 캐세이퍼시픽 공식 화물 추적 포털
+          window.open(`https://www.cathaycargo.com/en-us/track-and-trace.html`, '_blank');
+          break;
+
         case '131':
-          // JAL Cargo: 안내 홈이 아닌 awb1/awb2 파라미터를 넘겨 실제 결과 조회 화면을 즉시 렌더링
-          window.open(`https://www.jal.co.jp/jp/ja/jalcargo/inter/awb/?awb1=131&awb2=${encodeURIComponent(serial)}`, '_blank');
+          // JAL Cargo: 에러를 뿜는 직결 파라미터를 버리고, 글로벌 메인 카고 조회 화면으로 이동
+          window.open(`https://www.jal.co.jp/jp/en/jalcargo/`, '_blank');
+          break;
+
+        case '205':
+          // ANA Cargo
+          window.open(`https://www.anacargo.jp/ja/int/`, '_blank');
           break;
 
         case '180':
-          // 대한항공 Cargo: e-Tracking 직접 결과 화면
+          // 대한항공 Cargo: e-Tracking
           window.open(`https://cargo.koreanair.com/ko/tracking?awbNo=180${encodeURIComponent(serial)}`, '_blank');
           break;
 
         case '988':
-          // 아시아나 Cargo: 추적 폼 다이렉트
+          // 아시아나 Cargo
           window.open(`https://www.asianacargo.com/tracking/awbTracking.do`, '_blank');
           break;
 
-        case '160':
-          // 캐세이퍼시픽 공식 화물 추적 포털 (Cathay Cargo Track & Trace)
-          window.open(`https://www.cathaycargo.com/en-us/track-and-trace.html`, '_blank');
-          break;
-
-        case '205':
-          // ANA Cargo (전일본공수 국제화물 추적)
-          window.open(`https://www.anacargo.jp/ja/int/service/tracking/?awb=205-${encodeURIComponent(serial)}`, '_blank');
-          break;
-
         case '807':
-          // NCA (일본화물항공)
+          // NCA
           window.open(`https://www.nca.aero/`, '_blank');
           break;
 
-        case '618':
-          // 싱가포르항공 Cargo
-          window.open(`https://www.siacargo.com/`, '_blank');
-          break;
-
-        case '695':
-          // 에버항공 Cargo
-          window.open(`https://www.brcargo.com/`, '_blank');
-          break;
-
-        case '020':
-          // 루프트한자 Cargo
-          window.open(`https://lufthansa-cargo.com/eTracking`, '_blank');
-          break;
-
-        case '176':
-          // 에미레이트 SkyCargo
-          window.open(`https://www.skycargo.com/`, '_blank');
-          break;
-
-        case '406':
-          // UPS Air Cargo
-          window.open(`https://www.aircargo.ups.com/`, '_blank');
-          break;
-
         default:
-          window.open(`https://cargonavi.com/contents.html`, '_blank');
+          // 기타 항공사의 경우 track-trace로 즉시 연결(가장 안정적)하여 번호를 자동 조회
+          const form = document.getElementById('trackTraceForm');
+          document.getElementById('hidden_aircargo_number').value = cleanAwb;
+          form.submit();
           break;
       }
     }
@@ -488,7 +471,7 @@
       { id: 2, category: 'logistics', badge: '일본선복·피더', source: '日本海事新聞', datetime: '오늘 최신', url: 'https://news.google.com/search?q=日本発+コンテナ船+スペース逼迫&hl=ja&gl=JP&ceid=JP:ja', title: { ko: '일본발 원거리·역내 컨테이너선 선복난… 신규 부킹 제한 및 중단 선사 속출', ja: '日本発の北米・欧州・アジア域内コンテナ船スペース逼迫… 新規予約停止が相次ぐ', en: 'Container Space Shortage Ex-Japan: Multiple Carriers Suspend New Bookings' }, desc: { ko: '선사들이 중국 등 대형 화주 지역으로 선복을 우선 배정하면서 일본 기항 선박의 잔여 스페이스가 급감했습니다.', ja: '船社が中国等の大規模市場へ船腹を優先配分しているため、日本寄港船の空き枠が急減しています。', en: 'Carriers prioritize vessel allocation to larger markets like China, causing severe space crunches ex-Japan.' } },
       { id: 3, category: 'logistics', badge: '부산항·환적', source: '물류신문', datetime: '오늘 최신', url: 'https://news.google.com/search?q=부산항+환적+일본+2024년문제&hl=ko&gl=KR&ceid=KR:ko', title: { ko: "日 기업의 '부산항 경유 환적' 수요 지속 증가… 2024년 물류 문제 대체 루트 부각", ja: '日本企業の「釜山港経由トランジット」利用が定着… 2024年問題に伴う代替輸送機能が定着', en: 'Japan Shippers Deepen Reliance on Busan Hub: Feeder Transshipment Resolves Truck Shortage' }, desc: { ko: '일본 국내 트럭 기사 부족과 내륙 운송비 급등으로 일본 지방항에서 부산항으로 해상 피더 운송 후 환적하는 BCP 루트 선호가 이어지고 있습니다.', ja: '国内トラック輸送の人手不足を受け、地方港から釜山港へフィーダー輸送して本船接続するBCPルートの活用が定着しています。', en: 'Inland transport bottlenecks in Japan push regional shippers to feeder-route cargo through Busan Port.' } },
       { id: 4, category: 'logistics', badge: '운임·유류비', source: "Lloyd's List", datetime: '오늘 최신', url: 'https://news.google.com/search?q=VLSFO+BAF+유류할증료&hl=ko&gl=KR&ceid=KR:ko', title: { ko: '중동 리스크 및 희망봉 우회 장기화… 벙커유(VLSFO) 상승에 따른 유류할증료(BAF) 부담', ja: '紅海迂回の常態化と重油高騰… 船社の緊急燃油サーチャージ（BAF）適用が長期化', en: 'Cape Route Divergence Standardized: VLSFO Rise Drives Prolonged Bunker Surcharges (BAF)' }, desc: { ko: '수에즈 운하 회피 운항이 장기화되며 연료 소모가 증가, 글로벌 선사들이 4분기 유류할증료를 상향 반영 중입니다.', ja: '喜望峰迂回の長期化で燃料消費が増加し、船各社は第4四半期の燃油調整金を上方修正しています。', en: 'Cape of Good Hope rerouting forces extended vessel voyages and elevated bunker consumption.' } },
-      { id: 5, category: 'logistics', badge: '항공화물·성수기', source: 'The Loadstar', datetime: '오늘 최신', url: 'https://news.google.com/search?q=항공화물+운임+피크시즌&hl=ko&gl=KR&ceid=KR:ko', title: { ko: '연말 직구·전자상거래 피크 시즌 진입… 발틱 항공운임지수(BAI) 견조한 상승세', ja: '越境EC年末商戦のピーク突入… バルチック航空運賃指数（BAI）が強含み推移', en: 'Q4 Cross-Border E-Commerce Peak Season Sets In: Baltic Air Freight Index (BAI) Rallies' }, desc: { ko: '블랙프라이데이 등 연말 물량 증가와 해상 지연에 따른 긴급 항공 전환 수요로 아시아발 미주·유럽행 스페이스가 빠르게 소진되고 있습니다.', ja: '年末商戦向けの出荷増と海上輸送遅延に伴う航空シフトが重なり、航空スペースが逼迫しています。', en: 'Year-end shopping rushes combined with sea-to-air modal shifts tighten air cargo capacity.' } },
+      { id: 5, category: '항공화물·성수기', badge: '항공화물·성수기', source: 'The Loadstar', datetime: '오늘 최신', url: 'https://news.google.com/search?q=항공화물+운임+피크시즌&hl=ko&gl=KR&ceid=KR:ko', title: { ko: '연말 직구·전자상거래 피크 시즌 진입… 발틱 항공운임지수(BAI) 견조한 상승세', ja: '越境EC年末商戦のピーク突入… バルチック航空運賃指数（BAI）が強含み推移', en: 'Q4 Cross-Border E-Commerce Peak Season Sets In: Baltic Air Freight Index (BAI) Rallies' }, desc: { ko: '블랙프라이데이 등 연말 물량 증가와 해상 지연에 따른 긴급 항공 전환 수요로 아시아발 미주·유럽행 스페이스가 빠르게 소진되고 있습니다.', ja: '年末商戦向けの出荷増と海上輸送遅延に伴う航空シフトが重なり、航空スペースが逼迫しています。', en: 'Year-end shopping rushes combined with sea-to-air modal shifts tighten air cargo capacity.' } },
       { id: 6, category: 'japan_domestic', badge: '정치·수도이전', source: 'NHK NEWS', datetime: '오늘 최신', url: 'https://news.google.com/search?q=首都機能分散+副首都+日本&hl=ja&gl=JP&ceid=JP:ja', title: { ko: '도쿄 일극 집중 완화 및 재난 대비… 정부, ‘부수도(제2수도)’ 후보지 가이드라인 본격화', ja: '東京一極集中の緩和と大規模災害対策… 政府、「副首都」候補要件の検討指針を本格化', en: 'Decentralizing Tokyo: Japan Speeds Up Framework for Backup Capital Candidates' }, desc: { ko: '대규모 재해 발생 시 행정 기능을 지속할 대체 거점 선정을 위한 입지 조건 검토가 구체화되고 있습니다.', ja: '首都直下地震等の有事に備え、国の行政機能を維持する代替都市選定の要件整理が具体化しています。', en: 'The Japanese government is drafting guidelines to establish secondary capital hubs.' } },
       { id: 7, category: 'japan_domestic', badge: '경제·물가', source: '日本経済新聞', datetime: '오늘 최신', url: 'https://news.google.com/search?q=物価高+外食+価格改定+日本&hl=ja&gl=JP&ceid=JP:ja', title: { ko: '수입 원가 및 에너지 비용 누적… 일본 외식·유통업계 가격 인상 움직임 확산', ja: '輸入原材料・エネルギー高騰の長期化… 外食・流通大手で価格再改定が広がる', en: 'Import Costs and Energy Inflation Persist: Japanese Restaurant Chains Adjust Menu Prices' }, desc: { ko: '엔화 약세로 인한 식자재 수입가 상승과 인건비 부담이 커지며 주요 외식 프랜차이즈의 메뉴 가격 재조정이 잇따르고 있습니다.', ja: '円安に伴う食材調達コストの上昇と人件費増加が響き、大手外食チェーンで価格改定が相次いでいます。', en: 'Prolonged yen depreciation and rising domestic labor costs force major food and retail chains across Japan to adjust consumer pricing.' } },
       { id: 8, category: 'japan_domestic', badge: '물류·트럭', source: '朝日新聞', datetime: '오늘 최신', url: 'https://news.google.com/search?q=物流2024年問題+共同配送+日本&hl=ja&gl=JP&ceid=JP:ja', title: { ko: '물류 2024년 문제 대응 가속… 日 제조·유통 대기업 간 공동 배송망 합작 설립 잇따라', ja: '物流人手不足の打破へ… 大手製造・流通業による共同配送・幹線輸送シェアリングが加速', en: 'Overcoming Logistics Driver Deficits: Major Japanese Brands Expand Joint Delivery Networks' }, desc: { ko: '운전기사 잔업 규제에 대응하기 위해 대기업들이 물류 트럭을 공유하는 공동 수송 모델을 본격 확대하고 있습니다.', ja: 'ドライバーの時間外規制に対応するため、競合他社同士が長距離幹線便を共同運行する取り組みが本格化しています。', en: 'Competing consumer brands in Japan are forming joint freight operations to share long-haul transit.' } },
@@ -500,7 +483,7 @@
       { id: 14, category: 'japan_visa', badge: '체류관리·디지털', source: '디지털청', datetime: '오늘 최신', url: 'https://news.google.com/search?q=在留カード+マイナンバーカード+一体化&hl=ja&gl=JP&ceid=JP:ja', title: { ko: '외국인 재류카드-마이넘버카드 통합 발급 로드맵 추진… 온라인 갱신 편의 확대', ja: '在留カードとマイナンバーカードの一体化計画が進行… 更新手続きの利便性向上へ', en: 'Integration of Residence Card and My Number Card Progresses: Streamlined Online Renewal' }, desc: { ko: '재류카드와 마이넘버카드를 통합하여 비자 갱신 시 관공서 이중 방문을 최소화하는 디지털 행정 연계가 단계적으로 도입됩니다.', ja: '在留カードとマイナカードの一本化により、ビザ更新等のオンライン化が進められます。', en: 'The rollout of unified residence and My Number identity cards aims to simplify visa renewal procedures.' } },
       { id: 15, category: 'global', badge: '중동·해운안보', source: 'Reuters', datetime: '오늘 최신', url: 'https://news.google.com/search?q=Israel+election+shipping+risk&hl=en&gl=US&ceid=US:en', title: { ko: '이스라엘 총선 출구조사 박빙… 중동 정세 및 홍해 항로 안정화 시점 불투명', ja: 'イスラエル総選挙、出口調査で大接戦… 中東情勢と紅海航路の正常化時期は見通せず', en: 'Israel Election Exit Polls Deadlocked: Middle East Shipping Route Security Remains Uncertain' }, desc: { ko: '연정 구성 결과에 따라 안보 기조가 좌우될 것으로 보여 호르무즈 및 홍해 주변 해상 물류 리스크의 조기 완화는 난항이 예상됩니다.', ja: '連立交渉の結果次第で外交方針が左右される見通しで、紅海周辺の航行リスクの早期沈静化は見通せません。', en: 'Exit polls indicate a razor-thin coalition struggle, prolonging security uncertainties around key maritime chokepoints.' } },
       { id: 16, category: 'global', badge: '남미·원자재', source: 'Financial Times', datetime: '오늘 최신', url: 'https://news.google.com/search?q=Brazil+election+commodity+supply+chain&hl=en&gl=US&ceid=US:en', title: { ko: '브라질 대선 결과 정국 대립 지속… 대두·철광석 등 원자재 수출 공급망 모니터링', ja: 'ブラジル大統領選後の政情不安が継続… 大豆・鉄鉱石など資源供給網の動向注視', en: 'Post-Election Political Clashes in Brazil: Bulk Commodity & Iron Ore Export Corridors Watched' }, desc: { ko: '선거 결과에 불복하는 항만 파업 우려가 남아있어 글로벌 벌크선 운임 및 농산물·원자재 수급 변동성에 주의가 필요합니다.', ja: '選挙結果を巡る対立から主要港湾アクセスの混乱が警戒されており、バルク船運賃や資源供給に注視が必要です。', en: 'Post-election political friction maintains risks of transport strikes affecting major bulk ports.' } },
-      { id: 17, category: 'global', badge: '미·중·통상규제', source: 'Wall Street Journal', datetime: '오늘 최신', url: 'https://news.google.com/search?q=US+CBP+supply+chain+compliance&hl=en&gl=US&ceid=US:en', title: { ko: '미국 관세청(CBP) 저가 소액 화물 면세 축소 및 우회 수입 서류 검증 대폭 강화', ja: '米税関（CBP）、少額免税枠の厳格化と迂回輸入の監視強化を通告', en: 'US CBP Tightens Low-Value Import Scrutiny & Cross-Border Supply Chain Compliance' }, desc: { ko: '디미니미스 면세 제도를 악용한 불법 수입 방지를 위해 인보이스 및 HS코드 데이터 정합성이 일치하지 않을 시 즉각 통관 보류 조치가 취해집니다.', ja: '少額特例制度の悪用防止に向け、インボ이스や原産地記載の不備に対し即座に通関留めが実施されます。', en: 'US Customs steps up enforcement against fraudulent de minimis entries.' } },
+      { id: 17, category: 'global', badge: '미·중·통상규제', source: 'Wall Street Journal', datetime: '오늘 최신', url: 'https://news.google.com/search?q=US+CBP+supply+chain+compliance&hl=en&gl=US&ceid=US:en', title: { ko: '미국 관세청(CBP) 저가 소액 화물 면세 축소 및 우회 수입 서류 검증 대폭 강화', ja: '米税関（CBP）、少額免税枠の厳格化と迂回輸入の監視強化を通告', en: 'US CBP Tightens Low-Value Import Scrutiny & Cross-Border Supply Chain Compliance' }, desc: { ko: '디미니미스 면세 제도를 악용한 불법 수입 방지를 위해 인보이스 및 HS코드 데이터 정합성이 일치하지 않을 시 즉각 통관 보류 조치가 취해집니다.', ja: '少額特例制度の悪用防止に向け、インボイスや原産地記載の不備に対し即座に通関留めが実施されます。', en: 'US Customs steps up enforcement against fraudulent de minimis entries.' } },
       { id: 18, category: 'global', badge: '첨단테크·공급망', source: 'Bloomberg', datetime: '오늘 최신', url: 'https://news.google.com/search?q=tech+supply+chain+regulations&hl=en&gl=US&ceid=US:en', title: { ko: '글로벌 테크 공급망 디커플링 가속… 핵심 반도체·배터리 공급망 인증 요건 확대', ja: '先端技術サプライチェーンのデカップリング加速… 半導体・車載電池の調達証明義務化', en: 'Tech Supply Chain Decoupling Accelerates: Tougher Origin Tracing for Chips & Batteries' }, desc: { ko: '서방 주요국이 국가 안보를 이유로 방산 및 주요 인프라 부품에서 특정국 원자재 배제 인증을 의무화함에 따라 공급망 재편이 본격화되고 있습니다.', ja: '主要国が重要インフラにおける特定国サプライヤー排除方針を強めており、部材調達網の再編が迫られています。', en: 'Stricter origin traceability mandates in Western markets accelerate the realignment of electronic components.' } }
     ];
 
