@@ -1,0 +1,1205 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Global Trade & Logistics Daily Monitor</title>
+  
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Pretendard', 'Noto Sans JP', 'Inter', '-apple-system', 'BlinkMacSystemFont', 'Segoe UI', 'Roboto', 'sans-serif'],
+          },
+          colors: {
+            brand: {
+              50: '#f0f7ff',
+              100: '#e0effe',
+              500: '#0284c7',
+              600: '#0369a1',
+              700: '#075985',
+              800: '#0c4a6e',
+              900: '#082f49',
+            }
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <!-- Chart.js -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+  <style>
+    ::-webkit-scrollbar { width: 6px; height: 6px; }
+    ::-webkit-scrollbar-track { background: rgba(0, 0, 0, 0.05); }
+    .dark ::-webkit-scrollbar-track { background: rgba(255, 255, 255, 0.05); }
+    ::-webkit-scrollbar-thumb { background: rgba(100, 116, 139, 0.35); border-radius: 9999px; }
+    ::-webkit-scrollbar-thumb:hover { background: rgba(100, 116, 139, 0.6); }
+    .text-scale-large { font-size: 1.125rem; line-height: 1.75rem; }
+    .text-scale-large p, .text-scale-large li { font-size: 1.05rem; line-height: 1.8; }
+    .glass-nav { backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px); }
+  </style>
+</head>
+<body class="bg-slate-50 text-slate-800 dark:bg-slate-950 dark:text-slate-100 min-h-screen transition-colors duration-200 font-sans antialiased">
+
+  <!-- Top Navigation & Controls -->
+  <header class="border-b border-slate-200 dark:border-slate-800 bg-white/95 dark:bg-slate-900/95 sticky top-0 z-40 glass-nav">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-16">
+        
+        <!-- Logo & Branding -->
+        <div class="flex items-center space-x-3">
+          <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-sky-600 to-indigo-600 flex items-center justify-center text-white shadow-md shadow-sky-500/20">
+            <i data-lucide="globe" class="w-5 h-5"></i>
+          </div>
+          <div>
+            <div class="flex items-center space-x-2">
+              <span class="text-[10px] font-bold uppercase tracking-wider text-sky-700 dark:text-sky-300 bg-sky-100 dark:bg-sky-950/80 px-2 py-0.5 rounded-full border border-sky-300 dark:border-sky-800">
+                Sync: 09:00 & 18:00 JST/KST
+              </span>
+              <span id="liveStatusBadge" class="inline-flex items-center text-[11px] text-emerald-600 dark:text-emerald-400 font-medium">
+                <span class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse mr-1"></span> <span data-i18n="badge_auto">자동 갱신 활성</span>
+              </span>
+            </div>
+            <h1 class="text-sm sm:text-base font-bold tracking-tight text-slate-900 dark:text-white flex items-center gap-1.5" data-i18n="app_title">
+              글로벌 무역·물류 & 일·한 데일리 인텔리전스
+            </h1>
+          </div>
+        </div>
+
+        <!-- Right Side: Language Picker + Action Tools -->
+        <div class="flex items-center space-x-2">
+          
+          <!-- Language Selector -->
+          <div class="relative inline-block text-left">
+            <div class="flex items-center bg-slate-100 dark:bg-slate-800 p-1 rounded-lg border border-slate-200 dark:border-slate-700">
+              <button onclick="setLanguage('ko')" id="langBtn-ko" class="px-2 py-1 text-xs font-bold rounded transition-all bg-white dark:bg-slate-700 text-sky-600 dark:text-sky-300 shadow-sm">
+                KO
+              </button>
+              <button onclick="setLanguage('ja')" id="langBtn-ja" class="px-2 py-1 text-xs font-medium rounded transition-all text-slate-600 dark:text-slate-300 hover:text-slate-900">
+                JA
+              </button>
+              <button onclick="setLanguage('en')" id="langBtn-en" class="px-2 py-1 text-xs font-medium rounded transition-all text-slate-600 dark:text-slate-300 hover:text-slate-900">
+                EN
+              </button>
+            </div>
+          </div>
+
+          <!-- Messenger Copy Button -->
+          <button id="copyAllBtn" onclick="copyFullBriefing()" class="inline-flex items-center space-x-1.5 px-3 py-1.5 rounded-lg text-xs font-semibold bg-sky-600 hover:bg-sky-700 text-white shadow-sm transition active:scale-95">
+            <i data-lucide="copy" class="w-3.5 h-3.5"></i>
+            <span class="hidden sm:inline" data-i18n="btn_copy">전체 요약 복사</span>
+          </button>
+
+          <!-- Text Size Toggle -->
+          <button onclick="toggleFontSize()" title="Text Size" class="p-2 rounded-lg text-slate-600 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-800 transition">
+            <i data-lucide="type" class="w-4 h-4"></i>
+          </button>
+
+          <!-- Dark Mode Toggle -->
+          <button onclick="toggleDarkMode()" title="Theme Toggle" class="p-2 rounded-lg text-slate-600 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-800 transition">
+            <i data-lucide="moon" id="themeIcon" class="w-4 h-4"></i>
+          </button>
+
+          <!-- Print / PDF -->
+          <button onclick="window.print()" title="Print / PDF" class="p-2 rounded-lg text-slate-600 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-800 transition">
+            <i data-lucide="printer" class="w-4 h-4"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6 space-y-6">
+
+    <!-- KPI Operational Status Strip -->
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-3">
+      <div class="p-3.5 rounded-xl bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 shadow-sm flex items-center space-x-3">
+        <div class="w-9 h-9 rounded-lg bg-amber-500/10 text-amber-600 dark:text-amber-400 flex items-center justify-center shrink-0">
+          <i data-lucide="anchor" class="w-5 h-5"></i>
+        </div>
+        <div>
+          <div class="text-[11px] font-medium text-slate-500 dark:text-slate-400" data-i18n="kpi_reliability">정시 도착률 (Global)</div>
+          <div class="text-sm font-bold text-slate-900 dark:text-white flex items-center gap-1.5">
+            49.8% <span class="text-xs font-semibold text-rose-500">▼ 체선 경보</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="p-3.5 rounded-xl bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 shadow-sm flex items-center space-x-3">
+        <div class="w-9 h-9 rounded-lg bg-sky-500/10 text-sky-600 dark:text-sky-400 flex items-center justify-center shrink-0">
+          <i data-lucide="coins" class="w-5 h-5"></i>
+        </div>
+        <div>
+          <div class="text-[11px] font-medium text-slate-500 dark:text-slate-400" data-i18n="kpi_fx_trend">환율 기조 (FX)</div>
+          <div class="text-sm font-bold text-slate-900 dark:text-white flex items-center gap-1.5">
+            157.95 JPY <span class="text-xs font-semibold text-amber-500">엔저 지속</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="p-3.5 rounded-xl bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 shadow-sm flex items-center space-x-3">
+        <div class="w-9 h-9 rounded-lg bg-rose-500/10 text-rose-600 dark:text-rose-400 flex items-center justify-center shrink-0">
+          <i data-lucide="flame" class="w-5 h-5"></i>
+        </div>
+        <div>
+          <div class="text-[11px] font-medium text-slate-500 dark:text-slate-400" data-i18n="kpi_bunker">벙커유 VLSFO</div>
+          <div class="text-sm font-bold text-slate-900 dark:text-white flex items-center gap-1.5">
+            $612.00 <span class="text-xs font-semibold text-rose-500">▲ BAF 압박</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="p-3.5 rounded-xl bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 shadow-sm flex items-center space-x-3">
+        <div class="w-9 h-9 rounded-lg bg-indigo-500/10 text-indigo-600 dark:text-indigo-400 flex items-center justify-center shrink-0">
+          <i data-lucide="plane-takeoff" class="w-5 h-5"></i>
+        </div>
+        <div>
+          <div class="text-[11px] font-medium text-slate-500 dark:text-slate-400" data-i18n="kpi_air">항공 화물 시즌</div>
+          <div class="text-sm font-bold text-slate-900 dark:text-white flex items-center gap-1.5">
+            Q4 Peak <span class="text-xs font-semibold text-sky-500">스페이스 경색</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- FX & Logistics Market Data Section -->
+    <section class="bg-white dark:bg-slate-900 rounded-2xl border border-slate-200 dark:border-slate-800 p-5 shadow-sm">
+      <div class="flex flex-col sm:flex-row sm:items-center justify-between pb-4 mb-4 border-b border-slate-100 dark:border-slate-800 gap-2">
+        <div class="flex items-center space-x-2">
+          <div class="p-1.5 bg-sky-100 dark:bg-sky-950 text-sky-600 dark:text-sky-400 rounded-lg">
+            <i data-lucide="activity" class="w-4 h-4"></i>
+          </div>
+          <div>
+            <h2 class="text-sm font-bold text-slate-900 dark:text-white" data-i18n="fx_title">실시간 환율 및 주요 해운·항공 운임 지표</h2>
+            <p class="text-xs text-slate-500 dark:text-slate-400" data-i18n="fx_subtitle">09:00 / 18:00 정기 스케줄 및 data.json 연동</p>
+          </div>
+        </div>
+        <div class="flex items-center space-x-2 self-start sm:self-auto">
+          <span id="dataTimestamp" class="text-[11px] font-mono text-slate-500 dark:text-slate-400 bg-slate-100 dark:bg-slate-800 px-2.5 py-1 rounded-md">
+            동기화: 2026-10-28 09:00 KST
+          </span>
+          <button onclick="fetchExternalData(true)" class="p-1 text-slate-400 hover:text-sky-600 transition" title="새로고침">
+            <i data-lucide="refresh-cw" class="w-3.5 h-3.5"></i>
+          </button>
+        </div>
+      </div>
+
+      <!-- Financial Metric Cards -->
+      <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-3">
+        
+        <div class="p-3 rounded-xl bg-slate-50 dark:bg-slate-800/60 border border-slate-200/80 dark:border-slate-700/60">
+          <div class="flex items-center justify-between text-xs text-slate-500 dark:text-slate-400 font-medium mb-1">
+            <span>USD / KRW</span>
+            <span class="text-[10px] bg-slate-200 dark:bg-slate-700 px-1 rounded">원/달러</span>
+          </div>
+          <div id="rate-usdkrw" class="text-lg font-extrabold text-slate-900 dark:text-white font-mono">1,326.80</div>
+          <div class="text-[11px] font-semibold text-rose-500 flex items-center mt-0.5">
+            <i data-lucide="arrow-up-right" class="w-3.5 h-3.5 mr-0.5"></i> +2.10
+          </div>
+        </div>
+
+        <div class="p-3 rounded-xl bg-slate-50 dark:bg-slate-800/60 border border-slate-200/80 dark:border-slate-700/60">
+          <div class="flex items-center justify-between text-xs text-slate-500 dark:text-slate-400 font-medium mb-1">
+            <span>USD / JPY</span>
+            <span class="text-[10px] bg-slate-200 dark:bg-slate-700 px-1 rounded">달러/엔</span>
+          </div>
+          <div id="rate-usdjpy" class="text-lg font-extrabold text-slate-900 dark:text-white font-mono">157.95</div>
+          <div class="text-[11px] font-semibold text-rose-500 flex items-center mt-0.5">
+            <i data-lucide="arrow-up-right" class="w-3.5 h-3.5 mr-0.5"></i> +0.35
+          </div>
+        </div>
+
+        <div class="p-3 rounded-xl bg-slate-50 dark:bg-slate-800/60 border border-slate-200/80 dark:border-slate-700/60">
+          <div class="flex items-center justify-between text-xs text-slate-500 dark:text-slate-400 font-medium mb-1">
+            <span>JPY 100 / KRW</span>
+            <span class="text-[10px] bg-slate-200 dark:bg-slate-700 px-1 rounded">엔/원</span>
+          </div>
+          <div id="rate-jpykrw" class="text-lg font-extrabold text-slate-900 dark:text-white font-mono">839.80</div>
+          <div class="text-[11px] font-semibold text-sky-500 flex items-center mt-0.5">
+            <i data-lucide="arrow-down-right" class="w-3.5 h-3.5 mr-0.5"></i> -1.20
+          </div>
+        </div>
+
+        <div class="p-3 rounded-xl bg-slate-50 dark:bg-slate-800/60 border border-slate-200/80 dark:border-slate-700/60">
+          <div class="flex items-center justify-between text-xs text-slate-500 dark:text-slate-400 font-medium mb-1">
+            <span>VLSFO</span>
+            <span class="text-[10px] bg-slate-200 dark:bg-slate-700 px-1 rounded">로테르담</span>
+          </div>
+          <div id="rate-vlsfo" class="text-lg font-extrabold text-slate-900 dark:text-white font-mono">$612.00</div>
+          <div class="text-[11px] font-semibold text-rose-500 flex items-center mt-0.5">
+            <i data-lucide="arrow-up-right" class="w-3.5 h-3.5 mr-0.5"></i> +$8.50
+          </div>
+        </div>
+
+        <div class="p-3 rounded-xl bg-slate-50 dark:bg-slate-800/60 border border-slate-200/80 dark:border-slate-700/60">
+          <div class="flex items-center justify-between text-xs text-slate-500 dark:text-slate-400 font-medium mb-1">
+            <span>SCFI 종합</span>
+            <span class="text-[10px] bg-slate-200 dark:bg-slate-700 px-1 rounded">상하이컨</span>
+          </div>
+          <div id="rate-scfi" class="text-lg font-extrabold text-slate-900 dark:text-white font-mono">2,185.3</div>
+          <div class="text-[11px] font-semibold text-amber-500 flex items-center mt-0.5">
+            <i data-lucide="minus" class="w-3.5 h-3.5 mr-0.5"></i> 보합 유지
+          </div>
+        </div>
+
+        <div class="p-3 rounded-xl bg-slate-50 dark:bg-slate-800/60 border border-slate-200/80 dark:border-slate-700/60">
+          <div class="flex items-center justify-between text-xs text-slate-500 dark:text-slate-400 font-medium mb-1">
+            <span>BAI 지수</span>
+            <span class="text-[10px] bg-slate-200 dark:bg-slate-700 px-1 rounded">발틱항공</span>
+          </div>
+          <div id="rate-bai" class="text-lg font-extrabold text-slate-900 dark:text-white font-mono">2,310.4</div>
+          <div class="text-[11px] font-semibold text-rose-500 flex items-center mt-0.5">
+            <i data-lucide="arrow-up-right" class="w-3.5 h-3.5 mr-0.5"></i> +3.8%
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Sparkline Trend Chart Toggle -->
+      <div class="mt-4 pt-3 border-t border-slate-100 dark:border-slate-800 flex items-center justify-between">
+        <span class="text-xs text-slate-500 dark:text-slate-400" data-i18n="fx_comment">엔저 기조(157~158엔) 장기화에 따른 일본발 피더 환적 및 통관 유의</span>
+        <button onclick="toggleTrendChart()" class="text-xs font-semibold text-sky-600 dark:text-sky-400 hover:underline flex items-center gap-1">
+          <span id="chartToggleLabel" data-i18n="fx_chart_toggle">7일 FX 트렌드 보기</span>
+          <i data-lucide="chevron-down" id="chartToggleIcon" class="w-3.5 h-3.5"></i>
+        </button>
+      </div>
+      <div id="trendChartContainer" class="hidden mt-4 pt-4 border-t border-slate-100 dark:border-slate-800">
+        <div class="h-44 w-full">
+          <canvas id="fxTrendChart"></canvas>
+        </div>
+      </div>
+    </section>
+
+    <!-- Search & Category Filters -->
+    <div class="flex flex-col sm:flex-row gap-3 items-stretch sm:items-center justify-between bg-white dark:bg-slate-900 p-3.5 rounded-xl border border-slate-200 dark:border-slate-800 shadow-sm">
+      <div class="flex items-center gap-1.5 overflow-x-auto pb-1 sm:pb-0 scrollbar-none" id="filterTabs">
+        <button onclick="filterCategory('all')" data-cat="all" class="filter-btn px-3 py-1.5 rounded-lg text-xs font-bold bg-slate-900 text-white dark:bg-white dark:text-slate-900 transition whitespace-nowrap" data-i18n="tab_all">
+          전체 (All)
+        </button>
+        <button onclick="filterCategory('logistics')" data-cat="logistics" class="filter-btn px-3 py-1.5 rounded-lg text-xs font-medium bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-300 hover:bg-slate-200 dark:hover:bg-slate-700 transition whitespace-nowrap" data-i18n="tab_logistics">
+          🚢 무역 & 물류·포워딩
+        </button>
+        <button onclick="filterCategory('japan-domestic')" data-cat="japan-domestic" class="filter-btn px-3 py-1.5 rounded-lg text-xs font-medium bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-300 hover:bg-slate-200 dark:hover:bg-slate-700 transition whitespace-nowrap" data-i18n="tab_japan_domestic">
+          🗾 일본 국내 뉴스
+        </button>
+        <button onclick="filterCategory('japan-foreign')" data-cat="japan-foreign" class="filter-btn px-3 py-1.5 rounded-lg text-xs font-medium bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-300 hover:bg-slate-200 dark:hover:bg-slate-700 transition whitespace-nowrap" data-i18n="tab_japan_foreign">
+          🛂 일본 외국인·비자 정책
+        </button>
+        <button onclick="filterCategory('global')" data-cat="global" class="filter-btn px-3 py-1.5 rounded-lg text-xs font-medium bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-300 hover:bg-slate-200 dark:hover:bg-slate-700 transition whitespace-nowrap" data-i18n="tab_global">
+          🌐 글로벌 정세
+        </button>
+      </div>
+
+      <div class="relative min-w-[240px]">
+        <i data-lucide="search" class="w-4 h-4 absolute left-3 top-1/2 -translate-y-1/2 text-slate-400"></i>
+        <input 
+          type="text" 
+          id="searchInput" 
+          onkeyup="handleSearch()" 
+          placeholder="키워드 검색 (Search)..." 
+          class="w-full pl-9 pr-8 py-1.5 text-xs rounded-lg bg-slate-100 dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700 focus:outline-none focus:ring-2 focus:ring-sky-500 text-slate-800 dark:text-slate-100"
+        />
+        <button id="clearSearchBtn" onclick="clearSearch()" class="hidden absolute right-2.5 top-1/2 -translate-y-1/2 text-slate-400 hover:text-slate-600">
+          <i data-lucide="x" class="w-3.5 h-3.5"></i>
+        </button>
+      </div>
+    </div>
+
+    <!-- News Content Dynamic Feed -->
+    <div id="briefingFeed" class="space-y-6">
+      <!-- Injected via JavaScript based on chosen language (KO, JA, EN) -->
+    </div>
+
+    <!-- Empty State -->
+    <div id="noResults" class="hidden text-center py-16 bg-white dark:bg-slate-900 rounded-2xl border border-slate-200 dark:border-slate-800">
+      <i data-lucide="search-x" class="w-10 h-10 text-slate-400 mx-auto mb-3"></i>
+      <h3 class="text-base font-bold text-slate-800 dark:text-slate-200" data-i18n="no_results_title">검색된 브리핑 항목이 없습니다.</h3>
+      <p class="text-xs text-slate-500 mt-1" data-i18n="no_results_desc">다른 검색어를 입력하시거나 카테고리 필터를 변경해 보세요.</p>
+    </div>
+
+    <!-- Toast Notification -->
+    <div id="toastMessage" class="fixed bottom-6 right-6 z-50 transform translate-y-20 opacity-0 transition-all duration-300 pointer-events-none flex items-center space-x-2 px-4 py-3 rounded-xl bg-slate-900 text-white dark:bg-white dark:text-slate-900 shadow-xl border border-slate-700">
+      <i data-lucide="check-circle" class="w-4 h-4 text-emerald-400 dark:text-emerald-600"></i>
+      <span id="toastText" class="text-xs font-semibold">클립보드에 복사되었습니다.</span>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 mt-12 border-t border-slate-200 dark:border-slate-800 text-xs text-slate-500 dark:text-slate-400 flex flex-col sm:flex-row items-center justify-between gap-4">
+    <div class="flex items-center space-x-2">
+      <div class="w-6 h-6 rounded bg-slate-200 dark:bg-slate-800 flex items-center justify-center font-bold text-[10px] text-slate-700 dark:text-slate-300">
+        GT
+      </div>
+      <span data-i18n="footer_sync_text">글로벌 무역·물류 & 일·한 데일리 모니터 | 매일 09:00, 18:00 (JST/KST) 자동 갱신</span>
+    </div>
+    <div class="flex items-center space-x-4">
+      <a href="javascript:void(0)" onclick="copyFullBriefing()" class="hover:text-sky-600 dark:hover:text-sky-400 transition" data-i18n="footer_copy_link">사내 메신저 포맷 복사</a>
+      <span>•</span>
+      <a href="javascript:void(0)" onclick="window.scrollTo({top: 0, behavior: 'smooth'})" class="hover:text-sky-600 dark:hover:text-sky-400 transition">Top ↑</a>
+    </div>
+  </footer>
+
+  <!-- Complete Application State & Multilingual Logic -->
+  <script>
+    // i18n Dictionary for UI Chrome
+    const translations = {
+      ko: {
+        app_title: "글로벌 무역·물류 & 일·한 데일리 인텔리전스",
+        badge_auto: "자동 갱신 활성 (09:00 / 18:00)",
+        btn_copy: "전체 요약 복사",
+        kpi_reliability: "정시 도착률 (Global)",
+        kpi_fx_trend: "환율 기조 (FX)",
+        kpi_bunker: "선박유 VLSFO",
+        kpi_air: "항공 화물 피크",
+        fx_title: "실시간 환율 및 주요 해운·항공 운임 지표",
+        fx_subtitle: "09:00 / 18:00 정기 스케줄 및 data.json 연동",
+        fx_comment: "엔저 기조(157~158엔) 지속에 따른 일본발 피더 환적 및 통관 정합성 유의",
+        fx_chart_toggle: "7일 FX 트렌드 보기",
+        fx_chart_collapse: "7일 FX 트렌드 접기",
+        tab_all: "전체 (All)",
+        tab_logistics: "🚢 무역 & 물류·포워딩",
+        tab_japan_domestic: "🗾 일본 국내 뉴스",
+        tab_japan_foreign: "🛂 일본 외국인·비자 정책",
+        tab_global: "🌐 글로벌 정세",
+        search_placeholder: "키워드 검색 (예: 부산항, 비자, BAF, 영주권)...",
+        no_results_title: "검색된 브리핑 항목이 없습니다.",
+        no_results_desc: "다른 검색어를 입력하시거나 카테고리 필터를 변경해 보세요.",
+        footer_sync_text: "글로벌 무역·물류 & 일·한 데일리 모니터 | 매일 09:00, 18:00 (JST/KST) 자동 갱신",
+        footer_copy_link: "사내 메신저 포맷 복사",
+        copy_success: "사내 메신저용 전체 브리핑이 복사되었습니다."
+      },
+      ja: {
+        app_title: "グローバル貿易・物流＆日韓デイリーインテリジェンス",
+        badge_auto: "自動更新有効 (09:00 / 18:00)",
+        btn_copy: "要約全文をコピー",
+        kpi_reliability: "定時運航率 (Global)",
+        kpi_fx_trend: "為替トレンド (FX)",
+        kpi_bunker: "船舶燃料 VLSFO",
+        kpi_air: "航空貨物ピーク",
+        fx_title: "リアルタイム為替レート及び主要海運・航空運賃指標",
+        fx_subtitle: "09:00 / 18:00 定時更新および data.json 自動連携",
+        fx_comment: "歴史的円安基調(157〜158円)継続に伴う日本発フィーダー積み替え・通関リスク留意",
+        fx_chart_toggle: "7日間の為替推移を表示",
+        fx_chart_collapse: "7日間の為替推移を閉じる",
+        tab_all: "すべて (All)",
+        tab_logistics: "🚢 貿易＆物流・フォワーディング",
+        tab_japan_domestic: "🗾 日本国内主要ニュース",
+        tab_japan_foreign: "🛂 外国人労働・在留ビザ政策",
+        tab_global: "🌐 世界情勢・サプライチェーン",
+        search_placeholder: "キーワード検索 (例: 釜山港, ビザ, 永住権, BAF)...",
+        no_results_title: "該当するブリーフィング項目がありません。",
+        no_results_desc: "別のキーワードを入力するか、カテゴリーフィルターを変更してください。",
+        footer_sync_text: "グローバル貿易・物流＆日韓デイリーモニター | 毎日 09:00, 18:00 (JST/KST) 自動同期",
+        footer_copy_link: "社内チャット用フォーマットをコピー",
+        copy_success: "社内メッセンジャー用ブリーフィングがコピーされました。"
+      },
+      en: {
+        app_title: "Global Trade, Logistics & Japan-Korea Daily Monitor",
+        badge_auto: "Auto Sync Active (09:00 / 18:00)",
+        btn_copy: "Copy Full Briefing",
+        kpi_reliability: "Schedule Reliability",
+        kpi_fx_trend: "FX Trajectory",
+        kpi_bunker: "Bunker Fuel VLSFO",
+        kpi_air: "Air Cargo Peak",
+        fx_title: "Real-time FX & Core Shipping / Airfreight Indices",
+        fx_subtitle: "Scheduled at 09:00 & 18:00 JST/KST with data.json live hook",
+        fx_comment: "Weak Yen (157-158) sustains heavy feeder transshipment demand via Busan Port",
+        fx_chart_toggle: "Show 7-Day FX Trend",
+        fx_chart_collapse: "Hide 7-Day FX Trend",
+        tab_all: "All Feeds",
+        tab_logistics: "🚢 Trade & Logistics / Forwarding",
+        tab_japan_domestic: "🗾 Japan Domestic",
+        tab_japan_foreign: "🛂 Japan Visa & Immigration",
+        tab_global: "🌐 Global Geopolitics",
+        search_placeholder: "Search keywords (e.g. Busan, Visa, BAF, Congestion)...",
+        no_results_title: "No briefing matches found.",
+        no_results_desc: "Try searching for a different keyword or resetting categories.",
+        footer_sync_text: "Global Trade & Logistics Intelligence | Auto-refreshed daily at 09:00, 18:00 (JST/KST)",
+        footer_copy_link: "Copy Messenger Format",
+        copy_success: "Briefing copied to clipboard for Slack/Teams!"
+      }
+    };
+
+    // Comprehensive Multilingual News Dataset
+    const newsDataset = [
+      // 1. Logistics / Forwarding
+      {
+        id: "log-1",
+        category: "logistics",
+        badge: { ko: "선복 경색 경보", ja: "スペース逼迫警報", en: "Space Alert" },
+        badgeColor: "rose",
+        subBadge: { ko: "해운 컨테이너 / 일본발", ja: "海上コンテナ / 日本発", en: "Ocean Freight / Ex-Japan" },
+        title: {
+          ko: "일본발 아시아·미주향 신규 부킹 일시 중단 선사 속출… 롤오버 및 선사 스킵(Omission) 급증",
+          ja: "日本発アジア・北米向け新規ブッキング一時停止の船社が続出… ロールオーバー及び港湾スキップ急増",
+          en: "Carriers Halt Ex-Japan Bookings to Asia & US Amid Severe Congestion and Port Omissions"
+        },
+        bullets: {
+          ko: [
+            "<strong>원인 및 현황:</strong> 상하이·닝보 등 메가 허브항만 체선으로 선박 정시 운항률 49.8% 급락. 주요 선사가 일본 기항을 건너뛰는 포트 스킵(Port Omission) 빈발.",
+            "<strong>포워더 실무 영향:</strong> 중국발 선복 우선 배정으로 일본발 컨테이너의 신규 접수가 막히거나 1~2주씩 출항이 밀리는 롤오버(Rolled-over) 현상 가속.",
+            "<strong>대응 권고:</strong> 납기 준수 화물은 3~4주 전 선복 가예약 및 보수적 피더 스케줄 설정 필수."
+          ],
+          ja: [
+            "<strong>背景と現状:</strong> 上海・寧波などメガハブ港の混雑（天候悪化・貨物集中）により定時運航率が49.8%へ低迷。船社の日本寄港スキップが多発。",
+            "<strong>実務影響:</strong> 運賃の高い中国出しへスペースが優先配分され、日本発欧米・アジア向け新規予約停止や1〜2週間のロールオーバー（積み残し）が深刻化。",
+            "<strong>対策:</strong> 納期遵守の貨物は出港3〜4週間前の早期スペース確保と余裕を持ったフィーダー手配が必須。"
+          ],
+          en: [
+            "<strong>Root Cause:</strong> Global on-time reliability dipped below 50% due to severe congestion at Shanghai/Ningbo hubs, triggering frequent carrier port omissions in Japan.",
+            "<strong>Forwarding Impact:</strong> Ocean carriers prioritizing high-yield cargo from China are temporarily closing ex-Japan booking windows and rolling containers by 1-2 weeks.",
+            "<strong>Action:</strong> Secure bookings 3-4 weeks ahead and maintain contingency lead-time on intra-Asia connections."
+          ]
+        },
+        tags: "일본 선복난 부킹중단 체선 롤오버 허브항만 booking space omission rollover japan"
+      },
+      {
+        id: "log-2",
+        category: "logistics",
+        badge: { ko: "공급망 BCP", ja: "BCPルート強化", en: "Supply Chain BCP" },
+        badgeColor: "emerald",
+        subBadge: { ko: "한-일 피더 / 부산항 환적", ja: "日韓フィーダー / 釜山港積み替え", en: "Feeder / Busan Transshipment" },
+        title: {
+          ko: "일본 기업들의 '지방항 ➔ 부산항 피더 환적' 루트 강화 지속… 내륙 물류비 절감 목적",
+          ja: "日本企業の「地方港 ➔ 釜山港フィーダー積替」シフトが定着… 国内長距離トラック運賃高騰に対応",
+          en: "Japanese Shippers Expand Feeder Route via Busan Port to Counter Rising Domestic Trucking Rates"
+        },
+        bullets: {
+          ko: [
+            "<strong>배경:</strong> 일본의 '물류 2024년 문제'(트럭 운전자 잔업 규제)로 내륙 트럭 운임이 20~30% 폭등하자 게이힌·한신항 육상 운송 대신 지방 거점항 선적 선호.",
+            "<strong>환적 현황:</strong> 니가타, 도야마, 시모노세키 등 30여 개 일본 지방항에서 한국 부산항으로 피더 수송 후 미주·유럽 모선으로 환적하는 비중이 역대 최고치 유지.",
+            "<strong>체크포인트:</strong> 부산 신항 터미널 간 환적(ITT) 연결 스케줄 및 피더 모선 접안 시차 모니터링 중요."
+          ],
+          ja: [
+            "<strong>背景:</strong> 「物流2024年問題」によるトラックドライバー不足と国内陸送費の20〜30%上昇を受け、主要港への長距離陸送を回避する動きが加速。",
+            "<strong>利用実態:</strong> 新潟、富山、下関など全国30超の地方港から釜山港へフィーダー輸送し、欧米幹線母船へ積み替えるルートが定着。",
+            "<strong>注意点:</strong> 釜山新港・北港間の接続時間(ITT)およびフィーダー船の遅延リスク管理が重要。"
+          ],
+          en: [
+            "<strong>Context:</strong> Severe domestic driver overtime caps ('2024 Logistics Problem') increased Japanese cross-country trucking freight rates by 20-30%.",
+            "<strong>Operation:</strong> Shippers directly export via 30+ regional Japanese ports to Busan Port on feeder vessels, connecting onto mother vessels for EU/US routes.",
+            "<strong>Key Metric:</strong> Monitor inter-terminal transfer (ITT) smooth operation and feeder connection lead-times in Busan."
+          ]
+        },
+        tags: "부산항 피더 환적 bcp 일본지방항 트럭규제 busan feeder transshipment"
+      },
+      {
+        id: "log-3",
+        category: "logistics",
+        badge: { ko: "운임 & 유류비", ja: "運賃・燃料費", en: "Freight & Bunker" },
+        badgeColor: "amber",
+        subBadge: { ko: "유류할증료 (BAF) / 지정학", ja: "燃油サーチャージ / 地政学", en: "BAF / Geopolitics" },
+        title: {
+          ko: "홍해·중동 지정학 불안 장기화… 저유황유(VLSFO) 급등 및 긴급 BAF 인상 반영",
+          ja: "紅海・中東地政学リスク長期化… 適合油(VLSFO)高止まりと緊急燃料割増料(BAF)の引き上げ",
+          en: "Prolonged Red Sea Risk Drives Bunker Fuel Surge and Emergency BAF Surcharges"
+        },
+        bullets: {
+          ko: [
+            "<strong>항로 고착:</strong> 수에즈 운하 회피 및 희망봉 우회가 기본 항로화되며 연료 소모 급증. 싱가포르/로테르담 VLSFO 가격이 $612/MT 돌파.",
+            "<strong>할증료:</strong> 글로벌 메이저 선사들이 유럽 및 미주 동안 노선에 비상 유류할증료(Emergency BAF)를 FEU당 $150~$250 상향 고지."
+          ],
+          ja: [
+            "<strong>喜望峰迂回:</strong> スエズ運河通航回避が常態化し、航行距離延長により燃料消費が増加。ロッテルダムVLSFO価格は$612/MTへ上昇。",
+            "<strong>サーチャージ改定:</strong> 主要コンテナ船社が欧州・米東岸向けに緊急燃油サーチャージ(EBS/BAF)をFEUあたり$150〜$250追加適用。"
+          ],
+          en: [
+            "<strong>Routing:</strong> Cape of Good Hope detour remains standard, lifting fuel burn. Rotterdam/Singapore VLSFO holds firm above $612/MT.",
+            "<strong>Surcharges:</strong> Major global carriers implement emergency fuel surcharges (EBS/BAF) between $150-$250 per FEU on EU/USEC trades."
+          ]
+        },
+        tags: "홍해 baf vlsfo 유류할증료 중동 희망봉 bunker suez redsea"
+      },
+      {
+        id: "log-4",
+        category: "logistics",
+        badge: { ko: "Air Freight 피크", ja: "航空貨物ピーク", en: "Air Cargo Peak" },
+        badgeColor: "indigo",
+        subBadge: { ko: "항공 운임 지수 / 연말 특수", ja: "航空運賃指標 / 年末特需", en: "BAI Index / E-Commerce" },
+        title: {
+          ko: "연말 전자상거래 성수기 진입… 아시아발 항공 화물(Air Cargo) 운임 반등세 뚜렷",
+          ja: "年末EC商戦（ピークシーズン）突入… アジア発航空貨物運賃の反発が鮮明に",
+          en: "Q4 E-Commerce Peak Season Takes Off: Asian Air Freight Rates Rebound"
+        },
+        bullets: {
+          ko: [
+            "<strong>시황:</strong> 블랙프라이데이 및 크리스마스 쇼핑 시즌을 앞두고 해외 직구 물량이 급증하며 발틱항공운임지수(BAI)가 주간 3.8% 상승.",
+            "<strong>스페이스:</strong> 한·일·중 발 미주/유럽행 직항 화물기 스페이스가 빠르게 소진되어 전자/반도체 긴급 화물의 사전 블록 스페이스(BSA) 관리 시급."
+          ],
+          ja: [
+            "<strong>動向:</strong> ブラックフライデー等の年末商戦向けクロスボーダーEC貨物が急増し、バルト航空運賃指数(BAI)が前週比+3.8%上昇。",
+            "<strong>スペース:</strong> 日中韓発の欧米直行便スペースが逼迫。半導体・緊急自動車部品などの予約には早急な枠確保(BSA)が必要。"
+          ],
+          en: [
+            "<strong>Market:</strong> Influx of e-commerce cargo ahead of Black Friday lifted Baltic Air Freight Index (BAI) by +3.8% week-on-week.",
+            "<strong>Capacity:</strong> Ex-Asia freighter capacity to US/EU tightening rapidly; forwarders advised to secure block space allocations early."
+          ]
+        },
+        tags: "항공화물 air cargo bai 전자상거래 이커머스 airfreight"
+      },
+      {
+        id: "log-5",
+        category: "logistics",
+        badge: { ko: "수출입 통관 규제", ja: "通関規制強化", en: "Customs Compliance" },
+        badgeColor: "purple",
+        subBadge: { ko: "CBP / 관세청 정합성 검증", ja: "米CBP / 税関データ照合", en: "US CBP / Invoice Scrutiny" },
+        title: {
+          ko: "미국 CBP 및 각국 세관 '소액 면세(De Minimis) 화물' 및 선적 서류 정합성 전면 심사 착수",
+          ja: "米CBPおよび主要国税関、少額免税(De Minimis)貨物の審査厳格化と船積書類の照合を徹底",
+          en: "US CBP and Global Customs Crack Down on De Minimis Cargo and Data Consistency"
+        },
+        bullets: {
+          ko: [
+            "<strong>규제:</strong> 미국 관세청이 $800 미만 소액 면세 수입에 대한 우회 및 허위신고 집중 단속. 10자리 HS Code와 상업송장 품명 불일치 시 통관 보류(Hold) 조치.",
+            "<strong>주의:</strong> B/L, Commercial Invoice, Packing List 간 불명확한 품명 기재 금지 및 사전 원산지 확인 철저 요망."
+          ],
+          ja: [
+            "<strong>規制内容:</strong> 米国税関(CBP)が800ドル未満の免税輸入規定を悪用した虚偽・低廉申告の取り締まりを強化。10桁HSコードの不一致による留置(Hold)が多発。",
+            "<strong>注意点:</strong> インボイス上の曖昧な品名表記（Goods, Parts等）を排除し、B/LとPacking Listの整合性を事前確認することが不可欠。"
+          ],
+          en: [
+            "<strong>Enforcement:</strong> US CBP aggressively policing under-invoicing under the $800 de minimis threshold; vague cargo descriptions result in immediate holds.",
+            "<strong>Requirement:</strong> Precise 10-digit HTS codes and strict data matching between B/L, Commercial Invoice, and Packing List are mandatory."
+          ]
+        },
+        tags: "통관 cbp de minimis hs code 관세 소액면세 customs invoice"
+      },
+
+      // 2. Japan Domestic
+      {
+        id: "jp-dom-1",
+        category: "japan-domestic",
+        badge: { ko: "국정 과제 / 방재", ja: "首都防災 / 統括", en: "National BCP" },
+        badgeColor: "emerald",
+        subBadge: { ko: "일본 국내 정치·경제", ja: "日本国内 / 行政", en: "Japan Governance" },
+        title: {
+          ko: "도쿄 일극 집중 탈피… '수도 기능 분산(부수도 대체 거점)' 선정 가이드라인 윤곽",
+          ja: "東京一極集中の是正へ…「首都機能分散・副首都代替拠点」選定基準の骨子が判明",
+          en: "Japan Unveils Blueprint for Secondary Backup Capitals to Ease Tokyo Centralization"
+        },
+        bullets: {
+          ko: [
+            "수도 직하지진 및 난카이 해곡 대지진 리스크에 대비해 중앙 부처 업무를 백업할 제2수도 후보지 요건 구체화. 오사카, 후쿠오카 등 지자체 인프라 경쟁 가열.",
+            "주요 대기업 및 IT 물류 기업의 재해 대비 복수 본사제(BCP) 투자 유도 정책 병행."
+          ],
+          ja: [
+            "首都直下地震や南海トラフ巨大地震のリスクに備え、中央省庁の行政機能を代行するバックアップ拠点の要件が策定。大阪や福岡など地方中枢都市が誘致に名乗り。",
+            "大手企業やIT・物流インフラの複数本社体制(BCP)構築を支援する税制優遇も議論。"
+          ],
+          en: [
+            "To safeguard against mega-earthquake risks in Tokyo, a government panel formulated criteria for secondary backup capitals, spotlighting Osaka and Fukuoka.",
+            "Encourages multinational corporations and logistics headquarters to establish distributed dual-HQ operations."
+          ]
+        },
+        tags: "수도기능분산 부수도 지진 후쿠오카 오사카 방재 tokyo disaster backup"
+      },
+      {
+        id: "jp-dom-2",
+        category: "japan-domestic",
+        badge: { ko: "내수 경기 / 소비", ja: "内需・消費動向", en: "Consumer Economy" },
+        badgeColor: "amber",
+        subBadge: { ko: "외식·유통 물가", ja: "外食・仕入原価", en: "Inflation & Cost" },
+        title: {
+          ko: "엔저 누적으로 식자재 원가 상승 지속… 가성비 패밀리레스토랑 및 외식업 가격 조정 확산",
+          ja: "長期化する円安で輸入原材料高…「コスパ」象徴のファミレス・外食大手が価格改定へ",
+          en: "Persistent Weak Yen Pressures Food Imports: Japan's Value Dining Chains Adjust Prices"
+        },
+        bullets: {
+          ko: [
+            "수입 식자재(밀, 육류, 치즈)와 에너지 비용 상승세가 이어지며 초저가 외식 체인들의 가격 인상 및 메뉴 리뉴얼 잇따름.",
+            "일본 가계의 실질 임금 상승률 둔화와 맞물려 내수 소비 위축 여부 주시."
+          ],
+          ja: [
+            "輸入食材（肉類・小麦・乳製品）や光熱費の高騰を受け、長年価格維持を続けてきた大手ファミリーレストラン各社がメニュー改定および値上げを実施。",
+            "実質賃金の伸び悩みの中で、家計の防衛意識と個人消費への影響が懸念される。"
+          ],
+          en: [
+            "Accumulated import price hikes for beef, wheat, and dairy have forced renowned budget family restaurants to adjust prices and portion sizes.",
+            "Market watches whether lingering cost-push inflation will dampen Japanese private domestic consumption."
+          ]
+        },
+        tags: "물가 엔저 외식물가 사이제리야 인플레이션 inflation consumption yen"
+      },
+      {
+        id: "jp-dom-3",
+        category: "japan-domestic",
+        badge: { ko: "문화 / 사회", ja: "文化・社会", en: "Culture & Society" },
+        badgeColor: "slate",
+        subBadge: { ko: "일본 문화계", ja: "漫画界・追悼", en: "Obituary / Legacy" },
+        title: {
+          ko: "일본 만화계 거장 '내일의 죠' 작가 치바 테츠야 별세… 각계 애도 물결",
+          ja: "『あしたのジョー』ちばてつや氏が逝去、87歳… 昭和・平成のマンガ界牽引に追悼の声",
+          en: "Legendary Manga Artist Tetsuya Chiba, Creator of 'Ashita no Joe', Passes Away at 87"
+        },
+        bullets: {
+          ko: [
+            "복싱 만화의 전설 '내일의 죠'로 전후 일본 대중문화사에 한 획을 그은 치바 테츠야 작가의 부고에 문화계 및 글로벌 만화 팬 추모 잇따름."
+          ],
+          ja: [
+            "ボクシング漫画の金字塔『あしたのジョー』をはじめ数々の名作を世に送り出し、文化勲章を受章したちばてつや氏の訃報に国内外から追悼メッセージ。"
+          ],
+          en: [
+            "Tributes pour in worldwide for the iconic manga pioneer who shaped postwar Japanese visual culture and storytelling."
+          ]
+        },
+        tags: "치바테츠야 내일의죠 만화 문화 chiba tetsuya anime manga"
+      },
+
+      // 3. Japan Foreign & Visa
+      {
+        id: "jp-for-1",
+        category: "japan-foreign",
+        badge: { ko: "비자 제도 대개편", ja: "在留資格ガイドライン改定", en: "Immigration Policy" },
+        badgeColor: "violet",
+        subBadge: { ko: "출입국재류관리청", ja: "出入国在留管理庁", en: "Permanent Residency" },
+        title: {
+          ko: "영주권 심사 기준 대폭 강화: '일본어 능력(CEFR B1)' 및 세금·연금 미납 이력 엄격 검증",
+          ja: "永住許可の審査基準が大幅厳格化へ：「日本語能力(CEFR B1目安)」及び税・社会保険料納付の完全履行",
+          en: "Japan Tightens Permanent Residency: Mandatory Japanese Proficiency (B1) and Strict Tax Checks"
+        },
+        bullets: {
+          ko: [
+            "<strong>언어 요건 신설:</strong> 영주권 신청 가이드라인 개정안에 일상 소통 및 사회 정착 능력을 증명하는 일본어 능력 기준 공식 명시 추진.",
+            "<strong>연금·세금 심사:</strong> 과거 납부 기한을 단 하루라도 넘긴 체납 이력이 있을 경우 불허 처분되는 등 공적 의무 이행 심사 대폭 강화. 주재원 및 고도인재 사전 점검 필수."
+          ],
+          ja: [
+            "<strong>語学要件の導入:</strong> 永住許可のガイドライン改定において、地域社会への定着指標として日常会話レベル（CEFR B1程度）の日本語能力を要件化する方針。",
+            "<strong>公的義務の徹底:</strong> 住民税・国民年金・健康保険料の期日内完全納付が厳格に審査され、過去数年の納付遅延が不許可事由となるため、駐在員・高度人材は事前確認が必須。"
+          ],
+          en: [
+            "<strong>Language Criterion:</strong> Immigration Services Agency is formalizing conversational Japanese proficiency (CEFR B1 equivalent) as a PR requirement.",
+            "<strong>Tax Compliance:</strong> Any single delayed payment history of pension or residence taxes over recent years leads to rejection; expats must ensure automated bank transfers."
+          ]
+        },
+        tags: "영주권 비자 출입국재류관리청 입관 일본어 세금 연금 visa permanent residency immigration"
+      },
+      {
+        id: "jp-for-2",
+        category: "japan-foreign",
+        badge: { ko: "인력난 타개", ja: "人手不足対応", en: "Labor Shortage" },
+        badgeColor: "sky",
+        subBadge: { ko: "특정기능 1호 확대", ja: "特定技能1号 / 給食分野", en: "Specified Skilled Worker" },
+        title: {
+          ko: "'특정기능 1호' 급식 조리 분야 수용 재개… 외국인 주민 비율 5% 넘는 지자체 2배 급증",
+          ja: "「特定技能1号」給食調理分野の受け入れを再開… 外国人住民比率5%超の自治体が前年比2倍に急増",
+          en: "Specified Skilled Worker Visa Restarts for Food Service; Municipalities with >5% Foreign Residents Double"
+        },
+        bullets: {
+          ko: [
+            "고령화로 인력난이 극심한 병원·복지시설 급식 조리 현장에 특정기능 외국인 근로자 배치를 허용하도록 제도 확대.",
+            "제조업·농업 중심의 지방 지자체 100곳 이상에서 외국인 주민 비율이 5%를 초과하며 정주 지원 및 언어 교육 체계 마련 중."
+          ],
+          ja: [
+            "高齢化に伴い人手不足が深刻な病院・社会福祉施設の給食調理業務について、外食業特定技能の受け入れ枠組みを正式再開。",
+            "全国の市町村において外国人住民が5%を超える自治体が倍増。地方自治体における多文化共生や日本語教育インフラ整備が急務に。"
+          ],
+          en: [
+            "Japan reopened the Specified Skilled Worker (i) visa program for culinary operations at hospitals and nursing homes to alleviate chronic labor gaps.",
+            "Over 100 regional municipalities now exceed a 5% foreign population ratio, accelerating local integration programs."
+          ]
+        },
+        tags: "특정기능 급식 외국인비율 지자체 일손부족 specified skilled worker labor"
+      },
+      {
+        id: "jp-for-3",
+        category: "japan-foreign",
+        badge: { ko: "물류 노동력", ja: "物流労働力", en: "Logistics Workforce" },
+        badgeColor: "indigo",
+        subBadge: { ko: "트럭·운송 외국인 채용", ja: "トラック・バス運転手", en: "Driver Shortage" },
+        title: {
+          ko: "'물류 2024년 문제' 타개: 트럭·버스 운전 직군 외국인 기능인력 채용 가속",
+          ja: "「物流2024年問題」解決の一手：自動車運送業（トラック・バス）における外国人ドライバー採用が加速",
+          en: "Japan Fast-tracks Foreign Drivers in Logistics & Bus Transit to Mitigate '2024 Driver Cliff'"
+        },
+        bullets: {
+          ko: [
+            "국토교통성이 외국인 운전자의 제2종 면허 취득을 지원하기 위해 다국어 필기시험을 전국 확대하고 특정기능 비자 배정 속도 제고.",
+            "야마토 등 대형 물류사에서 전담 연수 센터를 설립하여 안전 및 언어 교육 후 실무 배치 착수."
+          ],
+          ja: [
+            "国土交通省は第2種運転免許の学科試験多言語化を全国展開し、物流崩壊を回避するための外国人材雇用プロセスを迅速化。",
+            "大手運送各社が専用研修カリキュラムを導入し、配送現場への段階的な配備を開始。"
+          ],
+          en: [
+            "Multilingual testing for commercial driver's licenses expanded nationwide to integrate foreign logistics talent under specific visa categories.",
+            "Major courier carriers are inaugurating specialized training centers for safety and on-road Japanese navigation."
+          ]
+        },
+        tags: "물류2024년문제 트럭기사 외국인 운전면허 driver truck logistics"
+      },
+
+      // 4. Global Geopolitics
+      {
+        id: "glob-1",
+        category: "global",
+        badge: { ko: "중동 안보 위기", ja: "中東安保危機", en: "Middle East Tension" },
+        badgeColor: "rose",
+        subBadge: { ko: "해상 수송로 안보", ja: "ホルムズ海峡 / 原油", en: "Strait of Hormuz" },
+        title: {
+          ko: "이스라엘 총선 초박빙 접전… 중동 긴장 장기화 속 호르무즈 해협 해상 봉쇄 경계",
+          ja: "イスラエル総選挙が大接戦… 中東情勢の長期化とホルムズ海峡の航行安全への警戒高まる",
+          en: "Tense Israeli Election Stalemate Extends Middle East Volatility and Hormuz Chokepoint Risks"
+        },
+        bullets: {
+          ko: [
+            "출구조사 결과 단독 과반 확보 불투명으로 연정 구성 난항 전망. 대이란 군사 리스크가 지속되며 원유 및 LNG 해상 운송로 안보 불안 가중.",
+            "정유 및 해운업계는 원유 도입가 상승과 선박 전쟁위험할증료(War Risk) 인상 가능성에 대비책 마련 중."
+          ],
+          ja: [
+            "総選挙で与野党が拮抗し連立協議の長期化が濃厚。中東全域への衝突拡大懸念から、原油輸送の大動脈であるホルムズ海峡の通航リスクを注視。",
+            "海運会社および製油各社は、追加戦争危険保険料(War Risk Surcharge)と調達コスト増への警戒を継続。"
+          ],
+          en: [
+            "A tight election deadlock prolongs geopolitical instability; energy and bulk vessel operators keep high vigilance over Hormuz transit security.",
+            "Rising risk of additional marine war-risk insurance premiums impacting crude tanker fixtures."
+          ]
+        },
+        tags: "이스라엘 중동 호르무즈 원유 해상봉쇄 유가 israel middle east oil"
+      },
+      {
+        id: "glob-2",
+        category: "global",
+        badge: { ko: "남미 원자재 공급망", ja: "南米資源サプライチェーン", en: "Commodities & Bulk" },
+        badgeColor: "amber",
+        subBadge: { ko: "곡물·철광석 선적항", ja: "穀物・鉄鉱石出荷港", en: "Grain & Ore Ports" },
+        title: {
+          ko: "브라질 대선 결과 후폭풍… 남미 정세 불안 속 곡물·철광석 수출항 차질 모니터링",
+          ja: "ブラジル政局の余波… 主要輸出港での道路封鎖懸念と穀物・鉄鉱石の船積遅延を警戒",
+          en: "Post-Election Political Headwinds in Brazil: Monitoring Grain & Iron Ore Loading Ports"
+        },
+        bullets: {
+          ko: [
+            "대선 결과 반발 시위로 주요 간선도로 봉쇄 우려 대두. 산투스항 등 남미 최대 수출항의 화물 반입 리드타임 지연 발생.",
+            "글로벌 대두(곡물) 및 케이프사이즈 철광석 벌크선 운임 변동성 확대."
+          ],
+          ja: [
+            "大統領選を巡る混乱から主要輸送路での抗議活動が発生し、サントス港など主要港への貨物搬入に一部遅れが発生。",
+            "大豆などの農作物および鉄鉱石輸送を担うケープサイズばら積み船(バルカー)の運賃変動に注意。"
+          ],
+          en: [
+            "Roadway demonstrations following election contestation cause intermittent road transit delays to major export ports such as Santos.",
+            "Capesize dry bulk freight rates experience swings amid soybean and iron ore export schedule shifts."
+          ]
+        },
+        tags: "브라질 대선 곡물 철광석 벌크선 산투스 brazil bulk grain santos"
+      },
+      {
+        id: "glob-3",
+        category: "global",
+        badge: { ko: "기술 통상 패권", ja: "通商・ハイテク規制", en: "Tech Sanctions" },
+        badgeColor: "slate",
+        subBadge: { ko: "디커플링 / 공급망", ja: "サプライチェーン追跡", en: "Traceability" },
+        title: {
+          ko: "미국, 우방국 핵심 인프라 내 중국산 스마트 부품 배제 확대… 글로벌 공급망 추적성 검증 요구",
+          ja: "米国、同盟国インフラ内での中国製コネクテッド部品排除を拡大… サプライチェーンの透明性要求が加速",
+          en: "US Expands Restrictions on Chinese Smart Components in Allied Bases, Demanding Deep Supply Chain Audit"
+        },
+        bullets: {
+          ko: [
+            "주일/주한 미군 및 전략 거점 내 중국산 커넥티드 장비 배제 정책 집행. 한·일 부품 협력업체에 2·3차 원산지 추적성(Traceability) 증명 제출 요구 강화.",
+            "글로벌 빅테크의 AI 인프라 투자 조정과 맞물려 첨단 전자부품 해상/항공 물동량 패턴 재편 중."
+          ],
+          ja: [
+            "在日米軍施設および同盟国の重要インフラにおいて中国製コネクテッド機器の排除を厳格化。日韓の電子・自動車部品メーカーに対し詳細な原産地証明の提出を要請。",
+            "サプライチェーンのデカップリングに伴い、部品調達および航空・海上輸送ルートの再編が進行。"
+          ],
+          en: [
+            "Tighter compliance mandates in allied defense facilities accelerate audits over component origins, compelling Tier-1/2 suppliers to verify bill of materials.",
+            "Realigns semiconductor and sub-assembly airfreight routing across East Asia."
+          ]
+        },
+        tags: "미중갈등 반도체 디커플링 공급망 규제 cbp us china decoupling"
+      }
+    ];
+
+    // State Variables
+    let currentLang = 'ko';
+    let currentFilter = 'all';
+    let chartInstance = null;
+    let chartVisible = false;
+    let isLargeFont = false;
+
+    // Set Language (KO, JA, EN)
+    function setLanguage(lang) {
+      currentLang = lang;
+      
+      // Update UI Language Buttons
+      ['ko', 'ja', 'en'].forEach(l => {
+        const btn = document.getElementById(`langBtn-${l}`);
+        if (l === lang) {
+          btn.className = "px-2 py-1 text-xs font-bold rounded transition-all bg-white dark:bg-slate-700 text-sky-600 dark:text-sky-300 shadow-sm";
+        } else {
+          btn.className = "px-2 py-1 text-xs font-medium rounded transition-all text-slate-600 dark:text-slate-300 hover:text-slate-900";
+        }
+      });
+
+      // Update All Static Labels
+      document.querySelectorAll('[data-i18n]').forEach(el => {
+        const key = el.getAttribute('data-i18n');
+        if (translations[lang] && translations[lang][key]) {
+          el.innerText = translations[lang][key];
+        }
+      });
+
+      // Update Search Placeholder
+      const searchInput = document.getElementById('searchInput');
+      if (searchInput && translations[lang].search_placeholder) {
+        searchInput.placeholder = translations[lang].search_placeholder;
+      }
+
+      // Re-render Dynamic Feed
+      renderFeed();
+    }
+
+    // Render Briefing Articles
+    function renderFeed() {
+      const feedContainer = document.getElementById('briefingFeed');
+      const query = document.getElementById('searchInput').value.trim().toLowerCase();
+      
+      const sectionsConfig = [
+        { id: 'logistics', titleKey: 'tab_logistics', color: 'bg-blue-600' },
+        { id: 'japan-domestic', titleKey: 'tab_japan_domestic', color: 'bg-emerald-600' },
+        { id: 'japan-foreign', titleKey: 'tab_japan_foreign', color: 'bg-violet-600' },
+        { id: 'global', titleKey: 'tab_global', color: 'bg-rose-600' }
+      ];
+
+      let totalVisible = 0;
+      let html = '';
+
+      sectionsConfig.forEach(sec => {
+        // Filter Items
+        const items = newsDataset.filter(item => {
+          const matchCat = (currentFilter === 'all' || item.category === sec.id);
+          const isCategoryActive = (currentFilter === 'all' || currentFilter === sec.id);
+          if (!isCategoryActive && item.category !== currentFilter) return false;
+
+          if (item.category !== sec.id) return false;
+
+          if (query === '') return true;
+
+          const title = item.title[currentLang].toLowerCase();
+          const bullets = item.bullets[currentLang].join(' ').toLowerCase();
+          const tags = item.tags.toLowerCase();
+          return title.includes(query) || bullets.includes(query) || tags.includes(query);
+        });
+
+        if (items.length === 0) return;
+
+        totalVisible += items.length;
+
+        // Section Markup
+        html += `
+          <section class="briefing-group">
+            <div class="flex items-center justify-between mb-3 px-1">
+              <div class="flex items-center space-x-2">
+                <span class="w-2.5 h-2.5 rounded-full ${sec.color}"></span>
+                <h3 class="text-base font-bold text-slate-900 dark:text-white flex items-center gap-2">
+                  ${translations[currentLang][sec.titleKey]}
+                  <span class="text-xs font-normal text-slate-500">(${items.length})</span>
+                </h3>
+              </div>
+              <button onclick="copySpecificSection('${sec.id}')" class="text-xs text-sky-600 dark:text-sky-400 hover:underline flex items-center gap-1 font-medium">
+                <i data-lucide="copy" class="w-3 h-3"></i> <span>Copy Section</span>
+              </button>
+            </div>
+            <div class="grid grid-cols-1 ${sec.id === 'logistics' ? 'gap-4' : 'md:grid-cols-3 gap-4'}">
+              ${items.map(item => generateCardMarkup(item)).join('')}
+            </div>
+          </section>
+        `;
+      });
+
+      feedContainer.innerHTML = html;
+
+      // Handle Empty State
+      const noResults = document.getElementById('noResults');
+      if (totalVisible === 0) {
+        noResults.classList.remove('hidden');
+      } else {
+        noResults.classList.add('hidden');
+      }
+
+      lucide.createIcons();
+    }
+
+    function generateCardMarkup(item) {
+      const badgeText = item.badge[currentLang];
+      const subBadgeText = item.subBadge[currentLang];
+      const titleText = item.title[currentLang];
+      const bullets = item.bullets[currentLang];
+
+      const badgeColorClasses = {
+        rose: 'bg-rose-100 text-rose-700 dark:bg-rose-950/70 dark:text-rose-300 border-rose-200 dark:border-rose-800',
+        emerald: 'bg-emerald-100 text-emerald-700 dark:bg-emerald-950/70 dark:text-emerald-300 border-emerald-200 dark:border-emerald-800',
+        amber: 'bg-amber-100 text-amber-700 dark:bg-amber-950/70 dark:text-amber-300 border-amber-200 dark:border-amber-800',
+        indigo: 'bg-indigo-100 text-indigo-700 dark:bg-indigo-950/70 dark:text-indigo-300 border-indigo-200 dark:border-indigo-800',
+        purple: 'bg-purple-100 text-purple-700 dark:bg-purple-950/70 dark:text-purple-300 border-purple-200 dark:border-purple-800',
+        violet: 'bg-violet-100 text-violet-700 dark:bg-violet-950/70 dark:text-violet-300 border-violet-200 dark:border-violet-800',
+        sky: 'bg-sky-100 text-sky-700 dark:bg-sky-950/70 dark:text-sky-300 border-sky-200 dark:border-sky-800',
+        slate: 'bg-slate-100 text-slate-700 dark:bg-slate-800 dark:text-slate-300 border-slate-200 dark:border-slate-700'
+      }[item.badgeColor] || 'bg-slate-100 text-slate-700';
+
+      return `
+        <article class="news-item bg-white dark:bg-slate-900 rounded-xl border border-slate-200 dark:border-slate-800 p-5 shadow-sm hover:shadow transition-shadow">
+          <div class="flex flex-wrap items-center gap-2 mb-2">
+            <span class="px-2 py-0.5 rounded text-[11px] font-bold border ${badgeColorClasses}">
+              ${badgeText}
+            </span>
+            <span class="px-2 py-0.5 rounded text-[11px] font-medium bg-slate-100 text-slate-600 dark:bg-slate-800 dark:text-slate-400">
+              ${subBadgeText}
+            </span>
+          </div>
+
+          <h4 class="text-sm sm:text-base font-bold text-slate-900 dark:text-white mb-2 leading-snug">
+            ${titleText}
+          </h4>
+
+          <div class="space-y-1.5 text-slate-600 dark:text-slate-300 text-xs sm:text-sm">
+            ${bullets.map(b => `
+              <p class="flex items-start gap-2">
+                <span class="text-sky-500 font-bold mt-0.5">•</span>
+                <span>${b}</span>
+              </p>
+            `).join('')}
+          </div>
+        </article>
+      `;
+    }
+
+    // Filter by Category
+    function filterCategory(cat) {
+      currentFilter = cat;
+      const buttons = document.querySelectorAll('.filter-btn');
+      buttons.forEach(btn => {
+        const c = btn.getAttribute('data-cat');
+        if (c === cat) {
+          btn.className = "filter-btn px-3 py-1.5 rounded-lg text-xs font-bold bg-slate-900 text-white dark:bg-white dark:text-slate-900 transition whitespace-nowrap";
+        } else {
+          btn.className = "filter-btn px-3 py-1.5 rounded-lg text-xs font-medium bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-300 hover:bg-slate-200 dark:hover:bg-slate-700 transition whitespace-nowrap";
+        }
+      });
+      renderFeed();
+    }
+
+    // Keyword Search
+    function handleSearch() {
+      const val = document.getElementById('searchInput').value.trim();
+      const clearBtn = document.getElementById('clearSearchBtn');
+      if (val.length > 0) {
+        clearBtn.classList.remove('hidden');
+      } else {
+        clearBtn.classList.add('hidden');
+      }
+      renderFeed();
+    }
+
+    function clearSearch() {
+      const input = document.getElementById('searchInput');
+      input.value = '';
+      document.getElementById('clearSearchBtn').classList.add('hidden');
+      renderFeed();
+      input.focus();
+    }
+
+    // Dynamic Live Data Loader: Tries './data.json', falls back cleanly
+    function fetchExternalData(isUserClick = false) {
+      fetch('./data.json')
+        .then(res => {
+          if (!res.ok) throw new Error("Local data.json not found, using baseline fallback.");
+          return res.json();
+        })
+        .then(data => {
+          if (data.last_updated) {
+            document.getElementById('dataTimestamp').innerText = `${translations[currentLang].badge_auto}: ${data.last_updated}`;
+          }
+          if (data.fx) {
+            if (data.fx.usd_krw) document.getElementById('rate-usdkrw').innerText = data.fx.usd_krw.toLocaleString();
+            if (data.fx.usd_jpy) document.getElementById('rate-usdjpy').innerText = data.fx.usd_jpy.toLocaleString();
+            if (data.fx.jpy_100_krw) document.getElementById('rate-jpykrw').innerText = data.fx.jpy_100_krw.toLocaleString();
+          }
+          if (isUserClick) showToast("data.json 동기화 완료");
+        })
+        .catch(err => {
+          if (isUserClick) showToast("기준 데이터 정상 유지 중");
+          console.info(err.message);
+        });
+    }
+
+    // Clipboard Copy
+    function executeCopy(text, msg) {
+      const ta = document.createElement("textarea");
+      ta.value = text;
+      ta.style.position = "fixed";
+      ta.style.opacity = "0";
+      document.body.appendChild(ta);
+      ta.focus();
+      ta.select();
+      try {
+        document.execCommand('copy');
+        showToast(msg || translations[currentLang].copy_success);
+      } catch (e) {
+        showToast("Copy failed.");
+      }
+      document.body.removeChild(ta);
+    }
+
+    function copyFullBriefing() {
+      const now = new Date();
+      const dateStr = now.toLocaleDateString(currentLang === 'ja' ? 'ja-JP' : currentLang === 'en' ? 'en-US' : 'ko-KR', {
+        year: 'numeric', month: 'long', day: 'numeric', weekday: 'short'
+      });
+
+      let summary = `[${translations[currentLang].app_title}] (${dateStr})\n`;
+      summary += `FX: USD/KRW ${document.getElementById('rate-usdkrw').innerText} | USD/JPY ${document.getElementById('rate-usdjpy').innerText} | JPY100/KRW ${document.getElementById('rate-jpykrw').innerText}\n`;
+      summary += `VLSFO: ${document.getElementById('rate-vlsfo').innerText} | BAI: ${document.getElementById('rate-bai').innerText}\n\n`;
+
+      newsDataset.forEach((item, idx) => {
+        summary += `${idx + 1}. [${item.badge[currentLang]}] ${item.title[currentLang]}\n`;
+        item.bullets[currentLang].forEach(b => {
+          summary += `   - ${b.replace(/<[^>]*>?/gm, '')}\n`;
+        });
+        summary += `\n`;
+      });
+
+      executeCopy(summary, translations[currentLang].copy_success);
+    }
+
+    function copySpecificSection(secId) {
+      const items = newsDataset.filter(item => item.category === secId);
+      let text = `[${translations[currentLang][secId === 'logistics' ? 'tab_logistics' : secId === 'japan-domestic' ? 'tab_japan_domestic' : secId === 'japan-foreign' ? 'tab_japan_foreign' : 'tab_global']}]\n\n`;
+      items.forEach((item, idx) => {
+        text += `${idx + 1}) ${item.title[currentLang]}\n`;
+        item.bullets[currentLang].forEach(b => {
+          text += ` - ${b.replace(/<[^>]*>?/gm, '')}\n`;
+        });
+        text += `\n`;
+      });
+      executeCopy(text, "Section copied!");
+    }
+
+    // Toast
+    function showToast(msg) {
+      const toast = document.getElementById('toastMessage');
+      const text = document.getElementById('toastText');
+      text.innerText = msg;
+      toast.classList.remove('translate-y-20', 'opacity-0');
+      toast.classList.add('translate-y-0', 'opacity-100');
+      setTimeout(() => {
+        toast.classList.add('translate-y-20', 'opacity-0');
+        toast.classList.remove('translate-y-0', 'opacity-100');
+      }, 2500);
+    }
+
+    // Theme & Font
+    function toggleDarkMode() {
+      const isDark = document.documentElement.classList.toggle('dark');
+      localStorage.theme = isDark ? 'dark' : 'light';
+      document.getElementById('themeIcon').setAttribute('data-lucide', isDark ? 'sun' : 'moon');
+      lucide.createIcons();
+      if (chartInstance) {
+        chartInstance.destroy();
+        initFxChart();
+      }
+    }
+
+    function toggleFontSize() {
+      isLargeFont = !isLargeFont;
+      document.body.classList.toggle('text-scale-large', isLargeFont);
+      showToast(isLargeFont ? "High Legibility (Large)" : "Standard Font Size");
+    }
+
+    // 7-Day Chart
+    function toggleTrendChart() {
+      chartVisible = !chartVisible;
+      const c = document.getElementById('trendChartContainer');
+      const label = document.getElementById('chartToggleLabel');
+      const icon = document.getElementById('chartToggleIcon');
+
+      if (chartVisible) {
+        c.classList.remove('hidden');
+        label.innerText = translations[currentLang].fx_chart_collapse;
+        icon.setAttribute('data-lucide', 'chevron-up');
+        if (!chartInstance) initFxChart();
+      } else {
+        c.classList.add('hidden');
+        label.innerText = translations[currentLang].fx_chart_toggle;
+        icon.setAttribute('data-lucide', 'chevron-down');
+      }
+      lucide.createIcons();
+    }
+
+    function initFxChart() {
+      const ctx = document.getElementById('fxTrendChart').getContext('2d');
+      const isDark = document.documentElement.classList.contains('dark');
+      chartInstance = new Chart(ctx, {
+        type: 'line',
+        data: {
+          labels: ['D-6', 'D-5', 'D-4', 'D-3', 'D-2', 'D-1', 'Today'],
+          datasets: [
+            {
+              label: 'USD/KRW',
+              data: [1312, 1316, 1319, 1324, 1322, 1324.7, 1326.8],
+              borderColor: '#0284c7',
+              backgroundColor: 'rgba(2, 132, 199, 0.1)',
+              yAxisID: 'yKrw',
+              tension: 0.3,
+              pointRadius: 3
+            },
+            {
+              label: 'USD/JPY',
+              data: [155.8, 156.4, 156.9, 157.3, 157.1, 157.6, 157.95],
+              borderColor: '#f43f5e',
+              backgroundColor: 'rgba(244, 63, 94, 0.1)',
+              yAxisID: 'yJpy',
+              tension: 0.3,
+              pointRadius: 3
+            }
+          ]
+        },
+        options: {
+          responsive: true,
+          maintainAspectRatio: false,
+          plugins: {
+            legend: { labels: { color: isDark ? '#cbd5e1' : '#475569', font: { size: 11 } } }
+          },
+          scales: {
+            x: {
+              grid: { color: isDark ? 'rgba(255,255,255,0.05)' : 'rgba(0,0,0,0.05)' },
+              ticks: { color: isDark ? '#94a3b8' : '#64748b' }
+            },
+            yKrw: {
+              type: 'linear', position: 'left',
+              grid: { color: isDark ? 'rgba(255,255,255,0.05)' : 'rgba(0,0,0,0.05)' },
+              ticks: { color: '#0284c7' }
+            },
+            yJpy: {
+              type: 'linear', position: 'right', grid: { display: false },
+              ticks: { color: '#f43f5e' }
+            }
+          }
+        }
+      });
+    }
+
+    // Init App
+    window.addEventListener('DOMContentLoaded', () => {
+      if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+        document.documentElement.classList.add('dark');
+        document.getElementById('themeIcon').setAttribute('data-lucide', 'sun');
+      }
+      setLanguage('ko');
+      fetchExternalData();
+      lucide.createIcons();
+    });
+  </script>
+</body>
+</html>
