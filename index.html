@@ -10,8 +10,6 @@
   <script src="https://unpkg.com/lucide@latest"></script>
   <!-- Chart.js -->
   <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-  <!-- QR Code Generator Lib -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
   <!-- Pretendard Font -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css">
   <script>
@@ -93,7 +91,7 @@
     </div>
   </header>
 
-  <!-- [NEW] CARGONAVI STYLE RAPID TRACKING MODULE (맨 윗부분 추가) -->
+  <!-- CARGONAVI STYLE RAPID TRACKING MODULE (QR 제거 및 AWB 번호 자동 복사 탑재) -->
   <section class="bg-gradient-to-r from-slate-900 via-slate-850 to-indigo-950 text-white border-b border-slate-800 shadow-md">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-3.5">
       <div class="grid grid-cols-1 lg:grid-cols-2 gap-4 items-center">
@@ -109,7 +107,6 @@
           </div>
 
           <div class="flex flex-1 w-full gap-1.5">
-            <!-- Carrier Selector -->
             <select id="tracking-carrier" class="bg-slate-800 text-white text-xs rounded-lg px-2 py-1.5 border border-slate-700 focus:outline-hidden focus:ring-1 focus:ring-brand-500 shrink-0">
               <option value="AUTO">자동 감지 / ALL</option>
               <option value="ONE">ONE (Ocean Network)</option>
@@ -126,7 +123,7 @@
               <option value="ZIM">ZIM Line</option>
             </select>
 
-            <input type="text" id="ocean-bl-input" placeholder="B/L or 컨테이너 번호 (예: ONEY..., MAEU...)" class="flex-1 min-w-0 bg-slate-800/90 text-white text-xs rounded-lg px-2.5 py-1.5 border border-slate-700 focus:outline-hidden focus:ring-2 focus:ring-rose-500 placeholder-slate-400 font-mono uppercase">
+            <input type="text" id="ocean-bl-input" placeholder="B/L 또는 컨테이너 번호 입력" class="flex-1 min-w-0 bg-slate-800/90 text-white text-xs rounded-lg px-2.5 py-1.5 border border-slate-700 focus:outline-hidden focus:ring-2 focus:ring-rose-500 placeholder-slate-400 font-mono uppercase">
           </div>
 
           <div class="flex items-center space-x-1 shrink-0 w-full sm:w-auto justify-end">
@@ -134,11 +131,11 @@
               <i data-lucide="search" class="w-3.5 h-3.5"></i>
               <span>Track</span>
             </button>
-            <button onclick="clearInput('ocean-bl-input')" class="px-2 py-1.5 bg-slate-700 hover:bg-slate-600 text-slate-300 rounded-lg text-xs transition">Clear</button>
+            <button onclick="clearInput('ocean-bl-input')" class="px-2.5 py-1.5 bg-slate-700 hover:bg-slate-600 text-slate-300 rounded-lg text-xs transition">Clear</button>
           </div>
         </div>
 
-        <!-- 航空 RapidTrack AWB Tracking (캡처화면 카고나비 스타일) -->
+        <!-- 航空 RapidTrack 国際エアカーゴ追跡 (cargonavi.com 카피 & 트랙 방식) -->
         <div class="bg-white/10 dark:bg-white/5 backdrop-blur-md p-3 rounded-xl border border-white/10 flex flex-col sm:flex-row items-center gap-2.5">
           <div class="flex items-center space-x-2 text-amber-400 shrink-0">
             <i data-lucide="plane-takeoff" class="w-5 h-5"></i>
@@ -149,7 +146,7 @@
           </div>
 
           <div class="flex flex-1 w-full gap-1.5 items-center">
-            <input type="text" id="air-awb-input" placeholder="例: 180-12345675 (또는 11자리)" class="flex-1 min-w-0 bg-slate-800/90 text-white text-xs rounded-lg px-2.5 py-1.5 border border-slate-700 focus:outline-hidden focus:ring-2 focus:ring-amber-500 placeholder-slate-400 font-mono">
+            <input type="text" id="air-awb-input" placeholder="例 : 123-1234 5675 (또는 16018096761)" class="flex-1 min-w-0 bg-slate-800/90 text-white text-xs rounded-lg px-2.5 py-1.5 border border-slate-700 focus:outline-hidden focus:ring-2 focus:ring-amber-500 placeholder-slate-400 font-mono">
           </div>
 
           <div class="flex items-center space-x-1 shrink-0 w-full sm:w-auto justify-end">
@@ -157,11 +154,7 @@
               <i data-lucide="search" class="w-3.5 h-3.5"></i>
               <span>Track</span>
             </button>
-            <button onclick="clearInput('air-awb-input')" class="px-2 py-1.5 bg-slate-700 hover:bg-slate-600 text-slate-300 rounded-lg text-xs transition">Clear</button>
-            <button onclick="openQrModal()" title="스마트폰 QR 조회" class="px-2 py-1.5 bg-slate-700 hover:bg-slate-600 text-slate-300 rounded-lg text-xs transition flex items-center space-x-1">
-              <i data-lucide="qr-code" class="w-3.5 h-3.5"></i>
-              <span>QR</span>
-            </button>
+            <button onclick="clearInput('air-awb-input')" class="px-2.5 py-1.5 bg-slate-700 hover:bg-slate-600 text-slate-300 rounded-lg text-xs transition">Clear</button>
           </div>
 
         </div>
@@ -169,19 +162,6 @@
       </div>
     </div>
   </section>
-
-  <!-- QR Code Modal -->
-  <div id="qr-modal" class="fixed inset-0 z-50 bg-black/60 backdrop-blur-xs flex items-center justify-center hidden p-4">
-    <div class="bg-white dark:bg-slate-900 rounded-2xl p-6 max-w-xs w-full shadow-2xl border border-slate-200 dark:border-slate-800 text-center relative">
-      <button onclick="closeQrModal()" class="absolute top-3 right-3 text-slate-400 hover:text-slate-600 dark:hover:text-white">
-        <i data-lucide="x" class="w-5 h-5"></i>
-      </button>
-      <h3 class="text-sm font-bold text-slate-900 dark:text-white mb-1">스마트폰 화물 조회 QR</h3>
-      <p class="text-xs text-slate-500 mb-4">카메라로 비추면 조회 화면으로 이동합니다</p>
-      <div id="qrcode-box" class="flex justify-center p-3 bg-white rounded-xl border border-slate-200 mx-auto w-fit"></div>
-      <div id="qr-target-text" class="text-[11px] text-slate-600 dark:text-slate-400 font-mono mt-3 truncate"></div>
-    </div>
-  </div>
 
   <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6 space-y-6 flex-1 w-full">
 
@@ -381,13 +361,13 @@
 
   <script>
     // ----------------------------------------------------
-    // CARGONAVI STYLE RAPID TRACKING LOGIC
+    // CARGONAVI STYLE RAPID TRACKING LOGIC (복사 + 화물직접조회)
     // ----------------------------------------------------
     function clearInput(id) {
       document.getElementById(id).value = '';
     }
 
-    // 1. 해상 컨테이너선 M B/L 추적
+    // 1. 해상 컨테이너선 M B/L 추적 (B/L 자동 복사 + 선사별 화물 트래킹 직결)
     function trackOceanCargo() {
       const bl = document.getElementById('ocean-bl-input').value.trim();
       const carrier = document.getElementById('tracking-carrier').value;
@@ -396,7 +376,10 @@
         return;
       }
 
-      // 선사별 트래킹 공식 다이렉트 URL 맵
+      // 클립보드에 B/L 번호 복사
+      navigator.clipboard.writeText(bl);
+      showToast(`B/L 번호 복사 완료: ${bl}`);
+
       const carrierUrls = {
         ONE: `https://ecomm.one-line.com/one-ecom/manage-shipment/cargo-tracking?quickSearchType=BL&quickSearchNumber=${encodeURIComponent(bl)}`,
         MAEU: `https://www.maersk.com/tracking/${encodeURIComponent(bl)}`,
@@ -415,71 +398,48 @@
       if (carrier !== 'AUTO' && carrierUrls[carrier]) {
         window.open(carrierUrls[carrier], '_blank');
       } else {
-        // 자동 판별 / 통합 추적 (Track-Trace)
         window.open(`https://www.track-trace.com/container?number=${encodeURIComponent(bl)}`, '_blank');
       }
     }
 
-    // 2. 항공화물 M AWB RapidTrack 추적 (캡처 이미지 기반)
+    // 2. 항공화물 M AWB RapidTrack 추적 (cargonavi.com 직결 + 번호 자동복사)
     function trackAirCargo() {
-      let awb = document.getElementById('air-awb-input').value.trim().replace(/[^0-9]/g, '');
-      if (!awb || awb.length < 8) {
-        showToast('유효한 AWB 번호를 입력하세요 (예: 18012345671)');
+      let rawInput = document.getElementById('air-awb-input').value.trim();
+      let cleanAwb = rawInput.replace(/[^0-9]/g, '');
+      if (!cleanAwb || cleanAwb.length < 8) {
+        showToast('유효한 AWB 번호를 입력하세요 (예: 160-18096761)');
         return;
       }
 
-      const prefix = awb.substring(0, 3);
-      const number = awb.substring(3);
+      const prefix = cleanAwb.substring(0, 3);
+      const serial = cleanAwb.substring(3);
+      const formattedAwb = `${prefix}-${serial}`;
 
-      // 주요 항공사 AWB 접두사 매핑
-      const airlineUrls = {
-        '180': `https://cargo.koreanair.com/ko/tracking?awbNo=${prefix}${number}`, // 대한항공
-        '988': `https://www.asianacargo.com/tracking/awbTracking.do`, // 아시아나
-        '131': `https://www.jal.co.jp/jalcargo/inter/`, // JAL
-        '205': `https://www.anacargo.jp/ja/int/`, // ANA
-        '160': `https://www.cathaypacificcargo.com/`, // 캐세이퍼시픽
-        '618': `https://www.singaporeair.com/` // 싱가포르항공
+      // AWB 번호를 클립보드에 자동 복사 (cargonavi 스타일)
+      navigator.clipboard.writeText(serial).catch(() => {});
+      showToast(`AWB 번호 복사됨: ${serial}`);
+
+      // 카고나비(cargonavi)와 동일하게 전세계 화물 Track-Trace 직결 + 주요 항공사 전용 화물 트래킹
+      // 스케줄(여객)이 아닌 실제 "화물 추적" 페이지로 연결
+      const airlineCargoTrackers = {
+        '160': `https://www.cathaycargo.com/ko-kr/manage/track-your-shipment.html?awbPrefix=160&awbNumber=${serial}`, // 캐세이퍼시픽 화물추적 직링크
+        '180': `https://cargo.koreanair.com/ko/tracking?awbNo=180${serial}`, // 대한항공 화물추적 직링크
+        '988': `https://www.asianacargo.com/tracking/awbTracking.do`, // 아시아나 화물추적
+        '131': `https://www.jal.co.jp/jalcargo/inter/`, // JAL 화물
+        '205': `https://www.anacargo.jp/ja/int/`, // ANA 화물
+        '618': `https://www.siacargo.com/` // 싱가포르항공 화물
       };
 
-      if (airlineUrls[prefix]) {
-        window.open(airlineUrls[prefix], '_blank');
+      if (airlineCargoTrackers[prefix]) {
+        window.open(airlineCargoTrackers[prefix], '_blank');
       } else {
-        // 전 세계 공용 에어카고 트래커
-        window.open(`https://www.track-trace.com/aircargo?number=${encodeURIComponent(awb)}`, '_blank');
+        // 기타 모든 항공사: Track-Trace Cargo 시스템으로 다이렉트 AWB 파라미터 전달
+        window.open(`https://www.track-trace.com/aircargo?number=${encodeURIComponent(cleanAwb)}`, '_blank');
       }
     }
 
-    // 3. QR코드 모달
-    let qrcodeInstance = null;
-    function openQrModal() {
-      const awb = document.getElementById('air-awb-input').value.trim();
-      const bl = document.getElementById('ocean-bl-input').value.trim();
-      const targetVal = awb || bl || 'https://kim-000.github.io/logistics-dashboard/';
-      const targetUrl = awb 
-        ? `https://www.track-trace.com/aircargo?number=${encodeURIComponent(awb)}`
-        : (bl ? `https://www.track-trace.com/container?number=${encodeURIComponent(bl)}` : targetVal);
-
-      const box = document.getElementById('qrcode-box');
-      box.innerHTML = '';
-      qrcodeInstance = new QRCode(box, {
-        text: targetUrl,
-        width: 140,
-        height: 140,
-        colorDark : "#0f172a",
-        colorLight : "#ffffff",
-        correctLevel : QRCode.CorrectLevel.M
-      });
-
-      document.getElementById('qr-target-text').innerText = targetVal;
-      document.getElementById('qr-modal').classList.remove('hidden');
-    }
-
-    function closeQrModal() {
-      document.getElementById('qr-modal').classList.add('hidden');
-    }
-
     // ----------------------------------------------------
-    // 인텔리전스 뉴스 데이터 (18건 보장)
+    // 인텔리전스 뉴스 데이터 (18건 기본 보장)
     // ----------------------------------------------------
     const fallbackNews = [
       { id: 1, category: 'logistics', badge: '해상운송·체선', source: 'Sea-Intelligence', datetime: '오늘 최신', url: 'https://news.google.com/search?q=컨테이너+선박+정시율&hl=ko&gl=KR&ceid=KR:ko', title: { ko: '글로벌 정시 도착률 50% 하회… 상하이·닝보 등 아시아 허브 항만 체선 심화', ja: 'コンテナ船の定時運航率が50％割れ… 上海・寧波などアジア主要港で混雑深刻化', en: 'Global Schedule Reliability Drops Below 50%: Port Congestion Worsens in Shanghai & Ningbo' }, desc: { ko: '기상 악화 및 환적 물량 집중으로 평균 지연 일수가 6.8일로 증가했습니다. 주요 선사들의 임의 기항 건너뛰기(Port Omission)에 대한 사전 대비가 요구됩니다.', ja: '悪天候と接続貨物の集中により平均遅延日数が6.8日に増加。船社の抜港や積み残しリスクに対する事前対応が求められます。', en: 'Average delay increased to 6.8 days due to adverse weather and transshipment surges.' } },
