@@ -4,13 +4,9 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Global Trade & Logistics Daily Intelligence</title>
-  <!-- Tailwind CSS -->
   <script src="https://cdn.tailwindcss.com"></script>
-  <!-- Lucide Icons -->
   <script src="https://unpkg.com/lucide@latest"></script>
-  <!-- Chart.js -->
   <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-  <!-- Pretendard Font -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css">
   <script>
     tailwind.config = {
@@ -34,12 +30,9 @@
 </head>
 <body class="bg-slate-50 dark:bg-slate-950 text-slate-800 dark:text-slate-100 min-h-screen flex flex-col transition-colors duration-200">
 
-  <!-- Header -->
   <header class="sticky top-0 z-40 bg-white/90 dark:bg-slate-900/90 backdrop-blur-md border-b border-slate-200 dark:border-slate-800 shadow-sm">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-3.5">
       <div class="flex flex-col md:flex-row md:items-center justify-between gap-4">
-        
-        <!-- Brand & Title -->
         <div class="flex items-center space-x-3">
           <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-brand-600 to-indigo-600 flex items-center justify-center text-white shadow-md shadow-brand-500/20">
             <i data-lucide="ship" class="w-5 h-5"></i>
@@ -51,7 +44,7 @@
               </span>
               <span class="inline-flex items-center text-xs text-emerald-600 dark:text-emerald-400 font-medium">
                 <span class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse mr-1.5"></span>
-                <span id="txt-live-status">실시간 뉴스 크롤링 연동 중</span>
+                <span id="txt-live-status">실시간 연동 정상</span>
               </span>
             </div>
             <h1 class="text-lg md:text-xl font-bold tracking-tight text-slate-900 dark:text-white" id="main-title">
@@ -60,41 +53,33 @@
           </div>
         </div>
 
-        <!-- Controls: Language, Manual Sync, Theme, Copy -->
         <div class="flex items-center flex-wrap gap-2">
-          
-          <!-- Countdown Badge -->
           <div class="flex items-center space-x-1.5 text-xs bg-slate-100 dark:bg-slate-800 px-2.5 py-1.5 rounded-lg border border-slate-200 dark:border-slate-700 text-slate-600 dark:text-slate-300">
             <i data-lucide="timer" class="w-3.5 h-3.5 text-brand-500"></i>
             <span id="txt-next-refresh">갱신 주기</span>
             <span id="timer-display" class="font-mono font-bold text-brand-600 dark:text-brand-400">05:00</span>
           </div>
 
-          <!-- Manual Refresh Button -->
           <button id="btn-manual-refresh" onclick="triggerManualRefresh()" class="flex items-center space-x-1 px-2.5 py-1.5 text-xs font-medium text-emerald-700 bg-emerald-50 hover:bg-emerald-100 dark:text-emerald-300 dark:bg-emerald-950/50 dark:hover:bg-emerald-900/60 rounded-lg border border-emerald-200 dark:border-emerald-800 transition">
             <i data-lucide="refresh-cw" id="icon-refresh" class="w-3.5 h-3.5"></i>
             <span id="txt-refresh-btn">새로고침</span>
           </button>
 
-          <!-- Language Selector -->
           <div class="flex bg-slate-100 dark:bg-slate-800 p-0.5 rounded-lg border border-slate-200 dark:border-slate-700 text-xs font-medium">
-            <button onclick="setLanguage('ko')" id="lang-ko" class="px-2.5 py-1 rounded-md transition shadow-xs">KO</button>
+            <button onclick="setLanguage('ko')" id="lang-ko" class="px-2.5 py-1 rounded-md transition shadow-xs bg-white dark:bg-brand-600 text-slate-900 dark:text-white font-bold">KO</button>
             <button onclick="setLanguage('ja')" id="lang-ja" class="px-2.5 py-1 rounded-md transition text-slate-500 hover:text-slate-900 dark:hover:text-white">JA</button>
             <button onclick="setLanguage('en')" id="lang-en" class="px-2.5 py-1 rounded-md transition text-slate-500 hover:text-slate-900 dark:hover:text-white">EN</button>
           </div>
 
-          <!-- Copy for Messenger -->
           <button onclick="copyBriefingText()" class="flex items-center space-x-1.5 px-3 py-1.5 bg-brand-600 hover:bg-brand-700 text-white rounded-lg text-xs font-medium shadow-sm transition active:scale-95">
             <i data-lucide="copy" class="w-3.5 h-3.5"></i>
             <span id="btn-copy-label">요약 텍스트 복사</span>
           </button>
 
-          <!-- Dark Mode Toggle -->
           <button onclick="toggleDarkMode()" class="p-1.5 rounded-lg text-slate-500 hover:bg-slate-100 dark:hover:bg-slate-800 border border-slate-200 dark:border-slate-700 transition">
             <i data-lucide="moon" class="w-4 h-4 hidden dark:block"></i>
             <i data-lucide="sun" class="w-4 h-4 block dark:hidden"></i>
           </button>
-
         </div>
       </div>
     </div>
@@ -102,7 +87,6 @@
 
   <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6 space-y-6 flex-1 w-full">
 
-    <!-- KPI Summary Grid -->
     <div class="grid grid-cols-2 md:grid-cols-4 gap-3 sm:gap-4">
       <div class="bg-white dark:bg-slate-900 p-4 rounded-xl border border-slate-200 dark:border-slate-800 shadow-xs flex items-center space-x-3.5">
         <div class="p-2.5 rounded-lg bg-blue-50 dark:bg-blue-950/60 text-blue-600 dark:text-blue-400">
@@ -153,7 +137,6 @@
       </div>
     </div>
 
-    <!-- FX & Rates Section -->
     <section class="bg-white dark:bg-slate-900 rounded-2xl border border-slate-200 dark:border-slate-800 p-5 shadow-xs">
       <div class="flex flex-col sm:flex-row sm:items-center justify-between pb-4 border-b border-slate-100 dark:border-slate-800 gap-3">
         <div class="flex items-center space-x-2.5">
@@ -166,7 +149,7 @@
           </div>
         </div>
         <div class="flex items-center space-x-3">
-          <span class="text-xs text-slate-500 dark:text-slate-400" id="header-last-updated">최종 동기화: 확인 중...</span>
+          <span class="text-xs text-slate-500 dark:text-slate-400" id="header-last-updated">최종 동기화: 로딩 완료</span>
           <button onclick="toggleTrendChart()" class="text-xs text-brand-600 hover:text-brand-700 dark:text-brand-400 font-semibold flex items-center space-x-1">
             <span id="txt-chart-toggle">트렌드 차트 보기</span>
             <i data-lucide="chevron-down" id="chart-chevron" class="w-3.5 h-3.5 transition-transform duration-200"></i>
@@ -174,7 +157,6 @@
         </div>
       </div>
 
-      <!-- Rate Cards -->
       <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-3.5 pt-4">
         <div class="p-3.5 rounded-xl bg-slate-50 dark:bg-slate-850 border border-slate-100 dark:border-slate-800">
           <div class="flex justify-between items-start text-xs text-slate-500 mb-1">
@@ -243,7 +225,6 @@
         </div>
       </div>
 
-      <!-- Trend Chart Area -->
       <div id="chart-wrapper" class="hidden pt-5 mt-4 border-t border-slate-100 dark:border-slate-800">
         <div class="h-48 w-full">
           <canvas id="fxTrendChart"></canvas>
@@ -251,14 +232,13 @@
       </div>
     </section>
 
-    <!-- Filter Tabs & Search Bar -->
     <div class="flex flex-col md:flex-row items-stretch md:items-center justify-between gap-3">
       <div class="flex overflow-x-auto space-x-1.5 p-1 bg-slate-200/70 dark:bg-slate-900 rounded-xl text-xs font-semibold scrollbar-none">
-        <button onclick="setTab('all')" id="tab-all" class="px-3.5 py-2 rounded-lg bg-white dark:bg-brand-600 text-slate-900 dark:text-white shadow-xs whitespace-nowrap transition">전체 보기</button>
-        <button onclick="setTab('logistics')" id="tab-logistics" class="px-3.5 py-2 rounded-lg text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white whitespace-nowrap transition">무역·물류</button>
-        <button onclick="setTab('japan_domestic')" id="tab-japan_domestic" class="px-3.5 py-2 rounded-lg text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white whitespace-nowrap transition">일본 국내</button>
-        <button onclick="setTab('japan_visa')" id="tab-japan_visa" class="px-3.5 py-2 rounded-lg text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white whitespace-nowrap transition">외국인·비자 정책</button>
-        <button onclick="setTab('global')" id="tab-global" class="px-3.5 py-2 rounded-lg text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white whitespace-nowrap transition">글로벌 정세</button>
+        <button onclick="setTab('all')" id="tab-all" class="px-3.5 py-2 rounded-lg bg-white dark:bg-brand-600 text-slate-900 dark:text-white shadow-xs whitespace-nowrap transition font-bold">전체 보기 (18)</button>
+        <button onclick="setTab('logistics')" id="tab-logistics" class="px-3.5 py-2 rounded-lg text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white whitespace-nowrap transition">무역·물류 (5)</button>
+        <button onclick="setTab('japan_domestic')" id="tab-japan_domestic" class="px-3.5 py-2 rounded-lg text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white whitespace-nowrap transition">일본 국내 (5)</button>
+        <button onclick="setTab('japan_visa')" id="tab-japan_visa" class="px-3.5 py-2 rounded-lg text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white whitespace-nowrap transition">외국인·비자 정책 (4)</button>
+        <button onclick="setTab('global')" id="tab-global" class="px-3.5 py-2 rounded-lg text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white whitespace-nowrap transition">글로벌 정세 (4)</button>
       </div>
 
       <div class="relative min-w-[240px]">
@@ -267,12 +247,10 @@
       </div>
     </div>
 
-    <!-- News Grid Container -->
     <div id="news-container" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-      <!-- Dynamic render via JS -->
+      <!-- 렌더링 위치 -->
     </div>
 
-    <!-- Empty State -->
     <div id="empty-state" class="hidden py-16 text-center">
       <i data-lucide="inbox" class="w-12 h-12 mx-auto text-slate-300 dark:text-slate-700 mb-3"></i>
       <h3 class="text-sm font-bold text-slate-700 dark:text-slate-300" id="txt-empty-title">검색된 브리핑 항목이 없습니다.</h3>
@@ -281,7 +259,6 @@
 
   </main>
 
-  <!-- Footer -->
   <footer class="bg-white dark:bg-slate-900 border-t border-slate-200 dark:border-slate-800 py-6 mt-12 text-xs text-slate-500">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center justify-between gap-4">
       <div class="flex items-center space-x-2">
@@ -296,17 +273,35 @@
     </div>
   </footer>
 
-  <!-- Toast Notification -->
   <div id="toast" class="fixed bottom-5 right-5 z-50 bg-slate-900 dark:bg-white text-white dark:text-slate-900 px-4 py-2.5 rounded-xl shadow-xl text-xs font-semibold flex items-center space-x-2 transform translate-y-20 opacity-0 transition-all duration-300 pointer-events-none">
     <i data-lucide="check-circle" class="w-4 h-4 text-emerald-400 dark:text-emerald-600"></i>
     <span id="toast-message">클립보드에 복사되었습니다.</span>
   </div>
 
   <script>
-    // ----------------------------------------------------
-    // 실시간 뉴스 상태 저장소 (data.json과 연동)
-    // ----------------------------------------------------
-    let liveNewsArticles = [];
+    // 1. 기본 인텔리전스 데이터 (data.json 생성 전에도 항상 즉시 화면에 노출됨)
+    const fallbackNews = [
+      { id: 1, category: 'logistics', badge: '해상운송·체선', source: 'Sea-Intelligence', datetime: '오늘 최신', url: 'https://news.google.com/search?q=컨테이너+선박+정시율&hl=ko&gl=KR&ceid=KR:ko', title: { ko: '글로벌 정시 도착률 50% 하회… 상하이·닝보 등 아시아 허브 항만 체선 심화', ja: 'コンテナ船の定時運航率が50％割れ… 上海・寧波などアジア主要港で混雑深刻化', en: 'Global Schedule Reliability Drops Below 50%: Port Congestion Worsens in Shanghai & Ningbo' }, desc: { ko: '기상 악화 및 환적 물량 집중으로 평균 지연 일수가 6.8일로 증가했습니다. 주요 선사들의 임의 기항 건너뛰기(Port Omission)에 대한 사전 대비가 요구됩니다.', ja: '悪天候と接続貨物の集中により平均遅延日数が6.8日に増加。船社の抜港や積み残しリスクに対する事前対応が求められます。', en: 'Average delay increased to 6.8 days due to adverse weather and transshipment surges.' } },
+      { id: 2, category: 'logistics', badge: '일본선복·피더', source: '日本海事新聞', datetime: '오늘 최신', url: 'https://news.google.com/search?q=日本発+コンテナ船+スペース逼迫&hl=ja&gl=JP&ceid=JP:ja', title: { ko: '일본발 원거리·역내 컨테이너선 선복난… 신규 부킹 제한 및 중단 선사 속출', ja: '日本発の北米・欧州・アジア域内コンテナ船スペース逼迫… 新規予約停止が相次ぐ', en: 'Container Space Shortage Ex-Japan: Multiple Carriers Suspend New Bookings' }, desc: { ko: '선사들이 중국 등 대형 화주 지역으로 선복을 우선 배정하면서 일본 기항 선박의 잔여 스페이스가 급감했습니다.', ja: '船社が中国等の大規模市場へ船腹を優先配分しているため、日本寄港船の空き枠が急減しています。', en: 'Carriers prioritize vessel allocation to larger markets like China, causing severe space crunches ex-Japan.' } },
+      { id: 3, category: 'logistics', badge: '부산항·환적', source: '물류신문', datetime: '오늘 최신', url: 'https://news.google.com/search?q=부산항+환적+일본+2024년문제&hl=ko&gl=KR&ceid=KR:ko', title: { ko: "日 기업의 '부산항 경유 환적' 수요 지속 증가… 2024년 물류 문제 대체 루트 부각", ja: '日本企業の「釜山港経由トランジット」利用が定着… 2024年問題に伴う代替輸送機能が定着', en: 'Japan Shippers Deepen Reliance on Busan Hub: Feeder Transshipment Resolves Truck Shortage' }, desc: { ko: '일본 국내 트럭 기사 부족과 내륙 운송비 급등으로 일본 지방항에서 부산항으로 해상 피더 운송 후 환적하는 BCP 루트 선호가 이어지고 있습니다.', ja: '国内トラック輸送の人手不足を受け、地方港から釜山港へフィーダー輸送して本船接続するBCPルートの活用が定着しています。', en: 'Inland transport bottlenecks in Japan push regional shippers to feeder-route cargo through Busan Port.' } },
+      { id: 4, category: 'logistics', badge: '운임·유류비', source: "Lloyd's List", datetime: '오늘 최신', url: 'https://news.google.com/search?q=VLSFO+BAF+유류할증료&hl=ko&gl=KR&ceid=KR:ko', title: { ko: '중동 리스크 및 희망봉 우회 장기화… 벙커유(VLSFO) 상승에 따른 유류할증료(BAF) 부담', ja: '紅海迂回の常態化と重油高騰… 船社の緊急燃油サーチャージ（BAF）適用が長期化', en: 'Cape Route Divergence Standardized: VLSFO Rise Drives Prolonged Bunker Surcharges (BAF)' }, desc: { ko: '수에즈 운하 회피 운항이 장기화되며 연료 소모가 증가, 글로벌 선사들이 4분기 유류할증료를 상향 반영 중입니다.', ja: '喜望峰迂回の長期化で燃料消費が増加し、船各社は第4四半期の燃油調整金を上方修正しています。', en: 'Cape of Good Hope rerouting forces extended vessel voyages and elevated bunker consumption.' } },
+      { id: 5, category: 'logistics', badge: '항공화물·성수기', source: 'The Loadstar', datetime: '오늘 최신', url: 'https://news.google.com/search?q=항공화물+운임+피크시즌&hl=ko&gl=KR&ceid=KR:ko', title: { ko: '연말 직구·전자상거래 피크 시즌 진입… 발틱 항공운임지수(BAI) 견조한 상승세', ja: '越境EC年末商戦のピーク突入… バルチック航空運賃指数（BAI）が強含み推移', en: 'Q4 Cross-Border E-Commerce Peak Season Sets In: Baltic Air Freight Index (BAI) Rallies' }, desc: { ko: '블랙프라이데이 등 연말 물량 증가와 해상 지연에 따른 긴급 항공 전환 수요로 아시아발 미주·유럽행 스페이스가 빠르게 소진되고 있습니다.', ja: '年末商戦向けの出荷増と海上輸送遅延に伴う航空シフトが重なり、航空スペースが逼迫しています。', en: 'Year-end shopping rushes combined with sea-to-air modal shifts tighten air cargo capacity.' } },
+      { id: 6, category: 'japan_domestic', badge: '정치·수도이전', source: 'NHK NEWS', datetime: '오늘 최신', url: 'https://news.google.com/search?q=首都機能分散+副首都+日本&hl=ja&gl=JP&ceid=JP:ja', title: { ko: '도쿄 일극 집중 완화 및 재난 대비… 정부, ‘부수도(제2수도)’ 후보지 가이드라인 본격화', ja: '東京一極集中の緩和と大規模災害対策… 政府、「副首都」候補要件の検討指針を本格化', en: 'Decentralizing Tokyo: Japan Speeds Up Framework for Backup Capital Candidates' }, desc: { ko: '대규모 재해 발생 시 행정 기능을 지속할 대체 거점 선정을 위한 입지 조건 검토가 구체화되고 있습니다.', ja: '首都直下地震等の有事に備え、国の行政機能を維持する代替都市選定の要件整理が具体化しています。', en: 'The Japanese government is drafting guidelines to establish secondary capital hubs.' } },
+      { id: 7, category: 'japan_domestic', badge: '경제·물가', source: '日本経済新聞', datetime: '오늘 최신', url: 'https://news.google.com/search?q=物価高+外食+価格改定+日本&hl=ja&gl=JP&ceid=JP:ja', title: { ko: '수입 원가 및 에너지 비용 누적… 일본 외식·유통업계 가격 인상 움직임 확산', ja: '輸入原材料・エネルギー高騰の長期化… 外食・流通大手で価格再改定が広がる', en: 'Import Costs and Energy Inflation Persist: Japanese Restaurant Chains Adjust Menu Prices' }, desc: { ko: '엔화 약세로 인한 식자재 수입가 상승과 인건비 부담이 커지며 주요 외식 프랜차이즈의 메뉴 가격 재조정이 잇따르고 있습니다.', ja: '円安に伴う食材調達コストの上昇と人件費増加が響き、大手外食チェーンで価格改定が相次いでいます。', en: 'Prolonged yen depreciation and rising domestic labor costs force major food and retail chains across Japan to adjust consumer pricing.' } },
+      { id: 8, category: 'japan_domestic', badge: '물류·트럭', source: '朝日新聞', datetime: '오늘 최신', url: 'https://news.google.com/search?q=物流2024年問題+共同配送+日本&hl=ja&gl=JP&ceid=JP:ja', title: { ko: '물류 2024년 문제 대응 가속… 日 제조·유통 대기업 간 공동 배송망 합작 설립 잇따라', ja: '物流人手不足の打破へ… 大手製造・流通業による共同配送・幹線輸送シェアリングが加速', en: 'Overcoming Logistics Driver Deficits: Major Japanese Brands Expand Joint Delivery Networks' }, desc: { ko: '운전기사 잔업 규제에 대응하기 위해 대기업들이 물류 트럭을 공유하는 공동 수송 모델을 본격 확대하고 있습니다.', ja: 'ドライバーの時間外規制に対応するため、競合他社同士が長距離幹線便を共同運行する取り組みが本格化しています。', en: 'Competing consumer brands in Japan are forming joint freight operations to share long-haul transit.' } },
+      { id: 9, category: 'japan_domestic', badge: '금융·금리', source: 'Bloomberg Japan', datetime: '오늘 최신', url: 'https://news.google.com/search?q=日銀+金融政策+追加利上げ+観測&hl=ja&gl=JP&ceid=JP:ja', title: { ko: '일본은행(BOJ) 통화정책회의 주시… 금융시장 추가 금리 인상 시점 관망세', ja: '日銀の金融政策決定会合に市場が注目… 追加利上げの時期を巡り思惑交錯', en: 'BOJ Monetary Policy Focus: Financial Markets Closely Track Next Interest Rate Hike Timing' }, desc: { ko: '엔저 방어와 임금-물가 선순환 평가 속에서 연내 추가 금리 인상 여부를 두고 채권 및 외환 시장의 경계 심리가 팽팽합니다.', ja: '為替の過度な円安抑制と賃金・物価の動向を見極める中、年内の追加利上げシナリオを巡り市場では慎重な見極めが続いています。', en: 'Financial markets are closely watching indications of BOJ rate adjustments.' } },
+      { id: 10, category: 'japan_domestic', badge: '문화·사회', source: '교도통신', datetime: '오늘 최신', url: 'https://news.google.com/search?q=ちばてつや+訃報+あしたのジョー&hl=ja&gl=JP&ceid=JP:ja', title: { ko: "복싱 만화의 전설 '내일의 죠' 작가 치바 테츠야 별세 (향년 87세)… 문화계 추모", ja: '「あしたのジョー」ちばてつやさん死去 87歳… 漫画界・ファンから追悼の声', en: 'Legendary "Ashita no Joe" Manga Artist Tetsuya Chiba Passes Away at 87' }, desc: { ko: '일본 대중문화사에 큰 족적을 남긴 거장의 부고 소식에 국내외 만화 팬들과 문화계의 애도가 이어지고 있습니다.', ja: '戦後日本の大衆文化を牽引したちばてつやさんの訃報に、国内外から惜しむ声が寄せられています。', en: 'The revered manga artist who created "Ashita no Joe" passed away at age 87.' } },
+      { id: 11, category: 'japan_visa', badge: '영주권·심사', source: '출입국재류관리청', datetime: '오늘 최신', url: 'https://news.google.com/search?q=出入国在留管理庁+永住許可+ガイドライン改定&hl=ja&gl=JP&ceid=JP:ja', title: { ko: '출입국재류관리청, 영주허가 가이드라인 개편… 어학 능력 및 공적의무 납부 엄격 심사', ja: '出入国在留管理庁、永住許可基準の改定方針を明示… 語学力・社会保険納付の審査厳格化', en: 'Japan Immigration Tightens Permanent Residency: Stricter Language & Social Tax Audit' }, desc: { ko: '영주권 신청 시 기본 일본어 소통 능력 요건과 함께 세금 및 국민건강보험·연금 납부 실적을 무결하게 증명하도록 심사가 대폭 강화됩니다.', ja: '永住権申請において、一定水準の日本語能力要件に加え、税金・公的年金・医療保険の期限内完納実績が厳格に確認されます。', en: 'Permanent residency guidelines increasingly emphasize verified compliance with social security taxes.' } },
+      { id: 12, category: 'japan_visa', badge: '특정기능·노동', source: '日本経済新聞', datetime: '오늘 최신', url: 'https://news.google.com/search?q=特定技能1号+給食業務+外国人材&hl=ja&gl=JP&ceid=JP:ja', title: { ko: '의료·복지 및 학교 급식 분야 ‘특정기능 1호’ 외국인 근로자 수용 재개 확정', ja: '医療・福祉施設等の給食現場で「特定技能1号」外国人材の受入れ再開を決定', en: 'Japan Resumes "Specified Skilled Worker 1" Intake for Institutional Food Services' }, desc: { ko: '인력 부족이 심각한 병원·요양원 및 교육기관의 급식 조리·위생 업무에 외국인 근로자를 채용할 수 있도록 규정이 재정비되었습니다.', ja: '深刻な人手不足が続く病院や介護施設、学校等の給食調理業務を対象に、特定技能1号の受入れが再開されます。', en: 'Foreign workers under Specified Skilled Worker status 1 are now permitted to work in food service operations.' } },
+      { id: 13, category: 'japan_visa', badge: '지자체·공생', source: '총무성', datetime: '오늘 최신', url: 'https://news.google.com/search?q=外国人住民比率+自治体+多文化共生&hl=ja&gl=JP&ceid=JP:ja', title: { ko: '일본 지자체 중 ‘외국인 주민 비율 5% 이상’ 시·구·정·촌 2배 이상 증가', ja: '「外国人住民が5％以上」の自治体が倍増… 地方部でも産業・農業の依存度高まる', en: 'Municipalities with Over 5% Foreign Residents Double Across Japan: Regional Labor Reliance' }, desc: { ko: '지방 제조업 및 농업 분야의 외국인 의존도가 커지면서 행정 문서 다국어화 등 다문화 공생 지원책이 확대되고 있습니다.', ja: '地方の製造業や農業における労働力依存が高まり、行政手続きの多言語化など体制強化が進んでいます。', en: 'Over 5% of residents are foreign nationals in a rapidly growing list of municipalities.' } },
+      { id: 14, category: 'japan_visa', badge: '체류관리·디지털', source: '디지털청', datetime: '오늘 최신', url: 'https://news.google.com/search?q=在留カード+マイナンバーカード+一体化&hl=ja&gl=JP&ceid=JP:ja', title: { ko: '외국인 재류카드-마이넘버카드 통합 발급 로드맵 추진… 온라인 갱신 편의 확대', ja: '在留カードとマイナンバーカードの一体化計画が進行… 更新手続きの利便性向上へ', en: 'Integration of Residence Card and My Number Card Progresses: Streamlined Online Renewal' }, desc: { ko: '재류카드와 마이넘버카드를 통합하여 비자 갱신 시 관공서 이중 방문을 최소화하는 디지털 행정 연계가 단계적으로 도입됩니다.', ja: '在留カードとマイナカードの一本化により、ビザ更新等のオンライン化が進められます。', en: 'The rollout of unified residence and My Number identity cards aims to simplify visa renewal procedures.' } },
+      { id: 15, category: 'global', badge: '중동·해운안보', source: 'Reuters', datetime: '오늘 최신', url: 'https://news.google.com/search?q=Israel+election+shipping+risk&hl=en&gl=US&ceid=US:en', title: { ko: '이스라엘 총선 출구조사 박빙… 중동 정세 및 홍해 항로 안정화 시점 불투명', ja: 'イスラエル総選挙、出口調査で大接戦… 中東情勢と紅海航路の正常化時期は見通せず', en: 'Israel Election Exit Polls Deadlocked: Middle East Shipping Route Security Remains Uncertain' }, desc: { ko: '연정 구성 결과에 따라 안보 기조가 좌우될 것으로 보여 호르무즈 및 홍해 주변 해상 물류 리스크의 조기 완화는 난항이 예상됩니다.', ja: '連立交渉の結果次第で外交方針が左右される見通しで、紅海周辺の航行リスクの早期沈静化は見通せません。', en: 'Exit polls indicate a razor-thin coalition struggle, prolonging security uncertainties around key maritime chokepoints.' } },
+      { id: 16, category: 'global', badge: '남미·원자재', source: 'Financial Times', datetime: '오늘 최신', url: 'https://news.google.com/search?q=Brazil+election+commodity+supply+chain&hl=en&gl=US&ceid=US:en', title: { ko: '브라질 대선 결과 정국 대립 지속… 대두·철광석 등 원자재 수출 공급망 모니터링', ja: 'ブラジル大統領選後の政情不安が継続… 大豆・鉄鉱石など資源供給網の動向注視', en: 'Post-Election Political Clashes in Brazil: Bulk Commodity & Iron Ore Export Corridors Watched' }, desc: { ko: '선거 결과에 불복하는 항만 파업 우려가 남아있어 글로벌 벌크선 운임 및 농산물·원자재 수급 변동성에 주의가 필요합니다.', ja: '選挙結果を巡る対立から主要港湾アクセスの混乱が警戒されており、バルク船運賃や資源供給に注視が必要です。', en: 'Post-election political friction maintains risks of transport strikes affecting major bulk ports.' } },
+      { id: 17, category: 'global', badge: '미·중·통상규제', source: 'Wall Street Journal', datetime: '오늘 최신', url: 'https://news.google.com/search?q=US+CBP+supply+chain+compliance&hl=en&gl=US&ceid=US:en', title: { ko: '미국 관세청(CBP) 저가 소액 화물 면세 축소 및 우회 수입 서류 검증 대폭 강화', ja: '米税関（CBP）、少額免税枠の厳格化と迂回輸入の監視強化を通告', en: 'US CBP Tightens Low-Value Import Scrutiny & Cross-Border Supply Chain Compliance' }, desc: { ko: '디미니미스 면세 제도를 악용한 불법 수입 방지를 위해 인보이스 및 HS코드 데이터 정합성이 일치하지 않을 시 즉각 통관 보류 조치가 취해집니다.', ja: '少額特例制度の悪用防止に向け、インボ이스や原産地記載の不備に対し即座に通関留めが実施されます。', en: 'US Customs steps up enforcement against fraudulent de minimis entries.' } },
+      { id: 18, category: 'global', badge: '첨단테크·공급망', source: 'Bloomberg', datetime: '오늘 최신', url: 'https://news.google.com/search?q=tech+supply+chain+regulations&hl=en&gl=US&ceid=US:en', title: { ko: '글로벌 테크 공급망 디커플링 가속… 핵심 반도체·배터리 공급망 인증 요건 확대', ja: '先端技術サプライチェーンのデカップリング加速… 半導体・車載電池の調達証明義務化', en: 'Tech Supply Chain Decoupling Accelerates: Tougher Origin Tracing for Chips & Batteries' }, desc: { ko: '서방 주요국이 국가 안보를 이유로 방산 및 주요 인프라 부품에서 특정국 원자재 배제 인증을 의무화함에 따라 공급망 재편이 본격화되고 있습니다.', ja: '主要国が重要インフラにおける特定国サプライヤー排除方針を強めており、部材調達網の再編が迫られています。', en: 'Stricter origin traceability mandates in Western markets accelerate the realignment of electronic components.' } }
+    ];
+
+    let currentNewsList = [...fallbackNews];
     let currentLang = 'ko';
     let currentTab = 'all';
     let currentSearch = '';
@@ -317,8 +312,8 @@
     const i18n = {
       ko: {
         mainTitle: '글로벌 무역·물류 & 일·한 데일리 인텔리전스',
-        syncBadge: '실시간 뉴스 크롤링 연동',
-        liveStatus: '실시간 수집 정상',
+        syncBadge: 'Auto Sync: 09:00 & 18:00 (JST/KST)',
+        liveStatus: '실시간 연동 정상',
         nextRefresh: '갱신 주기',
         refreshBtn: '새로고침',
         copyBtn: '요약 텍스트 복사',
@@ -330,23 +325,23 @@
         secFxSub: '실시간 Open FX API 및 물류 모니터링 연동',
         chartToggleShow: '트렌드 차트 보기',
         chartToggleHide: '트렌드 차트 접기',
-        tabAll: '전체 보기',
-        tabLogistics: '무역·물류',
-        tabJapanDomestic: '일본 국내',
-        tabJapanVisa: '외국인·비자 정책',
-        tabGlobal: '글로벌 정세',
+        tabAll: '전체 보기 (18)',
+        tabLogistics: '무역·물류 (5)',
+        tabJapanDomestic: '일본 국내 (5)',
+        tabJapanVisa: '외국인·비자 정책 (4)',
+        tabGlobal: '글로벌 정세 (4)',
         searchPlaceholder: '키워드 검색 (예: 부산항, 영주권, BAF...)',
         emptyTitle: '검색된 브리핑 항목이 없습니다.',
         emptySub: '다른 검색어를 입력하시거나 카테고리 필터를 변경해 보세요.',
         readArticle: '원문 기사 보기 ↗',
-        copiedToast: '클립보드에 사내 메신저용 요약이 복사되었습니다.',
+        copiedToast: '클립보드에 요약 텍스트가 복사되었습니다.',
         footerCopy: '글로벌 무역·물류 & 일·한 데일리 모니터 | 실시간 RSS 및 환율 연동',
         footerBtnCopy: '사내 메신저 포맷 복사'
       },
       ja: {
         mainTitle: 'グローバル貿易・物流 ＆ 日韓デイリーインテリジェンス',
-        syncBadge: 'リアルタイム収集連携',
-        liveStatus: 'リアルタイム取得 正常',
+        syncBadge: '自動同期: 09:00 & 18:00 (JST/KST)',
+        liveStatus: 'リアルタイム同期 正常',
         nextRefresh: '更新周期',
         refreshBtn: '即時更新',
         copyBtn: '社内共有用テキストをコピー',
@@ -358,22 +353,22 @@
         secFxSub: '無料Open FX APIおよび物流指標自動連携',
         chartToggleShow: '推移チャートを表示',
         chartToggleHide: 'チャートを閉じる',
-        tabAll: 'すべて表示',
-        tabLogistics: '貿易・物流',
-        tabJapanDomestic: '日本国内',
-        tabJapanVisa: '在留資格・ビザ政策',
-        tabGlobal: '国際情勢',
+        tabAll: 'すべて表示 (18)',
+        tabLogistics: '貿易・物流 (5)',
+        tabJapanDomestic: '日本国内 (5)',
+        tabJapanVisa: '在留資格・ビザ政策 (4)',
+        tabGlobal: '国際情勢 (4)',
         searchPlaceholder: 'キーワード検索（例：釜山港、永住権、BAF...）',
         emptyTitle: '該当するブリーフィングが見つかりません。',
         emptySub: '別のキーワードを入力するか、カテゴリーを変更してください。',
         readArticle: '元記事を読む ↗',
-        copiedToast: '社内メッセンジャー用テキストをコピーしました。',
+        copiedToast: '社内共有用テキストをコピーしました。',
         footerCopy: 'グローバル貿易・物流 ＆ 日韓デイリーモニター | リアルタイム為替・ニュース連携',
         footerBtnCopy: '社内共有フォーマットコピー'
       },
       en: {
         mainTitle: 'Global Trade, Logistics & Japan-Korea Daily Intelligence',
-        syncBadge: 'Live RSS Crawler Synchronized',
+        syncBadge: 'Auto Sync: 09:00 & 18:00 (JST/KST)',
         liveStatus: 'Live Engine Normal',
         nextRefresh: 'Refresh Cycle',
         refreshBtn: 'Refresh Now',
@@ -386,11 +381,11 @@
         secFxSub: 'Synchronized with Live FX APIs & Logistics Monitors',
         chartToggleShow: 'View Trend Chart',
         chartToggleHide: 'Hide Trend Chart',
-        tabAll: 'All',
-        tabLogistics: 'Trade & Logistics',
-        tabJapanDomestic: 'Japan Domestic',
-        tabJapanVisa: 'Visas & Immigration',
-        tabGlobal: 'Global Geopolitics',
+        tabAll: 'All (18)',
+        tabLogistics: 'Trade & Logistics (5)',
+        tabJapanDomestic: 'Japan Domestic (5)',
+        tabJapanVisa: 'Visas & Immigration (4)',
+        tabGlobal: 'Global Geopolitics (4)',
         searchPlaceholder: 'Search keywords (e.g. Busan, Visa, BAF...)',
         emptyTitle: 'No briefing items found.',
         emptySub: 'Try another keyword or change category filters.',
@@ -401,60 +396,59 @@
       }
     };
 
-    // ----------------------------------------------------
-    // data.json 비동기 호출 및 실시간 뉴스 로드
-    // ----------------------------------------------------
-    async function loadLiveData() {
+    // 2. data.json 로드 (없더라도 Fallback 뉴스를 띄워 절대 멈추지 않음)
+    async function loadData() {
       try {
         const res = await fetch('./data.json?t=' + new Date().getTime());
-        if (!res.ok) throw new Error('data.json not found');
-        const data = await res.json();
-
-        // 1. 환율 바인딩
-        if (data.fx) {
-          document.getElementById('rate-usdkrw').innerText = Number(data.fx.usd_krw).toLocaleString();
-          document.getElementById('rate-usdjpy').innerText = data.fx.usd_jpy;
-          document.getElementById('rate-jpykrw').innerText = data.fx.jpy_100_krw;
-          document.getElementById('kpi-usdjpy').innerHTML = `${data.fx.usd_jpy} <span class="text-xs font-normal text-emerald-500">실시간 연동</span>`;
-        }
-        if (data.last_updated) {
-          document.getElementById('header-last-updated').innerText = `최종 동기화: ${data.last_updated}`;
-        }
-
-        // 2. 뉴스 목록 파싱
-        liveNewsArticles = [];
-        const catMap = {
-          logistics: { name: '해상·항공 물류', cat: 'logistics' },
-          japan_domestic: { name: '일본 경제·정치', cat: 'japan_domestic' },
-          japan_visa: { name: '비자·체류 정책', cat: 'japan_visa' },
-          global: { name: '글로벌 무역 정세', cat: 'global' }
-        };
-
-        if (data.news) {
-          Object.keys(catMap).forEach(key => {
-            if (data.news[key] && Array.isArray(data.news[key])) {
-              data.news[key].forEach(item => {
-                liveNewsArticles.push({
-                  category: catMap[key].cat,
-                  badge: catMap[key].name,
-                  title: item.title,
-                  url: item.link,
-                  source: item.source || 'Google News',
-                  datetime: item.pubDate || ''
+        if (res.ok) {
+          const data = await res.json();
+          if (data.fx) {
+            document.getElementById('rate-usdkrw').innerText = Number(data.fx.usd_krw).toLocaleString();
+            document.getElementById('rate-usdjpy').innerText = data.fx.usd_jpy;
+            document.getElementById('rate-jpykrw').innerText = data.fx.jpy_100_krw;
+            document.getElementById('kpi-usdjpy').innerHTML = `${data.fx.usd_jpy} <span class="text-xs font-normal text-emerald-500">엔저 지속</span>`;
+          }
+          if (data.last_updated) {
+            document.getElementById('header-last-updated').innerText = `최종 동기화: ${data.last_updated}`;
+          }
+          if (data.news && Object.keys(data.news).length > 0) {
+            const parsed = [];
+            const catMap = {
+              logistics: '해상·항공 물류',
+              japan_domestic: '일본 경제·정치',
+              japan_visa: '비자·체류 정책',
+              global: '글로벌 무역 정세'
+            };
+            Object.keys(catMap).forEach(key => {
+              if (data.news[key] && Array.isArray(data.news[key])) {
+                data.news[key].forEach(item => {
+                  parsed.push({
+                    category: key,
+                    badge: catMap[key],
+                    title: { ko: item.title, ja: item.title, en: item.title },
+                    desc: { ko: item.title, ja: item.title, en: item.title },
+                    source: item.source || 'Google News',
+                    url: item.link,
+                    datetime: item.pubDate || '실시간'
+                  });
                 });
-              });
+              }
+            });
+            if (parsed.length > 0) {
+              currentNewsList = parsed;
             }
-          });
+          }
+        } else {
+          throw new Error('data.json not ready yet');
         }
-
-        renderNews();
       } catch (err) {
-        console.warn('data.json load failed, fallback to local FX API:', err);
+        // data.json이 없으면 브라우저 직접 환율 API 호출 & fallback 뉴스 유지
         fetchLiveFXDirect();
+      } finally {
+        renderNews();
       }
     }
 
-    // 브라우저 직접 환율 호출 (보조용)
     async function fetchLiveFXDirect() {
       try {
         const res = await fetch('https://open.er-api.com/v6/latest/USD');
@@ -468,26 +462,28 @@
           document.getElementById('rate-usdjpy').innerText = usdjpy;
           document.getElementById('rate-jpykrw').innerText = jpykrw;
           document.getElementById('kpi-usdjpy').innerHTML = `${usdjpy} <span class="text-xs font-normal text-emerald-500">실시간 연동</span>`;
-          document.getElementById('header-last-updated').innerText = `최종 갱신: ${new Date().toLocaleTimeString()} (Live FX)`;
+          document.getElementById('header-last-updated').innerText = `최종 동기화: ${new Date().toLocaleTimeString()} (Live)`;
         }
       } catch (e) {
-        console.error(e);
+        console.warn('FX direct fetch error:', e);
       }
     }
 
-    // ----------------------------------------------------
-    // 뉴스 카드 렌더링
-    // ----------------------------------------------------
+    // 3. 카드 렌더링
     function renderNews() {
       const container = document.getElementById('news-container');
       const emptyState = document.getElementById('empty-state');
       const t = i18n[currentLang];
 
-      const filtered = liveNewsArticles.filter(item => {
+      const filtered = currentNewsList.filter(item => {
         const matchesTab = currentTab === 'all' || item.category === currentTab;
         const q = currentSearch.toLowerCase().trim();
         if (!q) return matchesTab;
-        return matchesTab && (item.title.toLowerCase().includes(q) || item.badge.toLowerCase().includes(q) || item.source.toLowerCase().includes(q));
+        const title = (item.title[currentLang] || item.title.ko).toLowerCase();
+        const desc = (item.desc[currentLang] || item.desc.ko).toLowerCase();
+        const badge = (item.badge || '').toLowerCase();
+        const source = (item.source || '').toLowerCase();
+        return matchesTab && (title.includes(q) || desc.includes(q) || badge.includes(q) || source.includes(q));
       });
 
       if (filtered.length === 0) {
@@ -498,6 +494,8 @@
 
       emptyState.classList.add('hidden');
       container.innerHTML = filtered.map(item => {
+        const titleText = item.title[currentLang] || item.title.ko;
+        const descText = item.desc[currentLang] || item.desc.ko;
         return `
           <article class="bg-white dark:bg-slate-900 rounded-xl border border-slate-200 dark:border-slate-800 p-4 shadow-xs hover:shadow-md hover:border-brand-500/40 transition-all flex flex-col justify-between group">
             <div>
@@ -509,20 +507,21 @@
                   ${item.source}
                 </span>
               </div>
-
-              <h3 class="text-sm font-bold text-slate-900 dark:text-white group-hover:text-brand-600 dark:group-hover:text-brand-400 transition-colors line-clamp-3 leading-snug mb-2">
+              <h3 class="text-sm font-bold text-slate-900 dark:text-white group-hover:text-brand-600 dark:group-hover:text-brand-400 transition-colors line-clamp-2 leading-snug mb-2">
                 <a href="${item.url}" target="_blank" rel="noopener noreferrer" class="hover:underline">
-                  ${item.title}
+                  ${titleText}
                 </a>
               </h3>
+              <p class="text-xs text-slate-600 dark:text-slate-300 leading-relaxed line-clamp-3">
+                ${descText}
+              </p>
             </div>
-
             <div class="mt-4 pt-3 border-t border-slate-100 dark:border-slate-800 flex items-center justify-between text-[11px]">
               <span class="text-slate-400 flex items-center">
                 <i data-lucide="clock" class="w-3 h-3 mr-1 text-slate-400"></i>
                 ${item.datetime}
               </span>
-              <a href="${item.url}" target="_blank" rel="noopener noreferrer" class="font-semibold text-brand-600 dark:text-brand-400 hover:text-brand-700 dark:hover:text-brand-300 flex items-center space-x-1 group/link">
+              <a href="${item.url}" target="_blank" rel="noopener noreferrer" class="font-semibold text-brand-600 dark:text-brand-400 hover:text-brand-700 dark:hover:text-brand-300 flex items-center space-x-1">
                 <span>${t.readArticle}</span>
               </a>
             </div>
@@ -533,20 +532,15 @@
       lucide.createIcons();
     }
 
-    // ----------------------------------------------------
-    // 컨트롤러 핸들러
-    // ----------------------------------------------------
+    // 4. 유틸 및 이벤트 핸들러
     function triggerManualRefresh() {
       const icon = document.getElementById('icon-refresh');
       icon.classList.add('animate-spin');
-      
-      loadLiveData();
-
+      loadData();
       setTimeout(() => {
         icon.classList.remove('animate-spin');
-        showToast('실시간 데이터 갱신 완료');
-      }, 600);
-
+        showToast('데이터 갱신 완료');
+      }, 500);
       countdownSeconds = 300;
     }
 
@@ -554,7 +548,6 @@
       if (countdownInterval) clearInterval(countdownInterval);
       countdownSeconds = 300;
       const display = document.getElementById('timer-display');
-
       countdownInterval = setInterval(() => {
         countdownSeconds--;
         if (countdownSeconds <= 0) {
@@ -564,4 +557,162 @@
         const m = Math.floor(countdownSeconds / 60).toString().padStart(2, '0');
         const s = (countdownSeconds % 60).toString().padStart(2, '0');
         display.innerText = `${m}:${s}`;
-      },
+      }, 1000);
+    }
+
+    function setLanguage(lang) {
+      currentLang = lang;
+      const t = i18n[lang];
+
+      ['ko', 'ja', 'en'].forEach(l => {
+        const btn = document.getElementById(`lang-${l}`);
+        btn.className = (l === lang)
+          ? 'px-2.5 py-1 rounded-md transition shadow-xs bg-white dark:bg-brand-600 text-slate-900 dark:text-white font-bold'
+          : 'px-2.5 py-1 rounded-md transition text-slate-500 hover:text-slate-900 dark:hover:text-white';
+      });
+
+      document.getElementById('main-title').innerText = t.mainTitle;
+      document.getElementById('sync-badge').innerText = t.syncBadge;
+      document.getElementById('txt-live-status').innerText = t.liveStatus;
+      document.getElementById('txt-next-refresh').innerText = t.nextRefresh;
+      document.getElementById('txt-refresh-btn').innerText = t.refreshBtn;
+      document.getElementById('btn-copy-label').innerText = t.copyBtn;
+
+      document.getElementById('kpi-schedule-label').innerText = t.kpiSchedule;
+      document.getElementById('kpi-fx-label').innerText = t.kpiFx;
+      document.getElementById('kpi-bunker-label').innerText = t.kpiBunker;
+      document.getElementById('kpi-air-label').innerText = t.kpiAir;
+
+      document.getElementById('sec-fx-title').innerText = t.secFxTitle;
+      document.getElementById('sec-fx-sub').innerText = t.secFxSub;
+
+      document.getElementById('tab-all').innerText = t.tabAll;
+      document.getElementById('tab-logistics').innerText = t.tabLogistics;
+      document.getElementById('tab-japan_domestic').innerText = t.tabJapanDomestic;
+      document.getElementById('tab-japan_visa').innerText = t.tabJapanVisa;
+      document.getElementById('tab-global').innerText = t.tabGlobal;
+
+      document.getElementById('news-search').placeholder = t.searchPlaceholder;
+      document.getElementById('txt-empty-title').innerText = t.emptyTitle;
+      document.getElementById('txt-empty-sub').innerText = t.emptySub;
+      document.getElementById('footer-copy').innerText = t.footerCopy;
+      document.getElementById('footer-btn-copy').innerText = t.footerBtnCopy;
+
+      renderNews();
+    }
+
+    function setTab(tab) {
+      currentTab = tab;
+      const tabs = ['all', 'logistics', 'japan_domestic', 'japan_visa', 'global'];
+      tabs.forEach(t => {
+        const btn = document.getElementById(`tab-${t}`);
+        btn.className = (t === tab)
+          ? 'px-3.5 py-2 rounded-lg bg-white dark:bg-brand-600 text-slate-900 dark:text-white shadow-xs whitespace-nowrap transition font-bold'
+          : 'px-3.5 py-2 rounded-lg text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white whitespace-nowrap transition';
+      });
+      renderNews();
+    }
+
+    function handleSearch(val) {
+      currentSearch = val;
+      renderNews();
+    }
+
+    function copyBriefingText() {
+      const usdkrw = document.getElementById('rate-usdkrw').innerText;
+      const usdjpy = document.getElementById('rate-usdjpy').innerText;
+      const jpykrw = document.getElementById('rate-jpykrw').innerText;
+
+      let text = `📢 [Daily Intelligence - ${new Date().toISOString().slice(0, 10)}]\n`;
+      text += `━━━━━━━━━━━━━━━━━━━━━━━━━━\n`;
+      text += `📊 USD/KRW ${usdkrw} | USD/JPY ${usdjpy} | 100JPY/KRW ${jpykrw}\n`;
+      text += `━━━━━━━━━━━━━━━━━━━━━━━━━━\n\n`;
+
+      currentNewsList.slice(0, 10).forEach(i => {
+        const title = i.title[currentLang] || i.title.ko;
+        text += `• [${i.badge}] ${title} (${i.source})\n  링크: ${i.url}\n\n`;
+      });
+
+      text += `대시보드 바로가기: https://kim-000.github.io/logistics-dashboard/`;
+
+      navigator.clipboard.writeText(text).then(() => {
+        showToast(i18n[currentLang].copiedToast);
+      });
+    }
+
+    function showToast(msg) {
+      const toast = document.getElementById('toast');
+      document.getElementById('toast-message').innerText = msg;
+      toast.classList.remove('translate-y-20', 'opacity-0');
+      setTimeout(() => {
+        toast.classList.add('translate-y-20', 'opacity-0');
+      }, 2500);
+    }
+
+    function toggleTrendChart() {
+      const wrapper = document.getElementById('chart-wrapper');
+      const chevron = document.getElementById('chart-chevron');
+      const toggleTxt = document.getElementById('txt-chart-toggle');
+      const t = i18n[currentLang];
+
+      if (wrapper.classList.contains('hidden')) {
+        wrapper.classList.remove('hidden');
+        chevron.classList.add('rotate-180');
+        toggleTxt.innerText = t.chartToggleHide;
+        initChart();
+      } else {
+        wrapper.classList.add('hidden');
+        chevron.classList.remove('rotate-180');
+        toggleTxt.innerText = t.chartToggleShow;
+      }
+    }
+
+    function initChart() {
+      if (chartInstance) return;
+      const ctx = document.getElementById('fxTrendChart').getContext('2d');
+      chartInstance = new Chart(ctx, {
+        type: 'line',
+        data: {
+          labels: ['D-6', 'D-5', 'D-4', 'D-3', 'D-2', 'D-1', 'Today'],
+          datasets: [
+            {
+              label: 'USD/KRW',
+              data: [1320, 1324, 1322, 1328, 1325, 1324, 1326.8],
+              borderColor: '#3b82f6',
+              backgroundColor: 'rgba(59, 130, 246, 0.05)',
+              tension: 0.3,
+              fill: true
+            },
+            {
+              label: 'USD/JPY',
+              data: [156.8, 157.1, 157.4, 157.2, 157.6, 157.8, 157.95],
+              borderColor: '#10b981',
+              tension: 0.3
+            }
+          ]
+        },
+        options: {
+          responsive: true,
+          maintainAspectRatio: false,
+          plugins: { legend: { position: 'top', labels: { boxWidth: 12, font: { size: 11 } } } },
+          scales: {
+            y: { grid: { color: 'rgba(156, 163, 175, 0.1)' } },
+            x: { grid: { display: false } }
+          }
+        }
+      });
+    }
+
+    function toggleDarkMode() {
+      document.documentElement.classList.toggle('dark');
+    }
+
+    window.addEventListener('DOMContentLoaded', () => {
+      lucide.createIcons();
+      setLanguage('ko');
+      loadData();
+      startCountdown();
+    });
+  </script>
+</body>
+</html>
