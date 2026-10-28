@@ -1,0 +1,138 @@
+{
+  "last_updated": "2026-10-28 14:47 KST/JST",
+  "fx": {
+    "usd_krw": 1326.81,
+    "usd_jpy": 157.89,
+    "jpy_100_krw": 840.34
+  },
+  "news": {
+    "logistics": [
+      {
+        "title": "WTO 균열에 글로벌 물류질서 흔들…‘디지털 관세 장벽’ 비상, 해운·항만 공급망 블록화 덮친다",
+        "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTE5WTHY1OE14SU9TQVBnMGJZZlRsRGlEMzBmUERETGxRNXdLRnlyOTU3LS1NOVdELV9KNTNpek9FVGs5aGhLZnFWSHZhUTBMZEptN1NhM09VWTlKSGdzOUM2cFlOOGxWUlJyaTFZ?oc=5",
+        "pubDate": "Fri, 08 May 2026",
+        "source": "해사신문"
+      },
+      {
+        "title": "한국관세무역개발원, 교육·복지·재난까지 사회공헌 확대",
+        "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTE5Na2hfN21RSjQyWFBFektjbkpWMUlyOGp1YW9YNlBkbHFNY1NrVktBb0Q1STI0T2VWakx1TUhTbWxrSWVCQ0hqUXF1el9yVzBjeDVieGdsX0dseTNhNFZrLW8wRThzT25USWM0?oc=5",
+        "pubDate": "Thu, 10 Sep 2026",
+        "source": "물류신문"
+      },
+      {
+        "title": "美 의존 줄이는 글로벌 교역 구조…'인도 18% 관세' 영향 주목",
+        "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE1hQ2hEcXNod0oxTjh0Y3BLZm42c3haNzUxczZfejg2bGdOUjVFdm9EWEJwZmFxRXM5eTcweUd4YUFtelYyOG9oUHhUQk1ZbEJVOXp2blpOWV8tQnRuOWx1NTBzYzFTeE0?oc=5",
+        "pubDate": "Tue, 10 Feb 2026",
+        "source": "현대해양"
+      },
+      {
+        "title": "美, 철강 파생제품 관세 전면 개편… 물류시장 ‘직격탄’",
+        "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTFB6NTY1TEtHLUotYklRMUZOQ0dBVlNMTFRKdktwV29remZLZEdXZFJMQk4tR1FqaGVDdjliVXpPSUxobjVzWVotV3UzWmxiUFVRQjRjMlJoRjg2MEUzNmJxcnhSaEE0VWt4Sjlz?oc=5",
+        "pubDate": "Wed, 08 Jul 2026",
+        "source": "물류신문"
+      },
+      {
+        "title": "해운, \"정치적으로도 중요해졌다\"...미중 관세 불확실성 해소 따른 수혜 주목, 한달 만에 분위기 반전",
+        "link": "https://news.google.com/rss/articles/CBMic0FVX3lxTE1NZklYNTJvUzlscmEzdlhlbFJOVk1VTHN0MXQ5YnZTOUZjenpJTzRfS2FuVXVaMlNEQlRwSGNKRHJJcFF5dHRBYW1CcVM3M3JaSVhJRzdXY3FqMm9PMzhPM0kwYWV6Vm16MnVTc3RtYmVOMUk?oc=5",
+        "pubDate": "Thu, 30 Oct 2025",
+        "source": "쉬핑뉴스넷"
+      }
+    ],
+    "japan_domestic": [
+      {
+        "title": "米中間選挙、勝つのは共和か民主か 特派員3人が現地から速報中継",
+        "link": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE9IbzZ3VjlxTjAta0VjdC1DbE1ubW5OaXI0cEw0alJmekFQM3ptY3gtel9TWkJXU3dvVVlCVFRLYUdhY0ZTLUg3X3dNbURBOW1ZWXJDQ1hCbmw4a3c?oc=5",
+        "pubDate": "Wed, 28 Oct 2026",
+        "source": "日本経済新聞"
+      },
+      {
+        "title": "米連邦選挙委にサイバー攻撃 中間選挙投票には影響せず、ロイター報道",
+        "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTFBtRzN2ZFEwR2w5NEYxZkYxRi0zeDJDRHRhX3NJRmNwb081VFlKZWk5OVZhUnBCaVVadXh4c2x6RHhDbktsbVlXVEtKOWh0Q0g1bTdrbXYzcFRoSHBfbVJ2QThHSnZJOFNFWmg4aQ?oc=5",
+        "pubDate": "Wed, 28 Oct 2026",
+        "source": "日本経済新聞"
+      },
+      {
+        "title": "中国・魔都の闇に消えた「倒れぬ男」、力持つ大物経済官僚OBに警告",
+        "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE1DeXZVYXlGT3FQem9NT195R0I1dTNZLWxqd3RzcHBYMDJxNHdtOW1NbnpmV3gxcWhiNWFjV2szdC1PeThkSEFYbmtxXzNSR1N5X3FzbTdxblJrTUpkRk1xWFVOTkRiN2daTnhxMQ?oc=5",
+        "pubDate": "Tue, 27 Oct 2026",
+        "source": "日本経済新聞"
+      },
+      {
+        "title": "イベントカレンダー『各国の主要政治・経済イベント予定』(2026年9月号) | 阿原 健一郎 | 第一ライフ資産運用経済研究所",
+        "link": "https://news.google.com/rss/articles/CBMiWkFVX3lxTFA2dzhZMVNrNGp2TmZqRDlWc2MxUjZGNEMxSGgzb1BSVWw4bjNTR3ZJYnk3SWRQa0RVeFVILXZhT0Z5ZzlzMWE1WHFjNGpMWlZ3Qy1CcTlGaFBGZw?oc=5",
+        "pubDate": "Tue, 25 Aug 2026",
+        "source": "第一ライフ資産運用経済研究所"
+      },
+      {
+        "title": "イスラエル総選挙、与野党接戦 出口調査はネタニヤフ与党第1党",
+        "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE56eVhPdlhaMV95ckhXbnhhakhPWGtNdHE2ZExyMmZJdjhQY0VYM2NzaHBVWlhpUmxnalFTQldVc3dxbFVoajFXMWlDRngtdGJhb29uSENuaEdIVWxueUdEQVpjQS0teWZ4clA1Sw?oc=5",
+        "pubDate": "Tue, 27 Oct 2026",
+        "source": "日本経済新聞"
+      }
+    ],
+    "japan_visa": [
+      {
+        "title": "宿泊分野特定技能・育成就労協議会",
+        "link": "https://news.google.com/rss/articles/CBMixgFBVV95cUxOc2Y1WDNWWkhkc1lLS19uaTZ6czJYOEE0ZmpNVTNDWWp3eDNERk9xenZGZGFLX2xoTG5ZRVhLX1JFTW9UbWJuSDN6TGg1SFpFR0YxVjA2R2tJcV9wX3phU1A3dHdqX2tOUW5NUGQ0R0RNdk1RTVdNMjZ6UDNmZUhMYmx6dE1mMW5oWWFoSk14bkRoUzNjd1puNUpRVXdNY1hyX2pOQ1YyVENPdkdoWjBzZEhRSng0TjVJeXU2VGZHZUw2Q1pBOWc?oc=5",
+        "pubDate": "Thu, 22 Oct 2026",
+        "source": "国土交通省"
+      },
+      {
+        "title": "特定技能の外国人、「給食」受け入れを別分野で再開へ 政府が運用案 [外国人政策 高市早苗総理 自民党]",
+        "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTFA5VWNJeS1OVkNGTmJDTHNrdWFpNWxoOUw5REJtUlpVR1h2Y3NtRkRpRTRmVm4tbnNlQUFlYndqdzBWbWVZdWZRX2YwVlRMY2Q5VGk4WjlBaHFtNG9kWkJvQUZPbmZSZk0?oc=5",
+        "pubDate": "Mon, 19 Oct 2026",
+        "source": "朝日新聞"
+      },
+      {
+        "title": "外国人労働者の特定技能１号、給食業務の受け入れ再開へ…「外食」分野から「飲食料品製造」に変更（読売新聞オンライン）",
+        "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTE9yVVdXT0FKREZQWThNY0RLSDg1RlowNGxTRWE5d3llZ0NGZTJFMTRlamkzT3lucmpUckN4YkNGbmdHMDNreUE1VE8yUmJ0M0JzSk5JMDYzRUNucUE4Q0pUV2hQMWVQbXNZcEVpR3hFWkhnRHg3Y0twS2JXdTFpX0k?oc=5",
+        "pubDate": "Mon, 19 Oct 2026",
+        "source": "Yahoo!ニュース"
+      },
+      {
+        "title": "プレスリリース：［自動車運送業分野］ウズベキスタン共和国内閣府移民庁経由、初の特定技能ドライバー（5名）に在留資格認定証明書（COE）が交付（PR TIMES）",
+        "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTFA0U2tLdVRpWjR0aWdRd28zRC1HeGk1bGZiWGhSZUkyVWszemN1UktpRVpLSFZKMFRDTjFiZWl0bFFVQlZsd2Vhc05kUk9uWHM5SFFFU1VlM3FScU1GYmJPZ3ZaWThUa0g5?oc=5",
+        "pubDate": "Wed, 14 Oct 2026",
+        "source": "毎日新聞"
+      },
+      {
+        "title": "特定技能２号に「在留５年」 政府、来年１月施行方針：時事ドットコム",
+        "link": "https://news.google.com/rss/articles/CBMiY0FVX3lxTFByN0VnMnh4cmd3VjdEbDh2ZTRGMm0tUmM3d2swdEY5X0Q3UEJ6X25UNXpRaDZfYllMeG9INzdXSVdFNkVHZk9qWGNRQnczVWthek1IU25RUElzZDByVHJJeUxMVQ?oc=5",
+        "pubDate": "Tue, 04 Aug 2026",
+        "source": "時事ドットコム"
+      }
+    ],
+    "global": [
+      {
+        "title": "[경제포커스] 2026년 경상수지 흑자 상위 10개국…1위 중국, 2위 한국",
+        "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTFB0bHpYMGVFZXdhTVBwcEd5TnJRM0lMRzI4QTZQMENOWjVrOXRlcHBEaW14eHZiV3dERHd5dzljVjV5d3RIc081RmY4VWxzbHNEeG1uNjU0X0ZkU3pwSTk1RjJFallock5ET2RoaVRB?oc=5",
+        "pubDate": "Wed, 28 Oct 2026",
+        "source": "미디어인뉴스"
+      },
+      {
+        "title": "아우디, 美 첫 생산공장 설립 추진…40억달러 투자",
+        "link": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE5UTVk2NXgxbVpoWkVPQVFTaEJiOUNkZi1zZm5nRWtDTFByN21OcUVySnBBOHp1Slp2X0lxRGFUU2g4N05wbnlmazI4aEVXN3VWRG5pU3ZSM3F5cmgtUXRscFc2ZUs?oc=5",
+        "pubDate": "Mon, 26 Oct 2026",
+        "source": "매일일보"
+      },
+      {
+        "title": "[산업종합저널 | INDUSTRY SIGNAL] 외환보유액 4,405억弗 축소 속 대미 수출 쏠림…글로벌 금리·환율 변동성 대응 분수령",
+        "link": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE82S0dkTEVnRG9RcGg3a2tydWhiV1JfQ1B4V3hlYnVUaG1kTG9hODVjVGNQWU9Kaldtc3hzVmtLSEhSeHRtZW9DVjczQmJRLTlUREhz?oc=5",
+        "pubDate": "Wed, 07 Oct 2026",
+        "source": "산업종합저널"
+      },
+      {
+        "title": "인천중기청, “수출자금 조달과 환리스크 관리“ 세미나 개최",
+        "link": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE5YT2laMU43ZnNYUmkzX24tbDRtTzcxTExQN2Y5SUQ2S3JQRkVkNkdKNWdIVlpPUjIzZ2NBZ2xWR2RZWmNZTWtOWGY1dElpeW94bW9tN185YTNSYlUzWDZOazBJa0VvZw?oc=5",
+        "pubDate": "Fri, 16 Oct 2026",
+        "source": "한국미디어뉴스"
+      },
+      {
+        "title": "창원상의, 경남 수출기업 리스크 대응 '찾아가는 FTA·통상데스크' 개최",
+        "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTE90bDBjSUJkN1BISmk1SVY2U2RuUExIVXA5dFZvamhFMWtMMXVvTG92aGd6aFRCTHV5SWtiOC1IVWJuREtCeXJLRFJ2dVItZUZ1TU9ISF9lcXJMM0syNnlNOGZ4NEFzMWtlcWFR?oc=5",
+        "pubDate": "Tue, 15 Sep 2026",
+        "source": "경남일보"
+      }
+    ]
+  }
+}
