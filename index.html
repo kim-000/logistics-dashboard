@@ -91,7 +91,7 @@
     </div>
   </header>
 
-  <!-- CARGONAVI STYLE RAPID TRACKING MODULE (QR 제거 및 AWB 번호 자동 복사 탑재) -->
+  <!-- CARGONAVI STYLE RAPID TRACKING MODULE (cargonavi.com 실시간 직결 연동) -->
   <section class="bg-gradient-to-r from-slate-900 via-slate-850 to-indigo-950 text-white border-b border-slate-800 shadow-md">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-3.5">
       <div class="grid grid-cols-1 lg:grid-cols-2 gap-4 items-center">
@@ -135,7 +135,7 @@
           </div>
         </div>
 
-        <!-- 航空 RapidTrack 国際エアカーゴ追跡 (cargonavi.com 카피 & 트랙 방식) -->
+        <!-- 航空 RapidTrack 国際エアカーゴ追跡 (cargonavi.com 완전 일치) -->
         <div class="bg-white/10 dark:bg-white/5 backdrop-blur-md p-3 rounded-xl border border-white/10 flex flex-col sm:flex-row items-center gap-2.5">
           <div class="flex items-center space-x-2 text-amber-400 shrink-0">
             <i data-lucide="plane-takeoff" class="w-5 h-5"></i>
@@ -150,7 +150,7 @@
           </div>
 
           <div class="flex items-center space-x-1 shrink-0 w-full sm:w-auto justify-end">
-            <button onclick="trackAirCargo()" class="px-3 py-1.5 bg-amber-500 hover:bg-amber-400 text-slate-950 rounded-lg text-xs font-bold transition flex items-center space-x-1 shadow-xs">
+            <button onclick="trackAirCargo()" class="px-3.5 py-1.5 bg-amber-500 hover:bg-amber-400 text-slate-950 rounded-lg text-xs font-bold transition flex items-center space-x-1 shadow-xs">
               <i data-lucide="search" class="w-3.5 h-3.5"></i>
               <span>Track</span>
             </button>
@@ -361,13 +361,13 @@
 
   <script>
     // ----------------------------------------------------
-    // CARGONAVI STYLE RAPID TRACKING LOGIC (복사 + 화물직접조회)
+    // CARGONAVI STYLE RAPID TRACKING LOGIC (완전 일치)
     // ----------------------------------------------------
     function clearInput(id) {
       document.getElementById(id).value = '';
     }
 
-    // 1. 해상 컨테이너선 M B/L 추적 (B/L 자동 복사 + 선사별 화물 트래킹 직결)
+    // 1. 해상 M B/L / Container 추적
     function trackOceanCargo() {
       const bl = document.getElementById('ocean-bl-input').value.trim();
       const carrier = document.getElementById('tracking-carrier').value;
@@ -376,9 +376,8 @@
         return;
       }
 
-      // 클립보드에 B/L 번호 복사
       navigator.clipboard.writeText(bl);
-      showToast(`B/L 번호 복사 완료: ${bl}`);
+      showToast(`B/L 번호 복사됨: ${bl}`);
 
       const carrierUrls = {
         ONE: `https://ecomm.one-line.com/one-ecom/manage-shipment/cargo-tracking?quickSearchType=BL&quickSearchNumber=${encodeURIComponent(bl)}`,
@@ -402,7 +401,7 @@
       }
     }
 
-    // 2. 항공화물 M AWB RapidTrack 추적 (cargonavi.com 직결 + 번호 자동복사)
+    // 2. 항공화물 M AWB RapidTrack 추적 (cargonavi.com 완전 일치: 뒤 8자리 자동 복사 + Track-Trace 실시간 직결)
     function trackAirCargo() {
       let rawInput = document.getElementById('air-awb-input').value.trim();
       let cleanAwb = rawInput.replace(/[^0-9]/g, '');
@@ -411,31 +410,14 @@
         return;
       }
 
-      const prefix = cleanAwb.substring(0, 3);
+      // 일련번호 8자리를 클립보드에 자동 복사
       const serial = cleanAwb.substring(3);
-      const formattedAwb = `${prefix}-${serial}`;
-
-      // AWB 번호를 클립보드에 자동 복사 (cargonavi 스타일)
       navigator.clipboard.writeText(serial).catch(() => {});
-      showToast(`AWB 번호 복사됨: ${serial}`);
+      showToast(`일련번호 [${serial}] 복사 완료`);
 
-      // 카고나비(cargonavi)와 동일하게 전세계 화물 Track-Trace 직결 + 주요 항공사 전용 화물 트래킹
-      // 스케줄(여객)이 아닌 실제 "화물 추적" 페이지로 연결
-      const airlineCargoTrackers = {
-        '160': `https://www.cathaycargo.com/ko-kr/manage/track-your-shipment.html?awbPrefix=160&awbNumber=${serial}`, // 캐세이퍼시픽 화물추적 직링크
-        '180': `https://cargo.koreanair.com/ko/tracking?awbNo=180${serial}`, // 대한항공 화물추적 직링크
-        '988': `https://www.asianacargo.com/tracking/awbTracking.do`, // 아시아나 화물추적
-        '131': `https://www.jal.co.jp/jalcargo/inter/`, // JAL 화물
-        '205': `https://www.anacargo.jp/ja/int/`, // ANA 화물
-        '618': `https://www.siacargo.com/` // 싱가포르항공 화물
-      };
-
-      if (airlineCargoTrackers[prefix]) {
-        window.open(airlineCargoTrackers[prefix], '_blank');
-      } else {
-        // 기타 모든 항공사: Track-Trace Cargo 시스템으로 다이렉트 AWB 파라미터 전달
-        window.open(`https://www.track-trace.com/aircargo?number=${encodeURIComponent(cleanAwb)}`, '_blank');
-      }
+      // cargonavi와 동일하게 track-trace aircargo로 다이렉트 전송
+      const targetUrl = `https://www.track-trace.com/aircargo?number=${encodeURIComponent(cleanAwb)}`;
+      window.open(targetUrl, '_blank');
     }
 
     // ----------------------------------------------------
