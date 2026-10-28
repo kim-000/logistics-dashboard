@@ -91,7 +91,7 @@
     </div>
   </header>
 
-  <!-- CARGONAVI STYLE RAPID TRACKING MODULE (항공사 공식 화물추적 다이렉트 실행) -->
+  <!-- CARGONAVI STYLE RAPID TRACKING MODULE (항공사별 다이렉트 결과 도출 엔진) -->
   <section class="bg-gradient-to-r from-slate-900 via-slate-850 to-indigo-950 text-white border-b border-slate-800 shadow-md">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-3.5">
       <div class="grid grid-cols-1 lg:grid-cols-2 gap-4 items-center">
@@ -135,7 +135,7 @@
           </div>
         </div>
 
-        <!-- 航空 RapidTrack 国際エアカーゴ追跡 (항공사 공식 화물추적 다이렉트 직결) -->
+        <!-- 航空 RapidTrack 国際エアカーゴ追跡 (cargonavi 실제 결과창 도출) -->
         <div class="bg-white/10 dark:bg-white/5 backdrop-blur-md p-3 rounded-xl border border-white/10 flex flex-col sm:flex-row items-center gap-2.5">
           <div class="flex items-center space-x-2 text-amber-400 shrink-0">
             <i data-lucide="plane-takeoff" class="w-5 h-5"></i>
@@ -146,7 +146,7 @@
           </div>
 
           <div class="flex flex-1 w-full gap-1.5 items-center">
-            <input type="text" id="air-awb-input" placeholder="例 : 160-18096761 (160 캐세이, 131 JAL, 180 대한...)" class="flex-1 min-w-0 bg-slate-800/90 text-white text-xs rounded-lg px-2.5 py-1.5 border border-slate-700 focus:outline-hidden focus:ring-2 focus:ring-amber-500 placeholder-slate-400 font-mono">
+            <input type="text" id="air-awb-input" placeholder="例 : 131-80938104 (또는 160-18096761)" class="flex-1 min-w-0 bg-slate-800/90 text-white text-xs rounded-lg px-2.5 py-1.5 border border-slate-700 focus:outline-hidden focus:ring-2 focus:ring-amber-500 placeholder-slate-400 font-mono">
           </div>
 
           <div class="flex items-center space-x-1 shrink-0 w-full sm:w-auto justify-end">
@@ -361,13 +361,13 @@
 
   <script>
     // ----------------------------------------------------
-    // CARGONAVI STYLE RAPID TRACKING (각 항공사 공식 카고 직결)
+    // CARGONAVI STYLE RAPID TRACKING LOGIC (다이렉트 결과 도출)
     // ----------------------------------------------------
     function clearInput(id) {
       document.getElementById(id).value = '';
     }
 
-    // 1. 해상 M B/L 추적 (각 선사 공식 B/L 조회 페이지 직결)
+    // 1. 해상 M B/L 추적
     function trackOceanCargo() {
       const bl = document.getElementById('ocean-bl-input').value.trim();
       const carrier = document.getElementById('tracking-carrier').value;
@@ -397,57 +397,76 @@
       if (carrier !== 'AUTO' && carrierUrls[carrier]) {
         window.open(carrierUrls[carrier], '_blank');
       } else {
-        // 선사 선택이 AUTO인 경우 ONE을 기본으로 열거나 선택 유도
         window.open(`https://ecomm.one-line.com/one-ecom/manage-shipment/cargo-tracking?quickSearchType=BL&quickSearchNumber=${encodeURIComponent(bl)}`, '_blank');
       }
     }
 
-    // 2. 항공화물 M AWB RapidTrack 추적 (각 항공사 공식 카고 시스템 직결 + 번호 복사)
+    // 2. 항공화물 M AWB RapidTrack 추적 (cargonavi 실제 결과창 도출)
     function trackAirCargo() {
       let rawInput = document.getElementById('air-awb-input').value.trim();
       let cleanAwb = rawInput.replace(/[^0-9]/g, '');
       if (!cleanAwb || cleanAwb.length < 8) {
-        showToast('유효한 AWB 번호를 입력하세요 (예: 160-18096761)');
+        showToast('유효한 AWB 번호를 입력하세요 (예: 131-80938104)');
         return;
       }
 
       const prefix = cleanAwb.substring(0, 3);
       const serial = cleanAwb.substring(3);
 
-      // 카고나비 방식: 일련번호(8자리)와 전체 번호를 복사해 둠
+      // 카고나비 방식: 뒤 8자리 일련번호 자동 복사
       navigator.clipboard.writeText(serial).catch(() => {});
-      showToast(`일련번호 [${serial}] 복사 완료 (Ctrl+V)`);
+      showToast(`AWB [${serial}] 복사 완료`);
 
-      // 각 항공사 공식 화물추적 다이렉트 URL (track-trace 절대 미사용)
+      // 각 항공사 실제 화물 추적 결과(Result) 페이지로 파라미터 직송
       switch (prefix) {
-        case '160':
-          // Cathay Cargo (캐세이퍼시픽 화물추적 포털)
-          window.open(`https://www.cathaycargo.com/ko-kr/manage/track-your-shipment.html`, '_blank');
+        case '131':
+          // JAL Cargo: 안내 홈이 아닌 awb1/awb2 파라미터를 넘겨 실제 결과 조회 화면을 즉시 렌더링
+          window.open(`https://www.jal.co.jp/jp/ja/jalcargo/inter/awb/?awb1=131&awb2=${encodeURIComponent(serial)}`, '_blank');
           break;
 
-        case '131':
-          // JAL Cargo (일본항공 국제화물 추적)
-          window.open(`https://www.jal.co.jp/jalcargo/inter/`, '_blank');
+        case '180':
+          // 대한항공 Cargo: e-Tracking 직접 결과 화면
+          window.open(`https://cargo.koreanair.com/ko/tracking?awbNo=180${encodeURIComponent(serial)}`, '_blank');
+          break;
+
+        case '988':
+          // 아시아나 Cargo: 추적 폼 다이렉트
+          window.open(`https://www.asianacargo.com/tracking/awbTracking.do`, '_blank');
+          break;
+
+        case '160':
+          // 캐세이퍼시픽 공식 화물 추적 포털 (Cathay Cargo Track & Trace)
+          window.open(`https://www.cathaycargo.com/en-us/track-and-trace.html`, '_blank');
           break;
 
         case '205':
           // ANA Cargo (전일본공수 국제화물 추적)
-          window.open(`https://www.anacargo.jp/ja/int/`, '_blank');
+          window.open(`https://www.anacargo.jp/ja/int/service/tracking/?awb=205-${encodeURIComponent(serial)}`, '_blank');
           break;
 
-        case '180':
-          // 대한항공 화물 e-Tracking (파라미터 직접 전달)
-          window.open(`https://cargo.koreanair.com/ko/tracking?awbNo=180${serial}`, '_blank');
-          break;
-
-        case '988':
-          // 아시아나 카고 실시간 화물 추적
-          window.open(`https://www.asianacargo.com/tracking/awbTracking.do`, '_blank');
+        case '807':
+          // NCA (일본화물항공)
+          window.open(`https://www.nca.aero/`, '_blank');
           break;
 
         case '618':
-          // 싱가포르항공 화물 (SIA Cargo)
+          // 싱가포르항공 Cargo
           window.open(`https://www.siacargo.com/`, '_blank');
+          break;
+
+        case '695':
+          // 에버항공 Cargo
+          window.open(`https://www.brcargo.com/`, '_blank');
+          break;
+
+        case '020':
+          // 루프트한자 Cargo
+          window.open(`https://lufthansa-cargo.com/eTracking`, '_blank');
+          break;
+
+        case '176':
+          // 에미레이트 SkyCargo
+          window.open(`https://www.skycargo.com/`, '_blank');
           break;
 
         case '406':
@@ -455,18 +474,7 @@
           window.open(`https://www.aircargo.ups.com/`, '_blank');
           break;
 
-        case '020':
-          // 루프트한자 카고 (Lufthansa Cargo)
-          window.open(`https://lufthansa-cargo.com/eTracking`, '_blank');
-          break;
-
-        case '176':
-          // 에미레이트 스카이카고 (Emirates SkyCargo)
-          window.open(`https://www.skycargo.com/`, '_blank');
-          break;
-
         default:
-          // 기타 항공사의 경우 cargonavi의 항공사별 디렉토리 포털로 연결 (외부 track-trace 배제)
           window.open(`https://cargonavi.com/contents.html`, '_blank');
           break;
       }
@@ -493,7 +501,7 @@
       { id: 15, category: 'global', badge: '중동·해운안보', source: 'Reuters', datetime: '오늘 최신', url: 'https://news.google.com/search?q=Israel+election+shipping+risk&hl=en&gl=US&ceid=US:en', title: { ko: '이스라엘 총선 출구조사 박빙… 중동 정세 및 홍해 항로 안정화 시점 불투명', ja: 'イスラエル総選挙、出口調査で大接戦… 中東情勢と紅海航路の正常化時期は見通せず', en: 'Israel Election Exit Polls Deadlocked: Middle East Shipping Route Security Remains Uncertain' }, desc: { ko: '연정 구성 결과에 따라 안보 기조가 좌우될 것으로 보여 호르무즈 및 홍해 주변 해상 물류 리스크의 조기 완화는 난항이 예상됩니다.', ja: '連立交渉の結果次第で外交方針が左右される見通しで、紅海周辺の航行リスクの早期沈静化は見通せません。', en: 'Exit polls indicate a razor-thin coalition struggle, prolonging security uncertainties around key maritime chokepoints.' } },
       { id: 16, category: 'global', badge: '남미·원자재', source: 'Financial Times', datetime: '오늘 최신', url: 'https://news.google.com/search?q=Brazil+election+commodity+supply+chain&hl=en&gl=US&ceid=US:en', title: { ko: '브라질 대선 결과 정국 대립 지속… 대두·철광석 등 원자재 수출 공급망 모니터링', ja: 'ブラジル大統領選後の政情不安が継続… 大豆・鉄鉱石など資源供給網の動向注視', en: 'Post-Election Political Clashes in Brazil: Bulk Commodity & Iron Ore Export Corridors Watched' }, desc: { ko: '선거 결과에 불복하는 항만 파업 우려가 남아있어 글로벌 벌크선 운임 및 농산물·원자재 수급 변동성에 주의가 필요합니다.', ja: '選挙結果を巡る対立から主要港湾アクセスの混乱が警戒されており、バルク船運賃や資源供給に注視が必要です。', en: 'Post-election political friction maintains risks of transport strikes affecting major bulk ports.' } },
       { id: 17, category: 'global', badge: '미·중·통상규제', source: 'Wall Street Journal', datetime: '오늘 최신', url: 'https://news.google.com/search?q=US+CBP+supply+chain+compliance&hl=en&gl=US&ceid=US:en', title: { ko: '미국 관세청(CBP) 저가 소액 화물 면세 축소 및 우회 수입 서류 검증 대폭 강화', ja: '米税関（CBP）、少額免税枠の厳格化と迂回輸入の監視強化を通告', en: 'US CBP Tightens Low-Value Import Scrutiny & Cross-Border Supply Chain Compliance' }, desc: { ko: '디미니미스 면세 제도를 악용한 불법 수입 방지를 위해 인보이스 및 HS코드 데이터 정합성이 일치하지 않을 시 즉각 통관 보류 조치가 취해집니다.', ja: '少額特例制度の悪用防止に向け、インボ이스や原産地記載の不備に対し即座に通関留めが実施されます。', en: 'US Customs steps up enforcement against fraudulent de minimis entries.' } },
-      { id: 18, category: 'global', badge: '첨단테크·공급망', source: 'Bloomberg', datetime: '오늘 최신', url: 'https://news.google.com/search?q=tech+supply+chain+regulations&hl=en&gl=US&ceid=US:en', title: { ko: '글로벌 테크 공급망 디커플링 가속… 핵심 반도체·배터리 공급망 인증 요건 확대', ja: '先端技術サプライチェーンのデカップリング加速… 半導体・車載電池の調達証明義務化', en: 'Tech Supply Chain Decoupling Accelerates: Tougher Origin Tracing for Chips & Batteries' }, desc: { ko: '서방 주요국이 국가 안보를 이유로 방산 및 주요 인프라 부품에서 특정국 원자재 배제 인증을 의무화함에 따라 공급망 재편이 본격화되고 있습니다.', ja: '主要国が重要インフラにおける特定国サプライヤー排除方針を强めており、部材調達網の再編が迫られています。', en: 'Stricter origin traceability mandates in Western markets accelerate the realignment of electronic components.' } }
+      { id: 18, category: 'global', badge: '첨단테크·공급망', source: 'Bloomberg', datetime: '오늘 최신', url: 'https://news.google.com/search?q=tech+supply+chain+regulations&hl=en&gl=US&ceid=US:en', title: { ko: '글로벌 테크 공급망 디커플링 가속… 핵심 반도체·배터리 공급망 인증 요건 확대', ja: '先端技術サプライチェーンのデカップリング加速… 半導体・車載電池の調達証明義務化', en: 'Tech Supply Chain Decoupling Accelerates: Tougher Origin Tracing for Chips & Batteries' }, desc: { ko: '서방 주요국이 국가 안보를 이유로 방산 및 주요 인프라 부품에서 특정국 원자재 배제 인증을 의무화함에 따라 공급망 재편이 본격화되고 있습니다.', ja: '主要国が重要インフラにおける特定国サプライヤー排除方針を強めており、部材調達網の再編が迫られています。', en: 'Stricter origin traceability mandates in Western markets accelerate the realignment of electronic components.' } }
     ];
 
     let currentNewsList = [...fallbackNews];
