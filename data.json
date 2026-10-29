@@ -1,9 +1,9 @@
 {
-  "last_updated": "2026-10-29 09:24 KST/JST",
+  "last_updated": "2026-10-29 18:36 KST/JST",
   "fx": {
-    "usd_krw": 1326.81,
-    "usd_jpy": 157.89,
-    "jpy_100_krw": 840.34
+    "usd_krw": 1340.24,
+    "usd_jpy": 157.91,
+    "jpy_100_krw": 848.74
   },
   "news": {
     "logistics": [
@@ -26,16 +26,16 @@
         "source": "현대해양"
       },
       {
+        "title": "미국 무역과 관세 리스크 지속...내년 물동량 감소와 물류 수요 약세 전망",
+        "link": "https://news.google.com/rss/articles/CBMic0FVX3lxTFA5YWJoZFNEQWYwUnppSU45b1pPSEhUWnpVcEdDS0tsMEI5b2JaSVFxZnE1dGJnU1NNUF9qNVNHUDlqQ0xTSDJ0aDN1YzVzSFBseHViOHpiUVlESEVZYjFDaEVHZi1NM0wxY3ozeDhHSXhSTmc?oc=5",
+        "pubDate": "Sat, 20 Dec 2025",
+        "source": "쉬핑뉴스넷"
+      },
+      {
         "title": "美, 철강 파생제품 관세 전면 개편… 물류시장 ‘직격탄’",
         "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTFB6NTY1TEtHLUotYklRMUZOQ0dBVlNMTFRKdktwV29remZLZEdXZFJMQk4tR1FqaGVDdjliVXpPSUxobjVzWVotV3UzWmxiUFVRQjRjMlJoRjg2MEUzNmJxcnhSaEE0VWt4Sjlz?oc=5",
         "pubDate": "Wed, 08 Jul 2026",
         "source": "물류신문"
-      },
-      {
-        "title": "해운, \"정치적으로도 중요해졌다\"...미중 관세 불확실성 해소 따른 수혜 주목, 한달 만에 분위기 반전",
-        "link": "https://news.google.com/rss/articles/CBMic0FVX3lxTE1NZklYNTJvUzlscmEzdlhlbFJOVk1VTHN0MXQ5YnZTOUZjenpJTzRfS2FuVXVaMlNEQlRwSGNKRHJJcFF5dHRBYW1CcVM3M3JaSVhJRzdXY3FqMm9PMzhPM0kwYWV6Vm16MnVTc3RtYmVOMUk?oc=5",
-        "pubDate": "Thu, 30 Oct 2025",
-        "source": "쉬핑뉴스넷"
       }
     ],
     "japan_domestic": [
@@ -46,15 +46,15 @@
         "source": "日本経済新聞"
       },
       {
-        "title": "非上場株の相続評価、自民決議案「白地から議論を」 国税庁案認めず",
-        "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTFBuY0tNQXhhT2hTc2FMSm4taHZaQ09Rc1RWcWxpeEV0RnlzZHFrZjlHb3RMZGdIV21NRnhXY1hwYklUSHpIRzlja3ZuYWNTclRsRmplMWtQMVJMM1R2bmFHMjVnZ0c4MWhmWExjaw?oc=5",
-        "pubDate": "Wed, 28 Oct 2026",
-        "source": "日本経済新聞"
+        "title": "日本経済研究センターと日本国際問題研究所が主催する第13回「富士山会合」の政治家対話セッション...",
+        "link": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE91NkxGZUVad1FOOWV1c09ta3RlcUF3Y3B0dlZ0M3hmbTdGRGdXWi15YXdOd09NRGFwMXFUaXgtTGR1S1RGbnNaZ3YyMHQtLXRnWU82N3A1SC1lV2dPR2Q0?oc=5",
+        "pubDate": "Mon, 26 Oct 2026",
+        "source": "選挙ドットコム"
       },
       {
-        "title": "28日の高市首相の動静",
-        "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTFBzTEZmVVVNMF9ucGNrTURraGJPcXFwQ3J3UnVZMVJ5WE5OZkU0OGxEc3FfMHBWNkZpRWJiTFBza3cyYVlRdV9YSzU0UkVRdHNTd2laMEx2RUxWZWxTQlpKdGg1eUNWWFdiczB1eA?oc=5",
-        "pubDate": "Wed, 28 Oct 2026",
+        "title": "新規上場企業・詳細データ",
+        "link": "https://news.google.com/rss/articles/CBMifkFVX3lxTE5NWUNEUUdyYWRGd0UxTENDcGx0RzIyOVBiV0plRy1zbVAwRF9sQ25WazQ3RXpELWk1b3lTS2ZEMjB3dmxfTGRCLTBvaWk4VVJ5T3RWMW1ESGJzTloyWHRKRVVZZkdoSGtXMU9rUkVjVUQ3X1BIb3ZINXhTMHE3Zw?oc=5",
+        "pubDate": "Thu, 29 Oct 2026",
         "source": "日本経済新聞"
       },
       {
@@ -64,10 +64,10 @@
         "source": "日本経済新聞"
       },
       {
-        "title": "資産格差に寄り添う政治を 階層対立の先鋭化に懸念",
-        "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTFBxc1VfamZYWi0wQTZkcjY1b3MwMnpsaXhZT0themFqVmZXNlZQWllwZVNuSHRuMnhseEdFa3RVa1RESnN4aGt1eTRZaXBBV2dpcmNheDY1aG5Qc0c3NzhTcDM3dElGaHhpRExUaQ?oc=5",
-        "pubDate": "Tue, 06 Oct 2026",
-        "source": "日本経済新聞"
+        "title": "#政治#日本経済#神奈川16区#自民党#政策",
+        "link": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE02Q29mNVZTQkduV0c5eW5SQ3plSnJyTXVvQXlyVU8xcENaQS1hUEt4YkRnSWROTzNESHpBYUg1bnQwejh4WnExM09fblBQaEVRNE93bHRDVzFWWVJtWnMw?oc=5",
+        "pubDate": "Thu, 22 Oct 2026",
+        "source": "選挙ドットコム"
       }
     ],
     "japan_visa": [
@@ -76,6 +76,12 @@
         "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTFA5VWNJeS1OVkNGTmJDTHNrdWFpNWxoOUw5REJtUlpVR1h2Y3NtRkRpRTRmVm4tbnNlQUFlYndqdzBWbWVZdWZRX2YwVlRMY2Q5VGk4WjlBaHFtNG9kWkJvQUZPbmZSZk0?oc=5",
         "pubDate": "Mon, 19 Oct 2026",
         "source": "朝日新聞"
+      },
+      {
+        "title": "外国人労働者の特定技能１号、給食業務の受け入れ再開へ…「外食」分野から「飲食料品製造」に変更（読売新聞オンライン）",
+        "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTE9yVVdXT0FKREZQWThNY0RLSDg1RlowNGxTRWE5d3llZ0NGZTJFMTRlamkzT3lucmpUckN4YkNGbmdHMDNreUE1VE8yUmJ0M0JzSk5JMDYzRUNucUE4Q0pUV2hQMWVQbXNZcEVpR3hFWkhnRHg3Y0twS2JXdTFpX0k?oc=5",
+        "pubDate": "Mon, 19 Oct 2026",
+        "source": "Yahoo!ニュース"
       },
       {
         "title": "特定技能２号に「在留５年」 政府、来年１月施行方針：時事ドットコム",
@@ -90,16 +96,10 @@
         "source": "国土交通省"
       },
       {
-        "title": "在留資格厳格化「資本金3000万円」の根拠は――店舗契約、労働力に影響も #日本社会と外国人",
-        "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTE84OVM1UXpBZnFIRWhVcnpNV1JjTkJsLWNaSHhvMFBza0UzT2doWG91T2hWMEpZMS1Xb0JISVQyMFFRbHFNdE1Vd19GWHJhNlFCc2hSRkxOYVRVN1JTMXlWeXA0UnpDZmtYTkpJY3dCR3BhX0hYZjFwOFptLWYya2s?oc=5",
-        "pubDate": "Thu, 13 Aug 2026",
-        "source": "Yahoo!ニュース"
-      },
-      {
-        "title": "飲食店が苦境“在留資格”厳格化で閉店相次ぐ“特定技能”上限で外国人受け入れ停止",
-        "link": "https://news.google.com/rss/articles/CBMickFVX3lxTFBoUEIweEkwTUlDTFZpbjFGOTdMUEdqdWlvaUhXakh1ZGJUc0xqOWNJdU5mTF9mNkc5b3QtUFV4ZVlvdkJNVTJKOVdia3JpWldIRE5pekc1UW0zb2FuYmM3TGJwY1JESUo0ZFBJaXZnaWQwZw?oc=5",
-        "pubDate": "Sat, 09 May 2026",
-        "source": "テレ朝NEWS"
+        "title": "プレスリリース：［自動車運送業分野］ウズベキスタン共和国内閣府移民庁経由、初の特定技能ドライバー（5名）に在留資格認定証明書（COE）が交付（PR TIMES）",
+        "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTFA0U2tLdVRpWjR0aWdRd28zRC1HeGk1bGZiWGhSZUkyVWszemN1UktpRVpLSFZKMFRDTjFiZWl0bFFVQlZsd2Vhc05kUk9uWHM5SFFFU1VlM3FScU1GYmJPZ3ZaWThUa0g5?oc=5",
+        "pubDate": "Wed, 14 Oct 2026",
+        "source": "毎日新聞"
       }
     ],
     "global": [
@@ -110,28 +110,28 @@
         "source": "뉴시스"
       },
       {
-        "title": "[산업종합저널 | INDUSTRY SIGNAL] 외환보유액 4,405억弗 축소 속 대미 수출 쏠림…글로벌 금리·환율 변동성 대응 분수령",
-        "link": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE82S0dkTEVnRG9RcGg3a2tydWhiV1JfQ1B4V3hlYnVUaG1kTG9hODVjVGNQWU9Kaldtc3hzVmtLSEhSeHRtZW9DVjczQmJRLTlUREhz?oc=5",
-        "pubDate": "Wed, 07 Oct 2026",
-        "source": "산업종합저널"
+        "title": "[경제포커스] 2026년 경상수지 흑자 상위 10개국…1위 중국, 2위 한국",
+        "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTFB0bHpYMGVFZXdhTVBwcEd5TnJRM0lMRzI4QTZQMENOWjVrOXRlcHBEaW14eHZiV3dERHd5dzljVjV5d3RIc081RmY4VWxzbHNEeG1uNjU0X0ZkU3pwSTk1RjJFallock5ET2RoaVRB?oc=5",
+        "pubDate": "Wed, 28 Oct 2026",
+        "source": "미디어인뉴스"
       },
       {
-        "title": "인천중기청, “수출자금 조달과 환리스크 관리“ 세미나 개최",
-        "link": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE5YT2laMU43ZnNYUmkzX24tbDRtTzcxTExQN2Y5SUQ2S3JQRkVkNkdKNWdIVlpPUjIzZ2NBZ2xWR2RZWmNZTWtOWGY1dElpeW94bW9tN185YTNSYlUzWDZOazBJa0VvZw?oc=5",
-        "pubDate": "Fri, 16 Oct 2026",
-        "source": "한국미디어뉴스"
+        "title": "아우디, 美 첫 생산공장 설립 추진…40억달러 투자",
+        "link": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE5UTVk2NXgxbVpoWkVPQVFTaEJiOUNkZi1zZm5nRWtDTFByN21OcUVySnBBOHp1Slp2X0lxRGFUU2g4N05wbnlmazI4aEVXN3VWRG5pU3ZSM3F5cmgtUXRscFc2ZUs?oc=5",
+        "pubDate": "Mon, 26 Oct 2026",
+        "source": "매일일보"
       },
       {
-        "title": "하나은행·SK하이닉스, 7,500억 쏜다…K-반도체 수출 ‘공급망 금융’ 가동",
-        "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTFBtVWlBTXJwVWdMeDVpMW9fb1hnejlQRzlET3drTVUzZkgzS21vTUhZOGFrR1c2cUhpVUltQ0NldDNHbnhvWXB1b1FiTV84Zk0tSHc0OEJ1WUlpWUtqOEV1cXJibnVnV1hrUzV4QdIBb0FVX3lxTFBmMHNDYmJJMnBpcl9GdDlrZ2NvRS1OVnd6aTUzaEZuaGpXRzFiNUd5czhWN0tCLTBNZlR6aThNdjNSOHhaRFZrcFJvZ042Mm5GNmRyNjkyZExib2x6TkgtRElLMmRocmtuTjZSbGJGTQ?oc=5",
-        "pubDate": "Tue, 20 Oct 2026",
-        "source": "뉴스로드"
+        "title": "[오늘의 브릿지경제 1면] 글로벌 공급망 다변화 급한데… CPTPP 가입, 부처간 이견 팽팽",
+        "link": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE43ejQ4bHgzbWVaYVNmeVV3ZHVxaFpMVzlIX2toVHRzc2NZVDJxamhWTXIzWW05YlF2Zm5vdDQyaGNiLXR6QVBRdDZVVE9vaWVWWVB6VnVBazZOZw?oc=5",
+        "pubDate": "Tue, 25 Aug 2026",
+        "source": "브릿지경제"
       },
       {
-        "title": "창원상의, 경남 수출기업 리스크 대응 '찾아가는 FTA·통상데스크' 개최",
-        "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTE90bDBjSUJkN1BISmk1SVY2U2RuUExIVXA5dFZvamhFMWtMMXVvTG92aGd6aFRCTHV5SWtiOC1IVWJuREtCeXJLRFJ2dVItZUZ1TU9ISF9lcXJMM0syNnlNOGZ4NEFzMWtlcWFR?oc=5",
-        "pubDate": "Tue, 15 Sep 2026",
-        "source": "경남일보"
+        "title": "[전문가 칼럼] 1,500원 시대…환율이 아닌 ‘신고 시점’을 보라",
+        "link": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE9HMWxGLWtiZWVrR2FmTGYwWWZuOXZDSWJYdGVaLXdEZXduakZmbnNSYnQ5UzdndWdENV9RS1d6bmtYR08wNmYySE5RX25ZNkJoa2hPTzYySVRuTEpjblRhczVuNA?oc=5",
+        "pubDate": "Thu, 16 Apr 2026",
+        "source": "조세금융신문"
       }
     ]
   }
