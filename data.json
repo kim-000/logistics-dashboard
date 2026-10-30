@@ -1,9 +1,9 @@
 {
-  "last_updated": "2026-10-30 09:25 KST/JST",
+  "last_updated": "2026-10-30 18:37 KST/JST",
   "fx": {
-    "usd_krw": 1340.24,
-    "usd_jpy": 157.91,
-    "jpy_100_krw": 848.74
+    "usd_krw": 1338.04,
+    "usd_jpy": 157.88,
+    "jpy_100_krw": 847.5
   },
   "news": {
     "logistics": [
@@ -32,50 +32,50 @@
         "source": "물류신문"
       },
       {
-        "title": "해운, \"정치적으로도 중요해졌다\"...미중 관세 불확실성 해소 따른 수혜 주목, 한달 만에 분위기 반전",
-        "link": "https://news.google.com/rss/articles/CBMic0FVX3lxTE1NZklYNTJvUzlscmEzdlhlbFJOVk1VTHN0MXQ5YnZTOUZjenpJTzRfS2FuVXVaMlNEQlRwSGNKRHJJcFF5dHRBYW1CcVM3M3JaSVhJRzdXY3FqMm9PMzhPM0kwYWV6Vm16MnVTc3RtYmVOMUk?oc=5",
-        "pubDate": "Thu, 30 Oct 2025",
-        "source": "쉬핑뉴스넷"
+        "title": "트럼프 관세 압박에 복잡해진 해운업계 셈법...“물류 전반 재편 나서야”",
+        "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTFBTVUd0RGQ1OGFkYThKWnhwREtMbmZwWGdMV3JFMERWX1FpSzJpR3RtQkRUM3JlelI0YW5nVTU2S3lQMmM4UmhKT2U5TWd4cjU3aDcwcWVaUFMxN1lJdGVkdkZTdTlmY3hZWGww0gFvQVVfeXFMTmVEaGR3UGlnUi1XSm1yc3lvTVkxX1Z5VGJ0Q3p6YjBQMlZUd2xEN25DU3BYUzJFc2tMZlJtaXVvWmhieWs4Z1BCSDRGUGJDUG5jczhuQTEwcllTQ2hzN3MwTmRlVnA0b0RyQm9EY2Y0?oc=5",
+        "pubDate": "Sun, 30 Mar 2025",
+        "source": "투데이신문"
       }
     ],
     "japan_domestic": [
       {
+        "title": "「中国経済を『ソ連病』がむしばんでいる」興梠一郎・神田外大教授",
+        "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTFBWZXJpUks2QTNwSFlYSXNZaEY3ZG8yMmhEOUN5NGxjRm5UWVlmQ1pSZkRsQk1lRVhIeHp1c2VxVnlkOTZtejdqV3pKeHJiUHE1eXZmbjV2SEU5MVNrRzh2R1RER3VPZXdkd29JNA?oc=5",
+        "pubDate": "Thu, 29 Oct 2026",
+        "source": "日本経済新聞"
+      },
+      {
+        "title": "高市首相のG7欠席は国力を損なう 「集団の名声」が外交の後ろ盾に",
+        "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE80aXAzVFJzeU84NW16bkxCZzBZLTU0d3FpMlg3bndKRTFNNFVNVDFnclExUi1TMjJoV2s0WDg3andkbElZQi1HdGlMcTlqUEdHS21RVDNDMnlSU25RbFdhaUtVTUFLVEpfOFVyYw?oc=5",
+        "pubDate": "Fri, 30 Oct 2026",
+        "source": "日本経済新聞"
+      },
+      {
+        "title": "日本経済研究センターと日本国際問題研究所が主催する第13回「富士山会合」の政治家対話セッション...",
+        "link": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE91NkxGZUVad1FOOWV1c09ta3RlcUF3Y3B0dlZ0M3hmbTdGRGdXWi15YXdOd09NRGFwMXFUaXgtTGR1S1RGbnNaZ3YyMHQtLXRnWU82N3A1SC1lV2dPR2Q0?oc=5",
+        "pubDate": "Mon, 26 Oct 2026",
+        "source": "選挙ドットコム"
+      },
+      {
+        "title": "故斉藤斗志二氏に従三位",
+        "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTFB0eDdMUXpjOUd0YTBiVjJfcmM2ZmVYVWw1bFdtR3Jjb0VQOGFHd0ExV2ZkU3ROSE15YzI5eFdITEJvTW9PX0hHTUZhS1NzTHRFWDRIMVNnNU05cy0zRzJIZW5fWm1Jd0tpLXBTVg?oc=5",
+        "pubDate": "Fri, 30 Oct 2026",
+        "source": "日本経済新聞"
+      },
+      {
         "title": "東アジアでうごめくもう一つの「終戦」工作、日本外しに警戒を",
         "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTFBYYmFWYUx3UGRHeGM4dEhVaUFGMmNhczRaVWE2c0NudG9KYXZfa2Y1V2R2LThXRTFCNDJvSXctelljaFV3Z3J5cXI5ZFpBOUVrUjE3el9DVldRcjZ5MWZFWC1FS3F6YXdQVUdZdQ?oc=5",
-        "pubDate": "Thu, 29 Oct 2026",
-        "source": "日本経済新聞"
-      },
-      {
-        "title": "アメリカ中間選挙、トランプ氏どう動く 日本への影響を専門家が予測",
-        "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE9pM2ZIV2JpaEg5X3ZWRW9ZR0hOTjNUNklmSTdKOEtuR2ktSE9zMThtZFlaS0VyOVFPRVFyUG5Xb21zZlhoRTNMbnd5TVJyVl9iTEdDbWFwcjM0a3AzMl9CcDZhNWZZMEZwU184dQ?oc=5",
-        "pubDate": "Thu, 29 Oct 2026",
-        "source": "日本経済新聞"
-      },
-      {
-        "title": "W杯や選挙｢結果当て小遣い稼ぎ｣ 新手のポイ活、利用の9割が10〜20代",
-        "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE15MUF4UmJSRmx6NDZJWFBHMzhTTmg4eWUtVXRfeUZXQVFueHdBZi1xT1c2Z0dUeG5EVExodmhCeVM2WTlZOUpmQXFIR3Y4dzB1MnNtM25raTRtdG11Y3hjaEgyb0IwYTZOdGw5cg?oc=5",
-        "pubDate": "Thu, 29 Oct 2026",
-        "source": "日本経済新聞"
-      },
-      {
-        "title": "イベントカレンダー『各国の主要政治・経済イベント予定』(2026年9月号) | 阿原 健一郎 | 第一ライフ資産運用経済研究所",
-        "link": "https://news.google.com/rss/articles/CBMiWkFVX3lxTFA2dzhZMVNrNGp2TmZqRDlWc2MxUjZGNEMxSGgzb1BSVWw4bjNTR3ZJYnk3SWRQa0RVeFVILXZhT0Z5ZzlzMWE1WHFjNGpMWlZ3Qy1CcTlGaFBGZw?oc=5",
-        "pubDate": "Tue, 25 Aug 2026",
-        "source": "第一ライフ資産運用経済研究所"
-      },
-      {
-        "title": "29日の高市首相の動静",
-        "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE8xMDNPT3hYcldiTUZsYUNSalJCU2dLc2tBZXBwU0JNTFQ1NWU5MHRyVlYyN3lCZWF4MVdOZU9SLWJ1aXY1LVQzNjRSSDRrakJ2ZnoyMEV3UzlHbUhySTV2d2xvX2xWLTduNnZyLQ?oc=5",
         "pubDate": "Thu, 29 Oct 2026",
         "source": "日本経済新聞"
       }
     ],
     "japan_visa": [
       {
-        "title": "特定技能の外国人、「給食」受け入れを別分野で再開へ 政府が運用案 [外国人政策 高市早苗総理 自民党]",
-        "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTFA5VWNJeS1OVkNGTmJDTHNrdWFpNWxoOUw5REJtUlpVR1h2Y3NtRkRpRTRmVm4tbnNlQUFlYndqdzBWbWVZdWZRX2YwVlRMY2Q5VGk4WjlBaHFtNG9kWkJvQUZPbmZSZk0?oc=5",
+        "title": "特定技能の外国人、「給食」受け入れを別分野で再開へ 政府が運用案（朝日新聞）",
+        "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTE1IUThzd0RjeXlwYjh5YzRCS1NkMTNUbnFhRk1PbGxLM29JcDYydG1aNjlGYmZ3UTRPSGx2dWVFWTRQMWRMREdjT2ttWkl4TFQzejlvZHllbnltSGtuT3BNRHJQZ1VpU09mX1N5UWpRWHpzNU5HWF9IMTVycGpGS1E?oc=5",
         "pubDate": "Mon, 19 Oct 2026",
-        "source": "朝日新聞"
+        "source": "Yahoo!ニュース"
       },
       {
         "title": "特定技能２号に「在留５年」 政府、来年１月施行方針：時事ドットコム",
@@ -90,10 +90,10 @@
         "source": "国土交通省"
       },
       {
-        "title": "在留資格厳格化「資本金3000万円」の根拠は――店舗契約、労働力に影響も #日本社会と外国人",
-        "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTE84OVM1UXpBZnFIRWhVcnpNV1JjTkJsLWNaSHhvMFBza0UzT2doWG91T2hWMEpZMS1Xb0JISVQyMFFRbHFNdE1Vd19GWHJhNlFCc2hSRkxOYVRVN1JTMXlWeXA0UnpDZmtYTkpJY3dCR3BhX0hYZjFwOFptLWYya2s?oc=5",
-        "pubDate": "Thu, 13 Aug 2026",
-        "source": "Yahoo!ニュース"
+        "title": "在留資格「特定技能」について (農業分野)",
+        "link": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE1nNHRwaU5CclIwMkw3cUIyMm1mLWJSX2VWeXBtU282SkdVS2NHMHdMTktoVXdXbGlTd21fVjRzU21jWFBQOVdQLS1rR2Fyb1JpWEFrSlR3YktJTTBmRUE?oc=5",
+        "pubDate": "Sat, 14 Dec 2019",
+        "source": "農林水産省"
       },
       {
         "title": "在留資格認定証明書の電子化について | 出入国在留管理庁",
