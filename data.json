@@ -1,9 +1,9 @@
 {
-  "last_updated": "2026-10-31 09:29 KST/JST",
+  "last_updated": "2026-10-31 18:27 KST/JST",
   "fx": {
-    "usd_krw": 1338.04,
-    "usd_jpy": 157.88,
-    "jpy_100_krw": 847.5
+    "usd_krw": 1334.51,
+    "usd_jpy": 157.49,
+    "jpy_100_krw": 847.36
   },
   "news": {
     "logistics": [
@@ -26,28 +26,34 @@
         "source": "현대해양"
       },
       {
+        "title": "UNCTAD, 2025 해상 물동량 성장률0.5% 전망",
+        "link": "https://news.google.com/rss/articles/CBMiTEFVX3lxTE1kdTQtMlhwc2VPOTRINDRiZW9sc29jYnFyU3VzVXBoUXN2VUprUkJsSmZQR2NaalhOR3pyMGRaSGU4TF8zc3gtWlQtUzY?oc=5",
+        "pubDate": "Wed, 30 Sep 2026",
+        "source": "브런치"
+      },
+      {
         "title": "美, 철강 파생제품 관세 전면 개편… 물류시장 ‘직격탄’",
         "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTFB6NTY1TEtHLUotYklRMUZOQ0dBVlNMTFRKdktwV29remZLZEdXZFJMQk4tR1FqaGVDdjliVXpPSUxobjVzWVotV3UzWmxiUFVRQjRjMlJoRjg2MEUzNmJxcnhSaEE0VWt4Sjlz?oc=5",
         "pubDate": "Wed, 08 Jul 2026",
         "source": "물류신문"
-      },
-      {
-        "title": "해운, \"정치적으로도 중요해졌다\"...미중 관세 불확실성 해소 따른 수혜 주목, 한달 만에 분위기 반전",
-        "link": "https://news.google.com/rss/articles/CBMic0FVX3lxTE1NZklYNTJvUzlscmEzdlhlbFJOVk1VTHN0MXQ5YnZTOUZjenpJTzRfS2FuVXVaMlNEQlRwSGNKRHJJcFF5dHRBYW1CcVM3M3JaSVhJRzdXY3FqMm9PMzhPM0kwYWV6Vm16MnVTc3RtYmVOMUk?oc=5",
-        "pubDate": "Thu, 30 Oct 2025",
-        "source": "쉬핑뉴스넷"
       }
     ],
     "japan_domestic": [
       {
-        "title": "トランプ政権の審判迫る 慶応義塾大学教授 土居丈朗",
-        "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE1EUmxCbWlMZzhwSGZlQVBXUjRpeXR6dGt4VG9jM01EZ1hFZWJlaHBrVDhBVlAtVVdORHlFeXJWWEVCUmVlVTB5UWFKM1IybEVTQXpNeEpCaUFnOWVkdkFIa0RHUHN2WUZ0cG0tNg?oc=5",
+        "title": "トランプ氏の資産､就任1年で5割増の3900億円 報告書から浮かぶ「錬金術」",
+        "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTFAyRzh3WWphQUdETmgzWUlHM3I4UnRhTzFjdm9pN1hXYlNwWjV5dGlUSEZya0VfZzVIcmVhcXRxN1FTMUY4T3RHVUZCTGNRd1NLYkhuMDVfU0hMR3gwZWRvRXlfN1VBVlpDZV9wdw?oc=5",
         "pubDate": "Fri, 30 Oct 2026",
         "source": "日本経済新聞"
       },
       {
-        "title": "書評『首都』ローベルト・メナッセ著",
-        "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE5CWDhsVDA0TnNrbTAzNDhpZ0RHMkhqMG91NTYtZTdpTWNzNzZjcGJXR0NNbV9ZSVViYkpWYkYzN0R6NVhWS0w5YXFfbm00eGZDaVl4cWdmR081NGFscE9FV2ZQd0trOF9FNEhwaQ?oc=5",
+        "title": "高市首相のG7欠席は国力を損なう 「集団の名声」が外交の後ろ盾に",
+        "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE80aXAzVFJzeU84NW16bkxCZzBZLTU0d3FpMlg3bndKRTFNNFVNVDFnclExUi1TMjJoV2s0WDg3andkbElZQi1HdGlMcTlqUEdHS21RVDNDMnlSU25RbFdhaUtVTUFLVEpfOFVyYw?oc=5",
+        "pubDate": "Fri, 30 Oct 2026",
+        "source": "日本経済新聞"
+      },
+      {
+        "title": "トランプ政権の審判迫る 慶応義塾大学教授 土居丈朗",
+        "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE1EUmxCbWlMZzhwSGZlQVBXUjRpeXR6dGt4VG9jM01EZ1hFZWJlaHBrVDhBVlAtVVdORHlFeXJWWEVCUmVlVTB5UWFKM1IybEVTQXpNeEpCaUFnOWVkdkFIa0RHUHN2WUZ0cG0tNg?oc=5",
         "pubDate": "Fri, 30 Oct 2026",
         "source": "日本経済新聞"
       },
@@ -58,14 +64,8 @@
         "source": "日本経済新聞"
       },
       {
-        "title": "日本が金正恩氏に刻んだトラウマ 高市首相、危うい「トランプ任せ」",
-        "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE5qMU5Oc0NFVkxzb3JKdWk3Wm01dHRJZTR3a0Y5V2NYT09rbmRtczFyeG1DWHNCWV9zZXBLXzRxMDBPS3NFTDRTYkFUODd1LXRIQzN6NnBWNzZaZ25LSGk4TUVuYkZ5MTZQQkRrYw?oc=5",
-        "pubDate": "Fri, 30 Oct 2026",
-        "source": "日本経済新聞"
-      },
-      {
-        "title": "高市首相のG7欠席は国力を損なう 「集団の名声」が外交の後ろ盾に",
-        "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE80aXAzVFJzeU84NW16bkxCZzBZLTU0d3FpMlg3bndKRTFNNFVNVDFnclExUi1TMjJoV2s0WDg3andkbElZQi1HdGlMcTlqUEdHS21RVDNDMnlSU25RbFdhaUtVTUFLVEpfOFVyYw?oc=5",
+        "title": "スイス外相、23年ぶり北朝鮮訪問 「政治対話」へ外交事務所",
+        "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE9vRlJQNGpPNlpYVjVvWWdMOXE0a3VwNjcxN2czYmpMLWdOd3BhX01rZ296N29LN182ZzZ2SWR2MEN5QmR1LW1zUW9zNTJQYkNNTW41Y3JVMlJHbEhVbkNQTUZyMFJLc0ZHaU92TQ?oc=5",
         "pubDate": "Fri, 30 Oct 2026",
         "source": "日本経済新聞"
       }
@@ -97,8 +97,8 @@
       },
       {
         "title": "在留資格認定証明書の電子化について | 出入国在留管理庁",
-        "link": "https://news.google.com/rss/articles/CBMizAFBVV95cUxOLWs2eU12cnBENU80eC1WU2ZUckowWmNyY0VxekxZTG9xR2ZYaHdXVUp5Q1VrZTE4RFhBTk5NWkZCa3FtclVKZUE3UnNFNXFiaU5GVXpKNEs5c3FPcTlKZ3lsY1VEbVVmTGNDSWVqWUpTVkJoR2ZWTVZDVEtCVlZVOHY0Tm5Yd2dGVnBheXZ0V3VfVWtmbks2c01MdVpLUk9yRHI4UHJIVi1zUFFtSUU5bkZNMkhvRjQ5bU5OXzNjeG00S2UzZDhrX1hMV00?oc=5",
-        "pubDate": "Sun, 23 Jul 2023",
+        "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTE9fNnRnOGVZYlJGRnkybTNaaGlXTW9mTkJXUzc5M0NoYmpObzA1dUxoSkx1YXlNa0VGckV3c0xRU1RHQUpTMlJfb1pLRG90Q2R4azdhbTZHaUpYWXB4OXdyS2RJLVBGSlIxVEgxMGVUSGQ?oc=5",
+        "pubDate": "Tue, 14 Mar 2023",
         "source": "法務省"
       }
     ],
