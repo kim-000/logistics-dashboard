@@ -1,9 +1,9 @@
 {
-  "last_updated": "2026-11-05 09:36 KST/JST",
+  "last_updated": "2026-11-05 18:46 KST/JST",
   "fx": {
-    "usd_krw": 1343.93,
-    "usd_jpy": 158.4,
-    "jpy_100_krw": 848.44
+    "usd_krw": 1340.31,
+    "usd_jpy": 158.38,
+    "jpy_100_krw": 846.26
   },
   "news": {
     "logistics": [
@@ -52,22 +52,22 @@
         "source": "Yahoo!ニュース"
       },
       {
-        "title": "日経MOOK『最新動向で読み解く 地政学リスクと経済安全保障』出版記念セミナー",
-        "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTE1CTXJHRnU0MEF4dWd6VktTbUlRMmdJZnNETk91VUliLXctSENZRjFaRjg5WEJiQWYxdU81Y3dHbmliSkJvZXdHRllGMGZUdFQ3bVRZYnU2YU9kWXdSQ3V4bVFmRDBaM0hoQnNDM1VxMWswcHZTczFMQ0t0NkVQdlk?oc=5",
+        "title": "どうなる中間選挙後の米経済、識者に聞く 「AI投資にむしろプラス」",
+        "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE9OM3B5QVpIZmdoZW8tUHUwMl9KSnRIZFBaa3NTaVVsOXVCNUR4aG11ZkRZSmljMmRnTHAxaWxRRjJyNGJpOERyWHNHb2luRmltN3g2eVh0QWpld0llMTczYkhDaHBCMGhEcEJlRg?oc=5",
         "pubDate": "Wed, 04 Nov 2026",
-        "source": "kpmg.com"
-      },
-      {
-        "title": "日経平均株価、一時400円高 米中間選挙で政治への警戒後退",
-        "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE5RY0VBTGV4QVVDVEpSeWNBRlhHNXpXaU0xWVVEOTNheDRiQUVza0xmblJOUmpJaW9NT0xucEgzUnZ3dEI2SC1rMmhpc19Ra3pxX3NxdVBNV19pZng4dVFyRzJVRTg3ZkEwNnlXQQ?oc=5",
-        "pubDate": "Thu, 05 Nov 2026",
         "source": "日本経済新聞"
       },
       {
-        "title": "共和党歴史的大敗の中で株大幅高",
-        "link": "https://news.google.com/rss/articles/CBMiVEFVX3lxTFAyYXpQeU94S0hESE16ZjVFc05HU2dOOVBQZ3pKSGEteWZLeFN6SE1sMDI1N3hKU0R4NVVpeVVudWEtWGFuN2xLeFBhWm84cWwyN3pJbw?oc=5",
+        "title": "明日は我が身のフランスの混乱 中空麻奈氏",
+        "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTFB1X1ZkMTM3N05FRFp3TkFWX0ZQbENJMHFlRFI2eFpGU2lTYUpQeUxHclU1Q2hGNGdmWlBtb2NUM1lMOWJCZ1ZLNU1KaHJMc0g1NS14ZTJjLWNqeHpXNmlFYUFlaWhHb21TTEJ2Ng?oc=5",
+        "pubDate": "Wed, 04 Nov 2026",
+        "source": "日本経済新聞"
+      },
+      {
+        "title": "米中間選挙、南部とラストベルトで「共和党離れ」 AIや関税に失望強く",
+        "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE15Yk0xTUVYS3hzVXZoOGo0d2pVXzcwb2Npb082bVRfQkRmTUU1dm5rckRuajgyYUVhY3FMSDlMbFJVZ2RjVDJWTUhoYUdZZFgtRjM2eXpjdUZNQ0dkMlVORHFFY0l2TkdHOHB2Zw?oc=5",
         "pubDate": "Thu, 05 Nov 2026",
-        "source": "日経CNBC online"
+        "source": "日本経済新聞"
       }
     ],
     "japan_visa": [
@@ -84,12 +84,6 @@
         "source": "wowKorea"
       },
       {
-        "title": "特定技能２号に「在留５年」 政府、来年１月施行方針：時事ドットコム",
-        "link": "https://news.google.com/rss/articles/CBMiY0FVX3lxTFByN0VnMnh4cmd3VjdEbDh2ZTRGMm0tUmM3d2swdEY5X0Q3UEJ6X25UNXpRaDZfYllMeG9INzdXSVdFNkVHZk9qWGNRQnczVWthek1IU25RUElzZDByVHJJeUxMVQ?oc=5",
-        "pubDate": "Tue, 04 Aug 2026",
-        "source": "時事ドットコム"
-      },
-      {
         "title": "在留資格厳格化「資本金3000万円」の根拠は――店舗契約、労働力に影響も #日本社会と外国人",
         "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTE84OVM1UXpBZnFIRWhVcnpNV1JjTkJsLWNaSHhvMFBza0UzT2doWG91T2hWMEpZMS1Xb0JISVQyMFFRbHFNdE1Vd19GWHJhNlFCc2hSRkxOYVRVN1JTMXlWeXA0UnpDZmtYTkpJY3dCR3BhX0hYZjFwOFptLWYya2s?oc=5",
         "pubDate": "Thu, 13 Aug 2026",
@@ -100,6 +94,12 @@
         "link": "https://news.google.com/rss/articles/CBMidEFVX3lxTE5FeDNXWE1OVlp0cmFFMjVMSXVPWGJkNWlXdEk4ZFdyZm10LWFLVzViNENoU1EydW82XzE3aVlDenc2bXptd21wMWVwMlBOZlpOUU9TUTFDQ1hETUNtX2wwMWtBZFpiVmFVUGdZa29MUmZtMl9k?oc=5",
         "pubDate": "Wed, 03 Jun 2026",
         "source": "国土交通省"
+      },
+      {
+        "title": "キルギスに関する情報 | 出入国在留管理庁",
+        "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE05N0h4V1c1NEVtTV9XWEZuamQyTHJPcW5EUjA4MTZIdzloNm90YzNPZ3BUU2JkMnp0Q0d5RERZNENZSFIzSnpjTVRnald6ZkgzMGx6TGo1d0EycG1yRG9BR1BaMDBETTA?oc=5",
+        "pubDate": "Tue, 14 Apr 2026",
+        "source": "法務省"
       }
     ],
     "global": [
