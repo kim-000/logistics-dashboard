@@ -1,18 +1,12 @@
 {
-  "last_updated": "2026-11-06 09:34 KST/JST",
+  "last_updated": "2026-11-06 18:50 KST/JST",
   "fx": {
-    "usd_krw": 1340.31,
-    "usd_jpy": 158.38,
-    "jpy_100_krw": 846.26
+    "usd_krw": 1347.69,
+    "usd_jpy": 157.84,
+    "jpy_100_krw": 853.83
   },
   "news": {
     "logistics": [
-      {
-        "title": "WTO 균열에 글로벌 물류질서 흔들…‘디지털 관세 장벽’ 비상, 해운·항만 공급망 블록화 덮친다",
-        "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTE5WTHY1OE14SU9TQVBnMGJZZlRsRGlEMzBmUERETGxRNXdLRnlyOTU3LS1NOVdELV9KNTNpek9FVGs5aGhLZnFWSHZhUTBMZEptN1NhM09VWTlKSGdzOUM2cFlOOGxWUlJyaTFZ?oc=5",
-        "pubDate": "Fri, 08 May 2026",
-        "source": "해사신문"
-      },
       {
         "title": "한국관세무역개발원, 교육·복지·재난까지 사회공헌 확대",
         "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTE5Na2hfN21RSjQyWFBFektjbkpWMUlyOGp1YW9YNlBkbHFNY1NrVktBb0Q1STI0T2VWakx1TUhTbWxrSWVCQ0hqUXF1el9yVzBjeDVieGdsX0dseTNhNFZrLW8wRThzT25USWM0?oc=5",
@@ -26,37 +20,25 @@
         "source": "물류신문"
       },
       {
-        "title": "트럼프 관세 압박에 복잡해진 해운업계 셈법...“물류 전반 재편 나서야”",
-        "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTFBTVUd0RGQ1OGFkYThKWnhwREtMbmZwWGdMV3JFMERWX1FpSzJpR3RtQkRUM3JlelI0YW5nVTU2S3lQMmM4UmhKT2U5TWd4cjU3aDcwcWVaUFMxN1lJdGVkdkZTdTlmY3hZWGww0gFvQVVfeXFMTmVEaGR3UGlnUi1XSm1yc3lvTVkxX1Z5VGJ0Q3p6YjBQMlZUd2xEN25DU3BYUzJFc2tMZlJtaXVvWmhieWs4Z1BCSDRGUGJDUG5jczhuQTEwcllTQ2hzN3MwTmRlVnA0b0RyQm9EY2Y0?oc=5",
-        "pubDate": "Sun, 30 Mar 2025",
-        "source": "투데이신문"
+        "title": "WTO 균열에 글로벌 물류질서 흔들…‘디지털 관세 장벽’ 비상, 해운·항만 공급망 블록화 덮친다",
+        "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTE5WTHY1OE14SU9TQVBnMGJZZlRsRGlEMzBmUERETGxRNXdLRnlyOTU3LS1NOVdELV9KNTNpek9FVGs5aGhLZnFWSHZhUTBMZEptN1NhM09VWTlKSGdzOUM2cFlOOGxWUlJyaTFZ?oc=5",
+        "pubDate": "Fri, 08 May 2026",
+        "source": "해사신문"
       },
       {
-        "title": "해운, \"정치적으로도 중요해졌다\"...미중 관세 불확실성 해소 따른 수혜 주목, 한달 만에 분위기 반전",
-        "link": "https://news.google.com/rss/articles/CBMic0FVX3lxTE1NZklYNTJvUzlscmEzdlhlbFJOVk1VTHN0MXQ5YnZTOUZjenpJTzRfS2FuVXVaMlNEQlRwSGNKRHJJcFF5dHRBYW1CcVM3M3JaSVhJRzdXY3FqMm9PMzhPM0kwYWV6Vm16MnVTc3RtYmVOMUk?oc=5",
-        "pubDate": "Thu, 30 Oct 2025",
-        "source": "쉬핑뉴스넷"
+        "title": "관세청, 미국 관세국경보호청과 수출입 협력 논의",
+        "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTFBIUGlyRkg3aHdoWUJnNlZVM2dDWkM3akVqZWZpQk5HLTJIUjFsclFER0d2clp6aTJhdFNVaV9xdjcxamtlZ1ZGZmp0T051aV95Tm5tZm1iLXNjLXB5RmFHdk9GZ080djUzTVlz?oc=5",
+        "pubDate": "Mon, 15 Jun 2026",
+        "source": "물류신문"
+      },
+      {
+        "title": "美 의존 줄이는 글로벌 교역 구조…'인도 18% 관세' 영향 주목",
+        "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE1hQ2hEcXNod0oxTjh0Y3BLZm42c3haNzUxczZfejg2bGdOUjVFdm9EWEJwZmFxRXM5eTcweUd4YUFtelYyOG9oUHhUQk1ZbEJVOXp2blpOWV8tQnRuOWx1NTBzYzFTeE0?oc=5",
+        "pubDate": "Tue, 10 Feb 2026",
+        "source": "현대해양"
       }
     ],
     "japan_domestic": [
-      {
-        "title": "民主党大勝の米中間選挙「政権への世界的拒絶」 政治専門家の見方",
-        "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTFB1RTZ4N1F4UGpoMmpvdmphUG5OOXc3QkxuNlhBNmxCUmFCZnJfemhPS3BuVVF5N3piUXlZZHRGWDRWbUVWeW41TUNSbi1aVld2SXYtS1RtQTNfRkw1aWRmOUFJaEp3c0hrb0I5Tg?oc=5",
-        "pubDate": "Thu, 05 Nov 2026",
-        "source": "日本経済新聞"
-      },
-      {
-        "title": "トランプ氏“大敗”で何が起きる？ 日本経済に“3つの影響”（テレビ朝日系（ANN））",
-        "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTFAyRGYxUHBlVzRqRVpBakR4NExmeFJNOFJaZ2RtWWNvM3pWSXFwWTJSVTZLU3d1ZmdYdDFTNkFZVHRWa1d5dnN4MzZUZWc5OUNYaGFuU25VSVlJTlNTWm01Slo4ejVxYkZXdFpfRDNsWGlBZVRpeUo3bHlzRFRoYTQ?oc=5",
-        "pubDate": "Wed, 04 Nov 2026",
-        "source": "Yahoo!ニュース"
-      },
-      {
-        "title": "東証寄り付き 日経平均は反発で始まる 上げ幅一時400円超 米政治巡る警戒後退で",
-        "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE9rZ29POTR4cFFFWlhVa0h0ckhCWi03U01Sc3R2cy02UGVfdklSd3QxcTFzc29KcVFDSG1VdnMwQ3lHQnZYWVNrcno3R0NLWVlYM3VCY0xNMW8wWFpERzBRTjhxU2pVS2FlbS1lNA?oc=5",
-        "pubDate": "Thu, 05 Nov 2026",
-        "source": "日本経済新聞"
-      },
       {
         "title": "中間選挙後の世界、米中ロが削る日本 それでもプランBはない",
         "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE5fTk5wN3VhLThwTjR0MGUyMUlKNkVKX1h4OG1mQ2ZsSzBMT2VmR0hJRFBLdTh2UzRiRmZwVm5VV3R3aFVKU2hmZlVaeFhxU1A2SkZ1YWk0MmJUVmFoZS1zanNPYXMyUHVnbGZqag?oc=5",
@@ -64,9 +46,27 @@
         "source": "日本経済新聞"
       },
       {
-        "title": "日経平均、米政治混乱回避で自律反発狙いの買いも（先読み株式相場）",
-        "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE0xbEh1dHBkQkxHT3ZJUUtLckpvQ1dMRk0yaXNSeHdzRmxENE50aHI0YWt0T0lueWtTQW81QVJxakdqdFFPVkZZcFJCV3VjOEdKd1p0dEVuRENxN05qZmhyY3dkTFlwTmItWmM5Wg?oc=5",
-        "pubDate": "Wed, 04 Nov 2026",
+        "title": "高市総理 株価下落めぐり「予断できない、とにかく日本経済を強くする」",
+        "link": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE9uLTNkaEVwVzdIczVzT29sVHZyckpOdk1MVnRpUXk1QkZXcTA4S0I3cm93XzdMYnR6cUNtZW5nckR0ellsaVBGTFVWcXNUdw?oc=5",
+        "pubDate": "Fri, 06 Nov 2026",
+        "source": "FNNプライムオンライン"
+      },
+      {
+        "title": "日経平均株価が急落 高市総理「一時的か予断許さず」",
+        "link": "https://news.google.com/rss/articles/CBMic0FVX3lxTE4zdzdndFR1Y3RXWk1qNUhPUW9wSG44aDAwaXdFSzJtSFloN05NMkpkVTRVX1VQdXQ3SEkzbG5CMkpESXNoRVlKdlcxUTZNV0pJV1c2YXd2ekZjd1U3TFFTVjFfMmJVbHFhSlFrZ2RzVlE5enc?oc=5",
+        "pubDate": "Fri, 06 Nov 2026",
+        "source": "テレ朝NEWS"
+      },
+      {
+        "title": "日経平均株価が急落 高市総理「一時的か予断許さず」",
+        "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTFB4c1FLd09nUTJHZ0FjSmstRFR5cWZlZDRiLTN0aDRVU1k4TGliLVphWXduRDJwVWpDaGE3RGVfUF8ydEhuOFUzTUNVWlRYSFI1amFDRWRn?oc=5",
+        "pubDate": "Fri, 06 Nov 2026",
+        "source": "KSBニュース"
+      },
+      {
+        "title": "東証寄り付き 日経平均は反発で始まる 上げ幅一時400円超 米政治巡る警戒後退で",
+        "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE9rZ29POTR4cFFFWlhVa0h0ckhCWi03U01Sc3R2cy02UGVfdklSd3QxcTFzc29KcVFDSG1VdnMwQ3lHQnZYWVNrcno3R0NLWVlYM3VCY0xNMW8wWFpERzBRTjhxU2pVS2FlbS1lNA?oc=5",
+        "pubDate": "Thu, 05 Nov 2026",
         "source": "日本経済新聞"
       }
     ],
@@ -110,6 +110,18 @@
         "source": "울산제일일보"
       },
       {
+        "title": "[PPSS 기업해부 포스코 ⑤] 철강 넘어 LNG·자원개발로…포스코인터내셔널, 그룹의 새 수익축 될까",
+        "link": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE9aSmxzQkVVVjdnWmxNSmMzcVhHUkoxVVFnVWUwSzlDU3VFdUxaUTR6SG5yVnF3MmJzZVdjVmxobWtuZkZVT1VnRzk1bUNybDRObklxU2YxOHJwRzlQOXBmSFZrdWc?oc=5",
+        "pubDate": "Fri, 06 Nov 2026",
+        "source": "https://www.ppss.kr/"
+      },
+      {
+        "title": "[전문가 칼럼] 1,500원 시대…환율이 아닌 ‘신고 시점’을 보라",
+        "link": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE9HMWxGLWtiZWVrR2FmTGYwWWZuOXZDSWJYdGVaLXdEZXduakZmbnNSYnQ5UzdndWdENV9RS1d6bmtYR08wNmYySE5RX25ZNkJoa2hPTzYySVRuTEpjblRhczVuNA?oc=5",
+        "pubDate": "Thu, 16 Apr 2026",
+        "source": "조세금융신문"
+      },
+      {
         "title": "[오늘의 브릿지경제 1면] 글로벌 공급망 다변화 급한데… CPTPP 가입, 부처간 이견 팽팽",
         "link": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE43ejQ4bHgzbWVaYVNmeVV3ZHVxaFpMVzlIX2toVHRzc2NZVDJxamhWTXIzWW05YlF2Zm5vdDQyaGNiLXR6QVBRdDZVVE9vaWVWWVB6VnVBazZOZw?oc=5",
         "pubDate": "Tue, 25 Aug 2026",
@@ -120,18 +132,6 @@
         "link": "https://news.google.com/rss/articles/CBMiU0FVX3lxTFBjQnJ0WjRoeHlXd3pwcWxEdUJPaFpLVUdlX0lqUFY0Vnl1TkxOMFdCMnZCcEQ0OWJ1cl8wYXp5MDNRU09sY2xEYkdUZ2tTZTh0Snpn?oc=5",
         "pubDate": "Fri, 19 Jun 2026",
         "source": "브런치"
-      },
-      {
-        "title": "[경제/무역] 베트남 무역수지 반년 만에 168억 달러 적자… ‘역대 최대치’ 기록",
-        "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTFBvZU5NdW1kMHJOc3RiTjZPT1pyUUJlZ05ZT2o3UDhycGl1TEFxbjN2YUVVUkhudTZlRTZTVWY4eHlpT25MR0otcmZfcTVGZWJ6NlJkOWhfaENEanVKV0VPTFlfUk1RVlBfVHpHc1Q4MWo?oc=5",
-        "pubDate": "Fri, 19 Jun 2026",
-        "source": "굿모닝베트남미디어"
-      },
-      {
-        "title": "환율 1500원 시대의 역설, 재계 덮친 원가 쇼크에 곳곳에서 비상경영",
-        "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE9PNk95RXgyWXBkazFzbG82WFgtYUs3d0ktd3dfMnZYQ1JyT2FJSmxYRXZRVjAxeG5iSUxNVFNDdktOaHE3dGNjOHVJMEFBNUVIQ1RTM0l3?oc=5",
-        "pubDate": "Thu, 21 May 2026",
-        "source": "매일경제"
       }
     ]
   }
