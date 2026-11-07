@@ -1,29 +1,17 @@
 {
-  "last_updated": "2026-11-07 09:30 KST/JST",
+  "last_updated": "2026-11-07 18:33 KST/JST",
   "fx": {
-    "usd_krw": 1347.69,
-    "usd_jpy": 157.84,
-    "jpy_100_krw": 853.83
+    "usd_krw": 1356.68,
+    "usd_jpy": 158.37,
+    "jpy_100_krw": 856.65
   },
   "news": {
     "logistics": [
-      {
-        "title": "WTO 균열에 글로벌 물류질서 흔들…‘디지털 관세 장벽’ 비상, 해운·항만 공급망 블록화 덮친다",
-        "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTE5WTHY1OE14SU9TQVBnMGJZZlRsRGlEMzBmUERETGxRNXdLRnlyOTU3LS1NOVdELV9KNTNpek9FVGs5aGhLZnFWSHZhUTBMZEptN1NhM09VWTlKSGdzOUM2cFlOOGxWUlJyaTFZ?oc=5",
-        "pubDate": "Fri, 08 May 2026",
-        "source": "해사신문"
-      },
       {
         "title": "한국관세무역개발원, 교육·복지·재난까지 사회공헌 확대",
         "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTE5Na2hfN21RSjQyWFBFektjbkpWMUlyOGp1YW9YNlBkbHFNY1NrVktBb0Q1STI0T2VWakx1TUhTbWxrSWVCQ0hqUXF1el9yVzBjeDVieGdsX0dseTNhNFZrLW8wRThzT25USWM0?oc=5",
         "pubDate": "Thu, 10 Sep 2026",
         "source": "물류신문"
-      },
-      {
-        "title": "美 의존 줄이는 글로벌 교역 구조…'인도 18% 관세' 영향 주목",
-        "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE1hQ2hEcXNod0oxTjh0Y3BLZm42c3haNzUxczZfejg2bGdOUjVFdm9EWEJwZmFxRXM5eTcweUd4YUFtelYyOG9oUHhUQk1ZbEJVOXp2blpOWV8tQnRuOWx1NTBzYzFTeE0?oc=5",
-        "pubDate": "Tue, 10 Feb 2026",
-        "source": "현대해양"
       },
       {
         "title": "美, 철강 파생제품 관세 전면 개편… 물류시장 ‘직격탄’",
@@ -32,10 +20,22 @@
         "source": "물류신문"
       },
       {
-        "title": "트럼프 관세 압박에 복잡해진 해운업계 셈법...“물류 전반 재편 나서야”",
-        "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTFBTVUd0RGQ1OGFkYThKWnhwREtMbmZwWGdMV3JFMERWX1FpSzJpR3RtQkRUM3JlelI0YW5nVTU2S3lQMmM4UmhKT2U5TWd4cjU3aDcwcWVaUFMxN1lJdGVkdkZTdTlmY3hZWGww0gFvQVVfeXFMTmVEaGR3UGlnUi1XSm1yc3lvTVkxX1Z5VGJ0Q3p6YjBQMlZUd2xEN25DU3BYUzJFc2tMZlJtaXVvWmhieWs4Z1BCSDRGUGJDUG5jczhuQTEwcllTQ2hzN3MwTmRlVnA0b0RyQm9EY2Y0?oc=5",
-        "pubDate": "Sun, 30 Mar 2025",
-        "source": "투데이신문"
+        "title": "WTO 균열에 글로벌 물류질서 흔들…‘디지털 관세 장벽’ 비상, 해운·항만 공급망 블록화 덮친다",
+        "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTE5WTHY1OE14SU9TQVBnMGJZZlRsRGlEMzBmUERETGxRNXdLRnlyOTU3LS1NOVdELV9KNTNpek9FVGs5aGhLZnFWSHZhUTBMZEptN1NhM09VWTlKSGdzOUM2cFlOOGxWUlJyaTFZ?oc=5",
+        "pubDate": "Fri, 08 May 2026",
+        "source": "해사신문"
+      },
+      {
+        "title": "관세청, 미국 관세국경보호청과 수출입 협력 논의",
+        "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTFBIUGlyRkg3aHdoWUJnNlZVM2dDWkM3akVqZWZpQk5HLTJIUjFsclFER0d2clp6aTJhdFNVaV9xdjcxamtlZ1ZGZmp0T051aV95Tm5tZm1iLXNjLXB5RmFHdk9GZ080djUzTVlz?oc=5",
+        "pubDate": "Mon, 15 Jun 2026",
+        "source": "물류신문"
+      },
+      {
+        "title": "美 의존 줄이는 글로벌 교역 구조…'인도 18% 관세' 영향 주목",
+        "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE1hQ2hEcXNod0oxTjh0Y3BLZm42c3haNzUxczZfejg2bGdOUjVFdm9EWEJwZmFxRXM5eTcweUd4YUFtelYyOG9oUHhUQk1ZbEJVOXp2blpOWV8tQnRuOWx1NTBzYzFTeE0?oc=5",
+        "pubDate": "Tue, 10 Feb 2026",
+        "source": "현대해양"
       }
     ],
     "japan_domestic": [
@@ -52,21 +52,21 @@
         "source": "FNNプライムオンライン"
       },
       {
-        "title": "米中間選挙で民主大勝 米識者「企業は政治リスクの洗い出しを」",
-        "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE9JTXJVX2lmSVlFU1BHeXBJWmR3UFVtcnhFMmtFaEVKVkVZRXk0Vnl1MC1uYjlldU5OS2pDLVZBak9GTzZDdGotS0N4aENRek9pNWN1STRfVFZMSUtTY094VDhaMXZBQ3h5R0ZDaA?oc=5",
-        "pubDate": "Fri, 06 Nov 2026",
-        "source": "日本経済新聞"
-      },
-      {
         "title": "循環する米国のポピュリズム",
         "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTFBLNHpsdHBSbnpmQ3pOZmxSWUlSOTNTSFFpYU1vbHRnZ3JNMFZ6VnJqdDBQVmExMHpwRVg4M3czcHdGVld2c0NIN3QtT0c3cmN5T2RnaXZ6TlRPeTdLa1lrbHdlM0JqSXhFMDgwOQ?oc=5",
         "pubDate": "Fri, 06 Nov 2026",
         "source": "日本経済新聞"
       },
       {
-        "title": "東証寄り付き 日経平均は反発で始まる 上げ幅一時400円超 米政治巡る警戒後退で",
-        "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE9rZ29POTR4cFFFWlhVa0h0ckhCWi03U01Sc3R2cy02UGVfdklSd3QxcTFzc29KcVFDSG1VdnMwQ3lHQnZYWVNrcno3R0NLWVlYM3VCY0xNMW8wWFpERzBRTjhxU2pVS2FlbS1lNA?oc=5",
-        "pubDate": "Thu, 05 Nov 2026",
+        "title": "日経平均株価が急落 高市総理「一時的か予断許さず」",
+        "link": "https://news.google.com/rss/articles/CBMic0FVX3lxTE4zdzdndFR1Y3RXWk1qNUhPUW9wSG44aDAwaXdFSzJtSFloN05NMkpkVTRVX1VQdXQ3SEkzbG5CMkpESXNoRVlKdlcxUTZNV0pJV1c2YXd2ekZjd1U3TFFTVjFfMmJVbHFhSlFrZ2RzVlE5enc?oc=5",
+        "pubDate": "Fri, 06 Nov 2026",
+        "source": "テレ朝NEWS"
+      },
+      {
+        "title": "米中間選挙で民主大勝 米識者「企業は政治リスクの洗い出しを」",
+        "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE9JTXJVX2lmSVlFU1BHeXBJWmR3UFVtcnhFMmtFaEVKVkVZRXk0Vnl1MC1uYjlldU5OS2pDLVZBak9GTzZDdGotS0N4aENRek9pNWN1STRfVFZMSUtTY094VDhaMXZBQ3h5R0ZDaA?oc=5",
+        "pubDate": "Fri, 06 Nov 2026",
         "source": "日本経済新聞"
       }
     ],
@@ -110,10 +110,16 @@
         "source": "울산제일일보"
       },
       {
-        "title": "美 중간선거 이후 통상환경 변화 촉각… 울산 수출기업 대응 전략 모색",
-        "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTFBHX3ZsV2c0NzluWmgtS2N1UkdrUVYwa21MZXdPUjNtRnNINDVBSmFTZG83MlkxdFQtWEg5cHNqSDN6RXh6R0RSY2JVejUwUk1TNVdIQ0cyb2RBcWNEa0pQZnNsOF9za21IRl81TnJR?oc=5",
+        "title": "15조 달러 자본 지출과 피지컬 인공지능의 충격파 - 오픈에이아이 한국행이 촉발한 고대역 메모리 격돌 > 고성능 반도체 공급 부족과 파운드리 병목 현상 해부",
+        "link": "https://news.google.com/rss/articles/CBMickFVX3lxTFB2S3J2VHU3X0ZMT0RwR0NESVJLOHJfTmcxN2NqalJEcWhSQU9fLVVvV2tNakJaSlgwXy1UZmdRa1NnXzNMaHlTV0lhQVlESlg1VUkyenNtVi1MOGxsdjhHTGg2T05yakZqb3Jyb19ZWENrZw?oc=5",
         "pubDate": "Wed, 04 Nov 2026",
-        "source": "울산종합일보"
+        "source": "데일리머니"
+      },
+      {
+        "title": "[PPSS 기업해부 포스코 ⑤] 철강 넘어 LNG·자원개발로…포스코인터내셔널, 그룹의 새 수익축 될까",
+        "link": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE9aSmxzQkVVVjdnWmxNSmMzcVhHUkoxVVFnVWUwSzlDU3VFdUxaUTR6SG5yVnF3MmJzZVdjVmxobWtuZkZVT1VnRzk1bUNybDRObklxU2YxOHJwRzlQOXBmSFZrdWc?oc=5",
+        "pubDate": "Fri, 06 Nov 2026",
+        "source": "https://www.ppss.kr/"
       },
       {
         "title": "[오늘의 브릿지경제 1면] 글로벌 공급망 다변화 급한데… CPTPP 가입, 부처간 이견 팽팽",
@@ -126,12 +132,6 @@
         "link": "https://news.google.com/rss/articles/CBMiU0FVX3lxTFBjQnJ0WjRoeHlXd3pwcWxEdUJPaFpLVUdlX0lqUFY0Vnl1TkxOMFdCMnZCcEQ0OWJ1cl8wYXp5MDNRU09sY2xEYkdUZ2tTZTh0Snpn?oc=5",
         "pubDate": "Fri, 19 Jun 2026",
         "source": "브런치"
-      },
-      {
-        "title": "[경제/무역] 베트남 무역수지 반년 만에 168억 달러 적자… ‘역대 최대치’ 기록",
-        "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTFBvZU5NdW1kMHJOc3RiTjZPT1pyUUJlZ05ZT2o3UDhycGl1TEFxbjN2YUVVUkhudTZlRTZTVWY4eHlpT25MR0otcmZfcTVGZWJ6NlJkOWhfaENEanVKV0VPTFlfUk1RVlBfVHpHc1Q4MWo?oc=5",
-        "pubDate": "Fri, 19 Jun 2026",
-        "source": "굿모닝베트남미디어"
       }
     ]
   }
