@@ -1,9 +1,9 @@
 {
-  "last_updated": "2026-11-08 09:29 KST/JST",
+  "last_updated": "2026-11-08 18:33 KST/JST",
   "fx": {
-    "usd_krw": 1356.68,
-    "usd_jpy": 158.37,
-    "jpy_100_krw": 856.65
+    "usd_krw": 1355.38,
+    "usd_jpy": 158.32,
+    "jpy_100_krw": 856.1
   },
   "news": {
     "logistics": [
@@ -58,15 +58,15 @@
         "source": "日本経済新聞"
       },
       {
-        "title": "7日の高市首相の動静",
-        "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE9Xc2ZPdTBLRmh6eWdGZWFoMWpYMTdyRlZpeUJlM3FaWGNyM3htSU11NVE5UzNNRVZpNlAwTFAxZ292YmRMWDdOeTVTS0NGQ09lZGVxRl9JRVYyZjJUZUt4UzZhMjQzeXI1UzY1Uw?oc=5",
-        "pubDate": "Sat, 07 Nov 2026",
-        "source": "日本経済新聞"
+        "title": "日経平均株価が急落 高市総理「一時的か予断許さず」",
+        "link": "https://news.google.com/rss/articles/CBMic0FVX3lxTE4zdzdndFR1Y3RXWk1qNUhPUW9wSG44aDAwaXdFSzJtSFloN05NMkpkVTRVX1VQdXQ3SEkzbG5CMkpESXNoRVlKdlcxUTZNV0pJV1c2YXd2ekZjd1U3TFFTVjFfMmJVbHFhSlFrZ2RzVlE5enc?oc=5",
+        "pubDate": "Fri, 06 Nov 2026",
+        "source": "テレ朝NEWS"
       },
       {
-        "title": "トランプ敗北後も「米の外交・安保戻らず」 変わる脅威、自衛磨く欧州",
-        "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTFBjTENLWERDcjVIb1c3bmVvUGpCazlJRXpUZERHNG1Yb252M0J6UXJ6NnhXTnNwcVV3OGJQMDlhbFZJTnZxWEp6NDlXQ1pXMktKWEZ2ZmE2LTRhbEZqSkUxbklRb2JJMG9LV0d0Wg?oc=5",
-        "pubDate": "Sat, 07 Nov 2026",
+        "title": "米中間選挙で民主大勝 米識者「企業は政治リスクの洗い出しを」",
+        "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE9JTXJVX2lmSVlFU1BHeXBJWmR3UFVtcnhFMmtFaEVKVkVZRXk0Vnl1MC1uYjlldU5OS2pDLVZBak9GTzZDdGotS0N4aENRek9pNWN1STRfVFZMSUtTY094VDhaMXZBQ3h5R0ZDaA?oc=5",
+        "pubDate": "Fri, 06 Nov 2026",
         "source": "日本経済新聞"
       }
     ],
@@ -75,6 +75,18 @@
         "title": "宿泊分野特定技能・育成就労協議会",
         "link": "https://news.google.com/rss/articles/CBMixgFBVV95cUxOc2Y1WDNWWkhkc1lLS19uaTZ6czJYOEE0ZmpNVTNDWWp3eDNERk9xenZGZGFLX2xoTG5ZRVhLX1JFTW9UbWJuSDN6TGg1SFpFR0YxVjA2R2tJcV9wX3phU1A3dHdqX2tOUW5NUGQ0R0RNdk1RTVdNMjZ6UDNmZUhMYmx6dE1mMW5oWWFoSk14bkRoUzNjd1puNUpRVXdNY1hyX2pOQ1YyVENPdkdoWjBzZEhRSng0TjVJeXU2VGZHZUw2Q1pBOWc?oc=5",
         "pubDate": "Wed, 28 Oct 2026",
+        "source": "国土交通省"
+      },
+      {
+        "title": "外国人在留は「選別しつつ受け入れ」へ：相次ぐ審査の厳格化（nippon.com）",
+        "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTE9lbjJBTEVyMktWZ2F0YU9FUEZVRy1vNkZ4LVVQSmRPN1VKYkFsOXBWTjNIQ3QydGlBOWhFcERuN0VqbHRUalZpUWlmUDNCQzFydjlLMEE3bkpTR19TUURiMV9pdHFreHk4Z2xwUWxFMGRLeXRSLUttOEdLZ2pqbWM?oc=5",
+        "pubDate": "Tue, 29 Sep 2026",
+        "source": "Yahoo!ニュース"
+      },
+      {
+        "title": "物流・自動車：物流倉庫分野における特定技能外国人・育成就労外国人の受入れについて",
+        "link": "https://news.google.com/rss/articles/CBMidEFVX3lxTE5FeDNXWE1OVlp0cmFFMjVMSXVPWGJkNWlXdEk4ZFdyZm10LWFLVzViNENoU1EydW82XzE3aVlDenc2bXptd21wMWVwMlBOZlpOUU9TUTFDQ1hETUNtX2wwMWtBZFpiVmFVUGdZa29MUmZtMl9k?oc=5",
+        "pubDate": "Wed, 03 Jun 2026",
         "source": "国土交通省"
       },
       {
@@ -88,18 +100,6 @@
         "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE05N0h4V1c1NEVtTV9XWEZuamQyTHJPcW5EUjA4MTZIdzloNm90YzNPZ3BUU2JkMnp0Q0d5RERZNENZSFIzSnpjTVRnald6ZkgzMGx6TGo1d0EycG1yRG9BR1BaMDBETTA?oc=5",
         "pubDate": "Tue, 14 Apr 2026",
         "source": "法務省"
-      },
-      {
-        "title": "物流・自動車：物流倉庫分野における特定技能外国人・育成就労外国人の受入れについて",
-        "link": "https://news.google.com/rss/articles/CBMidEFVX3lxTE5FeDNXWE1OVlp0cmFFMjVMSXVPWGJkNWlXdEk4ZFdyZm10LWFLVzViNENoU1EydW82XzE3aVlDenc2bXptd21wMWVwMlBOZlpOUU9TUTFDQ1hETUNtX2wwMWtBZFpiVmFVUGdZa29MUmZtMl9k?oc=5",
-        "pubDate": "Wed, 03 Jun 2026",
-        "source": "国土交通省"
-      },
-      {
-        "title": "外食業分野における外国人材の受入れについて",
-        "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTE9EakthbTIxZDNndElucXBSeEFxTktFcHRBNThXdVJXZEhsdGFvZTdzSXVudXFYYlJoTVNxclpYaUZ6RkRINGJqQWE0dnNZNm9vYjhRQk1iT3M2SjdLS09TNEp0cnF2aXQwdjY1QllR?oc=5",
-        "pubDate": "Sun, 15 Dec 2019",
-        "source": "農林水産省"
       }
     ],
     "global": [
@@ -128,10 +128,10 @@
         "source": "데일리머니"
       },
       {
-        "title": "[PPSS 기업해부 포스코 ⑤] 철강 넘어 LNG·자원개발로…포스코인터내셔널, 그룹의 새 수익축 될까",
-        "link": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE9aSmxzQkVVVjdnWmxNSmMzcVhHUkoxVVFnVWUwSzlDU3VFdUxaUTR6SG5yVnF3MmJzZVdjVmxobWtuZkZVT1VnRzk1bUNybDRObklxU2YxOHJwRzlQOXBmSFZrdWc?oc=5",
-        "pubDate": "Fri, 06 Nov 2026",
-        "source": "https://www.ppss.kr/"
+        "title": "[전문가 칼럼] 1,500원 시대…환율이 아닌 ‘신고 시점’을 보라",
+        "link": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE9HMWxGLWtiZWVrR2FmTGYwWWZuOXZDSWJYdGVaLXdEZXduakZmbnNSYnQ5UzdndWdENV9RS1d6bmtYR08wNmYySE5RX25ZNkJoa2hPTzYySVRuTEpjblRhczVuNA?oc=5",
+        "pubDate": "Thu, 16 Apr 2026",
+        "source": "조세금융신문"
       }
     ]
   }
