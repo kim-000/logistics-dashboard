@@ -1,9 +1,9 @@
 {
-  "last_updated": "2026-11-09 09:32 KST/JST",
+  "last_updated": "2026-11-09 18:46 KST/JST",
   "fx": {
-    "usd_krw": 1355.38,
-    "usd_jpy": 158.32,
-    "jpy_100_krw": 856.1
+    "usd_krw": 1361.4,
+    "usd_jpy": 158.33,
+    "jpy_100_krw": 859.85
   },
   "news": {
     "logistics": [
@@ -14,9 +14,9 @@
         "source": "해사신문"
       },
       {
-        "title": "美, 철강 파생제품 관세 전면 개편… 물류시장 ‘직격탄’",
-        "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTFB6NTY1TEtHLUotYklRMUZOQ0dBVlNMTFRKdktwV29remZLZEdXZFJMQk4tR1FqaGVDdjliVXpPSUxobjVzWVotV3UzWmxiUFVRQjRjMlJoRjg2MEUzNmJxcnhSaEE0VWt4Sjlz?oc=5",
-        "pubDate": "Wed, 08 Jul 2026",
+        "title": "한국관세무역개발원, 교육·복지·재난까지 사회공헌 확대",
+        "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTE5Na2hfN21RSjQyWFBFektjbkpWMUlyOGp1YW9YNlBkbHFNY1NrVktBb0Q1STI0T2VWakx1TUhTbWxrSWVCQ0hqUXF1el9yVzBjeDVieGdsX0dseTNhNFZrLW8wRThzT25USWM0?oc=5",
+        "pubDate": "Thu, 10 Sep 2026",
         "source": "물류신문"
       },
       {
@@ -26,9 +26,9 @@
         "source": "현대해양"
       },
       {
-        "title": "한국관세무역개발원, 교육·복지·재난까지 사회공헌 확대",
-        "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTE5Na2hfN21RSjQyWFBFektjbkpWMUlyOGp1YW9YNlBkbHFNY1NrVktBb0Q1STI0T2VWakx1TUhTbWxrSWVCQ0hqUXF1el9yVzBjeDVieGdsX0dseTNhNFZrLW8wRThzT25USWM0?oc=5",
-        "pubDate": "Thu, 10 Sep 2026",
+        "title": "美, 철강 파생제품 관세 전면 개편… 물류시장 ‘직격탄’",
+        "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTFB6NTY1TEtHLUotYklRMUZOQ0dBVlNMTFRKdktwV29remZLZEdXZFJMQk4tR1FqaGVDdjliVXpPSUxobjVzWVotV3UzWmxiUFVRQjRjMlJoRjg2MEUzNmJxcnhSaEE0VWt4Sjlz?oc=5",
+        "pubDate": "Wed, 08 Jul 2026",
         "source": "물류신문"
       },
       {
@@ -40,16 +40,10 @@
     ],
     "japan_domestic": [
       {
-        "title": "政治という経営リスク 「米民主議員、巨大テックに対決姿勢」など3本をお届けします",
-        "link": "https://news.google.com/rss/articles/CBMifkFVX3lxTFBITUduZVhVMTBpSkpIb2dIblk5SzBoQ2VKR0lYeTFYbU44T2Y0azhfSDM4dW9JYlBtcTQ4U0ZBM25udTVSd0pxNlFRbnFGSUlpREZmcUhnS29BaHhEcDN5cm1aanNsOGpreExpUG5hWElkeFdZcjVvZjBNMkctdw?oc=5",
-        "pubDate": "Sun, 08 Nov 2026",
+        "title": "高市首相、日韓協力委員会にメッセージ「関係強化に一層、まい進」",
+        "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE5TV0dDTzg1VEhzckM1Y1BHdlBWRUp0M0pUbWhCOVBqYjliYlh2MFRsQkh3TjRGUkg4MkJ0amRoOVE5Rmp3dzl1ZDFqYXBkcVZMcjdvaldSNThMdFJMZVFBcjJoQTVNTzJTUWtPXw?oc=5",
+        "pubDate": "Mon, 09 Nov 2026",
         "source": "日本経済新聞"
-      },
-      {
-        "title": "高市総理 株価下落めぐり「予断できない、とにかく日本経済を強くする」",
-        "link": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE9uLTNkaEVwVzdIczVzT29sVHZyckpOdk1MVnRpUXk1QkZXcTA4S0I3cm93XzdMYnR6cUNtZW5nckR0ellsaVBGTFVWcXNUdw?oc=5",
-        "pubDate": "Fri, 06 Nov 2026",
-        "source": "FNNプライムオンライン"
       },
       {
         "title": "超知能へと進化するAI 経済や政治巡る世界のパワーゲームが激化",
@@ -58,15 +52,21 @@
         "source": "日本経済新聞"
       },
       {
-        "title": "米中間選挙で民主大勝 米識者「企業は政治リスクの洗い出しを」",
-        "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE9JTXJVX2lmSVlFU1BHeXBJWmR3UFVtcnhFMmtFaEVKVkVZRXk0Vnl1MC1uYjlldU5OS2pDLVZBak9GTzZDdGotS0N4aENRek9pNWN1STRfVFZMSUtTY094VDhaMXZBQ3h5R0ZDaA?oc=5",
-        "pubDate": "Fri, 06 Nov 2026",
-        "source": "日本経済新聞"
+        "title": "日本経済の歴史から、時代背景や社会の変容を研究する｜政治経済学部・日向祥子ゼミ ｜明治大学",
+        "link": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE1oemluZ0YxM1ZJalBRSmU3LXA0ODFUNWxCT2liWmJRekx5RTg3X2JLSlNUZVltZEFkTXRMVXVMWTlPU0tiYVl3OFpPSlYtczN6Tmc?oc=5",
+        "pubDate": "Mon, 11 May 2026",
+        "source": "Meiji NOW"
       },
       {
-        "title": "循環する米国のポピュリズム",
-        "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTFBLNHpsdHBSbnpmQ3pOZmxSWUlSOTNTSFFpYU1vbHRnZ3JNMFZ6VnJqdDBQVmExMHpwRVg4M3czcHdGVld2c0NIN3QtT0c3cmN5T2RnaXZ6TlRPeTdLa1lrbHdlM0JqSXhFMDgwOQ?oc=5",
-        "pubDate": "Fri, 06 Nov 2026",
+        "title": "イベントカレンダー『各国の主要政治・経済イベント予定』(2026年9月号) | 阿原 健一郎 | 第一ライフ資産運用経済研究所",
+        "link": "https://news.google.com/rss/articles/CBMiWkFVX3lxTFA2dzhZMVNrNGp2TmZqRDlWc2MxUjZGNEMxSGgzb1BSVWw4bjNTR3ZJYnk3SWRQa0RVeFVILXZhT0Z5ZzlzMWE1WHFjNGpMWlZ3Qy1CcTlGaFBGZw?oc=5",
+        "pubDate": "Tue, 25 Aug 2026",
+        "source": "第一ライフ資産運用経済研究所"
+      },
+      {
+        "title": "政治という経営リスク 「米民主議員、巨大テックに対決姿勢」など3本をお届けします",
+        "link": "https://news.google.com/rss/articles/CBMifkFVX3lxTFBITUduZVhVMTBpSkpIb2dIblk5SzBoQ2VKR0lYeTFYbU44T2Y0azhfSDM4dW9JYlBtcTQ4U0ZBM25udTVSd0pxNlFRbnFGSUlpREZmcUhnS29BaHhEcDN5cm1aanNsOGpreExpUG5hWElkeFdZcjVvZjBNMkctdw?oc=5",
+        "pubDate": "Sun, 08 Nov 2026",
         "source": "日本経済新聞"
       }
     ],
@@ -76,6 +76,12 @@
         "link": "https://news.google.com/rss/articles/CBMixgFBVV95cUxOc2Y1WDNWWkhkc1lLS19uaTZ6czJYOEE0ZmpNVTNDWWp3eDNERk9xenZGZGFLX2xoTG5ZRVhLX1JFTW9UbWJuSDN6TGg1SFpFR0YxVjA2R2tJcV9wX3phU1A3dHdqX2tOUW5NUGQ0R0RNdk1RTVdNMjZ6UDNmZUhMYmx6dE1mMW5oWWFoSk14bkRoUzNjd1puNUpRVXdNY1hyX2pOQ1YyVENPdkdoWjBzZEhRSng0TjVJeXU2VGZHZUw2Q1pBOWc?oc=5",
         "pubDate": "Wed, 28 Oct 2026",
         "source": "国土交通省"
+      },
+      {
+        "title": "特定技能２号に「在留５年」 政府、来年１月施行方針：時事ドットコム",
+        "link": "https://news.google.com/rss/articles/CBMiY0FVX3lxTFByN0VnMnh4cmd3VjdEbDh2ZTRGMm0tUmM3d2swdEY5X0Q3UEJ6X25UNXpRaDZfYllMeG9INzdXSVdFNkVHZk9qWGNRQnczVWthek1IU25RUElzZDByVHJJeUxMVQ?oc=5",
+        "pubDate": "Tue, 04 Aug 2026",
+        "source": "時事ドットコム"
       },
       {
         "title": "在留資格厳格化「資本金3000万円」の根拠は――店舗契約、労働力に影響も #日本社会と外国人",
@@ -94,20 +100,14 @@
         "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE05N0h4V1c1NEVtTV9XWEZuamQyTHJPcW5EUjA4MTZIdzloNm90YzNPZ3BUU2JkMnp0Q0d5RERZNENZSFIzSnpjTVRnald6ZkgzMGx6TGo1d0EycG1yRG9BR1BaMDBETTA?oc=5",
         "pubDate": "Tue, 14 Apr 2026",
         "source": "法務省"
-      },
-      {
-        "title": "外食業分野における外国人材の受入れについて",
-        "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTE9EakthbTIxZDNndElucXBSeEFxTktFcHRBNThXdVJXZEhsdGFvZTdzSXVudXFYYlJoTVNxclpYaUZ6RkRINGJqQWE0dnNZNm9vYjhRQk1iT3M2SjdLS09TNEp0cnF2aXQwdjY1QllR?oc=5",
-        "pubDate": "Sun, 15 Dec 2019",
-        "source": "農林水産省"
       }
     ],
     "global": [
       {
-        "title": "“수출기업, 내년 관세·환율 등 고려한 대응역량 갖춰야”",
-        "link": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE1GWXVGWVFYMU8tRTBRek9qczRqZGtmMGk4cnBvdGpVRUtub0xaRWExMG5ZUVI0SXhheFpPSG1vYXhycnZYeHhaQkFYRVR3UGZLTmpLYjBqWjZFVTJIVjd1WVVNdUQ3QQ?oc=5",
-        "pubDate": "Tue, 03 Nov 2026",
-        "source": "울산제일일보"
+        "title": "‘반도체 훈풍’에도 힘 못 쓴 삼전·닉스…소폭 반등에 그쳐",
+        "link": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE1sLUxVYzk4X2NuN1d3cXFUMEVqRVJ3TUVza0otTnhYb05uMzYxX3VnVVh2ZlBZZWlNY1N6cjQtS3ZzYUg0NUkwdFBMTVZ2YlVTbmc?oc=5",
+        "pubDate": "Mon, 09 Nov 2026",
+        "source": "더나은미래"
       },
       {
         "title": "中 더블스타, 금호타이어 韓·유럽 공장 건설 속도전…관세·원가 압박 정면돌파",
@@ -116,22 +116,22 @@
         "source": "더구루"
       },
       {
-        "title": "美 중간선거 이후 통상환경 변화 촉각… 울산 수출기업 대응 전략 모색",
-        "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTFBHX3ZsV2c0NzluWmgtS2N1UkdrUVYwa21MZXdPUjNtRnNINDVBSmFTZG83MlkxdFQtWEg5cHNqSDN6RXh6R0RSY2JVejUwUk1TNVdIQ0cyb2RBcWNEa0pQZnNsOF9za21IRl81TnJR?oc=5",
-        "pubDate": "Wed, 04 Nov 2026",
-        "source": "울산종합일보"
-      },
-      {
-        "title": "15조 달러 자본 지출과 피지컬 인공지능의 충격파 - 오픈에이아이 한국행이 촉발한 고대역 메모리 격돌 > 고성능 반도체 공급 부족과 파운드리 병목 현상 해부",
-        "link": "https://news.google.com/rss/articles/CBMickFVX3lxTFB2S3J2VHU3X0ZMT0RwR0NESVJLOHJfTmcxN2NqalJEcWhSQU9fLVVvV2tNakJaSlgwXy1UZmdRa1NnXzNMaHlTV0lhQVlESlg1VUkyenNtVi1MOGxsdjhHTGg2T05yakZqb3Jyb19ZWENrZw?oc=5",
-        "pubDate": "Wed, 04 Nov 2026",
-        "source": "데일리머니"
-      },
-      {
         "title": "[전문가 칼럼] 1,500원 시대…환율이 아닌 ‘신고 시점’을 보라",
         "link": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE9HMWxGLWtiZWVrR2FmTGYwWWZuOXZDSWJYdGVaLXdEZXduakZmbnNSYnQ5UzdndWdENV9RS1d6bmtYR08wNmYySE5RX25ZNkJoa2hPTzYySVRuTEpjblRhczVuNA?oc=5",
         "pubDate": "Thu, 16 Apr 2026",
         "source": "조세금융신문"
+      },
+      {
+        "title": "[오늘의 브릿지경제 1면] 글로벌 공급망 다변화 급한데… CPTPP 가입, 부처간 이견 팽팽",
+        "link": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE43ejQ4bHgzbWVaYVNmeVV3ZHVxaFpMVzlIX2toVHRzc2NZVDJxamhWTXIzWW05YlF2Zm5vdDQyaGNiLXR6QVBRdDZVVE9vaWVWWVB6VnVBazZOZw?oc=5",
+        "pubDate": "Tue, 25 Aug 2026",
+        "source": "브릿지경제"
+      },
+      {
+        "title": "2026년 호르무즈 리스크 확대에 따른 한국경제 충격 진단",
+        "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTFBUS2ZVM1VUZ3Zyay1DTEVmSkJ1WkdDeFFKRkNkaXNaY1VlelRRYldDSEU1UjFYUTcwR2ZEMUpzTG9KaW5LOVoxTEI0UlI2RjI2ak1MNUp6Tkx2YVRmd2FiSFJCQUJMVmQ5YjV3?oc=5",
+        "pubDate": "Fri, 10 Apr 2026",
+        "source": "KDI 경제교육·정보센터"
       }
     ]
   }
