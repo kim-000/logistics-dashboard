@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-11-09 18:46 KST/JST",
+  "last_updated": "2026-11-10 09:30 KST/JST",
   "fx": {
     "usd_krw": 1361.4,
     "usd_jpy": 158.33,
@@ -7,6 +7,24 @@
   },
   "news": {
     "logistics": [
+      {
+        "title": "美中, 무역 휴전 2개월 연장…관세·희토류 수출통제 유예",
+        "link": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE1VTGlqMkQwX0hpZTRPVlFCb3IzblNSenRpRDBIWFp5TzhtOFhxSEdKYUd5YWVMMTBNcnczS19iaG1mYW8wNUVIVEEySlI4OC1ES2ttOGh6NTJQQQ?oc=5",
+        "pubDate": "Mon, 09 Nov 2026",
+        "source": "한국경제"
+      },
+      {
+        "title": "中, 대미 24% 추가관세·희토류 통제강화 유예 2개월 연장(종합)",
+        "link": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE5XN1pzSjFsMTIwWVFGZXl3bDlQU2k2eUFnczhxS2RQbDN6dmxIODZCVHNMOWg3Y0R5M2FEMFFkRVc2QjRfaXlaSjNjX0hVU0J5TG5OdGRDUXoyOWhKN01teNIBYEFVX3lxTE5XN1pzSjFsMTIwWVFGZXl3bDlQU2k2eUFnczhxS2RQbDN6dmxIODZCVHNMOWg3Y0R5M2FEMFFkRVc2QjRfaXlaSjNjX0hVU0J5TG5OdGRDUXoyOWhKN01teA?oc=5",
+        "pubDate": "Mon, 09 Nov 2026",
+        "source": "연합뉴스"
+      },
+      {
+        "title": "中, 대미 24% 추가관세·희토류 수출통제 유예 내년 1월까지 연장",
+        "link": "https://news.google.com/rss/articles/CBMiUkFVX3lxTFBxRU9kc0VvaHBZeHFCZjVjUXR1WTBxMzUwRy05TThiRTVjVEsxSVVaUFZaLTEzcGZDMllGcDJzbFZoS0ZqdWtoLWwzZGhhQmtIQXfSAVNBVV95cUxNcE01MVhPdzhQckxRbnRLUTN3UWljNHFybEZRRGVpNzY4blJWd0dZbTZCUm5KS3ZjYkFCTkxNcEZVaGFoZm56QTl3eTN0OUFPaTBpRQ?oc=5",
+        "pubDate": "Mon, 09 Nov 2026",
+        "source": "서울경제"
+      },
       {
         "title": "WTO 균열에 글로벌 물류질서 흔들…‘디지털 관세 장벽’ 비상, 해운·항만 공급망 블록화 덮친다",
         "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTE5WTHY1OE14SU9TQVBnMGJZZlRsRGlEMzBmUERETGxRNXdLRnlyOTU3LS1NOVdELV9KNTNpek9FVGs5aGhLZnFWSHZhUTBMZEptN1NhM09VWTlKSGdzOUM2cFlOOGxWUlJyaTFZ?oc=5",
@@ -18,30 +36,12 @@
         "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTE5Na2hfN21RSjQyWFBFektjbkpWMUlyOGp1YW9YNlBkbHFNY1NrVktBb0Q1STI0T2VWakx1TUhTbWxrSWVCQ0hqUXF1el9yVzBjeDVieGdsX0dseTNhNFZrLW8wRThzT25USWM0?oc=5",
         "pubDate": "Thu, 10 Sep 2026",
         "source": "물류신문"
-      },
-      {
-        "title": "美 의존 줄이는 글로벌 교역 구조…'인도 18% 관세' 영향 주목",
-        "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE1hQ2hEcXNod0oxTjh0Y3BLZm42c3haNzUxczZfejg2bGdOUjVFdm9EWEJwZmFxRXM5eTcweUd4YUFtelYyOG9oUHhUQk1ZbEJVOXp2blpOWV8tQnRuOWx1NTBzYzFTeE0?oc=5",
-        "pubDate": "Tue, 10 Feb 2026",
-        "source": "현대해양"
-      },
-      {
-        "title": "美, 철강 파생제품 관세 전면 개편… 물류시장 ‘직격탄’",
-        "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTFB6NTY1TEtHLUotYklRMUZOQ0dBVlNMTFRKdktwV29remZLZEdXZFJMQk4tR1FqaGVDdjliVXpPSUxobjVzWVotV3UzWmxiUFVRQjRjMlJoRjg2MEUzNmJxcnhSaEE0VWt4Sjlz?oc=5",
-        "pubDate": "Wed, 08 Jul 2026",
-        "source": "물류신문"
-      },
-      {
-        "title": "트럼프 관세 압박에 복잡해진 해운업계 셈법...“물류 전반 재편 나서야”",
-        "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTFBTVUd0RGQ1OGFkYThKWnhwREtMbmZwWGdMV3JFMERWX1FpSzJpR3RtQkRUM3JlelI0YW5nVTU2S3lQMmM4UmhKT2U5TWd4cjU3aDcwcWVaUFMxN1lJdGVkdkZTdTlmY3hZWGww0gFvQVVfeXFMTmVEaGR3UGlnUi1XSm1yc3lvTVkxX1Z5VGJ0Q3p6YjBQMlZUd2xEN25DU3BYUzJFc2tMZlJtaXVvWmhieWs4Z1BCSDRGUGJDUG5jczhuQTEwcllTQ2hzN3MwTmRlVnA0b0RyQm9EY2Y0?oc=5",
-        "pubDate": "Sun, 30 Mar 2025",
-        "source": "투데이신문"
       }
     ],
     "japan_domestic": [
       {
-        "title": "高市首相、日韓協力委員会にメッセージ「関係強化に一層、まい進」",
-        "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE5TV0dDTzg1VEhzckM1Y1BHdlBWRUp0M0pUbWhCOVBqYjliYlh2MFRsQkh3TjRGUkg4MkJ0amRoOVE5Rmp3dzl1ZDFqYXBkcVZMcjdvaldSNThMdFJMZVFBcjJoQTVNTzJTUWtPXw?oc=5",
+        "title": "歴史的敗北、米政治に再生の好機（The Economist）",
+        "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTFBiVUhnbF8teFNoRDg2ZTZoSWlwTW9ETmRFeFU1c0N0MkswTlJZSkFfOGotbVc5V0hXUHZZZDN1WS1JOVBHdThfRVhieVpPMUt0REZ6YldxVzZqNFNYd0hnNHBEUG8zeFZRZ1dLXw?oc=5",
         "pubDate": "Mon, 09 Nov 2026",
         "source": "日本経済新聞"
       },
@@ -52,25 +52,31 @@
         "source": "日本経済新聞"
       },
       {
-        "title": "日本経済の歴史から、時代背景や社会の変容を研究する｜政治経済学部・日向祥子ゼミ ｜明治大学",
-        "link": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE1oemluZ0YxM1ZJalBRSmU3LXA0ODFUNWxCT2liWmJRekx5RTg3X2JLSlNUZVltZEFkTXRMVXVMWTlPU0tiYVl3OFpPSlYtczN6Tmc?oc=5",
-        "pubDate": "Mon, 11 May 2026",
-        "source": "Meiji NOW"
+        "title": "9日の高市首相の動静",
+        "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTFBUTE9SSzFlUUNmSXhaN3RXOXRXZXlFcU5sbXAxT3BPa0xKckk1TXZvZGJNdUFFMWd4QVR0a2Jaak5uRlNubC1wRkUxcEVvUU1OOVdwaGZ2OE5uWXBFaHVnVjU1ODI4eHRnTHkxeQ?oc=5",
+        "pubDate": "Mon, 09 Nov 2026",
+        "source": "日本経済新聞"
       },
       {
-        "title": "イベントカレンダー『各国の主要政治・経済イベント予定』(2026年9月号) | 阿原 健一郎 | 第一ライフ資産運用経済研究所",
-        "link": "https://news.google.com/rss/articles/CBMiWkFVX3lxTFA2dzhZMVNrNGp2TmZqRDlWc2MxUjZGNEMxSGgzb1BSVWw4bjNTR3ZJYnk3SWRQa0RVeFVILXZhT0Z5ZzlzMWE1WHFjNGpMWlZ3Qy1CcTlGaFBGZw?oc=5",
-        "pubDate": "Tue, 25 Aug 2026",
-        "source": "第一ライフ資産運用経済研究所"
+        "title": "トランプ氏、中間選挙の正当性に疑問 「結果受け入れ」から転換",
+        "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE0tU3J3MWlKejFiTkZTUkhULWY2QXA4eFhPWHZFZ3psX0U5ZGJrMlF1VFh5b3h1UGlFb3k0QnRJbkVCUi1LbWtrM09UQVJvQ2dhZnhwMy1JenNDempDX1VXV1BXald4WFdBM1JmVw?oc=5",
+        "pubDate": "Mon, 09 Nov 2026",
+        "source": "日本経済新聞"
       },
       {
-        "title": "政治という経営リスク 「米民主議員、巨大テックに対決姿勢」など3本をお届けします",
-        "link": "https://news.google.com/rss/articles/CBMifkFVX3lxTFBITUduZVhVMTBpSkpIb2dIblk5SzBoQ2VKR0lYeTFYbU44T2Y0azhfSDM4dW9JYlBtcTQ4U0ZBM25udTVSd0pxNlFRbnFGSUlpREZmcUhnS29BaHhEcDN5cm1aanNsOGpreExpUG5hWElkeFdZcjVvZjBNMkctdw?oc=5",
-        "pubDate": "Sun, 08 Nov 2026",
+        "title": "高市首相、日韓協力委員会にメッセージ「関係強化に一層、まい進」",
+        "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE5TV0dDTzg1VEhzckM1Y1BHdlBWRUp0M0pUbWhCOVBqYjliYlh2MFRsQkh3TjRGUkg4MkJ0amRoOVE5Rmp3dzl1ZDFqYXBkcVZMcjdvaldSNThMdFJMZVFBcjJoQTVNTzJTUWtPXw?oc=5",
+        "pubDate": "Mon, 09 Nov 2026",
         "source": "日本経済新聞"
       }
     ],
     "japan_visa": [
+      {
+        "title": "日本の食卓を守るのはカンボジアの若者!?　物流大手が仕掛けるドライバー確保への「本気すぎる一手」",
+        "link": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE1JaXBwUld2S05KOEdyT1ZKMmdxS2RqNjBxX3dGVTd4U3VGMU1OVGMzcmY2bGlKOVFCWWsyM0lIOUtkbTZ5WklyeXEzT2VQUmFCYXJZ0gFYQVVfeXFMT2JyUExUcTFrNjlJZnNzaWE1TEpTZjBpRFpSV29rTEtvbUlGVkNsajlnX1JGRXo5TWZjQjBRaURwcER0WEFfTzN1bGt3aW1YTkVJZ05ESjMwTg?oc=5",
+        "pubDate": "Mon, 09 Nov 2026",
+        "source": "WEB CARTOP"
+      },
       {
         "title": "宿泊分野特定技能・育成就労協議会",
         "link": "https://news.google.com/rss/articles/CBMixgFBVV95cUxOc2Y1WDNWWkhkc1lLS19uaTZ6czJYOEE0ZmpNVTNDWWp3eDNERk9xenZGZGFLX2xoTG5ZRVhLX1JFTW9UbWJuSDN6TGg1SFpFR0YxVjA2R2tJcV9wX3phU1A3dHdqX2tOUW5NUGQ0R0RNdk1RTVdNMjZ6UDNmZUhMYmx6dE1mMW5oWWFoSk14bkRoUzNjd1puNUpRVXdNY1hyX2pOQ1YyVENPdkdoWjBzZEhRSng0TjVJeXU2VGZHZUw2Q1pBOWc?oc=5",
@@ -94,17 +100,11 @@
         "link": "https://news.google.com/rss/articles/CBMidEFVX3lxTE5FeDNXWE1OVlp0cmFFMjVMSXVPWGJkNWlXdEk4ZFdyZm10LWFLVzViNENoU1EydW82XzE3aVlDenc2bXptd21wMWVwMlBOZlpOUU9TUTFDQ1hETUNtX2wwMWtBZFpiVmFVUGdZa29MUmZtMl9k?oc=5",
         "pubDate": "Wed, 03 Jun 2026",
         "source": "国土交通省"
-      },
-      {
-        "title": "キルギスに関する情報 | 出入国在留管理庁",
-        "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE05N0h4V1c1NEVtTV9XWEZuamQyTHJPcW5EUjA4MTZIdzloNm90YzNPZ3BUU2JkMnp0Q0d5RERZNENZSFIzSnpjTVRnald6ZkgzMGx6TGo1d0EycG1yRG9BR1BaMDBETTA?oc=5",
-        "pubDate": "Tue, 14 Apr 2026",
-        "source": "法務省"
       }
     ],
     "global": [
       {
-        "title": "‘반도체 훈풍’에도 힘 못 쓴 삼전·닉스…소폭 반등에 그쳐",
+        "title": "美 ‘반도체 훈풍’에도 힘 못 쓴 ‘삼전닉스’…소폭 반등 그쳐",
         "link": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE1sLUxVYzk4X2NuN1d3cXFUMEVqRVJ3TUVza0otTnhYb05uMzYxX3VnVVh2ZlBZZWlNY1N6cjQtS3ZzYUg0NUkwdFBMTVZ2YlVTbmc?oc=5",
         "pubDate": "Mon, 09 Nov 2026",
         "source": "더나은미래"
@@ -122,16 +122,16 @@
         "source": "조세금융신문"
       },
       {
+        "title": "팜 안 투안 박사: 두 자릿수 성장을 위해서는 자본만으로는 부족합니다.",
+        "link": "https://news.google.com/rss/articles/CBMimgFBVV95cUxOSkpnZDFmYUplOHJyalF5NGRYWmNuX0pVWXFqZXVZMUd3aENnMUpockFSMnJlTV9KWGplX2RTd2hTUUJSbThsM1hONVREREFUNTN4X1hvTkxKcVdOVWpPWmdsRnBKalAyOVNPVmdneGtRSnNVMUw2WWxaSEpCVUc5RFdwWGp3TU0wZTRQcTg5SGpzUTVTUDUxcFpB?oc=5",
+        "pubDate": "Mon, 09 Nov 2026",
+        "source": "Vietnam.vn"
+      },
+      {
         "title": "[오늘의 브릿지경제 1면] 글로벌 공급망 다변화 급한데… CPTPP 가입, 부처간 이견 팽팽",
         "link": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE43ejQ4bHgzbWVaYVNmeVV3ZHVxaFpMVzlIX2toVHRzc2NZVDJxamhWTXIzWW05YlF2Zm5vdDQyaGNiLXR6QVBRdDZVVE9vaWVWWVB6VnVBazZOZw?oc=5",
         "pubDate": "Tue, 25 Aug 2026",
         "source": "브릿지경제"
-      },
-      {
-        "title": "2026년 호르무즈 리스크 확대에 따른 한국경제 충격 진단",
-        "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTFBUS2ZVM1VUZ3Zyay1DTEVmSkJ1WkdDeFFKRkNkaXNaY1VlelRRYldDSEU1UjFYUTcwR2ZEMUpzTG9KaW5LOVoxTEI0UlI2RjI2ak1MNUp6Tkx2YVRmd2FiSFJCQUJMVmQ5YjV3?oc=5",
-        "pubDate": "Fri, 10 Apr 2026",
-        "source": "KDI 경제교육·정보센터"
       }
     ]
   }
