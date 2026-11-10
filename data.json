@@ -1,12 +1,24 @@
 {
-  "last_updated": "2026-11-10 09:30 KST/JST",
+  "last_updated": "2026-11-10 18:44 KST/JST",
   "fx": {
-    "usd_krw": 1361.4,
-    "usd_jpy": 158.33,
-    "jpy_100_krw": 859.85
+    "usd_krw": 1344.79,
+    "usd_jpy": 158.02,
+    "jpy_100_krw": 851.03
   },
   "news": {
     "logistics": [
+      {
+        "title": "민주당 美의회 장악에도 보호무역 지속…KMI “해운 영향 제한적, 불확실성은 확대”",
+        "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTE0wQmwyZkxCbEdXTUxIUlM5eUFEODZuVTlwdS12TDIxbGJBaUtEMllSd2RDczZfd21Tc01yRHNmdjVPNUVlUjl6dG83anNWYkJkVll5YUZkcm1RMEdGSTdEaVduNDhKNzFhNDN3?oc=5",
+        "pubDate": "Tue, 10 Nov 2026",
+        "source": "해사신문"
+      },
+      {
+        "title": "美·中 무역휴전 2개월 연장…관세·희토류·한화오션 제재 유예 1월까지",
+        "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE1oQUtMaEtLLWw5dFFkdEdIa25iY3RtMGRvbEpCR1RYVVRUMXAycWJ2b0lwRWpOclhEdnp3MlAyUXNJUklydmxHY3BhOHhSNkpqU2pNZkJUNWdaU2E5S1NZZU5INnVVNWfSAWtBVV95cUxQSjNqSUp1YXVlZmdITHVvcVNtMEFqWFpuY1dZdExVcGJsXzFLZ3l1Q3lzLVlZU0ZranVKYjh5RkNxYlZpRl9VSWpkRUxZM1VfQWFtX09QRXFCMmNvTmtUNldwOUxPWnZHZnRycw?oc=5",
+        "pubDate": "Tue, 10 Nov 2026",
+        "source": "CEO저널"
+      },
       {
         "title": "美中, 무역 휴전 2개월 연장…관세·희토류 수출통제 유예",
         "link": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE1VTGlqMkQwX0hpZTRPVlFCb3IzblNSenRpRDBIWFp5TzhtOFhxSEdKYUd5YWVMMTBNcnczS19iaG1mYW8wNUVIVEEySlI4OC1ES2ttOGh6NTJQQQ?oc=5",
@@ -20,18 +32,6 @@
         "source": "연합뉴스"
       },
       {
-        "title": "中, 대미 24% 추가관세·희토류 수출통제 유예 내년 1월까지 연장",
-        "link": "https://news.google.com/rss/articles/CBMiUkFVX3lxTFBxRU9kc0VvaHBZeHFCZjVjUXR1WTBxMzUwRy05TThiRTVjVEsxSVVaUFZaLTEzcGZDMllGcDJzbFZoS0ZqdWtoLWwzZGhhQmtIQXfSAVNBVV95cUxNcE01MVhPdzhQckxRbnRLUTN3UWljNHFybEZRRGVpNzY4blJWd0dZbTZCUm5KS3ZjYkFCTkxNcEZVaGFoZm56QTl3eTN0OUFPaTBpRQ?oc=5",
-        "pubDate": "Mon, 09 Nov 2026",
-        "source": "서울경제"
-      },
-      {
-        "title": "WTO 균열에 글로벌 물류질서 흔들…‘디지털 관세 장벽’ 비상, 해운·항만 공급망 블록화 덮친다",
-        "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTE5WTHY1OE14SU9TQVBnMGJZZlRsRGlEMzBmUERETGxRNXdLRnlyOTU3LS1NOVdELV9KNTNpek9FVGs5aGhLZnFWSHZhUTBMZEptN1NhM09VWTlKSGdzOUM2cFlOOGxWUlJyaTFZ?oc=5",
-        "pubDate": "Fri, 08 May 2026",
-        "source": "해사신문"
-      },
-      {
         "title": "한국관세무역개발원, 교육·복지·재난까지 사회공헌 확대",
         "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTE5Na2hfN21RSjQyWFBFektjbkpWMUlyOGp1YW9YNlBkbHFNY1NrVktBb0Q1STI0T2VWakx1TUhTbWxrSWVCQ0hqUXF1el9yVzBjeDVieGdsX0dseTNhNFZrLW8wRThzT25USWM0?oc=5",
         "pubDate": "Thu, 10 Sep 2026",
@@ -40,48 +40,48 @@
     ],
     "japan_domestic": [
       {
+        "title": "政府、APEC宣言に「貿易の透明性」提案 中国レアアース規制念頭",
+        "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE9yNnVqSUNzcHpTZmRRc1VLaDlXTjNQQndKdWZ4ODhwakVKRWxCanVLNjEzY29Za3JFMjN2amhSaGlGRmJQYVFPWEtsUEZuZkVGOGk5VGh3TWNPaGh2cXRnTVZFUlBmdkRYbkllZw?oc=5",
+        "pubDate": "Tue, 10 Nov 2026",
+        "source": "日本経済新聞"
+      },
+      {
         "title": "歴史的敗北、米政治に再生の好機（The Economist）",
         "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTFBiVUhnbF8teFNoRDg2ZTZoSWlwTW9ETmRFeFU1c0N0MkswTlJZSkFfOGotbVc5V0hXUHZZZDN1WS1JOVBHdThfRVhieVpPMUt0REZ6YldxVzZqNFNYd0hnNHBEUG8zeFZRZ1dLXw?oc=5",
         "pubDate": "Mon, 09 Nov 2026",
         "source": "日本経済新聞"
       },
       {
-        "title": "超知能へと進化するAI 経済や政治巡る世界のパワーゲームが激化",
-        "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE9yQlVGUjdOa1BJa2ZIa2VHU2dwcDM3NEw3TEJzS2lwSTU0Q2M2WVRudWlhRTVoREVaZ1M5S3plR0poN1NSQlVmOC0xcnlTbDlHQmdvV2ExemljM1JELWJ3elZJUjdOOHR3VzNNeg?oc=5",
-        "pubDate": "Sat, 07 Nov 2026",
+        "title": "日本経済の歴史から、時代背景や社会の変容を研究する｜政治経済学部・日向祥子ゼミ ｜明治大学",
+        "link": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE1oemluZ0YxM1ZJalBRSmU3LXA0ODFUNWxCT2liWmJRekx5RTg3X2JLSlNUZVltZEFkTXRMVXVMWTlPU0tiYVl3OFpPSlYtczN6Tmc?oc=5",
+        "pubDate": "Mon, 11 May 2026",
+        "source": "Meiji NOW"
+      },
+      {
+        "title": "AIには渡せない思考の快楽 ポスト・トゥルースから10年の人と技術",
+        "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE5DdmlxUmVpMGNVYlU3N3hEU3NxVjI4LWRtd2xWdG1PRHpZektHWXlZOEVpdFZaaFpLS2g2TW9FM2szdzFQekoyb2dBNGlkZzI4TnNWMmJiQWZYaWJNdllhWnRiMG0xSTBoV3IzOA?oc=5",
+        "pubDate": "Tue, 10 Nov 2026",
         "source": "日本経済新聞"
       },
       {
-        "title": "9日の高市首相の動静",
-        "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTFBUTE9SSzFlUUNmSXhaN3RXOXRXZXlFcU5sbXAxT3BPa0xKckk1TXZvZGJNdUFFMWd4QVR0a2Jaak5uRlNubC1wRkUxcEVvUU1OOVdwaGZ2OE5uWXBFaHVnVjU1ODI4eHRnTHkxeQ?oc=5",
-        "pubDate": "Mon, 09 Nov 2026",
-        "source": "日本経済新聞"
-      },
-      {
-        "title": "トランプ氏、中間選挙の正当性に疑問 「結果受け入れ」から転換",
-        "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE0tU3J3MWlKejFiTkZTUkhULWY2QXA4eFhPWHZFZ3psX0U5ZGJrMlF1VFh5b3h1UGlFb3k0QnRJbkVCUi1LbWtrM09UQVJvQ2dhZnhwMy1JenNDempDX1VXV1BXald4WFdBM1JmVw?oc=5",
-        "pubDate": "Mon, 09 Nov 2026",
-        "source": "日本経済新聞"
-      },
-      {
-        "title": "高市首相、日韓協力委員会にメッセージ「関係強化に一層、まい進」",
-        "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE5TV0dDTzg1VEhzckM1Y1BHdlBWRUp0M0pUbWhCOVBqYjliYlh2MFRsQkh3TjRGUkg4MkJ0amRoOVE5Rmp3dzl1ZDFqYXBkcVZMcjdvaldSNThMdFJMZVFBcjJoQTVNTzJTUWtPXw?oc=5",
+        "title": "「弱いトランプ」新たな火種 米経済、終わる関税の宴",
+        "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTFBISm5JMEo5Z2NMb1FyNGlBR3FwSGhXeUN0eWJuRVUwTWNXaG0ySFJ2ci1vRUlPZFJyc0E2R2l0dDl3a1pPUGVUMkpQY2xBcC1UR2x5Y0tmeHd1cXNCYXBkSmpLaDdFZHotMXhsaw?oc=5",
         "pubDate": "Mon, 09 Nov 2026",
         "source": "日本経済新聞"
       }
     ],
     "japan_visa": [
       {
-        "title": "日本の食卓を守るのはカンボジアの若者!?　物流大手が仕掛けるドライバー確保への「本気すぎる一手」",
-        "link": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE1JaXBwUld2S05KOEdyT1ZKMmdxS2RqNjBxX3dGVTd4U3VGMU1OVGMzcmY2bGlKOVFCWWsyM0lIOUtkbTZ5WklyeXEzT2VQUmFCYXJZ0gFYQVVfeXFMT2JyUExUcTFrNjlJZnNzaWE1TEpTZjBpRFpSV29rTEtvbUlGVkNsajlnX1JGRXo5TWZjQjBRaURwcER0WEFfTzN1bGt3aW1YTkVJZ05ESjMwTg?oc=5",
-        "pubDate": "Mon, 09 Nov 2026",
-        "source": "WEB CARTOP"
-      },
-      {
         "title": "宿泊分野特定技能・育成就労協議会",
         "link": "https://news.google.com/rss/articles/CBMixgFBVV95cUxOc2Y1WDNWWkhkc1lLS19uaTZ6czJYOEE0ZmpNVTNDWWp3eDNERk9xenZGZGFLX2xoTG5ZRVhLX1JFTW9UbWJuSDN6TGg1SFpFR0YxVjA2R2tJcV9wX3phU1A3dHdqX2tOUW5NUGQ0R0RNdk1RTVdNMjZ6UDNmZUhMYmx6dE1mMW5oWWFoSk14bkRoUzNjd1puNUpRVXdNY1hyX2pOQ1YyVENPdkdoWjBzZEhRSng0TjVJeXU2VGZHZUw2Q1pBOWc?oc=5",
         "pubDate": "Wed, 28 Oct 2026",
         "source": "国土交通省"
+      },
+      {
+        "title": "日本の食卓を守るのはカンボジアの若者!?　物流大手が仕掛けるドライバー確保への「本気すぎる一手」",
+        "link": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE1JaXBwUld2S05KOEdyT1ZKMmdxS2RqNjBxX3dGVTd4U3VGMU1OVGMzcmY2bGlKOVFCWWsyM0lIOUtkbTZ5WklyeXEzT2VQUmFCYXJZ0gFYQVVfeXFMT2JyUExUcTFrNjlJZnNzaWE1TEpTZjBpRFpSV29rTEtvbUlGVkNsajlnX1JGRXo5TWZjQjBRaURwcER0WEFfTzN1bGt3aW1YTkVJZ05ESjMwTg?oc=5",
+        "pubDate": "Mon, 09 Nov 2026",
+        "source": "WEB CARTOP"
       },
       {
         "title": "特定技能２号に「在留５年」 政府、来年１月施行方針：時事ドットコム",
@@ -128,10 +128,10 @@
         "source": "Vietnam.vn"
       },
       {
-        "title": "[오늘의 브릿지경제 1면] 글로벌 공급망 다변화 급한데… CPTPP 가입, 부처간 이견 팽팽",
-        "link": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE43ejQ4bHgzbWVaYVNmeVV3ZHVxaFpMVzlIX2toVHRzc2NZVDJxamhWTXIzWW05YlF2Zm5vdDQyaGNiLXR6QVBRdDZVVE9vaWVWWVB6VnVBazZOZw?oc=5",
-        "pubDate": "Tue, 25 Aug 2026",
-        "source": "브릿지경제"
+        "title": "2026년 호르무즈 리스크 확대에 따른 한국경제 충격 진단",
+        "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTFBUS2ZVM1VUZ3Zyay1DTEVmSkJ1WkdDeFFKRkNkaXNaY1VlelRRYldDSEU1UjFYUTcwR2ZEMUpzTG9KaW5LOVoxTEI0UlI2RjI2ak1MNUp6Tkx2YVRmd2FiSFJCQUJMVmQ5YjV3?oc=5",
+        "pubDate": "Fri, 10 Apr 2026",
+        "source": "KDI 경제교육·정보센터"
       }
     ]
   }
