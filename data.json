@@ -1,9 +1,9 @@
 {
-  "last_updated": "2026-11-11 18:46 KST/JST",
+  "last_updated": "2026-11-12 09:46 KST/JST",
   "fx": {
-    "usd_krw": 1341.69,
-    "usd_jpy": 158.56,
-    "jpy_100_krw": 846.17
+    "usd_krw": 1336.6,
+    "usd_jpy": 159.51,
+    "jpy_100_krw": 837.94
   },
   "news": {
     "logistics": [
@@ -14,35 +14,47 @@
         "source": "해사신문"
       },
       {
-        "title": "中, 대미 24% 추가관세·희토류 통제강화 유예 2개월 연장(종합)",
-        "link": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE5XN1pzSjFsMTIwWVFGZXl3bDlQU2k2eUFnczhxS2RQbDN6dmxIODZCVHNMOWg3Y0R5M2FEMFFkRVc2QjRfaXlaSjNjX0hVU0J5TG5OdGRDUXoyOWhKN01teNIBYEFVX3lxTE5XN1pzSjFsMTIwWVFGZXl3bDlQU2k2eUFnczhxS2RQbDN6dmxIODZCVHNMOWg3Y0R5M2FEMFFkRVc2QjRfaXlaSjNjX0hVU0J5TG5OdGRDUXoyOWhKN01teA?oc=5",
-        "pubDate": "Mon, 09 Nov 2026",
-        "source": "연합뉴스"
-      },
-      {
         "title": "美中, 무역 휴전 2개월 연장…관세·희토류 수출통제 유예",
         "link": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE1VTGlqMkQwX0hpZTRPVlFCb3IzblNSenRpRDBIWFp5TzhtOFhxSEdKYUd5YWVMMTBNcnczS19iaG1mYW8wNUVIVEEySlI4OC1ES2ttOGh6NTJQQQ?oc=5",
         "pubDate": "Mon, 09 Nov 2026",
         "source": "한국경제"
       },
       {
-        "title": "中, 대미 24% 추가관세·희토류 수출통제 유예 내년 1월까지 연장",
-        "link": "https://news.google.com/rss/articles/CBMiUkFVX3lxTFBxRU9kc0VvaHBZeHFCZjVjUXR1WTBxMzUwRy05TThiRTVjVEsxSVVaUFZaLTEzcGZDMllGcDJzbFZoS0ZqdWtoLWwzZGhhQmtIQXfSAVNBVV95cUxNcE01MVhPdzhQckxRbnRLUTN3UWljNHFybEZRRGVpNzY4blJWd0dZbTZCUm5KS3ZjYkFCTkxNcEZVaGFoZm56QTl3eTN0OUFPaTBpRQ?oc=5",
-        "pubDate": "Mon, 09 Nov 2026",
-        "source": "서울경제"
-      },
-      {
         "title": "美·中 무역휴전 2개월 연장…관세·희토류·한화오션 제재 유예 1월까지",
         "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE1oQUtMaEtLLWw5dFFkdEdIa25iY3RtMGRvbEpCR1RYVVRUMXAycWJ2b0lwRWpOclhEdnp3MlAyUXNJUklydmxHY3BhOHhSNkpqU2pNZkJUNWdaU2E5S1NZZU5INnVVNWfSAWtBVV95cUxQSjNqSUp1YXVlZmdITHVvcVNtMEFqWFpuY1dZdExVcGJsXzFLZ3l1Q3lzLVlZU0ZranVKYjh5RkNxYlZpRl9VSWpkRUxZM1VfQWFtX09QRXFCMmNvTmtUNldwOUxPWnZHZnRycw?oc=5",
         "pubDate": "Tue, 10 Nov 2026",
         "source": "CEO저널"
+      },
+      {
+        "title": "한국관세무역개발원, 교육·복지·재난까지 사회공헌 확대",
+        "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTE5Na2hfN21RSjQyWFBFektjbkpWMUlyOGp1YW9YNlBkbHFNY1NrVktBb0Q1STI0T2VWakx1TUhTbWxrSWVCQ0hqUXF1el9yVzBjeDVieGdsX0dseTNhNFZrLW8wRThzT25USWM0?oc=5",
+        "pubDate": "Thu, 10 Sep 2026",
+        "source": "물류신문"
+      },
+      {
+        "title": "WTO 균열에 글로벌 물류질서 흔들…‘디지털 관세 장벽’ 비상, 해운·항만 공급망 블록화 덮친다",
+        "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTE5WTHY1OE14SU9TQVBnMGJZZlRsRGlEMzBmUERETGxRNXdLRnlyOTU3LS1NOVdELV9KNTNpek9FVGs5aGhLZnFWSHZhUTBMZEptN1NhM09VWTlKSGdzOUM2cFlOOGxWUlJyaTFZ?oc=5",
+        "pubDate": "Fri, 08 May 2026",
+        "source": "해사신문"
       }
     ],
     "japan_domestic": [
       {
+        "title": "石破茂前首相、消費税減税「インフレ助長する政策」 高松で講演",
+        "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE5rN3JXbHJjU3RYVkJQczVOTnota3ZITU9YckxNOHlFN0Zub0k2SUxYV1JuUUlyM1VDcWljcWVXc2lSMTk2eGpyVXEzUnVIMk55YWctSDd3MXprZmctUFEzSlQ5RjRITUNJWkxDZA?oc=5",
+        "pubDate": "Wed, 11 Nov 2026",
+        "source": "日本経済新聞"
+      },
+      {
         "title": "春秋（11月11日）信念と良心",
         "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE5GS1AwUGpwcW9XTXVyMkdTSWc0Qlp5LUlvcTBDWGJKeWU3cWdNSTE0WUNwMUF6SkVCeThrN01BTVFZTV9sV2wxMUU1d2RjN25SXzV6QTI4RzQ1SFVLM0NQeVphU3VEdEdWMXJtdw?oc=5",
         "pubDate": "Tue, 10 Nov 2026",
+        "source": "日本経済新聞"
+      },
+      {
+        "title": "安保3文書に「集団的強靱性」明記へ 同志国の経済安保力を強化",
+        "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE5oTk9aX1hCckloWkllaEpZcG9yQ05IUUNVTFlEUW1hT0JCa3psOVpfMnNNNS0xUkpURGwzUURmb0ZRbnhSTm16ajdtUWtRRUMtS2pMQk0ySTVteUVhSW1ETm5GaEpxQ0NaU0J3Tw?oc=5",
+        "pubDate": "Wed, 11 Nov 2026",
         "source": "日本経済新聞"
       },
       {
@@ -52,21 +64,9 @@
         "source": "日本経済新聞"
       },
       {
-        "title": "日本経済の歴史から、時代背景や社会の変容を研究する｜政治経済学部・日向祥子ゼミ ｜明治大学",
-        "link": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE1oemluZ0YxM1ZJalBRSmU3LXA0ODFUNWxCT2liWmJRekx5RTg3X2JLSlNUZVltZEFkTXRMVXVMWTlPU0tiYVl3OFpPSlYtczN6Tmc?oc=5",
-        "pubDate": "Mon, 11 May 2026",
-        "source": "Meiji NOW"
-      },
-      {
-        "title": "イベントカレンダー『各国の主要政治・経済イベント予定』(2026年9月号) | 阿原 健一郎 | 第一ライフ資産運用経済研究所",
-        "link": "https://news.google.com/rss/articles/CBMiWkFVX3lxTFA2dzhZMVNrNGp2TmZqRDlWc2MxUjZGNEMxSGgzb1BSVWw4bjNTR3ZJYnk3SWRQa0RVeFVILXZhT0Z5ZzlzMWE1WHFjNGpMWlZ3Qy1CcTlGaFBGZw?oc=5",
-        "pubDate": "Tue, 25 Aug 2026",
-        "source": "第一ライフ資産運用経済研究所"
-      },
-      {
-        "title": "危機に向き合う政治とは 財政、災害、そして有事",
-        "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTFB6YXNrZnRsWXdPM2NER3IzRDE4amxBcl9Pb05pWVVWcEN4UHFEQTcyU3ZieTZnb2M0YjR5QXB1YUZ1NVFvcFpid2dENWdJdTd2RTIwNUEzV2RKRmxwaVpLaVlRTEg1aGtrUG5JRw?oc=5",
-        "pubDate": "Sun, 25 Oct 2026",
+        "title": "共和ヘイリー氏出馬見送り 28年米大統領選",
+        "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE0tUGtKLVh3YUwwUEN6OGJyT2Vlbzd1clQ2QXZpVnR5MGtDTEJjY3NUeUsyclotUk56SWtLbDljUzhMT0xwNl9ueWFCVm9ybE95N0pMb1lsUFVlWHVWTGlFWHlqUFFfWms5elFvOQ?oc=5",
+        "pubDate": "Thu, 12 Nov 2026",
         "source": "日本経済新聞"
       }
     ],
@@ -90,16 +90,16 @@
         "source": "時事ドットコム"
       },
       {
+        "title": "在留資格厳格化「資本金3000万円」の根拠は――店舗契約、労働力に影響も #日本社会と外国人",
+        "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTE84OVM1UXpBZnFIRWhVcnpNV1JjTkJsLWNaSHhvMFBza0UzT2doWG91T2hWMEpZMS1Xb0JISVQyMFFRbHFNdE1Vd19GWHJhNlFCc2hSRkxOYVRVN1JTMXlWeXA0UnpDZmtYTkpJY3dCR3BhX0hYZjFwOFptLWYya2s?oc=5",
+        "pubDate": "Thu, 13 Aug 2026",
+        "source": "Yahoo!ニュース"
+      },
+      {
         "title": "物流・自動車：物流倉庫分野における特定技能外国人・育成就労外国人の受入れについて",
         "link": "https://news.google.com/rss/articles/CBMidEFVX3lxTE5FeDNXWE1OVlp0cmFFMjVMSXVPWGJkNWlXdEk4ZFdyZm10LWFLVzViNENoU1EydW82XzE3aVlDenc2bXptd21wMWVwMlBOZlpOUU9TUTFDQ1hETUNtX2wwMWtBZFpiVmFVUGdZa29MUmZtMl9k?oc=5",
         "pubDate": "Wed, 03 Jun 2026",
         "source": "国土交通省"
-      },
-      {
-        "title": "キルギスに関する情報 | 出入国在留管理庁",
-        "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE05N0h4V1c1NEVtTV9XWEZuamQyTHJPcW5EUjA4MTZIdzloNm90YzNPZ3BUU2JkMnp0Q0d5RERZNENZSFIzSnpjTVRnald6ZkgzMGx6TGo1d0EycG1yRG9BR1BaMDBETTA?oc=5",
-        "pubDate": "Tue, 14 Apr 2026",
-        "source": "法務省"
       }
     ],
     "global": [
@@ -110,10 +110,16 @@
         "source": "더나은미래"
       },
       {
-        "title": "中 더블스타, 금호타이어 韓·유럽 공장 건설 속도전…관세·원가 압박 정면돌파",
-        "link": "https://news.google.com/rss/articles/CBMiY0FVX3lxTFAxU0FaWUlIMDk4UVJWUDRQNi1GWThIcmdnVzZHcExMWnRrOW1mUGxreG0zVE11ZklXTWJieGM2WDBUb0MwWUk2aUxIejdOdVVhSF8teE1RcGxmUk1kTzdyMlNjTQ?oc=5",
-        "pubDate": "Sat, 07 Nov 2026",
-        "source": "더구루"
+        "title": "[전문가 칼럼] 1,500원 시대…환율이 아닌 ‘신고 시점’을 보라",
+        "link": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE9HMWxGLWtiZWVrR2FmTGYwWWZuOXZDSWJYdGVaLXdEZXduakZmbnNSYnQ5UzdndWdENV9RS1d6bmtYR08wNmYySE5RX25ZNkJoa2hPTzYySVRuTEpjblRhczVuNA?oc=5",
+        "pubDate": "Thu, 16 Apr 2026",
+        "source": "조세금융신문"
+      },
+      {
+        "title": "2026년 호르무즈 리스크 확대에 따른 한국경제 충격 진단",
+        "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTFBUS2ZVM1VUZ3Zyay1DTEVmSkJ1WkdDeFFKRkNkaXNaY1VlelRRYldDSEU1UjFYUTcwR2ZEMUpzTG9KaW5LOVoxTEI0UlI2RjI2ak1MNUp6Tkx2YVRmd2FiSFJCQUJMVmQ5YjV3?oc=5",
+        "pubDate": "Fri, 10 Apr 2026",
+        "source": "KDI 경제교육·정보센터"
       },
       {
         "title": "팜 안 투안 박사: 두 자릿수 성장을 위해서는 자본만으로는 부족합니다.",
@@ -126,12 +132,6 @@
         "link": "https://news.google.com/rss/articles/CBMiU0FVX3lxTFBjQnJ0WjRoeHlXd3pwcWxEdUJPaFpLVUdlX0lqUFY0Vnl1TkxOMFdCMnZCcEQ0OWJ1cl8wYXp5MDNRU09sY2xEYkdUZ2tTZTh0Snpn?oc=5",
         "pubDate": "Fri, 19 Jun 2026",
         "source": "브런치"
-      },
-      {
-        "title": "[경제/무역] 베트남 무역수지 반년 만에 168억 달러 적자… ‘역대 최대치’ 기록",
-        "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTFBvZU5NdW1kMHJOc3RiTjZPT1pyUUJlZ05ZT2o3UDhycGl1TEFxbjN2YUVVUkhudTZlRTZTVWY4eHlpT25MR0otcmZfcTVGZWJ6NlJkOWhfaENEanVKV0VPTFlfUk1RVlBfVHpHc1Q4MWo?oc=5",
-        "pubDate": "Fri, 19 Jun 2026",
-        "source": "굿모닝베트남미디어"
       }
     ]
   }
