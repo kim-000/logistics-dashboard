@@ -1,9 +1,9 @@
 {
-  "last_updated": "2026-11-14 18:32 KST/JST",
+  "last_updated": "2026-11-15 09:30 KST/JST",
   "fx": {
-    "usd_krw": 1336.18,
-    "usd_jpy": 159.8,
-    "jpy_100_krw": 836.16
+    "usd_krw": 1336.06,
+    "usd_jpy": 159.78,
+    "jpy_100_krw": 836.19
   },
   "news": {
     "logistics": [
@@ -46,43 +46,31 @@
         "source": "日本経済新聞"
       },
       {
-        "title": "「だます」も表すsting（Step up English）",
-        "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE5NZmlWOVJvQkJEN2hFdUJmU3V3TVRSNnVkd2Y0RG5LUlJDSFhYOWtqdjJBYWRDRTJIMDk5cGhZbXdtU1ZOR2Z2azZzMjdXeVRsaWV4X18wVXFsc3JteFBQczhQRjAxV2RHTzBhMA?oc=5",
+        "title": "「エモい」昭和から「復興」の政治まで ノスタルジアは今をどう編むか",
+        "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE5oMTcxb2tIWm5xYkpGVlhaNUViVHh2Y0p1Y21yVnJpZG40a0pVcmdpNWFRWGZRN2l0R2RRQ3ZDWUtXa3Awa2YweS1rRnUzZjRTcHNVZnpjaThhbGg0SWlqWVlkd1YxT0FTdWhWZw?oc=5",
         "pubDate": "Sat, 14 Nov 2026",
         "source": "日本経済新聞"
+      },
+      {
+        "title": "米上院議員選出のタラリコさん 「愛の政治」掲げ共和党の牙城崩す",
+        "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTFB2SnUyTk1JdTFpX053aXpJMENsaHdtdUJLSW43SUtXbmZlVWlXQVJmVjVHQkN1YmJEWlBQRzdjX09wNnFNWFIwby1LbFRDNzl4enVVTzF3VGkyclJlSXk0aVFndmtaVng4bUFYcg?oc=5",
+        "pubDate": "Sat, 14 Nov 2026",
+        "source": "日本経済新聞"
+      },
+      {
+        "title": "イベントカレンダー『各国の主要政治・経済イベント予定』(2026年9月号) | 阿原 健一郎 | 第一ライフ資産運用経済研究所",
+        "link": "https://news.google.com/rss/articles/CBMiWkFVX3lxTFA2dzhZMVNrNGp2TmZqRDlWc2MxUjZGNEMxSGgzb1BSVWw4bjNTR3ZJYnk3SWRQa0RVeFVILXZhT0Z5ZzlzMWE1WHFjNGpMWlZ3Qy1CcTlGaFBGZw?oc=5",
+        "pubDate": "Tue, 25 Aug 2026",
+        "source": "第一ライフ資産運用経済研究所"
       },
       {
         "title": "危機に向き合う政治とは 財政、災害、そして有事",
         "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTFB6YXNrZnRsWXdPM2NER3IzRDE4amxBcl9Pb05pWVVWcEN4UHFEQTcyU3ZieTZnb2M0YjR5QXB1YUZ1NVFvcFpid2dENWdJdTd2RTIwNUEzV2RKRmxwaVpLaVlRTEg1aGtrUG5JRw?oc=5",
         "pubDate": "Sun, 25 Oct 2026",
         "source": "日本経済新聞"
-      },
-      {
-        "title": "中国も米国も信じぬ欧州 メルツ独首相が語った「日本との絆」",
-        "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE9tblVZeW95VjFCN3ZHUFljLS1CM2NDRTE2MUVsdlJMN2hzY3VpMXBQbW1OMXNLQnUyTFFVVXRfNmp5YlZ4S25kck1qbjdWeERUbjBNV0hSMmxuNVRZSjhvYkhsMS01RmhWcU52Vg?oc=5",
-        "pubDate": "Fri, 13 Nov 2026",
-        "source": "日本経済新聞"
-      },
-      {
-        "title": "［社説］渡航情報に拘束リスク反映を",
-        "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE5rWHFZWFdIaXFpeHg3X0k4ck10THNEcHFVVXpBdVJOdVYzUm1uUTZZWTd1UnBkNkswR3BOQk54dVRZU1Q2Vm9OODJ3eGJjUmZ4M25JTUp3MktzR0VWS1NwbHpMOFllbkRIcTZJTA?oc=5",
-        "pubDate": "Fri, 13 Nov 2026",
-        "source": "日本経済新聞"
       }
     ],
     "japan_visa": [
-      {
-        "title": "宿泊分野特定技能・育成就労協議会",
-        "link": "https://news.google.com/rss/articles/CBMixgFBVV95cUxOc2Y1WDNWWkhkc1lLS19uaTZ6czJYOEE0ZmpNVTNDWWp3eDNERk9xenZGZGFLX2xoTG5ZRVhLX1JFTW9UbWJuSDN6TGg1SFpFR0YxVjA2R2tJcV9wX3phU1A3dHdqX2tOUW5NUGQ0R0RNdk1RTVdNMjZ6UDNmZUhMYmx6dE1mMW5oWWFoSk14bkRoUzNjd1puNUpRVXdNY1hyX2pOQ1YyVENPdkdoWjBzZEhRSng0TjVJeXU2VGZHZUw2Q1pBOWc?oc=5",
-        "pubDate": "Wed, 28 Oct 2026",
-        "source": "国土交通省"
-      },
-      {
-        "title": "日本の食卓を守るのはカンボジアの若者!?　物流大手が仕掛けるドライバー確保への「本気すぎる一手」",
-        "link": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE1JaXBwUld2S05KOEdyT1ZKMmdxS2RqNjBxX3dGVTd4U3VGMU1OVGMzcmY2bGlKOVFCWWsyM0lIOUtkbTZ5WklyeXEzT2VQUmFCYXJZ0gFYQVVfeXFMT2JyUExUcTFrNjlJZnNzaWE1TEpTZjBpRFpSV29rTEtvbUlGVkNsajlnX1JGRXo5TWZjQjBRaURwcER0WEFfTzN1bGt3aW1YTkVJZ05ESjMwTg?oc=5",
-        "pubDate": "Mon, 09 Nov 2026",
-        "source": "WEB CARTOP"
-      },
       {
         "title": "特定技能２号に「在留５年」 政府、来年１月施行方針：時事ドットコム",
         "link": "https://news.google.com/rss/articles/CBMiY0FVX3lxTFByN0VnMnh4cmd3VjdEbDh2ZTRGMm0tUmM3d2swdEY5X0Q3UEJ6X25UNXpRaDZfYllMeG9INzdXSVdFNkVHZk9qWGNRQnczVWthek1IU25RUElzZDByVHJJeUxMVQ?oc=5",
@@ -90,30 +78,42 @@
         "source": "時事ドットコム"
       },
       {
-        "title": "在留資格厳格化「資本金3000万円」の根拠は――店舗契約、労働力に影響も #日本社会と外国人",
-        "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTE84OVM1UXpBZnFIRWhVcnpNV1JjTkJsLWNaSHhvMFBza0UzT2doWG91T2hWMEpZMS1Xb0JISVQyMFFRbHFNdE1Vd19GWHJhNlFCc2hSRkxOYVRVN1JTMXlWeXA0UnpDZmtYTkpJY3dCR3BhX0hYZjFwOFptLWYya2s?oc=5",
-        "pubDate": "Thu, 13 Aug 2026",
-        "source": "Yahoo!ニュース"
-      },
-      {
         "title": "物流・自動車：物流倉庫分野における特定技能外国人・育成就労外国人の受入れについて",
         "link": "https://news.google.com/rss/articles/CBMidEFVX3lxTE5FeDNXWE1OVlp0cmFFMjVMSXVPWGJkNWlXdEk4ZFdyZm10LWFLVzViNENoU1EydW82XzE3aVlDenc2bXptd21wMWVwMlBOZlpOUU9TUTFDQ1hETUNtX2wwMWtBZFpiVmFVUGdZa29MUmZtMl9k?oc=5",
         "pubDate": "Wed, 03 Jun 2026",
         "source": "国土交通省"
+      },
+      {
+        "title": "特定技能の外食業分野、2026年4月13日から受け入れ一時停止へ",
+        "link": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE5abENPX2ZwbnlMUEdmX1FXYjhfOGtsM2pXajJWdHcxNFREWlBpQlNvSFdObXhYeDlVS1cySGZGbGFuVUpFdlVFOXpScExaODJwVmc?oc=5",
+        "pubDate": "Mon, 30 Mar 2026",
+        "source": "ツギノジダイ"
+      },
+      {
+        "title": "キルギスに関する情報 | 出入国在留管理庁",
+        "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE05N0h4V1c1NEVtTV9XWEZuamQyTHJPcW5EUjA4MTZIdzloNm90YzNPZ3BUU2JkMnp0Q0d5RERZNENZSFIzSnpjTVRnald6ZkgzMGx6TGo1d0EycG1yRG9BR1BaMDBETTA?oc=5",
+        "pubDate": "Tue, 14 Apr 2026",
+        "source": "法務省"
+      },
+      {
+        "title": "在留資格「特定技能」について (農業分野)",
+        "link": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE1nNHRwaU5CclIwMkw3cUIyMm1mLWJSX2VWeXBtU282SkdVS2NHMHdMTktoVXdXbGlTd21fVjRzU21jWFBQOVdQLS1rR2Fyb1JpWEFrSlR3YktJTTBmRUE?oc=5",
+        "pubDate": "Sat, 14 Dec 2019",
+        "source": "農林水産省"
       }
     ],
     "global": [
-      {
-        "title": "337호 세계경제) AI·관세·전쟁·에너지…2027 세계경제를 흔들 4대 변수",
-        "link": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE84ZHR1VTM1Y25UaDh5NFh5dHduZmpFaWIyZG40MURiTUs3SFE3VkM5WnA4aXZVOHhIajZtU2puSVFiZDNJYndtNFJWamRQNG5GYVdrNkVxLXhHRkw4NmowOFpB?oc=5",
-        "pubDate": "Sat, 14 Nov 2026",
-        "source": "시사매거진"
-      },
       {
         "title": "美 ‘반도체 훈풍’에도 힘 못 쓴 ‘삼전닉스’…소폭 반등 그쳐",
         "link": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE1sLUxVYzk4X2NuN1d3cXFUMEVqRVJ3TUVza0otTnhYb05uMzYxX3VnVVh2ZlBZZWlNY1N6cjQtS3ZzYUg0NUkwdFBMTVZ2YlVTbmc?oc=5",
         "pubDate": "Mon, 09 Nov 2026",
         "source": "더나은미래"
+      },
+      {
+        "title": "337호 세계경제) AI·관세·전쟁·에너지…2027 세계경제를 흔들 4대 변수",
+        "link": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE84ZHR1VTM1Y25UaDh5NFh5dHduZmpFaWIyZG40MURiTUs3SFE3VkM5WnA4aXZVOHhIajZtU2puSVFiZDNJYndtNFJWamRQNG5GYVdrNkVxLXhHRkw4NmowOFpB?oc=5",
+        "pubDate": "Sat, 14 Nov 2026",
+        "source": "시사매거진"
       },
       {
         "title": "[전문가 칼럼] 1,500원 시대…환율이 아닌 ‘신고 시점’을 보라",
