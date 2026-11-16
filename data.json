@@ -1,9 +1,9 @@
 {
-  "last_updated": "2026-11-16 09:45 KST/JST",
+  "last_updated": "2026-11-16 19:30 KST/JST",
   "fx": {
-    "usd_krw": 1336.06,
+    "usd_krw": 1335.91,
     "usd_jpy": 159.78,
-    "jpy_100_krw": 836.19
+    "jpy_100_krw": 836.09
   },
   "news": {
     "logistics": [
@@ -40,15 +40,15 @@
     ],
     "japan_domestic": [
       {
-        "title": "15日の高市首相の動静",
-        "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE54bHdtblI3YlVzWTNiNWxERFFBVlJVWHZDMEI5MTRpeWxzdEItbEVyWDRlcFNRVnhYdWh6UUJ0YmxzaTAwclV5b2xxejBwMjAxTHRZcUdlQldFS1dWeWkyTXdrTEVfbDY2dTJMcw?oc=5",
-        "pubDate": "Sun, 15 Nov 2026",
+        "title": "防衛費50兆〜60兆円台、与党から異論 既存契約や円安で｢実質減｣",
+        "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE9PNzlYVzRMalhhal82RE5LRVFfOEJ5WWVwNndHNk1xRHRJRnp2UENJZWVSM3ZhMzZ5bzB4UEVzSTR1VGVsOGhpM1NzbFR4TGxyNHhUWjlQYnJpZWRMc1k2dVNINnppWEI3ZHBYSw?oc=5",
+        "pubDate": "Mon, 16 Nov 2026",
         "source": "日本経済新聞"
       },
       {
-        "title": "タイ経済の停滞、病根は政治 ティティナン・ポンスディラック氏",
-        "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTFBGSEZkT0MyNWFTNlk3Y0xQc3BIQktvOGNYVERiVm5aQl9EcUNhQmNKSmZnWFQ3Y2lqdFBSQmdYN0E2ckF3VnVwSm9TamtFNzFYMEo1aDItTVZZaG1VZExHZWRKdmF2aV85eHlIZA?oc=5",
-        "pubDate": "Fri, 13 Nov 2026",
+        "title": "新規上場企業・詳細データ",
+        "link": "https://news.google.com/rss/articles/CBMifkFVX3lxTE4tWkt1MHkySjBORlRzbEJtS1RZQk1vRjZpNlhwNFFwQUdXNGZlOXY5SndsQmpwaTd2R0hfQ0kycFFPMnhJSEdwZ3B1ajBMd3hYWFd0S0g4bEt3aXVwaGdKZkdPamdHREQ3TTFuM0x5eVlPVVZHa2ozMDJDOVZTQQ?oc=5",
+        "pubDate": "Mon, 16 Nov 2026",
         "source": "日本経済新聞"
       },
       {
@@ -58,14 +58,14 @@
         "source": "Meiji NOW"
       },
       {
-        "title": "「エモい」昭和から「復興」の政治まで ノスタルジアは今をどう編むか",
-        "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE5oMTcxb2tIWm5xYkpGVlhaNUViVHh2Y0p1Y21yVnJpZG40a0pVcmdpNWFRWGZRN2l0R2RRQ3ZDWUtXa3Awa2YweS1rRnUzZjRTcHNVZnpjaThhbGg0SWlqWVlkd1YxT0FTdWhWZw?oc=5",
-        "pubDate": "Sat, 14 Nov 2026",
-        "source": "日本経済新聞"
+        "title": "イベントカレンダー『各国の主要政治・経済イベント予定』(2026年9月号) | 阿原 健一郎 | 第一ライフ資産運用経済研究所",
+        "link": "https://news.google.com/rss/articles/CBMiWkFVX3lxTFA2dzhZMVNrNGp2TmZqRDlWc2MxUjZGNEMxSGgzb1BSVWw4bjNTR3ZJYnk3SWRQa0RVeFVILXZhT0Z5ZzlzMWE1WHFjNGpMWlZ3Qy1CcTlGaFBGZw?oc=5",
+        "pubDate": "Tue, 25 Aug 2026",
+        "source": "第一ライフ資産運用経済研究所"
       },
       {
-        "title": "政府、戦略17分野の女性人材育成 学び直しで地方の就業促進",
-        "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTFBMZFlJd3FRbk9OM0JsRTVneF9ScWtfTkVpRTB1MkdNMTZSU2NrRkFCNGdwdGNFRVJfM3AyNU1qakExOFRyVU1VajR3a1kyRnpNMENaYk5QR3dGNDBPRnRybXRjamxQeWY3VlBNNQ?oc=5",
+        "title": "15日の高市首相の動静",
+        "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE54bHdtblI3YlVzWTNiNWxERFFBVlJVWHZDMEI5MTRpeWxzdEItbEVyWDRlcFNRVnhYdWh6UUJ0YmxzaTAwclV5b2xxejBwMjAxTHRZcUdlQldFS1dWeWkyTXdrTEVfbDY2dTJMcw?oc=5",
         "pubDate": "Sun, 15 Nov 2026",
         "source": "日本経済新聞"
       }
@@ -104,10 +104,10 @@
     ],
     "global": [
       {
-        "title": "美 ‘반도체 훈풍’에도 힘 못 쓴 ‘삼전닉스’…소폭 반등 그쳐",
-        "link": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE1sLUxVYzk4X2NuN1d3cXFUMEVqRVJ3TUVza0otTnhYb05uMzYxX3VnVVh2ZlBZZWlNY1N6cjQtS3ZzYUg0NUkwdFBMTVZ2YlVTbmc?oc=5",
-        "pubDate": "Mon, 09 Nov 2026",
-        "source": "더나은미래"
+        "title": "[전문가 칼럼] 1,500원 시대…환율이 아닌 ‘신고 시점’을 보라",
+        "link": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE9HMWxGLWtiZWVrR2FmTGYwWWZuOXZDSWJYdGVaLXdEZXduakZmbnNSYnQ5UzdndWdENV9RS1d6bmtYR08wNmYySE5RX25ZNkJoa2hPTzYySVRuTEpjblRhczVuNA?oc=5",
+        "pubDate": "Thu, 16 Apr 2026",
+        "source": "조세금융신문"
       },
       {
         "title": "[오늘의 브릿지경제 1면] 글로벌 공급망 다변화 급한데… CPTPP 가입, 부처간 이견 팽팽",
