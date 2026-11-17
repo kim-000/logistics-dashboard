@@ -1,9 +1,9 @@
 {
-  "last_updated": "2026-11-16 19:30 KST/JST",
+  "last_updated": "2026-11-17 09:38 KST/JST",
   "fx": {
-    "usd_krw": 1335.91,
-    "usd_jpy": 159.78,
-    "jpy_100_krw": 836.09
+    "usd_krw": 1335.49,
+    "usd_jpy": 159.58,
+    "jpy_100_krw": 836.88
   },
   "news": {
     "logistics": [
@@ -12,12 +12,6 @@
         "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTE0wQmwyZkxCbEdXTUxIUlM5eUFEODZuVTlwdS12TDIxbGJBaUtEMllSd2RDczZfd21Tc01yRHNmdjVPNUVlUjl6dG83anNWYkJkVll5YUZkcm1RMEdGSTdEaVduNDhKNzFhNDN3?oc=5",
         "pubDate": "Tue, 10 Nov 2026",
         "source": "해사신문"
-      },
-      {
-        "title": "美·中 무역휴전 2개월 연장…관세·희토류·한화오션 제재 유예 1월까지",
-        "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTFBKM2pJSnVhdWVmZ0hMdW9xU20wQWpYWm5jV1l0TFVwYmxfMUtneXVDeXMtWVlTRmtqdUpiOHlGQ3FiVmlGX1VJamRFTFkzVV9BYW1fT1BFcUIyY29Oa1Q2V3A5TE9adkdmdHJz0gFrQVVfeXFMUEozaklKdWF1ZWZnSEx1b3FTbTBBalhabmNXWXRMVXBibF8xS2d5dUN5cy1ZWVNGa2p1SmI4eUZDcWJWaUZfVUlqZEVMWTNVX0FhbV9PUEVxQjJjb05rVDZXcDlMT1p2R2Z0cnM?oc=5",
-        "pubDate": "Tue, 10 Nov 2026",
-        "source": "CEO저널"
       },
       {
         "title": "美中, 무역 휴전 2개월 연장…관세·희토류 수출통제 유예",
@@ -36,18 +30,24 @@
         "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTE5WTHY1OE14SU9TQVBnMGJZZlRsRGlEMzBmUERETGxRNXdLRnlyOTU3LS1NOVdELV9KNTNpek9FVGs5aGhLZnFWSHZhUTBMZEptN1NhM09VWTlKSGdzOUM2cFlOOGxWUlJyaTFZ?oc=5",
         "pubDate": "Fri, 08 May 2026",
         "source": "해사신문"
+      },
+      {
+        "title": "美 의존 줄이는 글로벌 교역 구조…'인도 18% 관세' 영향 주목",
+        "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE1hQ2hEcXNod0oxTjh0Y3BLZm42c3haNzUxczZfejg2bGdOUjVFdm9EWEJwZmFxRXM5eTcweUd4YUFtelYyOG9oUHhUQk1ZbEJVOXp2blpOWV8tQnRuOWx1NTBzYzFTeE0?oc=5",
+        "pubDate": "Tue, 10 Feb 2026",
+        "source": "현대해양"
       }
     ],
     "japan_domestic": [
       {
-        "title": "防衛費50兆〜60兆円台、与党から異論 既存契約や円安で｢実質減｣",
-        "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE9PNzlYVzRMalhhal82RE5LRVFfOEJ5WWVwNndHNk1xRHRJRnp2UENJZWVSM3ZhMzZ5bzB4UEVzSTR1VGVsOGhpM1NzbFR4TGxyNHhUWjlQYnJpZWRMc1k2dVNINnppWEI3ZHBYSw?oc=5",
+        "title": "防衛費「安定財源を確保すべき」 安保3文書有識者会議の議事要旨",
+        "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE5oekthb21OdG1QRDRYajA3aENEdG05R1dSSGVKYk1fbUMxVHBZNWZsQ3RMbFY3OUM4NnBlQ19OWk9vLXBEdUQ3WElELWtHTXRlMWdFRmpXVG04d2NkcnF6QlhneXgtdmJfVng2Qw?oc=5",
         "pubDate": "Mon, 16 Nov 2026",
         "source": "日本経済新聞"
       },
       {
-        "title": "新規上場企業・詳細データ",
-        "link": "https://news.google.com/rss/articles/CBMifkFVX3lxTE4tWkt1MHkySjBORlRzbEJtS1RZQk1vRjZpNlhwNFFwQUdXNGZlOXY5SndsQmpwaTd2R0hfQ0kycFFPMnhJSEdwZ3B1ajBMd3hYWFd0S0g4bEt3aXVwaGdKZkdPamdHREQ3TTFuM0x5eVlPVVZHa2ozMDJDOVZTQQ?oc=5",
+        "title": "16日の高市首相の動静",
+        "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE95TjZwdDN5X3FBbmctcEMyU2s2eG5KQ0NnZS04T1FmRVRXOG1mY19wcWxFSmRwQnBsNV9xN0l6bXN5My1Id1FTUjRteDNGcjJIbkRPTExDT0w1MFZUTmI3eGltS0duTk5QVXBuYg?oc=5",
         "pubDate": "Mon, 16 Nov 2026",
         "source": "日本経済新聞"
       },
@@ -64,9 +64,9 @@
         "source": "第一ライフ資産運用経済研究所"
       },
       {
-        "title": "15日の高市首相の動静",
-        "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE54bHdtblI3YlVzWTNiNWxERFFBVlJVWHZDMEI5MTRpeWxzdEItbEVyWDRlcFNRVnhYdWh6UUJ0YmxzaTAwclV5b2xxejBwMjAxTHRZcUdlQldFS1dWeWkyTXdrTEVfbDY2dTJMcw?oc=5",
-        "pubDate": "Sun, 15 Nov 2026",
+        "title": "防衛費50兆〜60兆円台、与党から異論 既存契約や円安で｢実質減｣",
+        "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE9PNzlYVzRMalhhal82RE5LRVFfOEJ5WWVwNndHNk1xRHRJRnp2UENJZWVSM3ZhMzZ5bzB4UEVzSTR1VGVsOGhpM1NzbFR4TGxyNHhUWjlQYnJpZWRMc1k2dVNINnppWEI3ZHBYSw?oc=5",
+        "pubDate": "Mon, 16 Nov 2026",
         "source": "日本経済新聞"
       }
     ],
