@@ -1,9 +1,9 @@
 {
-  "last_updated": "2026-11-18 18:48 KST/JST",
+  "last_updated": "2026-11-19 09:46 KST/JST",
   "fx": {
-    "usd_krw": 1335.36,
-    "usd_jpy": 159.39,
-    "jpy_100_krw": 837.79
+    "usd_krw": 1332.22,
+    "usd_jpy": 159.36,
+    "jpy_100_krw": 835.98
   },
   "news": {
     "logistics": [
@@ -12,12 +12,6 @@
         "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTE0wQmwyZkxCbEdXTUxIUlM5eUFEODZuVTlwdS12TDIxbGJBaUtEMllSd2RDczZfd21Tc01yRHNmdjVPNUVlUjl6dG83anNWYkJkVll5YUZkcm1RMEdGSTdEaVduNDhKNzFhNDN3?oc=5",
         "pubDate": "Tue, 10 Nov 2026",
         "source": "해사신문"
-      },
-      {
-        "title": "美中, 무역 휴전 2개월 연장…관세·희토류 수출통제 유예",
-        "link": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE1VTGlqMkQwX0hpZTRPVlFCb3IzblNSenRpRDBIWFp5TzhtOFhxSEdKYUd5YWVMMTBNcnczS19iaG1mYW8wNUVIVEEySlI4OC1ES2ttOGh6NTJQQQ?oc=5",
-        "pubDate": "Mon, 09 Nov 2026",
-        "source": "한국경제"
       },
       {
         "title": "한국관세무역개발원, 교육·복지·재난까지 사회공헌 확대",
@@ -36,15 +30,15 @@
         "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE1hQ2hEcXNod0oxTjh0Y3BLZm42c3haNzUxczZfejg2bGdOUjVFdm9EWEJwZmFxRXM5eTcweUd4YUFtelYyOG9oUHhUQk1ZbEJVOXp2blpOWV8tQnRuOWx1NTBzYzFTeE0?oc=5",
         "pubDate": "Tue, 10 Feb 2026",
         "source": "현대해양"
+      },
+      {
+        "title": "美, 철강 파생제품 관세 전면 개편… 물류시장 ‘직격탄’",
+        "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTFB6NTY1TEtHLUotYklRMUZOQ0dBVlNMTFRKdktwV29remZLZEdXZFJMQk4tR1FqaGVDdjliVXpPSUxobjVzWVotV3UzWmxiUFVRQjRjMlJoRjg2MEUzNmJxcnhSaEE0VWt4Sjlz?oc=5",
+        "pubDate": "Wed, 08 Jul 2026",
+        "source": "물류신문"
       }
     ],
     "japan_domestic": [
-      {
-        "title": "ロビー活動の外国代理人、政治家接触に届け出義務 スパイ防止へ法整備",
-        "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE8zQzhpLXc5WVltRUJDWHlQbmxjc0NSUzU5a0w2UHdjcUVQOEZ2Smh5ZDFyT0FleTJMQXlqRjF3NVhEQmhwU1R6anU0RGpuVDloT1lhQ3BjUjR4MjhjTk54UXBMLWNVNmZHMWFHag?oc=5",
-        "pubDate": "Wed, 18 Nov 2026",
-        "source": "日本経済新聞"
-      },
       {
         "title": "米中ロ首脳会談を緊急解説 深圳から生中継",
         "link": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE5zbGE5bHA3UlhqOUVuWWFIdEZsYkVEcnc0U2x5aVFwRWFUNHRqU1pfejVDTFhrbzdwRmxQS09sbHlyWFhxNmQySGlvWkdrbUZEMHNub0E0Snhidw?oc=5",
@@ -52,20 +46,26 @@
         "source": "日本経済新聞"
       },
       {
-        "title": "米政界、多様性が招く反動 「人種のるつぼ」に亀裂の芽",
-        "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE91cndLZFdBaUZQelNzRjdLby12V3lsY2h6UWlfeHdBMkhuN2xUVEtQLUZYNm5qeHZtN1AyVHItTkVhLUhpejRUVFpGcnVqUWJrVlV2bGRpdXdvYS1DSUZlX2V5UkJndzFaQkR0bg?oc=5",
+        "title": "ロビー活動の外国代理人、政治家接触に届け出義務 スパイ防止へ法整備",
+        "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE8zQzhpLXc5WVltRUJDWHlQbmxjc0NSUzU5a0w2UHdjcUVQOEZ2Smh5ZDFyT0FleTJMQXlqRjF3NVhEQmhwU1R6anU0RGpuVDloT1lhQ3BjUjR4MjhjTk54UXBMLWNVNmZHMWFHag?oc=5",
         "pubDate": "Wed, 18 Nov 2026",
         "source": "日本経済新聞"
       },
       {
-        "title": "イベントカレンダー『各国の主要政治・経済イベント予定』(2026年9月号) | 阿原 健一郎 | 第一ライフ資産運用経済研究所",
-        "link": "https://news.google.com/rss/articles/CBMiWkFVX3lxTFA2dzhZMVNrNGp2TmZqRDlWc2MxUjZGNEMxSGgzb1BSVWw4bjNTR3ZJYnk3SWRQa0RVeFVILXZhT0Z5ZzlzMWE1WHFjNGpMWlZ3Qy1CcTlGaFBGZw?oc=5",
-        "pubDate": "Tue, 25 Aug 2026",
-        "source": "第一ライフ資産運用経済研究所"
+        "title": "虚構の「新ヤルタ」が告げる転換点 米中ロを変えた12年と日本の孤立",
+        "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTFBXLVl1ZHhVV0NBZEZETHE3LTBMaTlnaklZUVllRGZSa2QwZk5fUWJkWVBYM3lDcHNFYnpETTBjTFBfTjVMd2tHdktGQXpVYmZCdmoydVpHMEZ1a2FWQ1lNMVdNdG5zcXpoaVFYTw?oc=5",
+        "pubDate": "Wed, 18 Nov 2026",
+        "source": "日本経済新聞"
       },
       {
-        "title": "米国の選挙、マネーで買えない道理",
-        "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTFA0MjVwd3R2SFBqNFBVNnppTnNkazF1V2QwUHBTNi1YaUExN2NEd0hFZUI0TGduY2drUkhPRktkWTVGRkFQR0REV000dHBRZXlxd0FvUTRjTHNUdk45TDROQV9hb1ZrazRYRlF0UQ?oc=5",
+        "title": "18日の高市首相の動静",
+        "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE9QOFFUbDZIU25KbmtlSVltQXJMazVHYnE0bWUwcFk3WWw4dF9zNzZxZ3N2YlZBbmwzNWVNSk9YaEl4cjBYYWFMeGZ2T1p0OXFBRUhxNklxRU9kSkVNM1plWjlOODF0aEc1UnhMTQ?oc=5",
+        "pubDate": "Wed, 18 Nov 2026",
+        "source": "日本経済新聞"
+      },
+      {
+        "title": "日ロ首脳が対話、ウクライナ侵略以降初 首相は邦人記者解放など要求",
+        "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTFBmY0JyUXBVbGM3YUNIaURfd080cE5obUNSSW40WFhOS3ozQmJQMXgzOGJvS0lUaVZFdkEydDRYd1hTRExLX3hEWl9nYlg3M1lvNnZCaTFVbU5yS0xjM2hBR01YckJpZHVLeGg3dQ?oc=5",
         "pubDate": "Wed, 18 Nov 2026",
         "source": "日本経済新聞"
       }
@@ -104,12 +104,6 @@
     ],
     "global": [
       {
-        "title": "[심층분석] AI가 바꾸는 글로벌 B2B 무역… 알리바바닷컴, 중소기업 해외 소싱의 진입장벽 낮춘다",
-        "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE5pYTVmWktLTS0wNnBXQ2I0aW1BX2p3OHcxYUtFTVlzY2xEQnJLS3hZYjFBRFJ3T3ZXWVBiLVdTMFMxMUZKLUhYSFN1M1ppYk1velR5WFd1QzN4NXpsQk9lMWNYSjVycnlYREE?oc=5",
-        "pubDate": "Tue, 17 Nov 2026",
-        "source": "뉴스밸류"
-      },
-      {
         "title": "[전문가 칼럼] 1,500원 시대…환율이 아닌 ‘신고 시점’을 보라",
         "link": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE9HMWxGLWtiZWVrR2FmTGYwWWZuOXZDSWJYdGVaLXdEZXduakZmbnNSYnQ5UzdndWdENV9RS1d6bmtYR08wNmYySE5RX25ZNkJoa2hPTzYySVRuTEpjblRhczVuNA?oc=5",
         "pubDate": "Thu, 16 Apr 2026",
@@ -132,6 +126,12 @@
         "link": "https://news.google.com/rss/articles/CBMiU0FVX3lxTFBjQnJ0WjRoeHlXd3pwcWxEdUJPaFpLVUdlX0lqUFY0Vnl1TkxOMFdCMnZCcEQ0OWJ1cl8wYXp5MDNRU09sY2xEYkdUZ2tTZTh0Snpn?oc=5",
         "pubDate": "Fri, 19 Jun 2026",
         "source": "브런치"
+      },
+      {
+        "title": "[경제/무역] 베트남 무역수지 반년 만에 168억 달러 적자… ‘역대 최대치’ 기록",
+        "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTFBvZU5NdW1kMHJOc3RiTjZPT1pyUUJlZ05ZT2o3UDhycGl1TEFxbjN2YUVVUkhudTZlRTZTVWY4eHlpT25MR0otcmZfcTVGZWJ6NlJkOWhfaENEanVKV0VPTFlfUk1RVlBfVHpHc1Q4MWo?oc=5",
+        "pubDate": "Fri, 19 Jun 2026",
+        "source": "굿모닝베트남미디어"
       }
     ]
   }
