@@ -1,9 +1,9 @@
 {
-  "last_updated": "2026-11-19 18:50 KST/JST",
+  "last_updated": "2026-11-20 09:38 KST/JST",
   "fx": {
-    "usd_krw": 1332.22,
-    "usd_jpy": 159.36,
-    "jpy_100_krw": 835.98
+    "usd_krw": 1330.97,
+    "usd_jpy": 159.75,
+    "jpy_100_krw": 833.16
   },
   "news": {
     "logistics": [
@@ -38,7 +38,38 @@
         "source": "물류신문"
       }
     ],
-    "japan_domestic": [],
+    "japan_domestic": [
+      {
+        "title": "高市首相、日中4政治文書「位置づけ変わらず」 習氏には招待の謝意",
+        "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE5rTTkyWC1OcDkzemJiOGZub1lNQkMtWXRMa0lSOUVVNER5eTVVVTBod0NROXZzTmo0ZWxKdjJOc0xKdm9lb3ZaejJVYl9MVUtHNjR6bVllNjFHN2dibmcyX29xUENfdGdBUVNKdg?oc=5",
+        "pubDate": "Thu, 19 Nov 2026",
+        "source": "日本経済新聞"
+      },
+      {
+        "title": "日中の政治対話、長い空白 APECで首脳会談実現せず",
+        "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTFBkMkVuTVVQVmI5RU93UXNrbzY3WmI4LTBiVTlDNkhpZDRjOTBudTNEblc5MmdZYjk4VnZ0VGE1T0J6d3RvUjgwenByc2pZUW9ybGEyRkd4RzJRc2pOb3plbE5CUkJrY3A5NVRYUg?oc=5",
+        "pubDate": "Thu, 19 Nov 2026",
+        "source": "日本経済新聞"
+      },
+      {
+        "title": "文明は崩壊するのか",
+        "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE5BQjcwSjZVQXppZ0RFeFNJaWhETVotUHZjNFF4cFBjWk4zWFFROXJwM3c4MzNFLUoyWXRDYndpMzM2NjNxa1BPQ0xxZFhfdlo0Ql9hak5XTlY3SmZORm9IaWNmNEN3MU5CUEZDWg?oc=5",
+        "pubDate": "Thu, 19 Nov 2026",
+        "source": "日本経済新聞"
+      },
+      {
+        "title": "ロビー活動の外国代理人、政治家接触に届け出義務 スパイ防止へ法整備",
+        "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE8zQzhpLXc5WVltRUJDWHlQbmxjc0NSUzU5a0w2UHdjcUVQOEZ2Smh5ZDFyT0FleTJMQXlqRjF3NVhEQmhwU1R6anU0RGpuVDloT1lhQ3BjUjR4MjhjTk54UXBMLWNVNmZHMWFHag?oc=5",
+        "pubDate": "Wed, 18 Nov 2026",
+        "source": "日本経済新聞"
+      },
+      {
+        "title": "［社説］米中ロに世界秩序は委ねられない",
+        "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE9FVU0xRnE1d2luaXpMbzNpVEJIeDBmLXZsRlZqbWRCMFpxNnhLaEJtNlFaQW41VUhnN290YW5TdWFIVHNLRzEteTU4SEZfZDY5M3gzQjVtNlpvWGV0SkJORDhtekNqeUZyVHk4ZA?oc=5",
+        "pubDate": "Thu, 19 Nov 2026",
+        "source": "日本経済新聞"
+      }
+    ],
     "japan_visa": [
       {
         "title": "宿泊分野特定技能・育成就労協議会",
@@ -47,16 +78,16 @@
         "source": "国土交通省"
       },
       {
-        "title": "外国人在留は「選別しつつ受け入れ」へ：相次ぐ審査の厳格化（nippon.com）",
-        "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTE9lbjJBTEVyMktWZ2F0YU9FUEZVRy1vNkZ4LVVQSmRPN1VKYkFsOXBWTjNIQ3QydGlBOWhFcERuN0VqbHRUalZpUWlmUDNCQzFydjlLMEE3bkpTR19TUURiMV9pdHFreHk4Z2xwUWxFMGRLeXRSLUttOEdLZ2pqbWM?oc=5",
-        "pubDate": "Tue, 29 Sep 2026",
-        "source": "Yahoo!ニュース"
-      },
-      {
         "title": "特定技能２号に「在留５年」 政府、来年１月施行方針：時事ドットコム",
         "link": "https://news.google.com/rss/articles/CBMiY0FVX3lxTFByN0VnMnh4cmd3VjdEbDh2ZTRGMm0tUmM3d2swdEY5X0Q3UEJ6X25UNXpRaDZfYllMeG9INzdXSVdFNkVHZk9qWGNRQnczVWthek1IU25RUElzZDByVHJJeUxMVQ?oc=5",
         "pubDate": "Tue, 04 Aug 2026",
         "source": "時事ドットコム"
+      },
+      {
+        "title": "外国人在留は「選別しつつ受け入れ」へ：相次ぐ審査の厳格化（nippon.com）",
+        "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTE9lbjJBTEVyMktWZ2F0YU9FUEZVRy1vNkZ4LVVQSmRPN1VKYkFsOXBWTjNIQ3QydGlBOWhFcERuN0VqbHRUalZpUWlmUDNCQzFydjlLMEE3bkpTR19TUURiMV9pdHFreHk4Z2xwUWxFMGRLeXRSLUttOEdLZ2pqbWM?oc=5",
+        "pubDate": "Tue, 29 Sep 2026",
+        "source": "Yahoo!ニュース"
       },
       {
         "title": "物流・自動車：物流倉庫分野における特定技能外国人・育成就労外国人の受入れについて",
@@ -79,10 +110,10 @@
         "source": "산업일보"
       },
       {
-        "title": "[심층분석] AI가 바꾸는 글로벌 B2B 무역… 알리바바닷컴, 중소기업 해외 소싱의 진입장벽 낮춘다",
-        "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE5pYTVmWktLTS0wNnBXQ2I0aW1BX2p3OHcxYUtFTVlzY2xEQnJLS3hZYjFBRFJ3T3ZXWVBiLVdTMFMxMUZKLUhYSFN1M1ppYk1velR5WFd1QzN4NXpsQk9lMWNYSjVycnlYREE?oc=5",
-        "pubDate": "Tue, 17 Nov 2026",
-        "source": "뉴스밸류"
+        "title": "한국 수출 사상 첫 1조달러 돌파…세계 4대 수출강국 도약 기대",
+        "link": "https://news.google.com/rss/articles/CBMiZEFVX3lxTFBqaGZXSWxrYVY1ZWs5VzJJZEZPeS0wLURjbWpza19jdHpnelJSUXlNR3o5Q3poejM2Mk95S0htYU8yaTN0VkxMeXlaZWVMUERoYzhiTTJQMFFYdllFUUtSZXJYMVo?oc=5",
+        "pubDate": "Thu, 19 Nov 2026",
+        "source": "지이코노미"
       },
       {
         "title": "[전문가 칼럼] 1,500원 시대…환율이 아닌 ‘신고 시점’을 보라",
