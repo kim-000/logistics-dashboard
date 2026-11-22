@@ -1,9 +1,9 @@
 {
-  "last_updated": "2026-11-21 18:37 KST/JST",
+  "last_updated": "2026-11-22 09:33 KST/JST",
   "fx": {
-    "usd_krw": 1330.97,
-    "usd_jpy": 159.75,
-    "jpy_100_krw": 833.16
+    "usd_krw": 1343.33,
+    "usd_jpy": 158.75,
+    "jpy_100_krw": 846.19
   },
   "news": {
     "logistics": [
@@ -14,47 +14,35 @@
         "source": "해사신문"
       },
       {
-        "title": "“미 중간선거 後 국내 해운물류 단기영향 ‘제한적’”",
-        "link": "https://news.google.com/rss/articles/CBMiekFVX3lxTE1tWXRqbkZ0N3UxblBpVmlodVk1N2tXWnVOLXo0SHdNTHZvNWtMTmdRclU3bDh4REt2bGJ3XzRid2RuMV8zNkgtdnJ2cUdnVzN0OUlreFktYThaeTAwbHdaa2R0aGxLTnp2V1JWdjZQSXlkaXIxc09pdUpn?oc=5",
-        "pubDate": "Wed, 11 Nov 2026",
-        "source": "해양한국"
+        "title": "美中, 무역 휴전 2개월 연장…관세·희토류 수출통제 유예",
+        "link": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE1VTGlqMkQwX0hpZTRPVlFCb3IzblNSenRpRDBIWFp5TzhtOFhxSEdKYUd5YWVMMTBNcnczS19iaG1mYW8wNUVIVEEySlI4OC1ES2ttOGh6NTJQQQ?oc=5",
+        "pubDate": "Mon, 09 Nov 2026",
+        "source": "한국경제"
       },
       {
-        "title": "한국관세무역개발원, 교육·복지·재난까지 사회공헌 확대",
-        "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTE5Na2hfN21RSjQyWFBFektjbkpWMUlyOGp1YW9YNlBkbHFNY1NrVktBb0Q1STI0T2VWakx1TUhTbWxrSWVCQ0hqUXF1el9yVzBjeDVieGdsX0dseTNhNFZrLW8wRThzT25USWM0?oc=5",
-        "pubDate": "Thu, 10 Sep 2026",
-        "source": "물류신문"
+        "title": "美·中 무역휴전 2개월 연장…관세·희토류·한화오션 제재 유예 1월까지",
+        "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE1oQUtMaEtLLWw5dFFkdEdIa25iY3RtMGRvbEpCR1RYVVRUMXAycWJ2b0lwRWpOclhEdnp3MlAyUXNJUklydmxHY3BhOHhSNkpqU2pNZkJUNWdaU2E5S1NZZU5INnVVNWfSAWtBVV95cUxQSjNqSUp1YXVlZmdITHVvcVNtMEFqWFpuY1dZdExVcGJsXzFLZ3l1Q3lzLVlZU0ZranVKYjh5RkNxYlZpRl9VSWpkRUxZM1VfQWFtX09QRXFCMmNvTmtUNldwOUxPWnZHZnRycw?oc=5",
+        "pubDate": "Tue, 10 Nov 2026",
+        "source": "CEO저널"
       },
       {
-        "title": "美, 철강 파생제품 관세 전면 개편… 물류시장 ‘직격탄’",
-        "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTFB6NTY1TEtHLUotYklRMUZOQ0dBVlNMTFRKdktwV29remZLZEdXZFJMQk4tR1FqaGVDdjliVXpPSUxobjVzWVotV3UzWmxiUFVRQjRjMlJoRjg2MEUzNmJxcnhSaEE0VWt4Sjlz?oc=5",
-        "pubDate": "Wed, 08 Jul 2026",
-        "source": "물류신문"
+        "title": "미·중 '무역 휴전' 쌍끌이 연장…내년 1월까지 관세·제재 유예",
+        "link": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE81emRwcWlzemVEODZYTTMybGtmbjVJa3RKRUM5djZKZ1FQY2dEeF9rcmUxdlVOOC1hajB2QzgyNExMamZIT3NiMUE4T2N6YzlFSDltWDh5alZhQQ?oc=5",
+        "pubDate": "Tue, 10 Nov 2026",
+        "source": "파이낸셜뉴스"
       },
       {
-        "title": "관세청, 미국 관세국경보호청과 수출입 협력 논의",
-        "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTFBIUGlyRkg3aHdoWUJnNlZVM2dDWkM3akVqZWZpQk5HLTJIUjFsclFER0d2clp6aTJhdFNVaV9xdjcxamtlZ1ZGZmp0T051aV95Tm5tZm1iLXNjLXB5RmFHdk9GZ080djUzTVlz?oc=5",
-        "pubDate": "Mon, 15 Jun 2026",
-        "source": "물류신문"
+        "title": "中, 대미 24% 추가관세·희토류 수출통제 유예 내년 1월까지 연장",
+        "link": "https://news.google.com/rss/articles/CBMiUkFVX3lxTFBxRU9kc0VvaHBZeHFCZjVjUXR1WTBxMzUwRy05TThiRTVjVEsxSVVaUFZaLTEzcGZDMllGcDJzbFZoS0ZqdWtoLWwzZGhhQmtIQXfSAVNBVV95cUxNcE01MVhPdzhQckxRbnRLUTN3UWljNHFybEZRRGVpNzY4blJWd0dZbTZCUm5KS3ZjYkFCTkxNcEZVaGFoZm56QTl3eTN0OUFPaTBpRQ?oc=5",
+        "pubDate": "Mon, 09 Nov 2026",
+        "source": "서울경제"
       }
     ],
     "japan_domestic": [
       {
-        "title": "ケイコ・フジモリ大統領インタビュー「ペルーを南米の玄関口に」 日本企業を誘致",
-        "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE9ndGoyUUZESk92OURQMklWWHBTWklPRkFSZUZfdzg2N29CeWtEOEFYSFBIdG1CbkFQbzVzem82WkVJaVpZVmNxanB1eGJiUGJTR0dhY3RZVlY2a1BsNjBJVGVDYWVFQ2pmNS15eA?oc=5",
-        "pubDate": "Fri, 20 Nov 2026",
-        "source": "日本経済新聞"
-      },
-      {
-        "title": "大阪市廃止で経済成長率が上昇？ 都構想の財政試算、問われる根拠",
-        "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE4wYTFtUDdZckVoVFB0ZnVNRjF3MkdmU3ZqMFdsZjV6T2pCUHNXVHZqSV9LWXNXVjBMWUxkTGtsVGg3X04wMVhWdWZsVkRQOFlRZXZKbXcwd3lsQVVSdk96NnM4anRnODNQU3ctcA?oc=5",
-        "pubDate": "Fri, 20 Nov 2026",
-        "source": "日本経済新聞"
-      },
-      {
-        "title": "税は搾取でなく権利だ 小説家・真山仁氏、財政破綻後の日本描く理由",
-        "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE9takFuWGxYZXk0c1BCUHZsY2JjUXZUS3AwWTFOS3FRSFV2SUhqeU9sdnZQNzN4ZUoxdUJiYkJzS3kyN3EzNmxZOW04RDlhbjlidUpiWlppNUNCYWZVWE1vWVd0SlhROUh2TjNhbw?oc=5",
-        "pubDate": "Fri, 20 Nov 2026",
+        "title": "21日の高市首相の動静",
+        "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE53SmRkbkZqTFV6T3JnYUtTVndxb0g5NFBITW5MQW14c1BKX1ZRcjZMTzljY0xfZV85ajRjZFpuSWxPel90LUROTkdKRkVUaWVqekxjQV8tTndpSmFOMlY4dUQweFAyQkZVejlINQ?oc=5",
+        "pubDate": "Sat, 21 Nov 2026",
         "source": "日本経済新聞"
       },
       {
@@ -64,8 +52,20 @@
         "source": "日本経済新聞"
       },
       {
-        "title": "高市首相、日中4政治文書「位置づけ変わらず」 習氏には招待の謝意",
-        "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE5rTTkyWC1OcDkzemJiOGZub1lNQkMtWXRMa0lSOUVVNER5eTVVVTBod0NROXZzTmo0ZWxKdjJOc0xKdm9lb3ZaejJVYl9MVUtHNjR6bVllNjFHN2dibmcyX29xUENfdGdBUVNKdg?oc=5",
+        "title": "日本経済の歴史から、時代背景や社会の変容を研究する｜政治経済学部・日向祥子ゼミ ｜明治大学",
+        "link": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE1oemluZ0YxM1ZJalBRSmU3LXA0ODFUNWxCT2liWmJRekx5RTg3X2JLSlNUZVltZEFkTXRMVXVMWTlPU0tiYVl3OFpPSlYtczN6Tmc?oc=5",
+        "pubDate": "Mon, 11 May 2026",
+        "source": "Meiji NOW"
+      },
+      {
+        "title": "化粧品広告の規制緩和へ、数値・体験談を解禁 輸出促進へ海外足並み",
+        "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTFBQTEhqWlpJNVNsVnlpeWRUdTZiQzNlMTR0Z1pUUi00TTRVZ1pqRm1IenNqVDl0bTE4UHE2bG5pSmQ1SHVqQnd3VnhCMHAwT0dBVDVpWnloelR5dVp0dm11SFY1OV9EdVNCMllLUQ?oc=5",
+        "pubDate": "Sat, 21 Nov 2026",
+        "source": "日本経済新聞"
+      },
+      {
+        "title": "米中ロ首脳会談を現地緊急解説",
+        "link": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE1TQ25JZmljVHZybU5VMlBzZFVpelNnbllwenlGWDlWXy1fZE9JVG51QkRERHBDMV9SNXphOXA5d29CdUdkQUdzb2E1U3RZSUhTeW9SVEVyZWx2Zms?oc=5",
         "pubDate": "Thu, 19 Nov 2026",
         "source": "日本経済新聞"
       }
@@ -90,16 +90,16 @@
         "source": "国土交通省"
       },
       {
-        "title": "在留資格認定証明書の電子化について | 出入国在留管理庁",
-        "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTE9fNnRnOGVZYlJGRnkybTNaaGlXTW9mTkJXUzc5M0NoYmpObzA1dUxoSkx1YXlNa0VGckV3c0xRU1RHQUpTMlJfb1pLRG90Q2R4azdhbTZHaUpYWXB4OXdyS2RJLVBGSlIxVEgxMGVUSGQ?oc=5",
-        "pubDate": "Tue, 14 Mar 2023",
-        "source": "法務省"
-      },
-      {
         "title": "在留資格「特定技能」について (農業分野)",
         "link": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE1nNHRwaU5CclIwMkw3cUIyMm1mLWJSX2VWeXBtU282SkdVS2NHMHdMTktoVXdXbGlTd21fVjRzU21jWFBQOVdQLS1rR2Fyb1JpWEFrSlR3YktJTTBmRUE?oc=5",
         "pubDate": "Sat, 14 Dec 2019",
         "source": "農林水産省"
+      },
+      {
+        "title": "在留資格認定証明書の電子化について | 出入国在留管理庁",
+        "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTE9fNnRnOGVZYlJGRnkybTNaaGlXTW9mTkJXUzc5M0NoYmpObzA1dUxoSkx1YXlNa0VGckV3c0xRU1RHQUpTMlJfb1pLRG90Q2R4azdhbTZHaUpYWXB4OXdyS2RJLVBGSlIxVEgxMGVUSGQ?oc=5",
+        "pubDate": "Tue, 14 Mar 2023",
+        "source": "法務省"
       }
     ],
     "global": [
