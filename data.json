@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-11-25 18:57 KST/JST",
+  "last_updated": "2026-11-26 09:45 KST/JST",
   "fx": {
     "usd_krw": 1343.04,
     "usd_jpy": 159.24,
@@ -12,6 +12,12 @@
         "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTE0wQmwyZkxCbEdXTUxIUlM5eUFEODZuVTlwdS12TDIxbGJBaUtEMllSd2RDczZfd21Tc01yRHNmdjVPNUVlUjl6dG83anNWYkJkVll5YUZkcm1RMEdGSTdEaVduNDhKNzFhNDN3?oc=5",
         "pubDate": "Tue, 10 Nov 2026",
         "source": "해사신문"
+      },
+      {
+        "title": "美中, 무역 휴전 2개월 연장…관세·희토류 수출통제 유예",
+        "link": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE1VTGlqMkQwX0hpZTRPVlFCb3IzblNSenRpRDBIWFp5TzhtOFhxSEdKYUd5YWVMMTBNcnczS19iaG1mYW8wNUVIVEEySlI4OC1ES2ttOGh6NTJQQQ?oc=5",
+        "pubDate": "Mon, 09 Nov 2026",
+        "source": "한국경제"
       },
       {
         "title": "美, 철강 파생제품 관세 전면 개편… 물류시장 ‘직격탄’",
@@ -30,30 +36,24 @@
         "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE1hQ2hEcXNod0oxTjh0Y3BLZm42c3haNzUxczZfejg2bGdOUjVFdm9EWEJwZmFxRXM5eTcweUd4YUFtelYyOG9oUHhUQk1ZbEJVOXp2blpOWV8tQnRuOWx1NTBzYzFTeE0?oc=5",
         "pubDate": "Tue, 10 Feb 2026",
         "source": "현대해양"
-      },
-      {
-        "title": "한국관세무역개발원, 교육·복지·재난까지 사회공헌 확대",
-        "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTE5Na2hfN21RSjQyWFBFektjbkpWMUlyOGp1YW9YNlBkbHFNY1NrVktBb0Q1STI0T2VWakx1TUhTbWxrSWVCQ0hqUXF1el9yVzBjeDVieGdsX0dseTNhNFZrLW8wRThzT25USWM0?oc=5",
-        "pubDate": "Thu, 10 Sep 2026",
-        "source": "물류신문"
       }
     ],
     "japan_domestic": [
       {
-        "title": "トランプ氏とファン氏、モラルなき特権政治 多重の利益相反疑惑",
-        "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE1uWFRzR3pkNW5yVTFxVDBPWHpuOWFzUXREbDB3UGpURlFNLXc3NVZMRE1Ecy1aQnJ6NUstLU1oeHBjRFBERlUzTXJxb09LSUhFZXB1djFVemVtdEJ3LWpsV3Q2SGdneTVsYnlRcg?oc=5",
-        "pubDate": "Tue, 24 Nov 2026",
+        "title": "SNS政治、執行権優位の高速度民主主義に 自壊回避へ岐路の10年",
+        "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE5QcWhtRmVTZ1NZQTIyTmJ1Q1k4ZFphZldxOWV5Y1Z1TjA5RlZXWWROSDJVQ09xVFlUU1huNTdldjZibktCcGxLNHlfOWVHclJ1M2RBWmotT3RpaWdZZzhuT3NoaEFtemVDaExaWA?oc=5",
+        "pubDate": "Wed, 25 Nov 2026",
         "source": "日本経済新聞"
       },
       {
-        "title": "[FT]気温上昇に「時間軸の悲劇」 低炭素経済へ投資ためらうな",
-        "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE1qVGQ0ZmpkTzFieXNJbWlmdUZZRlNBbjVWZHBQNnl2OVBKQlNibDhrYjR4OEZBaTctVVB5TEVRN194S3Z5WW5GOUdCSWpwLVkwSUgtMERCb0dBN3JLWFNzVk5xZ0FXVDJzQldFZQ?oc=5",
-        "pubDate": "Tue, 24 Nov 2026",
+        "title": "25日の高市首相の動静",
+        "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTFBXSWQ5OU0yQ0d0YlE5S3IzcEQ0bmRwaDJZblN4Uy1lVDhiYTE2Z2ZEeVZ0NHZmYmt1QmpMUUQ2YW50Z3JBU0ZsN3FBeTZLNThMLWxpRmg0eThmS3g5R0t4YjREcDBiSnZvSHRqWA?oc=5",
+        "pubDate": "Wed, 25 Nov 2026",
         "source": "日本経済新聞"
       },
       {
-        "title": "参政党、独極右政党AfD議員を招待 来年2月の政治資金パーティー",
-        "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE1fM1JLWW9ZbVBOdmJFbzYtRTJqRC1WbWhjZkZTUXNwTFF0MmlxSEswRVV3TWhPd3l5WU9JZ0FZNDAydU4ydFZjd0VhSG5vb3owWENvRWZ0bnFQdVIwM3ZneXUwR1BDengxc1JBQg?oc=5",
+        "title": "大国政治復活を阻む資本の論理 呉軍華氏",
+        "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE5GdE9GcFZ3aENKbHJMUXU3a1FYaVFuYnlQQ3lCR041ZGhsT3FCd2RjUjN3Y2hnVGM4MVhKaTEzNTlieE8xcDJUUlFKb1kzTml4YUluV2VWMHczNlZZQVN6bThGcThPS0QtMkFUYw?oc=5",
         "pubDate": "Wed, 25 Nov 2026",
         "source": "日本経済新聞"
       },
@@ -64,8 +64,8 @@
         "source": "第一ライフ資産運用経済研究所"
       },
       {
-        "title": "中国、上海市トップの陳吉寧氏を調査 「重大な規律違反」",
-        "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE5URXVLTXBpSmItSDhOTEZadmhSLWZLVUZ4OUV2X1pnU2d0YkljWFkzN2lNT0MyaUlsNkt5YUhNR0FueGIzNjEtSXZPU3dOV1pQTWF3TEdOMVVxaHhsc3NSWHg1bVRhXzA1a0dzcw?oc=5",
+        "title": "トランプ氏とファン氏、モラルなき特権政治 多重の利益相反疑惑",
+        "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE1uWFRzR3pkNW5yVTFxVDBPWHpuOWFzUXREbDB3UGpURlFNLXc3NVZMRE1Ecy1aQnJ6NUstLU1oeHBjRFBERlUzTXJxb09LSUhFZXB1djFVemVtdEJ3LWpsV3Q2SGdneTVsYnlRcg?oc=5",
         "pubDate": "Tue, 24 Nov 2026",
         "source": "日本経済新聞"
       }
@@ -104,34 +104,34 @@
     ],
     "global": [
       {
+        "title": "[산업종합저널 | INDUSTRY SIGNAL] 외환보유액 4,405억弗 축소 속 대미 수출 쏠림…글로벌 금리·환율 변동성 대응 분수령",
+        "link": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE82S0dkTEVnRG9RcGg3a2tydWhiV1JfQ1B4V3hlYnVUaG1kTG9hODVjVGNQWU9Kaldtc3hzVmtLSEhSeHRtZW9DVjczQmJRLTlUREhz?oc=5",
+        "pubDate": "Wed, 07 Oct 2026",
+        "source": "산업종합저널"
+      },
+      {
         "title": "[전문가 칼럼] 1,500원 시대…환율이 아닌 ‘신고 시점’을 보라",
         "link": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE9HMWxGLWtiZWVrR2FmTGYwWWZuOXZDSWJYdGVaLXdEZXduakZmbnNSYnQ5UzdndWdENV9RS1d6bmtYR08wNmYySE5RX25ZNkJoa2hPTzYySVRuTEpjblRhczVuNA?oc=5",
         "pubDate": "Thu, 16 Apr 2026",
         "source": "조세금융신문"
       },
       {
-        "title": "[T나는 경제] 수출 호황에 달러 넘치는데 환율 왜 오르나…달라진 외환시장 공식",
-        "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTFA5ek0yTk0zOEJMenBEc1JGaFpnaGhwTTFrUzJ4OF9tRXlNY2gxbVpkdHdEdEVMNUxXem5BTU45ME93QWt1OFlZbUdyZ19hS3dsNVZhZUo2TzRtMjFyQTRrMEtHcmtVRmlI?oc=5",
-        "pubDate": "Wed, 10 Jun 2026",
-        "source": "티제이비"
+        "title": "[심층진단] 美 관세·EU 환경규제·中 수출통제…동시다발 무역장벽, 한국 수출기업의 ‘복합 리스크’ 시대",
+        "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE11X2pfMng0RFZzaHgzSTlLN2xtdEtnSkhZZDV0TmRyeXNJZ0k3aTYwelN3MU9WUG5oUE9Kdm12T3ZaSU5UOWxOQ0QwWVQzVFpDWTZmbm5qUndxNUxxdjlDLTZHZ0VuMFZPeUE?oc=5",
+        "pubDate": "Thu, 23 Jul 2026",
+        "source": "뉴스밸류"
       },
       {
-        "title": "[오늘의 브릿지경제 1면] 글로벌 공급망 다변화 급한데… CPTPP 가입, 부처간 이견 팽팽",
-        "link": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE1leXRQcDR4Q09nS3JMeG0xM1NtcTJ4SlpHQng3LWRZT1JDUEdOUngtbEJUQXNUcXozb29LWFdsbXNMdGJydWFUOXdTcmdLSS1IS0luTXJmMA?oc=5",
-        "pubDate": "Tue, 25 Aug 2026",
-        "source": "브릿지경제"
+        "title": "국제통상학과 세특, '무역 이슈 요약'만으론 부족하다… 합격 만드는 탐구의 차이",
+        "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTFBSUGdSMF9sNTEtLXJiTU1aSzJ3eUY2N1YxSm5PNUZLMERPcHJuenRLWDlySjlweHdqVUFzakF5OGVYeXFDeTN0YmpLOV8zS0lmNFlZNk5sMnVVSlV0OHA2NUJPTl9NQmwyc2c?oc=5",
+        "pubDate": "Wed, 30 Sep 2026",
+        "source": "에듀진 인터넷 교육신문"
       },
       {
-        "title": "05화 [4화] 환율 풀던 박사, 대리에게 배운 BL과 LC",
-        "link": "https://news.google.com/rss/articles/CBMiU0FVX3lxTFBjQnJ0WjRoeHlXd3pwcWxEdUJPaFpLVUdlX0lqUFY0Vnl1TkxOMFdCMnZCcEQ0OWJ1cl8wYXp5MDNRU09sY2xEYkdUZ2tTZTh0Snpn?oc=5",
-        "pubDate": "Fri, 19 Jun 2026",
-        "source": "브런치"
-      },
-      {
-        "title": "[경제/무역] 베트남 무역수지 반년 만에 168억 달러 적자… ‘역대 최대치’ 기록",
-        "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTFBvZU5NdW1kMHJOc3RiTjZPT1pyUUJlZ05ZT2o3UDhycGl1TEFxbjN2YUVVUkhudTZlRTZTVWY4eHlpT25MR0otcmZfcTVGZWJ6NlJkOWhfaENEanVKV0VPTFlfUk1RVlBfVHpHc1Q4MWo?oc=5",
-        "pubDate": "Fri, 19 Jun 2026",
-        "source": "굿모닝베트남미디어"
+        "title": "인천중기청, “수출자금 조달과 환리스크 관리“ 세미나 개최",
+        "link": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE5YT2laMU43ZnNYUmkzX24tbDRtTzcxTExQN2Y5SUQ2S3JQRkVkNkdKNWdIVlpPUjIzZ2NBZ2xWR2RZWmNZTWtOWGY1dElpeW94bW9tN185YTNSYlUzWDZOazBJa0VvZw?oc=5",
+        "pubDate": "Fri, 16 Oct 2026",
+        "source": "한국미디어뉴스"
       }
     ]
   }
