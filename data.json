@@ -1,9 +1,9 @@
 {
-  "last_updated": "2026-11-26 18:55 KST/JST",
+  "last_updated": "2026-11-27 09:49 KST/JST",
   "fx": {
-    "usd_krw": 1343.04,
-    "usd_jpy": 159.24,
-    "jpy_100_krw": 843.41
+    "usd_krw": 1343.84,
+    "usd_jpy": 159.28,
+    "jpy_100_krw": 843.7
   },
   "news": {
     "logistics": [
@@ -40,21 +40,15 @@
     ],
     "japan_domestic": [
       {
-        "title": "SNS政治、執行権優位の高速度民主主義に 自壊回避へ岐路の10年",
-        "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE5QcWhtRmVTZ1NZQTIyTmJ1Q1k4ZFphZldxOWV5Y1Z1TjA5RlZXWWROSDJVQ09xVFlUU1huNTdldjZibktCcGxLNHlfOWVHclJ1M2RBWmotT3RpaWdZZzhuT3NoaEFtemVDaExaWA?oc=5",
-        "pubDate": "Wed, 25 Nov 2026",
-        "source": "日本経済新聞"
-      },
-      {
-        "title": "大国政治復活を阻む資本の論理 呉軍華氏",
-        "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE5GdE9GcFZ3aENKbHJMUXU3a1FYaVFuYnlQQ3lCR041ZGhsT3FCd2RjUjN3Y2hnVGM4MVhKaTEzNTlieE8xcDJUUlFKb1kzTml4YUluV2VWMHczNlZZQVN6bThGcThPS0QtMkFUYw?oc=5",
-        "pubDate": "Wed, 25 Nov 2026",
-        "source": "日本経済新聞"
-      },
-      {
         "title": "トランプ氏とファン氏、モラルなき特権政治 多重の利益相反疑惑",
         "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE1uWFRzR3pkNW5yVTFxVDBPWHpuOWFzUXREbDB3UGpURlFNLXc3NVZMRE1Ecy1aQnJ6NUstLU1oeHBjRFBERlUzTXJxb09LSUhFZXB1djFVemVtdEJ3LWpsV3Q2SGdneTVsYnlRcg?oc=5",
         "pubDate": "Tue, 24 Nov 2026",
+        "source": "日本経済新聞"
+      },
+      {
+        "title": "資産格差に寄り添う政治を 階層対立の先鋭化に懸念",
+        "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTFBxc1VfamZYWi0wQTZkcjY1b3MwMnpsaXhZT0themFqVmZXNlZQWllwZVNuSHRuMnhseEdFa3RVa1RESnN4aGt1eTRZaXBBV2dpcmNheDY1aG5Qc0c3NzhTcDM3dElGaHhpRExUaQ?oc=5",
+        "pubDate": "Tue, 06 Oct 2026",
         "source": "日本経済新聞"
       },
       {
@@ -64,19 +58,19 @@
         "source": "第一ライフ資産運用経済研究所"
       },
       {
-        "title": "「日本を、強く豊かに 奈良の柿」 高市早苗首相、地元名産で一句",
-        "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE5VZmlMWVEwU0prN3JuVFBuU2d5R3A2Yy1fMXpSeFFXRjNCcXloa2RneG10M2hkN185YVdRVlZkSUhPTldvcGE4NnBCRkgtd3otc0lHRTl3cExjd1Nqc0x1X3BVOE16UGlqSUVTNw?oc=5",
-        "pubDate": "Thu, 26 Nov 2026",
+        "title": "いまの日本に「保守」はない 片山杜秀・慶大教授、迎合政治を憂う",
+        "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE5pVTdzZERkMUhsTlJ4MnU5UUF3RGFXUFY3V1plMExRSVJSODRBRlJ0NU0wMnFUaHNCYTdBS1ZMbWdRaFE3VTNFRGE3UnZqVmVkUGJmNkdDdGhQUGlyLVVsbS05b3k3YkE1cVh3cQ?oc=5",
+        "pubDate": "Sat, 03 Oct 2026",
+        "source": "日本経済新聞"
+      },
+      {
+        "title": "データセンター建設、米政治の焦点に(The Economist)",
+        "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTFBjSlhxTkhpbTdQbUhBWHNFY0FmU3pkRzBqNmVic3lXckZwQXIyVmx3VThmdV9PeDVGbGtHU0pMelJsRDB3MHdRc0UweWE4NTRvZFVxc1VOVnBIZWUtZ3NPa2UxeTc0YlVTdkdKag?oc=5",
+        "pubDate": "Tue, 08 Sep 2026",
         "source": "日本経済新聞"
       }
     ],
     "japan_visa": [
-      {
-        "title": "【自動車運送業分野】特定技能人財の海外育成、2026年11月下旬に法務省出入国在留管理庁・外務省による現地視察",
-        "link": "https://news.google.com/rss/articles/CBMickFVX3lxTE1BUWVhUlFaajBzTHU3OXg3VHo1N21WQU5faElKaVpmNmo3alVPV2w3V2gyQ0NJQ3ZWdlptemcwYzluQTFBOE5hRDdDWXJodWZHYnM5OGRfS2xiQUZuX3hJU3lMWmlzNU1USUl3M3ByOTNlQQ?oc=5",
-        "pubDate": "Thu, 26 Nov 2026",
-        "source": "Infoseek"
-      },
       {
         "title": "宿泊分野特定技能・育成就労協議会",
         "link": "https://news.google.com/rss/articles/CBMixgFBVV95cUxOc2Y1WDNWWkhkc1lLS19uaTZ6czJYOEE0ZmpNVTNDWWp3eDNERk9xenZGZGFLX2xoTG5ZRVhLX1JFTW9UbWJuSDN6TGg1SFpFR0YxVjA2R2tJcV9wX3phU1A3dHdqX2tOUW5NUGQ0R0RNdk1RTVdNMjZ6UDNmZUhMYmx6dE1mMW5oWWFoSk14bkRoUzNjd1puNUpRVXdNY1hyX2pOQ1YyVENPdkdoWjBzZEhRSng0TjVJeXU2VGZHZUw2Q1pBOWc?oc=5",
@@ -84,10 +78,16 @@
         "source": "国土交通省"
       },
       {
-        "title": "外国人在留は「選別しつつ受け入れ」へ：相次ぐ審査の厳格化（nippon.com）",
-        "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTE9lbjJBTEVyMktWZ2F0YU9FUEZVRy1vNkZ4LVVQSmRPN1VKYkFsOXBWTjNIQ3QydGlBOWhFcERuN0VqbHRUalZpUWlmUDNCQzFydjlLMEE3bkpTR19TUURiMV9pdHFreHk4Z2xwUWxFMGRLeXRSLUttOEdLZ2pqbWM?oc=5",
-        "pubDate": "Tue, 29 Sep 2026",
-        "source": "Yahoo!ニュース"
+        "title": "【自動車運送業分野】特定技能人財の海外育成、2026年11月下旬に法務省出入国在留管理庁・外務省による現地視察",
+        "link": "https://news.google.com/rss/articles/CBMickFVX3lxTE1BUWVhUlFaajBzTHU3OXg3VHo1N21WQU5faElKaVpmNmo3alVPV2w3V2gyQ0NJQ3ZWdlptemcwYzluQTFBOE5hRDdDWXJodWZHYnM5OGRfS2xiQUZuX3hJU3lMWmlzNU1USUl3M3ByOTNlQQ?oc=5",
+        "pubDate": "Thu, 26 Nov 2026",
+        "source": "Infoseek"
+      },
+      {
+        "title": "特定技能の外国人、「給食」受け入れを別分野で再開へ 政府が運用案 [外国人政策 高市早苗総理 自民党]",
+        "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTFA5VWNJeS1OVkNGTmJDTHNrdWFpNWxoOUw5REJtUlpVR1h2Y3NtRkRpRTRmVm4tbnNlQUFlYndqdzBWbWVZdWZRX2YwVlRMY2Q5VGk4WjlBaHFtNG9kWkJvQUZPbmZSZk0?oc=5",
+        "pubDate": "Mon, 19 Oct 2026",
+        "source": "朝日新聞"
       },
       {
         "title": "特定技能２号に「在留５年」 政府、来年１月施行方針：時事ドットコム",
@@ -96,10 +96,10 @@
         "source": "時事ドットコム"
       },
       {
-        "title": "物流・自動車：物流倉庫分野における特定技能外国人・育成就労外国人の受入れについて",
-        "link": "https://news.google.com/rss/articles/CBMidEFVX3lxTE5FeDNXWE1OVlp0cmFFMjVMSXVPWGJkNWlXdEk4ZFdyZm10LWFLVzViNENoU1EydW82XzE3aVlDenc2bXptd21wMWVwMlBOZlpOUU9TUTFDQ1hETUNtX2wwMWtBZFpiVmFVUGdZa29MUmZtMl9k?oc=5",
-        "pubDate": "Wed, 03 Jun 2026",
-        "source": "国土交通省"
+        "title": "在留・永住手続き手数料が10月から大幅引き上げ 外国人ら「暮らしていけない」、社員本人分の全額補助に踏み切る企業も",
+        "link": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE9fd2RZbVlRMEE2bndGSmNDV21fZTZTTVJiODI4cEtBcmtUOXFpbi0tSHN6RnNJbzFTaW9haWlJSXkwNVpGSEdWbVZ0Vnh5SnhhcUFQMA?oc=5",
+        "pubDate": "Mon, 28 Sep 2026",
+        "source": "中日新聞Web"
       }
     ],
     "global": [
@@ -110,28 +110,28 @@
         "source": "조세금융신문"
       },
       {
-        "title": "[산업종합저널 | INDUSTRY SIGNAL] 외환보유액 4,405억弗 축소 속 대미 수출 쏠림…글로벌 금리·환율 변동성 대응 분수령",
-        "link": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE82S0dkTEVnRG9RcGg3a2tydWhiV1JfQ1B4V3hlYnVUaG1kTG9hODVjVGNQWU9Kaldtc3hzVmtLSEhSeHRtZW9DVjczQmJRLTlUREhz?oc=5",
-        "pubDate": "Wed, 07 Oct 2026",
-        "source": "산업종합저널"
-      },
-      {
-        "title": "[심층진단] 美 관세·EU 환경규제·中 수출통제…동시다발 무역장벽, 한국 수출기업의 ‘복합 리스크’ 시대",
-        "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE11X2pfMng0RFZzaHgzSTlLN2xtdEtnSkhZZDV0TmRyeXNJZ0k3aTYwelN3MU9WUG5oUE9Kdm12T3ZaSU5UOWxOQ0QwWVQzVFpDWTZmbm5qUndxNUxxdjlDLTZHZ0VuMFZPeUE?oc=5",
-        "pubDate": "Thu, 23 Jul 2026",
-        "source": "뉴스밸류"
-      },
-      {
-        "title": "국제통상학과 세특, '무역 이슈 요약'만으론 부족하다… 합격 만드는 탐구의 차이",
-        "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTFBSUGdSMF9sNTEtLXJiTU1aSzJ3eUY2N1YxSm5PNUZLMERPcHJuenRLWDlySjlweHdqVUFzakF5OGVYeXFDeTN0YmpLOV8zS0lmNFlZNk5sMnVVSlV0OHA2NUJPTl9NQmwyc2c?oc=5",
-        "pubDate": "Wed, 30 Sep 2026",
-        "source": "에듀진 인터넷 교육신문"
+        "title": "[T나는 경제] 수출 호황에 달러 넘치는데 환율 왜 오르나…달라진 외환시장 공식",
+        "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTFA5ek0yTk0zOEJMenBEc1JGaFpnaGhwTTFrUzJ4OF9tRXlNY2gxbVpkdHdEdEVMNUxXem5BTU45ME93QWt1OFlZbUdyZ19hS3dsNVZhZUo2TzRtMjFyQTRrMEtHcmtVRmlI?oc=5",
+        "pubDate": "Wed, 10 Jun 2026",
+        "source": "티제이비"
       },
       {
         "title": "[오늘의 브릿지경제 1면] 글로벌 공급망 다변화 급한데… CPTPP 가입, 부처간 이견 팽팽",
         "link": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE1leXRQcDR4Q09nS3JMeG0xM1NtcTJ4SlpHQng3LWRZT1JDUEdOUngtbEJUQXNUcXozb29LWFdsbXNMdGJydWFUOXdTcmdLSS1IS0luTXJmMA?oc=5",
         "pubDate": "Tue, 25 Aug 2026",
         "source": "브릿지경제"
+      },
+      {
+        "title": "[현장] 이탈리아 프레첼에서 헝가리 벌꿀까지…오감으로 맛본 ‘수입 엑스포 2026’",
+        "link": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE12NDI1OHZYbUxhSDUzc0JSU3JnLTFGdkVlMnhSVm1xNDJHYWtlcEc2ckpHejlKaUdxcEdGWDBKU0g3SVFKa3doZVkyVGs4MW55RlROaW1YWVBoWGM?oc=5",
+        "pubDate": "Tue, 23 Jun 2026",
+        "source": "에너지경제신문"
+      },
+      {
+        "title": "05화 [4화] 환율 풀던 박사, 대리에게 배운 BL과 LC",
+        "link": "https://news.google.com/rss/articles/CBMiU0FVX3lxTFBjQnJ0WjRoeHlXd3pwcWxEdUJPaFpLVUdlX0lqUFY0Vnl1TkxOMFdCMnZCcEQ0OWJ1cl8wYXp5MDNRU09sY2xEYkdUZ2tTZTh0Snpn?oc=5",
+        "pubDate": "Fri, 19 Jun 2026",
+        "source": "브런치"
       }
     ]
   }
